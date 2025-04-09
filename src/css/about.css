@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: poppins;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  /*-----About-hero image----*/
+  .about-hero {
+    margin-top: 4%;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  .about-content {
+    padding: 40px 0px;
+  }
+  
+  .about-para p,
+  .about-para-2 p {
+    font-weight: Regular 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2144;
+    text-align: justify;
+    margin-top: 30px;
+    width: 90%;
+    font-family: poppins;
+  }
+  
+  .about-para-2 h4 {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2f2144;
+    font-weight: 800;
+    padding: 20px 0px;
+    font-family: poppins;
+  }
+  
+  .about-para-2 ul li {
+    list-style-type: square;
+    color: #2f2144;
+    line-height: 1.8;
+    font-weight: Regular 400;
+    font-size: 15px;
+    font-family: poppins;
+  }
+  .about-para h1 {
+    font-size: 35px;
+      color: #52377b;
+      font-weight: 700;
+      font-family: 'Segoe UI';
+      text-transform: capitalize;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  .start {
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  .start a {
+    text-decoration: none;
+    color: #2f2144;
+  }
+  
+  .start h3 {
+    font-size: 49px;
+    color: #52377b;
+    font-family: 'Segoe UI';
+    text-transform: capitalize;
+    font-weight: 800;
+    padding-bottom: 40px;
+  }
+  
+  .start span {
+    font-size: 49px;
+    line-height: 46px;
+    font-family: 'Segoe UI';
+    color: #3678bc;
+    font-weight: 800;
+  }
+  
+  .start button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #2f2144;
+    color: #2f2144;
+    font-family: poppins;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .start .button-wiggle {
+    animation: wiggle 4s 2s infinite;
+  }
+  
+  @keyframes wiggle {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1.15);
+    }
+    20% {
+      transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+      transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+      transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+      transform: scale(1.15) rotate(0);
+    }
+  }
+  .LetusConnect
+   {
+    margin: 60px 0px;
+   }
+  .GetTouch
+  {
+    flex-direction: column;
+    height: 100%;
+    background-color: #e6e9f3;
+    border-radius: 20px;
+    padding: 30px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .GetTouch .row
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .LetusConnect .contact-title h2
+  {
+    padding-bottom: 40px;
+    color: #52377b;
+    font-weight: 600;
+    text-align: center;
+  } */
+  .LetusConnect .contact-title
+  {
+    text-align: center;
+  }
+   .LetusConnect .contact-title h3 {
+    font-size: 49px;
+    color: #52377b;
+    font-family: 'Segoe UI';
+    text-transform: capitalize;
+    font-weight: 800;
+    padding-bottom: 40px;
+  }
+  
+   .LetusConnect .contact-title span {
+    font-size: 49px;
+    line-height: 46px;
+    font-family: 'Segoe UI';
+    color: #3678bc;
+    font-weight: 800;
+  }
+  .LetusConnect input
+  {
+    width: 100%;
+    padding: 10px 20px;
+    /* background-color: #d8c4df; */
+    background-color: transparent;
+    color:#2f2144;
+    border: none;
+    border: 1px solid #2f2144;
+    outline: none;
+    /* border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px; */
+  }
+  .LetusConnect input::placeholder
+  {
+    color:#2f2144;
+  }
+  .LetusConnect button
+  {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3bc50;
+    color: #2f2144;
+    border:none;
+    outline: none;
+    /* border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px; */
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  /* .start {
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  .start a {
+    text-decoration: none;
+    color: #2f2144;
+  }
+  
+  .start h3 {
+    font-size: 49px;
+    color: #52377b;
+    font-family: 'Segoe UI';
+    text-transform: capitalize;
+    font-weight: 800;
+    padding-bottom: 40px;
+  }
+  
+  .start span {
+    font-size: 49px;
+    line-height: 46px;
+    font-family: 'Segoe UI';
+    color: #3678bc;
+    font-weight: 800;
+  }
+  
+  .start button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #2f2144;
+    color: #2f2144;
+    font-family: poppins;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .start .button-wiggle {
+    animation: wiggle 4s 2s infinite;
+  }
+  
+  @keyframes wiggle {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1.15);
+    }
+    20% {
+      transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+      transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+      transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+      transform: scale(1.15) rotate(0);
+    }
+  } */
+
+  .about-services {
+    padding: 40px;
+    margin-top: 40px;
+  }
+  
+  .decription-heading h2 {
+    font-size: 43px;
+    color: #52377b;
+    line-height: 41px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family:'Segoe UI';
+  }
+  
+  .decription-heading p {
+    margin-bottom: 20px;
+    font-weight: Regular 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2144;
+    text-align: justify;
+    font-family: poppins;
+  }
+  
+  .tailored_made_hed {
+    height: 80px;
+    display: flex;
+
+  }
+
+  .about-services .card {
+    text-align: center;
+    width: 18rem;
+    min-height: 280px ;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about-services .card:hover {
+    background: #fec435;
+    color: #2f2144;
+  }
+  
+  .tailored_made_border {
+    width: 70px;
+    height: 5px;
+    background-color: #f3bc50;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .about-services .card:hover .tailored_made_border {
+    background-color: #2f2144;
+  }
+  
+  .about-services .card-title {
+    font-weight: 700;
+    text-align: left;
+    font-size: 22px;
+    color: #52377b;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+  }
+  
+  .about-services .card:hover .card-text {
+    color: #2f2144;
+    opacity: 2;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about-services .card-text {
+    font-weight: Regular 400;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #2f2144;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .our-address {
+    margin-top: 0px;
+  }
+  .ceo
+  {
+  margin-top:60px;
+  
+  }
+  .ceo .container
+  {
+    width:100%;
+    
+  }
+  .ceo h1
+  {
+    font-family: poppins;
+    /* font-size: 2rem; */
+    font-weight: 700;
+    line-height: 1.8;
+    color: #2f2144;
+  }
+  .ceo-photo 
+  {   
+    text-align: center;
+    margin-top: -80px;
+  }
+  .ceo-photo h2
+  {
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.8;
+    color: #2f2144;
+  }
+  .ceo-photo h3
+  {
+    color: #2f21448c;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-transform: uppercase;
+  }
+  .profile p
+  {
+    font-family: poppins;
+    font-weight: Regular 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2144;
+    text-align: justify;
+    margin-top: 20px;
+  
+  }
+
+  .media-body h4 {
+    font-size: 22px;
+    color: #52377b;
+    font-weight: 800;
+    font-family: 'Segoe UI';
+    /* padding: 10px 0px; */
+    text-transform: capitalize;
+  }
+  
+  .media-body p {
+    font-weight: Regular 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2144;
+    text-align: justify;
+  }
+  
+  .tailored_made_hed img
+  {
+     width:80px;
+     height: 80px;
+  }
+  .smm-icon img
+  {
+    width: 100px;
+    height: 80px;
+  }
+  .brand-icon img
+  {
+    width: 100px;
+    height: 100px;
+  }
+  .ecom-icon img
+  {
+    width: 90px;
+    height:80px;
+  }
+  .podcast-icon img 
+  {
+    width: 106px;
+    height: 90px;
+  }
+  /*-----------Media queries -------------*/
+  @media screen and (min-width:320px) and (max-width:374px) {
+    .decription-heading h2 {
+      margin-top: 20px !important;
+      font-size: 26px;
+    }
+    .about-hero {
+      margin-top: 25% !important;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+    .ceo-photo 
+  {   
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about-services .card
+  {
+    margin: 20px auto;
+    min-height: 280px ;
+    width: 100%;
+  }
+  .about-services
+  {
+    padding: 10px !important;
+    margin: 10px auto;
+  }
+  
+  }
+  
+  @media screen and (max-width:319.9px) {
+    .decription-heading h2 {
+      margin-top: 20px !important;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+.about-para-2 ul li
+{
+  padding-left: 0px !important;
+}
+  }
+  @media screen and (min-width:430px) and (max-width:540px) {
+    .about-hero {
+      margin-top: 15% !important;
+    }
+    .about-services .card
+    {
+      margin: 20px auto;
+      min-height: 280px ;
+      width: 100%;
+    }
+    .about-services
+    {
+      padding: 10px !important;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+  }
+  @media screen and (min-width:541px) and (max-width:767px) {
+    .about-hero {
+      margin-top: 10% !important;
+    }
+    .about-services .card
+    {
+      margin: 20px auto;
+      min-height: 280px ;
+      width: 100%;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .about-content {
+      padding: 10px 0px;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+    .about-para p,
+    .about-para-2 p {
+      font-weight: Regular 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #2f2144;
+      text-align: justify;
+      margin-top: 10px;
+      width: 100%;
+      padding: 0px 15px;
+    }
+  
+    .about-para-2 h4 {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2f2144;
+      font-weight: 800;
+      padding: 20px 15px;
+    }
+  
+    .lap {
+      display: none;
+    }
+  
+    .tab {
+      display: block;
+    }
+  
+    .about-hero {
+      margin-top: 19%;
+    }
+  
+    .about-image a.js-tilt>img {
+      padding-left: 0px;
+      padding-top: 30px;
+    }
+  
+    .about-para-2 ul li {
+      margin-left: 40px;
+    }
+    .ceo-photo 
+  {   
+    
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about-services .card
+  {
+    margin: 20px auto;
+    min-height: 280px ;
+    width: 100%;
+  }
+  .decription-heading h2
+  {
+    font-size: 30px;
+  }
+  .profile p
+  {
+    padding: 0px 15px;
+    margin-top: 0px;
+    text-align: left !important;
+  }
+  .ceo h1
+  {
+    padding: 0px 20px;
+  }
+}
+  @media screen and (min-width:768px) and (max-width:991px) {
+    .lap {
+      display: none;
+    }
+  
+    .tab {
+      display: block;
+    }
+  
+    .about-hero {
+      margin-top: 9%;
+    }
+  
+    .about-image a.js-tilt>img {
+      padding-left: 0px;
+      padding-top: 30px;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+    /* .start {
+      text-align: center;
+      margin-top: 10%;
+    } */
+  
+    .about-para p,
+    .about-para-2 p {
+      font-weight: Regular 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #2f2144;
+      text-align: justify;
+      margin-top: 30px;
+      width: 100%;
+    }
+    .dropdown-menu .row h2 a {
+      margin-left: 0px;
+    }
+    .sides-drop
+  {
+    display: flex !important;
+    width: 100%;
+    gap: 20px;
+  }
+  .ceo-photo 
+  {   
+    text-align: center;
+    margin-top: 10px;
+  }
+  .about-services .card
+  {
+    margin: 20px auto;
+    min-height: 280px ;
+    width: 100%;
+  }
+  .decription-heading h2
+  {
+    font-size: 35px;
+  }
+  }
+  
+  @media screen and (min-width:992px) and (max-width:1199.9px) {
+    .about-image a.js-tilt>img {
+      padding-left: 0px;
+      margin-top: 25%;
+    }
+  
+    .about-hero {
+      margin-top: 8%;
+    }
+    .LetusConnect input
+    {
+      margin: 10px auto;
+    }
+    .GetTouch
+    {
+      padding: 60px 20px;
+    }
+    /* .start h3 {
+      font-size: 40px;
+    } */
+    .about-services .card
+    {
+      margin: 20px auto;
+      height:100% !important;
+      width: 100%;
+    }
+
+  }
+  
+  @media screen and (min-width:1200px) and (max-width:1399.9px) {
+    .about-image a.js-tilt>img {
+      padding-left: 0px;
+      margin-top: 15%;
+    }
+  
+    .about-hero {
+      margin-top: 6%;
+    }
+  
+    .start h3 {
+      font-size: 40px;
+    }
+    
+  }

@@ -1,0 +1,45 @@
+
+/* .side-points
+{
+    margin-top: 7%;
+} */
+@media screen and (min-width:992px) and (max-width:1400px) {
+    .smm .service-image {
+        margin-top: 20%;
+    }
+    .service-para h1 {
+        font-size: 30px !important;
+    }
+    .smm .img-fluid {
+        max-width: 100% !important;
+        height: auto;
+        margin-left: 0px;
+    }
+    .service-para {
+        margin-top:0% !important;
+    }
+}
+
+@media screen and (min-width:1199px) and (max-width:1400px) {
+    .service-image {
+        margin-top: 5%;
+
+    }
+}
+@media screen and (max-width:768px) {
+    .left-media {
+        padding-right: 0px !important;
+    }
+    .service-para {
+        margin-top:0% !important;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .left-media {
+        padding-right: 0px !important;
+    }
+    .service-para {
+        margin-top:0% !important;
+    }
+}
