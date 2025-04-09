@@ -12,6 +12,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import baseURL from '../../Environment';
+import { useNavigate } from 'react-router-dom';
 export default function LogoQuestions() {
   const [activeKey, setActiveKey] = useState("0");
   const [isOtherSelected, setIsOtherSelected] = useState(false);
@@ -26,13 +27,13 @@ export default function LogoQuestions() {
     createTagline: '',
     newBusiness: '',
     existingBusinessReason: '',
-    message:'',
+    message: '',
     organizationDescription: '',
     mainProductsServices: '',
     targetCustomers: '',
     industries: '',
     targetMarket: '',
-    targetmessage:'',
+    targetmessage: '',
     competitors: '',
     logoComplexity: '',
     logoIdeas: '',
@@ -45,7 +46,7 @@ export default function LogoQuestions() {
     logoExamples: '',
     colorCombinations: ''
   });
-
+  const navigate = useNavigate()
   // Define a function to handle logo form input changes
   const handleLogoFormChange = (e) => {
     const { name, value } = e.target;
@@ -74,7 +75,7 @@ export default function LogoQuestions() {
   const handleFinalSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(baseURL+ 'questionnaire.php', logoFormData);
+      const response = await axios.post('/questionnaire.php', logoFormData);
       console.log('Form submission successful:', response.data);
       // Clear the form data
       setLogoFormData({
@@ -86,13 +87,13 @@ export default function LogoQuestions() {
         createTagline: '',
         newBusiness: '',
         existingBusinessReason: '',
-        message:'',
+        message: '',
         organizationDescription: '',
         mainProductsServices: '',
         targetCustomers: '',
         industries: '',
         targetMarket: '',
-        targetmessage:'',
+        targetmessage: '',
         competitors: '',
         logoComplexity: '',
         logoIdeas: '',
@@ -105,6 +106,7 @@ export default function LogoQuestions() {
         logoExamples: '',
         colorCombinations: ''
       });
+      navigate("/thankyou")
     } catch (error) {
       console.error('Error submitting form:', error);
       console.error('Response status:', error.response.status);
@@ -195,7 +197,7 @@ export default function LogoQuestions() {
                 <Form onSubmit={handleFinalSubmit}>
                   {/* Step 1 Questions */}
                   {currentStep === 1 && (
-                    <div  className='accordion-form mb-4'>
+                    <div className='accordion-form mb-4'>
                       <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
                         <Form.Label className="mb-3">Name</Form.Label>
                         <Form.Control

@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'; // Import the Bounce transition effect
 import baseURL from '../Environment';
+import { useNavigate } from 'react-router-dom';
 export default function ContactForm() {
   // Define state for form data
   const [formData, setFormData] = useState({
@@ -20,52 +21,38 @@ export default function ContactForm() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-
-// Handle form submission
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  try {
-    const formWithPage = { ...formData, page: window.location.href };
-
-    const response = await axios.post('/servicecontact.php', formWithPage); // Fixed URL format
-
-    if (response && response.status === 200) {
-      toast.success('Your message has been sent successfully! We will get back to you shortly.', {
-        position: 'top-center',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: 'colored',
-        transition: Bounce,
-      });
-
-      setFormData({
-        fullname: '',
-        email: '',
-        phoneNumber: '',
-        message: ''
-      });
-    } else {
-      toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
-        position: 'top-center',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: 'colored',
-        transition: Bounce,
-      });
+  const navigate = useNavigate()
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const formWithPage = { ...formData, page: window.location.href };
+      const response = await axios.post('/servicecontact.php', formWithPage); // Fixed URL format
+      if (response && response.status === 200) {
+        setFormData({
+          fullname: '',
+          email: '',
+          phoneNumber: '',
+          message: ''
+        });
+        navigate("/thankyou")
+      } else {
+        toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'colored',
+          transition: Bounce,
+        });
+      }
+    } catch (error) {
+      console.error('Error:', error);
     }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-};
+  };
 
 
 
@@ -102,7 +89,7 @@ const handleSubmit = async (e) => {
                     value={formData.email}
                     onChange={handleChange}
                   /><br />
-                    <input
+                  <input
                     name="phoneNumber"
                     id="phoneNumber"
                     type="text"

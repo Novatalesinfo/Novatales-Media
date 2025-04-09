@@ -10,8 +10,9 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { Bounce } from 'react-toastify' // Import the Bounce transition effect
 import baseURL from '../../Environment'
+import { useNavigate } from 'react-router-dom'
 
-export default function ServiceContactForm () {
+export default function ServiceContactForm() {
   // Initialize form data state
   const [formData, setFormData] = useState({
     fullname: '',
@@ -19,7 +20,7 @@ export default function ServiceContactForm () {
     phonenumber: '',
     message: ''
   })
-
+  const navigate = useNavigate()
   // Handle form input changes
   const handleChange = e => {
     const { name, value } = e.target
@@ -52,21 +53,6 @@ export default function ServiceContactForm () {
       .post('/servicecontact.php', formWithPage)
       .then(response => {
         // Handle success
-        toast.success(
-          'Your message has been sent successfully! We will get back to you shortly.',
-          {
-            position: 'top-center',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'colored',
-            transition: Bounce
-          }
-        )
-
         // Clear form fields
         setFormData({
           fullname: '',
@@ -74,7 +60,9 @@ export default function ServiceContactForm () {
           phonenumber: '',
           message: ''
         })
+        navigate("/thankyou")
       })
+
       .catch(error => {
         console.error('There was an error submitting the form!', error)
         // Handle error
