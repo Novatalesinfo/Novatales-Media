@@ -1,0 +1,87 @@
+
+.media-body ul li
+{
+  font-size: 15px;
+  padding: 10px;
+}
+/* .side-points
+{
+    margin-top: 15%;
+} */
+.media-body ul li .fa-solid 
+{
+  padding-right: 8px;
+}
+.media-body ul li .fa-regular 
+{
+  padding-right: 8px;
+}
+.advertising .img-fluid  {
+    max-width: 100%;
+      height: auto;
+  }
+  .media-head p
+{
+  font-weight: Regular 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2f2144;
+  text-align: justify;
+  padding: 10px 0px;
+}
+.media-head h3 {
+  color: #52377b;
+  font-weight: 800;
+  font-family: 'Segoe UI';
+  padding: 10px 0px;
+  text-transform: capitalize;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+.marketing-services
+{
+  margin-top: 6rem;
+}
+.advertising .media{
+  padding-bottom:30px;
+}
+.left-media
+{
+  padding-right: 70px;
+}
+@media screen and (max-width:768px){
+    .left-media {
+        padding-right: 0px !important;
+    }
+    .advertising .img-fluid  {
+        max-width: 100%;
+        height: 400px;
+       margin: 0px auto !important;
+    }
+    .media-head p
+    {
+    font-size: 13px !important;
+    padding: 0px 20px;
+    }
+    .media-body ul 
+    {
+        font-size: 13px !important;
+        padding: 0px 40px;
+    }
+    .media-head h3
+    {
+        padding: 10px 20px;
+    }
+    .advertising .img-fluid  {
+        max-width: 100%;
+          height: 400px;
+          /* margin-left: 100px !important; */
+      }
+}
+@media screen and (min-width:992px) and (max-width:1199.9px) {
+  .advertising .img-fluid {
+    max-width:100%;
+    height: auto;
+    margin-top: 40%;
+}
+}

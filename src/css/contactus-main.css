@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: poppins;
+    background-color: #fff;
+}
+
+
+
+.touch .container-fluid {
+    width: 93%;
+}
+
+.touch {
+    margin-top: 5%;
+}
+
+.touch .contact form {
+    margin-right: 60px;
+}
+
+.get-heading h1 {
+    padding: 20px 0px;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding-bottom: 40px;
+    color: #2f2144;
+    text-transform: capitalize;
+}
+
+.touch .contact form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    outline: 1px solid grey;
+    border: none;
+    margin: 10px auto;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px transparent;
+}
+
+.touch ::placeholder {
+    color: #2f2144;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.touch .contact form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    outline: 1px solid grey;
+    border: none;
+    margin: 10px auto;
+    box-shadow: 0 0 0 1px transparent;
+    color: #2f2144;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.touch .contact form select option {
+    color: #2f2144;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.touch .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    outline: 1px solid grey;
+    border: none;
+    margin: 10px auto;
+    box-shadow: 0 0 0 1px transparent;
+}
+
+.touch .contact form input[type=submit] {
+    width: 150px;
+    color: #2f2144;
+    background-color: #fec435;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+.touch .contact form label {
+    color: #2f2144;
+    padding: 10px;
+    font-size: 15px;
+    /* padding-bottom: 30px; */
+}
+
+.touch .name .invalid-tooltip {
+    position: relative;
+    bottom: 100px;
+    left: 80px;
+    width: 200px;
+}
+
+.touch .selection .invalid-tooltip {
+    position: relative;
+    bottom: 100px;
+    left: 160px;
+    width: 200px;
+}
+
+.touch .email .invalid-tooltip {
+    position: relative;
+    bottom: 100px;
+    left: 160px;
+    width: 250px;
+}
+
+.touch .scope .invalid-tooltip {
+    position: relative;
+    bottom: 200px;
+    left: 160px;
+    width: 200px;
+}
+
+.logo-heading {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.logo-heading h2 {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: #9b499c;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.sqs-block-content {
+    width: 70%;
+    color: #386792;
+}
+
+.logo-heading .p1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logo-heading .p2 {
+    font-size: 15px;
+}
+.map iframe {
+    width:100%;
+}
+/*-----------Media queries ----------*/
+
+@media screen and (min-width:992px) and (max-width:1440px) {
+    .map iframe {
+        height: 270px;
+        width:100%;
+    }
+
+    .logo-heading h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+}
+
+@media screen and (min-width:1379px) and (max-width:1616px) {
+    .logo-heading h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:991px) {
+    .logo-heading {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .touch {
+        margin-top: 20%;
+    }
+
+    .contact form {
+        margin-right: 0px;
+    }
+    .map iframe {
+        width:100%;
+    }
+    .logo-heading h2
+    {
+        font-size: 40px;
+    }
+    .touch .contact form
+    {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:424px) {
+    .touch {
+        margin-top: 20%;
+    }
+
+    .get-heading h1 {
+        font-size: 40px;
+    }
+    .logo-heading h2 {
+        font-size: 30px;
+    }
+
+    .logo-heading {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .sqs-block-content {
+        width: 100%;
+        color: #386792;
+    }
+
+    .contact form {
+        margin-right: 0px !important;
+    }
+    .map iframe {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:319px) {
+    .touch {
+        margin-top: 20%;
+    }
+
+    .get-heading h1 {
+        font-size: 40px;
+    }
+
+    .logo-heading h2 {
+        font-size: 40px;
+    }
+
+    .logo-heading {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .sqs-block-content {
+        width: 100%;
+        color: #386792;
+    }
+
+    .contact form {
+        margin-right: 0px;
+    }
+    .map iframe {
+        width:100%;
+    }
+}

@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1️⃣ Redirect non-www to www (Enforcing HTTPS)
+  RewriteCond %{HTTP_HOST} ^novatales\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.novatales.com/$1 [R=301,L]
+
+  # 2️⃣ Specific manual redirects for known uppercase URLs
+  RewriteCond %{REQUEST_URI} ^/GoogleAnalytics-SearchConsole$ [NC]
+  RewriteRule ^GoogleAnalytics-SearchConsole$ /google-analytics-search-console [R=301,L]
+  # Add more specific redirects here if you know other uppercase URLs Google has indexed
+  # Example: RewriteRule ^AboutUs$ /aboutus [R=301,L]
+
+  # 3️⃣ Allow access to existing files and directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 4️⃣ Redirect all other requests to index.html (For SPAs)
+  RewriteRule ^(.*)$ /index.html [L]
+
+</IfModule>

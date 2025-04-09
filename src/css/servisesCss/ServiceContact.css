@@ -1,0 +1,72 @@
+.service-contact h4 {
+    font-size: 35px;
+    color: #52377b;
+    line-height: 50px;
+    text-align: center;
+    padding: 40px 0px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+  
+  }
+  
+  .contact-now {
+    background-color: #dbd0f5;
+    padding: 5%;
+  }
+  
+  .service-contact-us form {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 55px;
+    padding-right: 35px;
+    padding-bottom: 45px;
+    padding-left: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+  .service-contact-us form input {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+    outline: none !important;
+  }
+  .service-contact-us form textarea
+  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .service-contact-us form ::placeholder {
+    color: #2f2144;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .service-contact-us form input[type="submit"] {
+    color: #2f2144;
+    background-color: #fec435;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+  
+  }
+  
+  .service-contact-us form input[type="submit"]:hover {
+  
+    background-color: #2f2144;
+    color: white;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  .cloud2 {
+    display: none;
+  }
