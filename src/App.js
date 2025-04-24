@@ -63,7 +63,8 @@ const App = () => {
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/contactus" element={<ContactUsMain />} />
           <Route path="/blog" element={<Blog />} />
-          {/* <Route path="/healthcare" element={<HealthCare />} /> */} {/* Lowercased if uncommented */}
+           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
+           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} /> {/* Fixed: Use element instead of component */}
 

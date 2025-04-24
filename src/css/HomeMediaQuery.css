@@ -1018,7 +1018,7 @@
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
-    left: -100px;
+    width: 160px;
   }
 
   .dropdown-menu {
@@ -1436,9 +1436,9 @@
   {
     margin-top:179px !important;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  /* .navbar-expand-lg .navbar-nav .dropdown-menu {
     margin-left: -480px;
-  }
+  } */
 
   .main-heading {
     margin-bottom: 150px;

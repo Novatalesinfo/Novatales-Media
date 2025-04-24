@@ -74,68 +74,68 @@ export default function MainPage() {
                 </div>
             </section>
             <section className='Below-Landing'>
-              <Container>
-              <div className="image-wrapper">
-                    <img src={girlImage} alt="social media content creation" className="overlap-image"/>
+                <Container>
+                    <div className="image-wrapper">
+                        <img src={girlImage} alt="social media content creation" className="overlap-image" />
                         <div className="content-on-image">
-                        <Row className='justify-content-center'>
-                            <Col lg={3} md={6} sm={12} >
-                                <div className='icon-1 mx-md-4'>
-                                    <div>
-                                        <img src={icon1} alt="icon" width="90px" />
+                            <Row className='justify-content-center'>
+                                <Col lg={3} md={6} sm={12} >
+                                    <div className='icon-1 mx-md-4'>
+                                        <div>
+                                            <img src={icon1} alt="icon" width="90px" />
+                                        </div>
+                                        <div className="heading">
+                                            <p className="title">Holistic
+                                                Approach</p>
+                                        </div>
+                                        <div className="content">
+                                            <p>Our process is all-encompassing. We start with a deep dive into your brand's essence and craft digital strategies that are in perfect alignment with your objectives.</p>
+                                        </div>
                                     </div>
-                                    <div className="heading">
-                                        <p className="title">Holistic
-                                            Approach</p>
+                                </Col>
+                                <Col lg={3} md={6} sm={12} >
+                                    <div className='icon-2 mx-md-4'>
+                                        <div>
+                                            <img src={icon2} alt="icon" width="90px" />
+                                        </div>
+                                        <div className="heading">
+                                            <p className="title">Innovation</p>
+                                        </div>
+                                        <div className="content">
+                                            <p>The digital landscape is ever-changing, and we are here to help you navigate it successfully. We are committed to keeping you updated with the latest trends and technologies.</p>
+                                        </div>
                                     </div>
-                                    <div className="content">
-                                        <p>Our process is all-encompassing. We start with a deep dive into your brand's essence and craft digital strategies that are in perfect alignment with your objectives.</p>
+                                </Col>
+                                <Col lg={3} md={6} >
+                                    <div className='icon-3 mx-md-4'>
+                                        <div>
+                                            <img src={icon3} alt="icon" width="90px" height="80px" />
+                                        </div>
+                                        <div className="heading">
+                                            <p className="title">Results-Driven</p>
+                                        </div>
+                                        <div className="content">
+                                            <p>We do not just create and leave it at that. We continually measure, analyze, and optimize to ensure that your digital presence is performing at its best.</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </Col>
-                            <Col lg={3} md={6} sm={12} >
-                                <div className='icon-2 mx-md-4'>
-                                    <div>
-                                        <img src={icon2} alt="icon" width="90px" />
+                                </Col>
+                                <Col lg={3} md={6} >
+                                    <div className='icon-4 mx-md-4'>
+                                        <div>
+                                            <img src={icon4} alt="icon" width="90px" />
+                                        </div>
+                                        <div className="heading">
+                                            <p className="title">Client-Centric</p>
+                                        </div>
+                                        <div className="content">
+                                            <p>Your satisfaction is our priority. We communicate transparently, keep you in the loop, and value your input throughout the process to ensure your contentment. </p>
+                                        </div>
                                     </div>
-                                    <div className="heading">
-                                        <p className="title">Innovation</p>
-                                    </div>
-                                    <div className="content">
-                                        <p>The digital landscape is ever-changing, and we are here to help you navigate it successfully. We are committed to keeping you updated with the latest trends and technologies.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={3} md={6} >
-                                <div className='icon-3 mx-md-4'>
-                                    <div>
-                                        <img src={icon3} alt="icon" width="90px" height="80px"/>
-                                    </div>
-                                    <div className="heading">
-                                        <p className="title">Results-Driven</p>
-                                    </div>
-                                    <div className="content">
-                                        <p>We do not just create and leave it at that. We continually measure, analyze, and optimize to ensure that your digital presence is performing at its best.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={3} md={6} >
-                                <div className='icon-4 mx-md-4'>
-                                    <div>
-                                        <img src={icon4} alt="icon" width="90px" />
-                                    </div>
-                                    <div className="heading">
-                                        <p className="title">Client-Centric</p>
-                                    </div>
-                                    <div className="content">
-                                        <p>Your satisfaction is our priority. We communicate transparently, keep you in the loop, and value your input throughout the process to ensure your contentment. </p>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
+                                </Col>
+                            </Row>
                         </div>
-                </div>
-              </Container>
+                    </div>
+                </Container>
             </section>
         </div>
     )

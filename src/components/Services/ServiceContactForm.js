@@ -9,9 +9,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { Bounce } from 'react-toastify' // Import the Bounce transition effect
-import baseURL from '../../Environment'
 import { useNavigate } from 'react-router-dom'
-
 export default function ServiceContactForm() {
   // Initialize form data state
   const [formData, setFormData] = useState({
@@ -69,7 +67,7 @@ export default function ServiceContactForm() {
         toast.error(
           'Oops! We encountered an issue sending your message. Please try again later.',
           {
-            position: 'top-center',
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,7 +25,7 @@ const Header = () => {
     const path =
       location.pathname === '/'
         ? 'home'
-        : location.pathname === '/healthcare'
+        : location.pathname === '/hospital-digital-marketing'
         ? 'HealthCare'
         : location.pathname.slice(1)
 
@@ -454,7 +455,7 @@ const Header = () => {
               >
                 Blog
               </Nav.Link>
-              {/* <NavDropdown title="Industries" id="industries-dropdown"
+               <NavDropdown title="Industries" id="industries-dropdown"
                show={showIndustries} // Use state to control visibility
                onMouseEnter={handleMouseEnterIndustries}
                onMouseLeave={handleMouseLeaveIndustries}
@@ -480,13 +481,13 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/HealthCare"
+                  to="/hospital-digital-marketing"
                   onClick={() => { handleNavigation('HealthCare'); handleNavCollapse(); }}
                 >
                   Health Care
                 </NavDropdown.Item>
-              </NavDropdown> */}
-              <Nav.Link
+              </NavDropdown> 
+              {/* <Nav.Link
                 as={Link}
                 to='/#Our-Clients'
                 onClick={e => {
@@ -504,7 +505,7 @@ const Header = () => {
                 }}
               >
                 Clients
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 as={Link}
                 to='/contactus'

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import digitalIcon from '../images/digital marketing icon-01.png';
 import videoProductionIcon from '../images/video production icon-01.png';
@@ -15,84 +15,11 @@ import BrandingIcon from '../images/branding -01.png';
 import photoshootIcon from '../images/photoshoot icon-01.png'
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
-import { Row, Col, Container } from 'react-bootstrap';
-import axios from 'axios';
-import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Bounce } from 'react-toastify'; // Import the Bounce transition effect
-import baseURL from '../Environment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 export default function AllServices() {
-    // Initialize form data state
-    const [formData, setFormData] = useState({
-        fullname: '',
-        email: '',
-        phonenumber: '',
-    });
-
-    // Handle form input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            [name]: value,
-        }));
-    };
-
-    // Handle phone number input to allow only digits
-    const handlePhoneChange = (e) => {
-        const { value } = e.target;
-        // Remove non-numeric characters
-        const numericValue = value.replace(/\D/g, '');
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            phonenumber: numericValue,
-        }));
-    };
-
-    // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        // Send form data to the server
-        axios.post(baseURL + 'servicecontact.php', formData)
-            .then(response => {
-                // Handle success, e.g., show success message
-                toast.success('Your message has been sent successfully! We will get back to you shortly.', {
-                    position: 'top-center',
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: 'colored',
-                    transition: Bounce,
-                });
-                // Clear form fields
-                setFormData({
-                    fullname: '',
-                    email: '',
-                    phonenumber: '',
-                });
-            })
-            .catch(error => {
-                console.error('There was an error submitting the form!', error);
-                // Handle error, e.g., show error message
-                toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
-                    position: 'top-center',
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: 'colored',
-                    transition: Bounce,
-                });
-            });
-    };
+  
 
     // Scroll to the top of the page when the component mounts
     useEffect(() => {
@@ -102,68 +29,14 @@ export default function AllServices() {
 
     return (
         <div>
-            {/* <div className="LetusConnect">
-                <div className="contact-title">
-                <h3>Let's Get <span>started</span></h3>
-                </div>
-                <form onSubmit={handleSubmit}>
-                    <Container>
-                        <div className="GetTouch">
-                            <Row>
-                                <Col lg={3}>
-                                    <input
-                                        type="text"
-                                        placeholder='Your Name'
-                                        name="fullname"
-                                        id="fullname"
-                                        required
-                                        value={formData.fullname}
-                                        onChange={handleChange}
-                                    />
-                                </Col>
-                                <Col lg={3}>
-                                    <input
-                                        type="text"
-                                        placeholder='Your Number'
-                                        name="phonenumber"
-                                        id="phonenumber"
-                                        required
-                                        value={formData.phonenumber}
-                                        onChange={handlePhoneChange}
-                                        pattern="\d{10}"
-                                        maxLength="10"
-                                    />
-                                </Col>
-                                <Col lg={3}>
-                                    <input
-                                        type="text"
-                                        placeholder='Your Email'
-                                        name="email"
-                                        id="email"
-                                        required
-                                        aria-required="true"
-                                        pattern="^.+@.+\.[a-zA-Z]{2,63}$"
-                                        maxLength="250"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                    />
-                                </Col>
-                                <Col lg={2}>
-                                    <button type="submit">Submit</button>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-                </form>
-            </div> */}
             <div className="container">
-            <div className="start">
-                <h3>Let's Get <span>started</span></h3>
-                <div className='button-wiggle'>
-                    <Link to="/contactus"><button>Request a quote <FontAwesomeIcon icon={faAngleRight} /></button></Link>
+                <div className="start">
+                    <h3>Let's Get <span>started</span></h3>
+                    <div className='button-wiggle'>
+                        <Link to="/contactus"><button>Request a quote <FontAwesomeIcon icon={faAngleRight} /></button></Link>
+                    </div>
                 </div>
             </div>
-        </div>
             <div className="about-services">
                 <div className="container">
                     <div className="about-services-heading">

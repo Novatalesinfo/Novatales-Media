@@ -6,7 +6,6 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'; // Import the Bounce transition effect
-import baseURL from '../Environment';
 import { useNavigate } from 'react-router-dom';
 export default function ContactForm() {
   // Define state for form data
@@ -38,7 +37,7 @@ export default function ContactForm() {
         navigate("/thankyou")
       } else {
         toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
-          position: 'top-center',
+          position: 'top-right',
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -51,6 +50,17 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error('Error:', error);
+      toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+        transition: Bounce,
+      });
     }
   };
 
@@ -118,7 +128,7 @@ export default function ContactForm() {
                     <input id="submit" type="submit" value="Submit" className="btn pink" />
                   </div>
                 </form>
-                <ToastContainer />
+
               </div>
             </div>
           </div>

@@ -5,9 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import baseURL from '../Environment';
 import { useNavigate } from 'react-router-dom';
-
 export default function ContactUsMain() {
   const [formData, setFormData] = useState({
     fullname: '',
@@ -47,16 +45,13 @@ const navigate = useNavigate()
         service: '',
         otherInfo: '',
       });
-  
       form.classList.remove('was-validated');
       form.reset();
-
       navigate("/thankyou")
     } catch (error) {
       console.error('There was an error submitting the form!', error);
-
-      toast.error('Oops! We encountered an issue sending your message. Please try again later.', {
-        position: 'top-center',
+      toast.error(error, {
+        position: 'top-right',
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
