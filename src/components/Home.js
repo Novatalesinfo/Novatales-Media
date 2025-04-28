@@ -5,20 +5,24 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import YourAims from './YourAims';
 import Clients from './Clients';
 import MainPage from './MainPage';
+import { useLocation } from "react-router-dom";
 const Home = () => {
   // Scroll to the top of the page when the component mounts
+  const location = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    // Scroll to the element with the ID in the URL hash
-    const hash = window.location.hash;
+    const hash = location.hash; // get hash from router location
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => { // slight delay to allow DOM to settle
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
-  }, []);
+  }, [location]);
   // Render the components for the home page
   return (
     <HelmetProvider  >
@@ -39,7 +43,7 @@ const Home = () => {
       <div id="our-services">
         <OurServices />
       </div>
-     <div id='Our-Clients'>
+     <div id='our-clients'>
      <Clients />
      </div>
       <ContactForm />

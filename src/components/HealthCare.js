@@ -6,11 +6,22 @@ import Faqs from "./faq";
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import healthbanner from "../images/novatales_healthbanner.jpg"
-import logoVisualMImage from '../images/logo & visual elements m.png';
+import hospital_image_1 from '../images/hospital_banner_1.jpg';
+import hospital_image_2 from '../images/hospital_banner_3.jpg';
 import VerifiedIcon from '@mui/icons-material/Verified';
-import healthcareservice_1 from "../images/healthcareService_1.jpg"
+import healthcareservice_1 from "../images/healthcareService_1.png"
+import healthcareservice_2 from "../images/healthcareService_2.png"
+import healthcareservice_3 from "../images/healthcareservice_3.png"
+import healthcareservice_4 from "../images/healthcareService_4.png"
+import healthcareservice_5 from "../images/healthcareService_5.png"
+import healthcareservice_6 from "../images/healthcareService_6.png"
+import healthcareservice_7 from "../images/healthcareService_7.png"
+import healthcareservice_8 from "../images/healthcareService_8.png"
 import icon1 from '../images/icon 1.png';
+import icon2 from '../images/icon 2.png';
+import icon3 from '../images/icon3.png';
+import icon4 from '../images/icon 4.png';
+import bannerImage from "../images/bg-7.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 export default function HealthCare() {
@@ -42,37 +53,39 @@ export default function HealthCare() {
           />
         </Helmet>
         <div className='landing-health-care'>
-          {/* <div>
+          <div className='row d-flex flex-column-reverse flex-lg-row'>
+            <div className='col-lg-6 d-flex justify-content-end align-items-center'>
+              <img src={bannerImage} alt='healthcare digital marketing agency' width="110%" />
+            </div>
+            <div className='col-lg-6 d-flex justify-content-start align-items-center  text-center'>
+              <h1 id='topHeading' className='text-center'>Transform Your Hospital with <br></br> <span style={{
+                color: "#fec436"
+              }}>
+                Digital Marketing Services
+              </span> </h1>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>Transform Your Hospital with<br></br> <span style={{
-            color: "#fec436"
-          }}>
-            Digital Marketing Services
-          </span> </h2>
-          <Link to="/contactus">
-            <button>Connect With Us</button>
-          </Link>
-        </div> */}
+        <div className='topHeading text-center' style={{
+        }}>
         </div>
         <div className="service-content LogoVisual">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-               
-                  <div className="service-para mt-3">
-                    <div className="health-why-novatales text-center text-lg-start">
-                      <h3>Boost Your <span>Hospital's Growth</span> with  <span>Hospital Digital Marketing</span></h3>
-                    </div>
-                    <p className='healthcareTopPara'>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</p>
-                    <p className='healthcareTopPara'>With the increasing competition in the healthcare industry, relying solely on traditional marketing isn’t enough. Our digital marketing agency for healthcare specializes in boosting hospital and clinic visibility using cutting-edge online strategies.</p>
+
+                <div className="service-para mt-3">
+                  <div className="health-why-novatales text-center text-lg-start">
+                    <h3 data-aos="fade-up">Boost Your <span>Hospital's Growth</span> with  <span>Hospital Digital Marketing</span></h3>
                   </div>
-                
+                  <p className='healthcareTopPara'>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</p>
+                  <p className='healthcareTopPara'>With the increasing competition in the healthcare industry, relying solely on traditional marketing isn’t enough. Our digital marketing agency for healthcare specializes in boosting hospital and clinic visibility using cutting-edge online strategies.</p>
+                </div>
               </div>
               <div className="col-lg-6 d-flex justify-content-center">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={logoVisualMImage} alt="logo design company" className="img-fluid topBottom" />
+                    <img src={hospital_image_1} alt="hospital digital marketing" className="img-fluid topBottom" />
                   </div>
                 </div>
               </div>
@@ -91,10 +104,10 @@ export default function HealthCare() {
               }}>Why Choose <span>NovaTales</span> for Your Healthcare <span>Marketing Strategies?</span></h3>
             </div>
             <Row className='justify-content-center my-5 '>
-              <Col lg={3} md={6} sm={12} className='my-md-5 my-4' >
+              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4' >
                 <div className='icon-1 text-center '>
                   <div>
-                    <img src={icon1} alt="icon" width="90px" />
+                    <img src={icon1} alt="healthcare marketing expertise" width="90px" />
                   </div>
                   <div className="heading">
                     <p className="title text-center">Industry Expertise</p>
@@ -104,36 +117,36 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} className='my-md-5' >
+              <Col lg={3} md={6} sm={12}  data-aos="fade-up" className='my-md-5' >
                 <div className='icon-1 text-center mx-md-4'>
                   <div>
-                    <img src={icon1} alt="icon" width="90px" />
+                    <img src={icon2} alt="digital solutions in healthcare" width="90px" />
                   </div>
                   <div className="heading">
-                    <p className="title  text-center">Customized Solutions</p>
+                    <p className="title text-center mt-1">Customized Solutions</p>
                   </div>
                   <div className="content  text-center">
                     <p className='text-center'>Our strategies are tailored to suit your hospital’s needs.</p>
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} className='my-md-5 my-4'>
-                <div className='icon-1 text-center'>
+              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4'>
+                <div className='icon-1 text-center mt-2'>
                   <div>
-                    <img src={icon1} alt="icon" width="90px" />
+                    <img src={icon3} alt="healthcare marketing budget" width="90px" />
                   </div>
                   <div className="heading">
-                    <p className="title text-center">Budget-Friendly Approach</p>
+                    <p className="title text-center mt-1">Budget-Friendly Approach</p>
                   </div>
                   <div className="content">
                     <p className='text-center'>Digital marketing is more cost-effective than traditional advertising.</p>
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} className='my-md-5'>
+              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5'>
                 <div className='icon-1 mx-md-3 text-center'>
                   <div>
-                    <img src={icon1} alt="icon" width="90px" />
+                    <img src={icon4} alt="reputation management for healthcare" width="90px" />
                   </div>
                   <div className="heading">
                     <p className="title text-center">Reputation Management</p>
@@ -142,13 +155,13 @@ export default function HealthCare() {
                     <p className='text-center'>We ensure positive online visibility and help manage patient feedback</p>
                   </div>
                 </div>
-              </Col>              
+              </Col>
             </Row>
           </Container>
         </div>
         <div className="health-Digital-Marketing">
           <Container>
-            <div className="health-why-novatales">
+            <div  data-aos="fade-up" className="health-why-novatales">
               <h3 className='text-center' style={{
                 textAlign: "center !important",
                 marginBottom: "80px",
@@ -157,9 +170,11 @@ export default function HealthCare() {
           </Container>
           <Container fluid>
             <Row className='health-Digital-Marketing-content xl-p-4' >
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_1} id='socialMedia' className="card-img-top" alt="Healthcare social media marketing" height="100%" style={{
+                    backgroundColor: "#FAFAFA"
+                  }} />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -170,10 +185,11 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4 '>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4 '>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} style={{
-                  }} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_2} style={{
+                    backgroundColor: "#FAFAFA"
+                  }} className="card-img-top" alt="healthcare seo services" />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -184,9 +200,11 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_3} className="card-img-top" alt="healthcare content marketing agency" style={{
+                    backgroundColor: "#FAFAFA"
+                  }} />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -197,9 +215,11 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_4} className="card-img-top" alt="Email Marketing for healthcare" style={{
+                    backgroundColor: "#FAFAFA"
+                  }} />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -210,9 +230,11 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_5} className="card-img-top" alt="reviews for hospitals" style={{
+                    backgroundColor: "#FAFAFA"
+                  }} />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -223,26 +245,26 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} style={{
-
-                  }} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_6} style={{
+                    backgroundColor: "#FAFAFA"
+                  }} className="card-img-top" alt="healthcare web development company" />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
-                    }}>Website Development & Optimization</h4>
+                    }}>Website Development</h4>
                     <div className="bottom-underline"></div>
                     <p>Improve user experience with a professionally designed website.</p>
                     <p>Ensure mobile-friendly and fast-loading pages.</p>
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} style={{
-
-                  }} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_7} style={{
+                    backgroundColor: "#FAFAFA"
+                  }} className="card-img-top" alt="ppc healthcare" />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -253,11 +275,11 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} className='mb-4 xl-p-4'>
+              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} style={{
-
-                  }} className="card-img-top" alt="..." />
+                  <img src={healthcareservice_8} style={{
+                    backgroundColor: "#FAFAFA"
+                  }} className="card-img-top" alt="Video Marketing for healthcare" />
                   <div className="card-body">
                     <h4 style={{
                       color: "#fec436"
@@ -275,14 +297,14 @@ export default function HealthCare() {
         <div className="service-content LogoVisual mb-5 pb-5">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 d-flex justify-content-center">
+              <div className="col-lg-6 d-flex justify-content-center" data-aos="fade-up">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={logoVisualMImage} alt="logo design company" className="img-fluid topBottom" />
+                    <img src={hospital_image_2} alt="benefits of digital marketing for healthcare" className="img-fluid topBottom" />
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6" data-aos="fade-up">
                 <div>
                   <div className="service-para mt-3">
                     {/* <h1 className="content-main-heading mb-3">Logo & Visual Elements</h1> */}
@@ -360,8 +382,8 @@ export default function HealthCare() {
           <Container>
             <div className="health-faqs-heading">
               <h3 className='text-center'> <span style={{
-            color: "#fec436"
-          }}>Frequently</span> Asked  Questions</h3>
+                color: "#fec436"
+              }}>Frequently</span> Asked  Questions</h3>
             </div>
             <div className="faq-accordion">
               <Row>

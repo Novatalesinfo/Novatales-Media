@@ -8,7 +8,7 @@ export default function NotFound() {
     // Redirect to the index page after 3 seconds
     const timer = setTimeout(() => {
       navigate('/');
-    }, 30000);
+    }, 2000);
 
     // Clean up the timer
     return () => clearTimeout(timer);

@@ -82,7 +82,7 @@ export default function MainPage() {
                                 <Col lg={3} md={6} sm={12} >
                                     <div className='icon-1 mx-md-4'>
                                         <div>
-                                            <img src={icon1} alt="icon" width="90px" />
+                                            <img src={icon1} alt="b2b marketing approach" width="90px" />
                                         </div>
                                         <div className="heading">
                                             <p className="title">Holistic
@@ -96,7 +96,7 @@ export default function MainPage() {
                                 <Col lg={3} md={6} sm={12} >
                                     <div className='icon-2 mx-md-4'>
                                         <div>
-                                            <img src={icon2} alt="icon" width="90px" />
+                                            <img src={icon2} alt="innovative digital marketing" width="90px" />
                                         </div>
                                         <div className="heading">
                                             <p className="title">Innovation</p>
@@ -109,7 +109,7 @@ export default function MainPage() {
                                 <Col lg={3} md={6} >
                                     <div className='icon-3 mx-md-4'>
                                         <div>
-                                            <img src={icon3} alt="icon" width="90px" height="80px" />
+                                            <img src={icon3} alt="results driven marketing agency" width="90px" height="80px" />
                                         </div>
                                         <div className="heading">
                                             <p className="title">Results-Driven</p>
@@ -122,7 +122,7 @@ export default function MainPage() {
                                 <Col lg={3} md={6} >
                                     <div className='icon-4 mx-md-4'>
                                         <div>
-                                            <img src={icon4} alt="icon" width="90px" />
+                                            <img src={icon4} alt="client centric marketing" width="90px" />
                                         </div>
                                         <div className="heading">
                                             <p className="title">Client-Centric</p>

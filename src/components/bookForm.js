@@ -5,7 +5,8 @@ const BookForm = () => {
     const initialFormData = {
         fullName: "",
         email: "",
-        phoneNumber: ""
+        phoneNumber: "",
+        hospitalname:""
     }
     const [formData, setFormData] = useState(initialFormData);
     const [consent, setConsent] = useState(false);
@@ -34,6 +35,7 @@ const BookForm = () => {
     const validate = () => {
         const newErrors = {};
         if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
+        if (!formData.hospitalname.trim()) newErrors.hospitalname = "Hospital name is required";
         if (!formData.email.trim()) {
             newErrors.email = "Email is required";
         } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
@@ -58,7 +60,7 @@ const BookForm = () => {
             setErrors(validationErrors);
             return;
         }
-        try {
+        try { 
             setLoading(true)
             const res = await fetch("./healthform.php", {
                 method: "POST",
@@ -67,7 +69,6 @@ const BookForm = () => {
                 },
                 body: JSON.stringify(formData),
             });
-            console.log(formData)
             const result = await res.json();
             if (result.success) {
                 setFormData(initialFormData);
@@ -110,26 +111,30 @@ const BookForm = () => {
             <div className="container">
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
-                        <div className="col-lg-4">
+                        <div className="col-xl-4">
                             <h3 className='text-center ' style={{
                                 fontSize: "38px"
                             }}>
                                 Get a Free Consultation
                             </h3>
                         </div>
-                        <div className="col-lg-8 d-flex flex-column justify-content-center align-items-center">
+                        <div className="col-xl-8 d-flex flex-column justify-content-center align-items-center">
                             <div className='row w-100'>
-                                <div className='col-lg-4 my-2'>
-                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='fullName' onChange={handleChange} value={formData.fullName} placeholder='Your Name' />
+                                <div className='col-lg-6 col-xl-3 my-2'>
+                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='fullName' onChange={handleChange} value={formData.fullName} placeholder='Name' />
                                     {errors.fullName && <small className="text-danger">{errors.fullName}</small>}
                                 </div>
-                                <div className='col-lg-4 my-2'>
-                                    <input className='form-control w-100 py-2' disabled={loading} type='email' name='email' onChange={handleChange} value={formData.email} placeholder='Your Email' />
+                                <div className='col-lg-6 col-xl-3 my-2'>
+                                    <input className='form-control w-100 py-2' disabled={loading} type='email' name='email' onChange={handleChange} value={formData.email} placeholder='Email' />
                                     {errors.email && <small className="text-danger">{errors.email}</small>}
                                 </div>
-                                <div className='col-lg-4 my-2'>
-                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='phoneNumber' onChange={handleChange} value={formData.phoneNumber} placeholder='Your Phone Number' />
+                                <div className='col-lg-6 col-xl-3 my-2'>
+                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='phoneNumber' onChange={handleChange} value={formData.phoneNumber} placeholder=' Phone Number' />
                                     {errors.phoneNumber && <small className="text-danger">{errors.phoneNumber}</small>}
+                                </div>
+                                <div className='col-lg-6 col-xl-3 my-2'>
+                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='hospitalname' onChange={handleChange} value={formData.hospitalname} placeholder='Hospital Name' />
+                                    {errors.hospitalname && <small className="text-danger">{errors.hospitalname}</small>}
                                 </div>
                             </div>
                             <div className='text-center d-flex justify-content-center gap-3 flex-md-row flex-column align-items-center mb-2 mt-4'>

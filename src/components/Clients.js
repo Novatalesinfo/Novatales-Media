@@ -21,9 +21,9 @@ export default function Clients() {
     }, []);
 
     return (
-        <div className='Clients Ourservice-heading' id='Our-Clients'>
-            <h2>Our Clients</h2>
-            <div className="logo-slider">
+        <div className='Clients Ourservice-heading' id='our-clients'>
+            <h2 >Our Clients</h2>
+            <div className="logo-slider" >
                 <div className="logos-slide">
                     <img src={TrippinladakhLogo} alt="Trippin Ladakh" width="150px" height="80px"/>
                     <img src={LivonComfortsLogo} alt="Livon Comforts" width="150px" height="80px"/>

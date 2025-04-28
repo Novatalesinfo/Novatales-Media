@@ -25,8 +25,6 @@ const Header = () => {
     const path =
       location.pathname === '/'
         ? 'home'
-        : location.pathname === '/hospital-digital-marketing'
-        ? 'HealthCare'
         : location.pathname.slice(1)
 
     handleNavigation(path) // Update the currentPage based on the current path
@@ -462,11 +460,11 @@ const Header = () => {
                >
                 <NavDropdown.Item
                   as={Link}
-                  to="/#Our-Clients"
+                  to="/#our-clients"
                   onClick={(e) => {
                     if (window.location.pathname === '/') {
                       e.preventDefault(); // Prevent default behavior
-                      const element = document.getElementById('Our-Clients');
+                      const element = document.getElementById('our-clients');
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
                       }
@@ -524,10 +522,10 @@ const Header = () => {
                     <Link
                       to='https://www.instagram.com/novatalesmedia/'
                       target='_blank'
-                      rel='noopener noreferrer'
+                      rel='noopener noreferrer' aria-labelledby='social media icons'
                     >
                       <FontAwesomeIcon
-                        icon={faInstagram}
+                        icon={faInstagram} aria-hidden="true"
                         className='fa-brands'
                       />
                     </Link>
@@ -536,10 +534,10 @@ const Header = () => {
                     <Link
                       to='https://www.facebook.com/novatalesdigital'
                       target='_blank'
-                      rel='noopener noreferrer'
+                      rel='noopener noreferrer' aria-labelledby='social media icons'
                     >
                       <FontAwesomeIcon
-                        icon={faFacebookSquare}
+                        icon={faFacebookSquare} aria-hidden="true"
                         className='fa-brands'
                       />
                     </Link>
@@ -548,10 +546,10 @@ const Header = () => {
                     <Link
                       to='https://twitter.com/novatalesmedia'
                       target='_blank'
-                      rel='noopener noreferrer'
+                      rel='noopener noreferrer' aria-labelledby='social media icons'
                     >
                       <FontAwesomeIcon
-                        icon={faSquareXTwitter}
+                        icon={faSquareXTwitter} aria-hidden="true"
                         className='fa-brands'
                       />
                     </Link>
@@ -560,11 +558,11 @@ const Header = () => {
                     <Link
                       to='https://www.linkedin.com/company/novatales/'
                       target='_blank'
-                      rel='noopener noreferrer'
+                      rel='noopener noreferrer' aria-labelledby='social media icons'
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
-                        className='fa-brands'
+                        className='fa-brands' aria-hidden="true"
                       />
                     </Link>
                   </div>
@@ -572,10 +570,10 @@ const Header = () => {
                     <Link
                       to='https://www.youtube.com/@NovaTalesMedia'
                       target='_blank'
-                      rel='noopener noreferrer'
+                      rel='noopener noreferrer' aria-labelledby='social media icons'
                     >
                       <FontAwesomeIcon
-                        icon={faYoutubeSquare}
+                        icon={faYoutubeSquare} aria-hidden="true"
                         className='fa-brands'
                       />
                     </Link>
