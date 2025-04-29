@@ -25,9 +25,9 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 // Allowed fields in the form
 $fields = array(
-    'fullname' => 'Full Name',
+    'fullName' => 'Full Name',
     'email' => 'Email',
-    'phonenumber' => 'Phone Number',
+    'phoneNumber' => 'Phone Number',
     'hospitalname' => 'Hospital Name' // <-- your newly added field
 );
 
@@ -49,7 +49,7 @@ try {
         throw new Exception('Email field is missing.');
     }
 
-    $from = $data['fullname'] . ' <' . $data['email'] . '>';
+    $from = $data['fullName'] . ' <' . $data['email'] . '>';
 
     // Build the email body
     $emailText = "You have a new message from Novatales Healthcare Page contact form\n";

@@ -6,7 +6,7 @@ const BookForm = () => {
         fullName: "",
         email: "",
         phoneNumber: "",
-        hospitalname:""
+        hospitalname: ""
     }
     const [formData, setFormData] = useState(initialFormData);
     const [consent, setConsent] = useState(false);
@@ -51,16 +51,14 @@ const BookForm = () => {
         }
         return newErrors;
     }
-    const handleSubmit = async (e) => { 
-        
-        
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const validationErrors = validate();
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
             return;
         }
-        try { 
+        try {
             setLoading(true)
             const res = await fetch("./healthform.php", {
                 method: "POST",
@@ -70,7 +68,7 @@ const BookForm = () => {
                 body: JSON.stringify(formData),
             });
             const result = await res.json();
-            if (result.success) {
+            if (result) {
                 setFormData(initialFormData);
                 setConsent(false);
                 navigate("/thankyou")
@@ -89,16 +87,6 @@ const BookForm = () => {
                 setLoading(false)
             }
         } catch (err) {
-            toast.error("Server error. Try again later.", {
-                position: 'top-right',
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: 'colored',
-            });
             console.error(err);
             setLoading(false)
         }
@@ -140,7 +128,7 @@ const BookForm = () => {
                             <div className='text-center d-flex justify-content-center gap-3 flex-md-row flex-column align-items-center mb-2 mt-4'>
                                 <div>
                                     <input type='checkbox' disabled={loading} checked={consent} style={{
-                                        cursor:"pointer"
+                                        cursor: "pointer"
                                     }} onChange={handleCheckbox} />
                                     <span className='ps-2 '>I hereby give my consent for NovaTales Media LLP to contact me.</span>
                                     {errors.consent && <div className="text-danger small">{errors.consent}</div>}

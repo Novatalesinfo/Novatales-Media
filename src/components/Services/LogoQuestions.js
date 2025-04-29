@@ -11,9 +11,9 @@ import axios from 'axios';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import baseURL from '../../Environment';
 import { useNavigate } from 'react-router-dom';
 export default function LogoQuestions() {
+  // eslint-disable-next-line no-unused-vars
   const [activeKey, setActiveKey] = useState("0");
   const [isOtherSelected, setIsOtherSelected] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);

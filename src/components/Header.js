@@ -458,7 +458,7 @@ const Header = () => {
                onMouseEnter={handleMouseEnterIndustries}
                onMouseLeave={handleMouseLeaveIndustries}
                >
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   as={Link}
                   to="/#our-clients"
                   onClick={(e) => {
@@ -476,7 +476,7 @@ const Header = () => {
                   }}
                 >
                   Clients
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item
                   as={Link}
                   to="/hospital-digital-marketing"
