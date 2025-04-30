@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -51,7 +52,7 @@ const BookForm = () => {
         }
         return newErrors;
     }
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         const validationErrors = validate();
         if (Object.keys(validationErrors).length > 0) {
@@ -59,22 +60,21 @@ const BookForm = () => {
             return;
         }
         try {
-            setLoading(true)
-            const res = await fetch("./healthform.php", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-            const result = await res.json();
-            if (result) {
-                setFormData(initialFormData);
-                setConsent(false);
-                navigate("/thankyou")
-                setLoading(false)
-            } else {
-                toast.error("Error: " + result.message, {
+            setLoading(true);
+            const formWithPage = { ...formData, page: window.location.href };
+             axios.post("/healthform.php", formWithPage).then(
+                res => {
+                    setFormData(initialFormData);
+                    setConsent(false);
+                    navigate("/thankyou");
+                }
+             )                                                    
+        } catch (error) {
+            console.error('Error:', error);
+            toast.error(
+                error?.response?.data?.message ||
+                'Oops! We encountered an issue sending your message. Please try again later.',
+                {
                     position: 'top-right',
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -83,12 +83,10 @@ const BookForm = () => {
                     draggable: true,
                     progress: undefined,
                     theme: 'colored',
-                });
-                setLoading(false)
-            }
-        } catch (err) {
-            console.error(err);
-            setLoading(false)
+                }
+            );
+        } finally {
+            setLoading(false);
         }
     }
     return (
