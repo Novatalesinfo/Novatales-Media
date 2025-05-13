@@ -33,6 +33,7 @@ import Photoshoot from './components/Services/Photoshoot';
 import Blog from './components/Blog';
 import HealthCare from './components/HealthCare';
 import ThankYou from './components/thankyou';
+import ClientsPage from './components/ClientsPage';
 
 // Component to handle uppercase-to-lowercase redirects
 const RedirectToLowercase = () => {
@@ -60,11 +61,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path='/clients' element={<ClientsPage />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/contactus" element={<ContactUsMain />} />
           <Route path="/blog" element={<Blog />} />
-           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
-           {/* Lowercased if uncommented */}
+          <Route path="/hospital-digital-marketing" element={<HealthCare />} />
+          {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} /> {/* Fixed: Use element instead of component */}
 
@@ -90,7 +92,7 @@ const App = () => {
           <Route path="/green-screen-studio-rent" element={<GreenScreen />} />
           <Route path="/video-production" element={<VideoProduction />} />
           <Route path="/professional-photoshoot" element={<Photoshoot />} />
-          
+
         </Routes>
         <Footer />
       </NavigationProvider>

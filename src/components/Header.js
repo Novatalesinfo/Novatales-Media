@@ -155,13 +155,13 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as={Link}
-                to='/technologies'
+                to='/clients'
                 onClick={() => {
                   handleNavigation('about')
                   handleNavCollapse()
                 }}
               >
-                Technologies
+             Clinets
               </Nav.Link>
               <NavDropdown
                 title='Services'

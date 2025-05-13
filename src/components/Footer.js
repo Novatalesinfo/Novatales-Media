@@ -68,6 +68,7 @@ const { handleNavigation } = useNavigation();
                                 <li><Link to="/ui-ux-design-development" onClick={() => handleNavigation('about')}><FontAwesomeIcon icon={faArrowRight} className="fa-solid" /> Web & App Development</Link></li>
                                 <li><Link to="/content-creation-and-marketing" onClick={() => handleNavigation('about')}><FontAwesomeIcon icon={faArrowRight} className="fa-solid" /> Content Marketing</Link></li>
                                 <li><Link to="/video-production" onClick={() => handleNavigation('about')}><FontAwesomeIcon icon={faArrowRight} className="fa-solid" /> Video Production</Link></li>
+                                <li><Link to="/technologies" onClick={() => handleNavigation('about')}><FontAwesomeIcon icon={faArrowRight} className="fa-solid" />Technologies</Link></li>
                             </ul>
                         </div>
                     </div>
