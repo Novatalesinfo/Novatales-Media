@@ -28,8 +28,6 @@ import cocktail_img_22 from "../images/portfolio/cocktail_img_22.webp"
 import cocktail_img_23 from "../images/portfolio/cocktail_img_23.webp"
 import cocktail_img_24 from "../images/portfolio/cocktail_img_24.webp"
 import cocktail_img_25 from "../images/portfolio/cocktail_img_25.webp"
-import AOS from 'aos';
-
 const CockTail = () => {
     const itemData = [
         {
