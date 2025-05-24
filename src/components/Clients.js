@@ -17,6 +17,7 @@ import yard from "../images/yard-22.png"
 import mapplestreet from "../images/MSB_1 FRONT.png"
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
+
 export default function Clients() {
     useEffect(() => {
         const logoSlide = document.querySelector(".logos-slide");

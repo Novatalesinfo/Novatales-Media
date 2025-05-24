@@ -33,6 +33,7 @@ const Header = () => {
   // State variables
   const [showDropdown, setShowDropdown] = useState(false) // Dropdown visibility
   const [showIndustries, setShowIndustries] = useState(false)
+  const [showClients, setShowClients] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false) // Header scroll state
   const [expanded, setExpanded] = useState(false) // Navbar expanded state
   const [latestPostLink, setLatestPostLink] = useState('') //blogs
@@ -44,6 +45,9 @@ const Header = () => {
   const handleMouseEnterIndustries = () => {
     setShowIndustries(true)
   }
+  const handleMouseEnterClients = () => {
+    setShowClients(true)
+  }
 
   // Handle mouse leave event to hide dropdown
   const handleMouseLeave = () => {
@@ -53,6 +57,9 @@ const Header = () => {
   // Handle mouse leave event to hide dropdown
   const handleMouseLeaveIndustries = () => {
     setShowIndustries(false)
+  }
+  const handleMouseLeaveClients = () => {
+    setShowClients(false)
   }
   // Handle navigation collapse
   const handleNavCollapse = () => {
@@ -153,16 +160,33 @@ const Header = () => {
               >
                 About
               </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to='/clients'
-                onClick={() => {
-                  handleNavigation('about')
-                  handleNavCollapse()
-                }}
+              <NavDropdown title="Clients" id="industries-dropdown"
+                show={showClients} // Use state to control visibility
+                onMouseEnter={handleMouseEnterClients}
+                onMouseLeave={handleMouseLeaveClients}
               >
-             Clinets
-              </Nav.Link>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/clients"
+                  onClick={() => { handleNavigation('HealthCare'); handleNavCollapse(); }}
+                >
+                  Clients
+                </NavDropdown.Item>
+                  <NavDropdown.Item
+                  as={Link}
+                  to="/portfolio"
+                  onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
+                >
+                 Portfolio
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/case-studies"
+                  onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
+                >
+                  case studies
+                </NavDropdown.Item>
+              </NavDropdown>
               <NavDropdown
                 title='Services'
                 id='navbarScrollingDropdown'
@@ -453,30 +477,11 @@ const Header = () => {
               >
                 Blog
               </Nav.Link>
-               <NavDropdown title="Industries" id="industries-dropdown"
-               show={showIndustries} // Use state to control visibility
-               onMouseEnter={handleMouseEnterIndustries}
-               onMouseLeave={handleMouseLeaveIndustries}
-               >
-                {/* <NavDropdown.Item
-                  as={Link}
-                  to="/#our-clients"
-                  onClick={(e) => {
-                    if (window.location.pathname === '/') {
-                      e.preventDefault(); // Prevent default behavior
-                      const element = document.getElementById('our-clients');
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                      handleNavCollapse(); // Call your collapse function
-                    } else {
-                      handleNavigation('home'); // Navigate to the home page
-                      handleNavCollapse();
-                    }
-                  }}
-                >
-                  Clients
-                </NavDropdown.Item> */}
+              <NavDropdown title="Industries" id="industries-dropdown"
+                show={showIndustries} // Use state to control visibility
+                onMouseEnter={handleMouseEnterIndustries}
+                onMouseLeave={handleMouseLeaveIndustries}
+              >
                 <NavDropdown.Item
                   as={Link}
                   to="/hospital-digital-marketing"
@@ -484,26 +489,16 @@ const Header = () => {
                 >
                   Health Care
                 </NavDropdown.Item>
-              </NavDropdown> 
-              {/* <Nav.Link
-                as={Link}
-                to='/#Our-Clients'
-                onClick={e => {
-                  if (window.location.pathname === '/') {
-                    e.preventDefault() // Prevent default behavior
-                    const element = document.getElementById('Our-Clients')
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' })
-                    }
-                    handleNavCollapse() // Call your collapse function
-                  } else {
-                    handleNavigation('home') // Navigate to the home page
-                    handleNavCollapse()
-                  }
-                }}
-              >
-                Clients
-              </Nav.Link> */}
+                <NavDropdown.Item
+                  as={Link}
+                  to="/real-estate"
+                  onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
+                >
+                  Real Estate
+                </NavDropdown.Item>
+              
+              </NavDropdown>
+
               <Nav.Link
                 as={Link}
                 to='/contactus'

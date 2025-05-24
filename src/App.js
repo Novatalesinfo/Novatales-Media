@@ -34,11 +34,23 @@ import Blog from './components/Blog';
 import HealthCare from './components/HealthCare';
 import ThankYou from './components/thankyou';
 import ClientsPage from './components/ClientsPage';
-
+import RealEstate from './components/RealEstate';
+import CaseStudy from './components/CaseStudy';
+import MagnAidCaseStudyDetails from './components/MagnaidCaseStudyDetails';
+import EkamCaseStudyDetails from './components/EkamCaseStudyDetails';
+import TwentyCaseStudyDetails from './components/22yardsCaseStudyDetails';
+import EndulaCaseStudyDetails from './components/EndulCaseStudyDetails';
+import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
+import Portfolio from './components/portfolio';
+import FoodBakery from './components/foodBakery';
+import CockTail from './components/CockTail';
+import VdoPortfolio from './components/VdoPortfolio';
+import ProductPortfolio from './components/ProductPortfolio';
+import JewelPortfolio from './components/JewelPortfolio';
+import PhotShootPortfolio from './components/PhotoShootPortfolio';
 // Component to handle uppercase-to-lowercase redirects
 const RedirectToLowercase = () => {
   const location = useLocation();
-
   useEffect(() => {
     const pathname = location.pathname;
     // Check if the pathname contains any uppercase letters
@@ -65,11 +77,35 @@ const App = () => {
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/contactus" element={<ContactUsMain />} />
           <Route path="/blog" element={<Blog />} />
+
+
+
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
+          <Route path="/real-estate" element={<RealEstate />} />
+
+
+
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/food-bakery" element={<FoodBakery />} />
+          <Route path="/portfolio/cocktail" element={<CockTail />} />
+          <Route path="/portfolio/video-portfolio" element={<VdoPortfolio />} />
+          <Route path='/portfolio/products' element={<ProductPortfolio />} />
+          <Route path="/portfolio/jewelary" element={<JewelPortfolio />} />
+          <Route path="/portfolio/photoshoot" element={<PhotShootPortfolio />} />
+
+
+
+
+          <Route path='/case-studies' element={<CaseStudy />} />
+          <Route path="/case-studies/magnaid-hospitals" element={<MagnAidCaseStudyDetails />} />
+          <Route path="/case-studies/ekam-fertility" element={<EkamCaseStudyDetails />} />
+          <Route path="/case-studies/22-yards" element={<TwentyCaseStudyDetails />} />
+          <Route path="/case-studies/endula-infra" element={<EndulaCaseStudyDetails />} />
+          <Route path="/case-studies/livvon-comforts" element={<LivvonCaseStudyDetails />} />
+
           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} /> {/* Fixed: Use element instead of component */}
-
           {/* Services Routes */}
           <Route path="/branding-and-marketing" element={<BrandingStrategy />} />
           <Route path="/brand-positioning" element={<BrandPositioning />} />
@@ -92,7 +128,6 @@ const App = () => {
           <Route path="/green-screen-studio-rent" element={<GreenScreen />} />
           <Route path="/video-production" element={<VideoProduction />} />
           <Route path="/professional-photoshoot" element={<Photoshoot />} />
-
         </Routes>
         <Footer />
       </NavigationProvider>

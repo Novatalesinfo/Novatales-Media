@@ -1,0 +1,318 @@
+.realestate-heading {
+  color: white;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+  .realestate-topBanner {
+    padding: 100px 8px 80px;
+    background-image: linear-gradient(to bottom, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 6.5vw;
+    color: white;
+    line-height: 8vw;
+    padding: 0px 8px;
+    letter-spacing: 1px;
+  }
+  #realestateImg {
+    width: 300px;
+  }
+  .whyNeedListCards {
+    flex-direction: row;
+    padding: 12px 20px;
+  }
+  .whyneedRealestate {
+    width: 90%;
+    margin-top: 80px;
+  }
+  .whyneedRealestate2 {
+    width: 90%;
+  }
+    .responsive-height-realestate{
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .realestate-topBanner {
+    padding: 100px 8px 80px;
+    background-image: linear-gradient(to bottom, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 6.5vw;
+    color: white;
+    line-height: 8vw;
+    padding: 0px 8px;
+    letter-spacing: 1px;
+  }
+  #realestateImg {
+    width: 300px;
+  }
+  .whyNeedListCards {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 8px;
+  }
+  .whyneedRealestate {
+    width: 90%;
+    margin-top: 80px;
+  }
+  .whyneedRealestate2 {
+    width: 90%;
+    margin-bottom: 80px;
+  }
+  
+}
+
+@media screen and (min-width: 375px) {
+  .realestate-topBanner {
+    padding: 100px 8px 80px;
+    background-image: linear-gradient(to bottom, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 6.5vw;
+    color: white;
+    line-height: 8vw;
+    padding: 0px 8px;
+    letter-spacing: 1px;
+  }
+  #realestateImg {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .realestate-topBanner {
+    padding: 100px 8px 80px;
+    background-image: linear-gradient(to bottom, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 6.5vw;
+    color: white;
+    line-height: 8vw;
+    padding: 0px 8px;
+    letter-spacing: 2px;
+  }
+  #realestateImg {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 548px) {
+  .realestate-topBanner {
+    padding: 100px 16px 100px;
+    background-image: linear-gradient(to bottom, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 5vw;
+    color: white;
+    line-height: 6vw;
+    padding: 0px 20px;
+    letter-spacing: 1px;
+  }
+  #realestateImg {
+    width: 400px;
+  }
+  .whyNeedListCards {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .realestate-topBanner {
+    padding: 100px 16px 100px;
+    background-image: linear-gradient(to left, #fec436, #9523ff);
+  }
+  .realestate-heading {
+    font-size: 5vw;
+    color: white;
+    line-height: 6vw;
+    padding: 0px 30px;
+  }
+  #realestateImg {
+    width: 400px;
+  }
+  .whyNeedListCards {
+    flex-direction: row;
+    padding: 12px 20px;
+  }
+  .whyneedRealestate {
+    width: 90%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .realestate-topBanner {
+    padding: 100px 16px 100px;
+  }
+  .realestate-heading {
+    font-size: 5vw;
+    color: white;
+    line-height: 6vw;
+    padding: 0px 40px;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+  .whyNeedListCards {
+    flex-direction: column;
+    padding: 12px 8px;
+  }
+  .whyneedRealestate {
+    width: 90%;
+    margin-top: 80px;
+  }
+  .responsive-height-realestate{
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .realestate-topBanner {
+    padding: 100px 16px 100px;
+  }
+  .realestate-heading {
+    font-size: 5vw;
+    color: white;
+    line-height: 6vw;
+    padding: 0px 40px;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .realestate-topBanner {
+    padding: 100px 16px 0px;
+  }
+  .realestate-heading {
+    font-size: 3.8vw;
+    color: white;
+    line-height: 5vw;
+    padding: 0;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+  .whyNeedListCards {
+    flex-direction: column;
+    padding: 20px 8px;
+  }
+  .whyneedRealestate {
+    width: 90%;
+    margin-top: 150px;
+  }
+  .whyneedRealestate2 {
+    width: 90%;
+    margin-bottom: 150px;
+  }
+  .responsive-height-realestate{
+    height: 430px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .realestate-topBanner {
+    padding: 100px 16px 0px;
+  }
+  .realestate-heading {
+    font-size: 3vw;
+    color: white;
+    line-height: 4vw;
+    padding: 0;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+   .responsive-height-realestate{
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .realestate-topBanner {
+    padding: 100px 16px 0px;
+  }
+  .realestate-heading {
+    font-size: 2.6vw;
+    color: white;
+    line-height: 4vw;
+    padding: 0 8px 0 8px;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+  .whyNeedListCards {
+    flex-direction: row;
+    padding: 20px 30px;
+  }
+  .whyneedRealestate {
+    width: 95%;
+    margin-top: 150px;
+  }
+  .whyneedRealestate2 {
+    width: 95%;
+    margin-bottom: 150px;
+  }
+   .responsive-height-realestate{
+    height: 480px;
+  }
+  .realEstateBenefits{
+    width: 80%;
+  }
+}
+
+#whyNeedRealP {
+  font-size: 18px;
+  padding-top: 10px;
+  color: #212529;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1536px) {
+  .realestate-topBanner {
+    padding: 100px 25px 0px;
+  }
+  .realestate-heading {
+    font-size: 2.6vw;
+    color: white;
+    line-height: 4vw;
+    padding: 0 20px 0 20px;
+    letter-spacing: 0px;
+  }
+  #realestateImg {
+    width: 500px;
+  }
+  .whyneedRealestate {
+    width: 82%;
+    margin-top: 150px;
+  }
+  .whyneedRealestate2 {
+    width: 82%;
+    margin-bottom: 150px;
+  }
+  .responsive-height-realestate{
+    height: 500px;
+  }
+  
+}
+.whyneedRealestate2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.realEstatebenefitspoints{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px 4px;
+  margin-bottom: 16px;
+  border: 1px solid #fec436;
+  border-radius: 24px;
+}

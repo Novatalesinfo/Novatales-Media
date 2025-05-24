@@ -3,7 +3,7 @@ import ContactImage from '../images/women illustration.png';
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContaine, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'; // Import the Bounce transition effect
 import { useNavigate } from 'react-router-dom';
