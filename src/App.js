@@ -90,7 +90,7 @@ const App = () => {
           <Route path="/portfolio/cocktail" element={<CockTail />} />
           <Route path="/portfolio/video-portfolio" element={<VdoPortfolio />} />
           <Route path='/portfolio/products' element={<ProductPortfolio />} />
-          <Route path="/portfolio/jewelary" element={<JewelPortfolio />} />
+          <Route path="/portfolio/jewellary" element={<JewelPortfolio />} />
           <Route path="/portfolio/photoshoot" element={<PhotShootPortfolio />} />
 
 

@@ -53,8 +53,8 @@ const Portfolio = () => {
                         <img src={prodcutPoster} alt='portfolio-images' />
                     </div>
                     <div className='portfolio-grid-child'>
-                        <Link to="/portfolio/jewelary" className='porfolio-grid-child-inner'>
-                            <h2>Jewelary and Fashion</h2>
+                        <Link to="/portfolio/jewellary" className='porfolio-grid-child-inner'>
+                            <h2>Jewellary and Fashion</h2>
                         </Link>
                         <img src={jewelPoster} alt='portfolio-images' />
                     </div>
