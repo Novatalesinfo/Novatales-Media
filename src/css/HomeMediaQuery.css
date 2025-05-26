@@ -2,11 +2,11 @@
                                                             HOME MEDIAQUERY FOR ALL SCREENS
 ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------- For Extra small screen Mobile -------*/
-@media screen and (min-width:320px) and (max-width:374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .service {
     background-color: #dbd0f5;
     padding: 40px;
-}
+  }
   .navbar-nav {
     margin-left: 0px !important;
   }
@@ -20,9 +20,7 @@
   }
 
   .navbar {
-    background: radial-gradient(circle,
-        #7c1ae3 0%,
-        #9423d1 100%);
+    background: radial-gradient(circle, #7c1ae3 0%, #9423d1 100%);
   }
 
   .menubar.home .nav-link {
@@ -33,7 +31,6 @@
   .menubar.home .social-icons .fa-brands {
     color: #fff;
     font-size: 25px;
-
   }
 
   /* width */
@@ -63,29 +60,25 @@
     overflow-y: auto;
     overflow-x: hidden;
     margin-left: 0px !important;
-    background-image: url('../images/dropdownbackgroundMobile.svg');
+    background-image: url("../images/dropdownbackgroundMobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-
   .about-para-2 ul {
     padding-left: 0px !important;
   }
 
-
-  .Landing-Image{
+  .Landing-Image {
     background-image: url("../images/mobile\ bg@14-01.png");
     background-size: 100% 100%;
     background-position: center;
   }
 
-
   .bubble-section-1 {
     width: 150px;
     top: 0px;
-
   }
 
   .bubble-section {
@@ -138,24 +131,21 @@
   /* Overlapping Image */
   .overlap-image {
     position: relative;
-    top: 0% !important; 
-    width: 100%; 
+    top: 0% !important;
+    width: 100%;
     height: 100%;
   }
   .Below-Landing {
     padding-bottom: 386% !important;
-}
-.content-on-image
-{
-  top: 0px !important;
-}
-  .overlap-image
-  {
+  }
+  .content-on-image {
+    top: 0px !important;
+  }
+  .overlap-image {
     display: none;
   }
-  .ourapproach
-  {
-    margin-top: 113px  !important;
+  .ourapproach {
+    margin-top: 113px !important;
   }
   /* Content on Top of Image */
   .content-on-image {
@@ -176,8 +166,9 @@
     margin: 0px;
     text-align: center;
   }
-  .heading
-{text-align: center;}
+  .heading {
+    text-align: center;
+  }
 
   .icon-2,
   .icon-4 {
@@ -245,7 +236,6 @@
 
   .ih-item.circle .img img:before {
     width: 100px !important;
-
   }
 
   .ih-item.circle.effect3 .info {
@@ -261,7 +251,7 @@
 
   .ih-item.circle.effect3 .info h3 {
     color: #fff;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2px;
@@ -305,7 +295,7 @@
     font-size: 40px;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #52377b;
     text-transform: capitalize;
@@ -358,95 +348,83 @@
     flex: 0 0 auto;
     width: 15%;
   }
-  .our-services .row
-  {
-    padding-bottom:0px
+  .our-services .row {
+    padding-bottom: 0px;
   }
 }
 
-@media screen and (min-width:600px) and (max-width:767px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .sides-drop {
     display: flex !important;
     width: 100%;
     gap: 40px;
   }
-  .box-down
-  {
-    background-image: url('../images/dropdownBackgroundTab.svg') !important;
-
+  .box-down {
+    background-image: url("../images/dropdownBackgroundTab.svg") !important;
   }
 }
-@media screen and (min-width:374px) and (max-width:426px) {
-  .Below-Landing
-  {
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .Below-Landing {
     background-color: aliceblue;
     padding-bottom: 339% !important;
   }
 }
-@media screen and (min-width:425px) and (max-width:459px) {
-  .Below-Landing
-  {
+@media screen and (min-width: 425px) and (max-width: 459px) {
+  .Below-Landing {
     background-color: aliceblue;
     padding-bottom: 293% !important;
   }
 }
-@media screen and (min-width:490px) and (max-width:519px){
+@media screen and (min-width: 490px) and (max-width: 519px) {
   .Below-Landing {
     background-color: aliceblue;
     padding-bottom: 343% !important;
+  }
 }
-}
-@media screen and (min-width:460px) and (max-width:489px) {
-  .Below-Landing
-{
-  background-color: aliceblue;
-  padding-bottom: 263% !important;
-}
-.bubble-section {
-  width: 150px;
-  margin-top: -87vh !important;
-}
+@media screen and (min-width: 460px) and (max-width: 489px) {
+  .Below-Landing {
+    background-color: aliceblue;
+    padding-bottom: 263% !important;
+  }
+  .bubble-section {
+    width: 150px;
+    margin-top: -87vh !important;
+  }
 }
 
-@media screen and (min-width:520px) and (max-width:768px) {
- 
-  .box-down
-  {
-    background-image: url('../images/dropdownBackgroundTab.svg') !important;
+@media screen and (min-width: 520px) and (max-width: 768px) {
+  .box-down {
+    background-image: url("../images/dropdownBackgroundTab.svg") !important;
   }
 
   .ourApproachCards .title {
     text-align: center;
-}
-.Below-Landing
-{
-  background-color: aliceblue;
-  padding-bottom: 209% !important;
-}
+  }
+  .Below-Landing {
+    background-color: aliceblue;
+    padding-bottom: 209% !important;
+  }
 }
 
-@media screen and (min-width:600px) and (max-width:700px) {
-  .Below-Landing
-{
-  background-color: aliceblue;
-  padding-bottom: 182% !important;
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .Below-Landing {
+    background-color: aliceblue;
+    padding-bottom: 182% !important;
+  }
 }
-}
-@media screen and (min-width:701px) and (max-width:767px) {
-  .Below-Landing
-{
-  background-color: aliceblue;
-  padding-bottom: 160% !important;
-}
+@media screen and (min-width: 701px) and (max-width: 767px) {
+  .Below-Landing {
+    background-color: aliceblue;
+    padding-bottom: 160% !important;
+  }
 }
 /*------- For small screen Mobile -------*/
-@media screen and (min-width:375px) and (max-width:768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .navbar-toggler {
     margin-right: 15px;
   }
-  .our-services .row
-  {
-    padding-bottom:0px
+  .our-services .row {
+    padding-bottom: 0px;
   }
   .service-contact h4 {
     font-size: 25px;
@@ -466,9 +444,7 @@
   }
 
   .navbar {
-    background: radial-gradient(circle,
-        #7c1ae3 0%,
-        #9423d1 100%);
+    background: radial-gradient(circle, #7c1ae3 0%, #9423d1 100%);
   }
 
   .main-text h1 {
@@ -488,7 +464,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     margin-left: 0px !important;
-    background-image: url('../images/dropdownbackgroundMobile.svg');
+    background-image: url("../images/dropdownbackgroundMobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -521,7 +497,7 @@
     font-size: 25px;
     display: inline;
   }
-  .Landing-Image{
+  .Landing-Image {
     background-image: url("../images/mobile\ bg@14-01.png");
     background-size: 100% 100%;
     background-position: center;
@@ -574,7 +550,7 @@
   }
   .ourApproachCards .title {
     text-align: center;
-}
+  }
   .icon-2,
   .icon-4 {
     margin-top: 0px;
@@ -588,15 +564,14 @@
   /* Overlapping Image */
   .overlap-image {
     position: relative;
-    top: 0% !important; 
-    width: 100%; 
+    top: 0% !important;
+    width: 100%;
     height: 100%;
     display: none;
   }
 
-  .ourapproach
-  {
-    margin-top: 113px  !important;
+  .ourapproach {
+    margin-top: 113px !important;
   }
   /* Content on Top of Image */
   .content-on-image {
@@ -617,8 +592,9 @@
     margin: 0px;
     text-align: center;
   }
-  .heading
-{text-align: center;}
+  .heading {
+    text-align: center;
+  }
 
   .icon-2,
   .icon-4 {
@@ -640,7 +616,6 @@
     font-size: 35px;
     text-align: center;
   }
-
 
   .goal p {
     font-size: 13px;
@@ -664,7 +639,7 @@
 
   .ih-item.circle.effect3 .info h3 {
     color: #fff;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2px;
@@ -688,7 +663,6 @@
   }
 
   .ih-item.circle.effect3 .info p {
-
     padding: 10px 5px;
     margin: 0 30px;
     font-size: 13px;
@@ -782,19 +756,17 @@
 }
 
 /*------- For Tab Screen-----*/
-@media screen and (min-width:769px) and (max-width:991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .service {
     background-color: #dbd0f5;
     padding: 40px;
-}
+  }
   .navbar-toggler {
     margin-right: 35px;
   }
 
   .navbar {
-    background: radial-gradient(circle,
-        #7c1ae3 0%,
-        #9423d1 100%);
+    background: radial-gradient(circle, #7c1ae3 0%, #9423d1 100%);
   }
 
   .menubar.home .nav-link {
@@ -812,7 +784,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     margin-left: 0px !important;
-    background-image: url('../images/dropdownBackgroundTab.svg');
+    background-image: url("../images/dropdownBackgroundTab.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -851,7 +823,6 @@
     margin-top: 0px;
   }
 
-
   .Logo {
     margin-left: 20px;
   }
@@ -860,7 +831,6 @@
     background-image: url("../images/tab\ bg-01.png");
     background-size: 100% 100%;
     background-position: center;
-   
   }
 
   .image {
@@ -881,23 +851,19 @@
 
   .our-heading h3 {
     font-size: 50px;
-
   }
 
-  .image-wrapper
-  {
-    margin-top:-284px;
+  .image-wrapper {
+    margin-top: -284px;
   }
-  .content-on-image
-  {
-    top:104%;
+  .content-on-image {
+    top: 104%;
   }
   .Ourservice-heading h2 {
     font-size: 50px;
   }
-  .Below-Landing
-  {
-    padding-bottom: 54%  !important;
+  .Below-Landing {
+    padding-bottom: 54% !important;
   }
   .ih-item.circle .img {
     left: 0px;
@@ -949,7 +915,6 @@
 
   .brands .fa-brands {
     padding: 20px 0px;
-
   }
 
   .links-heading h2 {
@@ -974,7 +939,6 @@
     width: 100%;
   }
 
-  
   .bubble-section-1 {
     width: 200px;
     top: 0px;
@@ -1002,11 +966,10 @@
 }
 
 /*--------- For Small Laptop screen -----*/
-@media screen and (min-width:992px) and (max-width:1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .Logo {
     margin-left: 10px;
   }
-
 
   .navbar .nav-link {
     padding: 0px 15px !important;
@@ -1064,22 +1027,19 @@
   .our-image img {
     margin-top: 30% !important;
   }
-  .First-section
-  {
+  .First-section {
     padding: 10% 0px !important;
   }
-  .ourapproach
-  {
-    margin-top:179px !important;
+  .ourapproach {
+    margin-top: 179px !important;
   }
   .our-services .container-fluid {
     width: 100%;
-
   }
 
   .ih-item.circle.effect3 .info h3 {
     color: #fff;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2px;
@@ -1125,9 +1085,8 @@
   .ih-item.circle.effect3 .info p {
     font-size: 10px;
     padding-right: 50px !important;
-    padding: 10px
+    padding: 10px;
   }
-
 
   .ih-item.circle.effect3.left_to_right a:hover .img {
     position: relative;
@@ -1145,10 +1104,9 @@
     color: #fec435;
     box-shadow: 0 0 40px #fec435;
   }
-
 }
 
-@media screen and (min-width:992px) and (max-width:1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .menubar .nav-link {
     padding: 20px 15px !important;
   }
@@ -1156,17 +1114,15 @@
   .box-down .container-fluid {
     width: 95%;
   }
-  .box-down
-  {
-    background-image: url('../images/dropdownBackgroundTab.svg');
+  .box-down {
+    background-image: url("../images/dropdownBackgroundTab.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .image-wrapper
-  {
-    margin-top:-313px;
+  .image-wrapper {
+    margin-top: -313px;
   }
   .bubble-section {
     width: 200px;
@@ -1223,7 +1179,7 @@
 }
 
 /*------- For Laptop screen ------*/
-@media screen and (min-width:1200px) and (max-width:1299px) {
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
   .navbar-nav {
     margin-left: 10px;
   }
@@ -1231,9 +1187,8 @@
   .box-down .container-fluid {
     width: 95%;
   }
-  .content-on-image
-  {
-    top:66%;
+  .content-on-image {
+    top: 66%;
   }
   .menubar .nav-link {
     padding: 0px 20px !important;
@@ -1242,13 +1197,11 @@
   {
     margin-top:179px !important;
   } */
-  .First-section
-  {
+  .First-section {
     padding: 15% 0px !important;
   }
-  .image-wrapper
-  {
-    margin-top:-313px;
+  .image-wrapper {
+    margin-top: -313px;
   }
   .image {
     left: 20px;
@@ -1315,16 +1268,16 @@
   .bubble-section-1 {
     width: 200px;
   }
-  .our-services .container-fluid .col-xl-3 ,.our-services .container-fluid .col-lg-3 , .our-services .container-fluid .col-md-6
-  {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  .our-services .container-fluid .col-xl-3,
+  .our-services .container-fluid .col-lg-3,
+  .our-services .container-fluid .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media screen and (min-width:1300px) and (max-width:1439px) {
-  
+@media screen and (min-width: 1300px) and (max-width: 1439px) {
   .box-down .container-fluid {
     width: 95%;
   }
@@ -1357,18 +1310,15 @@
   .image {
     left: 20px;
   }
-  .First-section
-  {
+  .First-section {
     padding: 0px;
   }
-  .Landing-Image
-  {
+  .Landing-Image {
     padding-bottom: 142px;
   }
-  .ourapproach
-  {
-    margin-top:229px !important;
-    padding-top:30px ;
+  .ourapproach {
+    margin-top: 229px !important;
+    padding-top: 30px;
   }
   .ih-item.circle {
     width: 250px;
@@ -1390,15 +1340,14 @@
 
   .our-services .container-fluid {
     width: 100%;
-
   }
-   .our-services .container-fluid .col-xl-3 ,.our-services .container-fluid .col-lg-3 , .our-services .container-fluid .col-md-6
-   {
+  .our-services .container-fluid .col-xl-3,
+  .our-services .container-fluid .col-lg-3,
+  .our-services .container-fluid .col-md-6 {
     display: flex;
     justify-content: center;
     align-items: center;
-   }
-
+  }
 
   .ih-item.circle.effect3 .info p {
     font-size: 12px;
@@ -1421,20 +1370,17 @@
     -o-transform: translateX(-100%);
     transform: translateX(-15%);
   }
-
 }
 
-@media screen and (min-width:1440px) and (max-width:1720px) {
+@media screen and (min-width: 1440px) and (max-width: 1720px) {
   .bubble-section {
     width: 250px;
   }
-  .First-section
-  {
+  .First-section {
     padding: 9% 0px !important;
   }
-  .ourapproach
-  {
-    margin-top:179px !important;
+  .ourapproach {
+    margin-top: 179px !important;
   }
   /* .navbar-expand-lg .navbar-nav .dropdown-menu {
     margin-left: -480px;
@@ -1489,8 +1435,7 @@
   }
 }
 
-@media screen and (min-width:1700px) {
-
+@media screen and (min-width: 1700px) {
   /* .container {
     width: 80%;
     margin: 0px auto;
@@ -1512,7 +1457,7 @@
 }
 
 /*----- very extra small screen-----*/
-@media screen and (max-width:319.9px) {
+@media screen and (max-width: 319.9px) {
   .navbar-toggler {
     margin-right: 20px;
   }
@@ -1527,10 +1472,7 @@
   }
 
   .navbar {
-    background: radial-gradient(circle,
-        #7c1ae3 0%,
-        #9423d1 100%);
-
+    background: radial-gradient(circle, #7c1ae3 0%, #9423d1 100%);
   }
 
   .menubar .nav-link {
@@ -1609,7 +1551,8 @@
     background-position: center;
   }
 
-  .bubble-section-1, .bubble-section {
+  .bubble-section-1,
+  .bubble-section {
     display: none;
   }
 
@@ -1627,12 +1570,11 @@
   /* Overlapping Image */
   .overlap-image {
     position: relative;
-    top: 0% !important; 
-    width: 100%; 
+    top: 0% !important;
+    width: 100%;
     height: 100%;
   }
-  .Below-Landing
-  {
+  .Below-Landing {
     background-color: aliceblue;
     padding-bottom: 390%;
   }
@@ -1654,20 +1596,18 @@
     margin-top: 20px;
     color: #52377b;
   }
-  .OurApprochSectionHeading h2
-  {
+  .OurApprochSectionHeading h2 {
     font-size: 40px;
   }
 
   /* Overlapping Image */
   .overlap-image {
     position: relative;
-    top: 0% !important; 
-    width: 100%; 
+    top: 0% !important;
+    width: 100%;
     height: 100%;
   }
-  .Below-Landing
-  {
+  .Below-Landing {
     background-color: aliceblue;
     padding-bottom: 350%;
   }
@@ -1691,8 +1631,9 @@
     margin: 0px;
     text-align: center;
   }
-  .heading
-{text-align: center;}
+  .heading {
+    text-align: center;
+  }
 
   .icon-2,
   .icon-4 {
@@ -1748,7 +1689,6 @@
 
   .our-services .container-fluid {
     width: 100%;
-
   }
 
   .ih-item.circle .img {
@@ -1761,7 +1701,6 @@
 
   .ih-item.circle .img img:before {
     width: 100px !important;
-
   }
 
   .ih-item.circle.effect3 .info {
@@ -1777,7 +1716,7 @@
 
   .ih-item.circle.effect3 .info h3 {
     color: #fff;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2px;
@@ -1816,7 +1755,7 @@
     font-size: 40px;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #52377b;
     text-transform: capitalize;
@@ -1864,29 +1803,29 @@
     padding-bottom: 10px;
     padding-top: 20px;
   }
-
 }
-@media screen and (min-width:320px) and (max-width:340px) {
-  .Below-Landing
-  { padding-bottom:414%!important;}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .Below-Landing {
+    padding-bottom: 414% !important;
+  }
 }
-@media screen and (min-width:768px) and (max-width:768px) {
-  .Below-Landing
-  { padding-bottom:18% !important;}
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .Below-Landing {
+    padding-bottom: 18% !important;
+  }
   .content-on-image {
     position: absolute;
     top: 177px !important;
     left: 0% !important;
     transform: translate(0%, 0%);
     width: 100%;
-}
-.overlap-image
-{
-  display: block;
-}
-.image-wrapper {
-  position: relative;
-  margin-top: -177px;
-  z-index: 130;
-}
+  }
+  .overlap-image {
+    display: block;
+  }
+  .image-wrapper {
+    position: relative;
+    margin-top: -177px;
+    z-index: 130;
+  }
 }

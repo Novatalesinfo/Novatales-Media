@@ -31,7 +31,7 @@
   .whyneedRealestate2 {
     width: 90%;
   }
-    .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 420px;
   }
 }
@@ -64,7 +64,6 @@
     width: 90%;
     margin-bottom: 80px;
   }
-  
 }
 
 @media screen and (min-width: 375px) {
@@ -167,7 +166,7 @@
     width: 90%;
     margin-top: 80px;
   }
-  .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 480px;
   }
 }
@@ -212,7 +211,7 @@
     width: 90%;
     margin-bottom: 150px;
   }
-  .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 430px;
   }
 }
@@ -230,7 +229,7 @@
   #realestateImg {
     width: 500px;
   }
-   .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 500px;
   }
 }
@@ -260,10 +259,10 @@
     width: 95%;
     margin-bottom: 150px;
   }
-   .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 480px;
   }
-  .realEstateBenefits{
+  .realEstateBenefits {
     width: 80%;
   }
 }
@@ -297,17 +296,16 @@
     width: 82%;
     margin-bottom: 150px;
   }
-  .responsive-height-realestate{
+  .responsive-height-realestate {
     height: 500px;
   }
-  
 }
 .whyneedRealestate2 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.realEstatebenefitspoints{
+.realEstatebenefitspoints {
   display: flex;
   flex-direction: column;
   gap: 4px;

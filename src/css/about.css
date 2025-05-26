@@ -156,13 +156,6 @@
     justify-content: center;
     align-items: center;
   }
-  /* .LetusConnect .contact-title h2
-  {
-    padding-bottom: 40px;
-    color: #52377b;
-    font-weight: 600;
-    text-align: center;
-  } */
   .LetusConnect .contact-title
   {
     text-align: center;
@@ -187,14 +180,12 @@
   {
     width: 100%;
     padding: 10px 20px;
-    /* background-color: #d8c4df; */
     background-color: transparent;
     color:#2f2144;
     border: none;
     border: 1px solid #2f2144;
     outline: none;
-    /* border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px; */
+
   }
   .LetusConnect input::placeholder
   {
@@ -213,76 +204,6 @@
     font-weight: 800;
     letter-spacing: 2px;
   }
-  /* .start {
-    text-align: center;
-    margin-top: 90px;
-  }
-  
-  .start a {
-    text-decoration: none;
-    color: #2f2144;
-  }
-  
-  .start h3 {
-    font-size: 49px;
-    color: #52377b;
-    font-family: 'Segoe UI';
-    text-transform: capitalize;
-    font-weight: 800;
-    padding-bottom: 40px;
-  }
-  
-  .start span {
-    font-size: 49px;
-    line-height: 46px;
-    font-family: 'Segoe UI';
-    color: #3678bc;
-    font-weight: 800;
-  }
-  
-  .start button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid #2f2144;
-    color: #2f2144;
-    font-family: poppins;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .start .button-wiggle {
-    animation: wiggle 4s 2s infinite;
-  }
-  
-  @keyframes wiggle {
-    5%,
-    50% {
-      transform: scale(1);
-    }
-    10% {
-      transform: scale(0.9);
-    }
-    15% {
-      transform: scale(1.15);
-    }
-    20% {
-      transform: scale(1.15) rotate(-5deg);
-    }
-    25% {
-      transform: scale(1.15) rotate(5deg);
-    }
-    30% {
-      transform: scale(1.15) rotate(-3deg);
-    }
-    35% {
-      transform: scale(1.15) rotate(2deg);
-    }
-    40% {
-      transform: scale(1.15) rotate(0);
-    }
-  } */
 
   .about-services {
     padding: 40px;
@@ -718,9 +639,6 @@
     {
       padding: 60px 20px;
     }
-    /* .start h3 {
-      font-size: 40px;
-    } */
     .about-services .card
     {
       margin: 20px auto;
