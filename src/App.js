@@ -78,12 +78,8 @@ const App = () => {
           <Route path="/contactus" element={<ContactUsMain />} />
           <Route path="/blog" element={<Blog />} />
 
-
-
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
           <Route path="/real-estate" element={<RealEstate />} />
-
-
 
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/food-bakery" element={<FoodBakery />} />
@@ -92,9 +88,6 @@ const App = () => {
           <Route path='/portfolio/products' element={<ProductPortfolio />} />
           <Route path="/portfolio/jewellary" element={<JewelPortfolio />} />
           <Route path="/portfolio/photoshoot" element={<PhotShootPortfolio />} />
-
-
-
 
           <Route path='/case-studies' element={<CaseStudy />} />
           <Route path="/case-studies/magnaid-hospitals" element={<MagnAidCaseStudyDetails />} />
