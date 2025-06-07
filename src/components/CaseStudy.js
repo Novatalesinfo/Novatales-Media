@@ -8,6 +8,8 @@ import tab_img_2 from "../images/casestudies/ekam.png"
 import tab_img_3 from "../images/casestudies/yards_22.png"
 import tab_img_4 from "../images/casestudies/endula.png"
 import tab_img_5 from "../images/casestudies/livvon.png"
+import tab_img_6 from "../images/casestudies/head-digital.png"
+
 import TabPanel from '@mui/lab/TabPanel';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -323,76 +325,29 @@ const CaseStudy = () => {
                                             fontSize: "18px", color: "gray", padding: "12px 0px"
                                         }}>Video Production</p>
                                         <h3>
-                                            Amara Hospital
+                                            Head Digital Works
                                         </h3>
                                         <div className='inside-tab-child-div' >
                                             <p className=''>
-                                                MagnAid Hospitals – the Integrated Township is spanned across vast 32 acres of landscape at one of Hyderabad's fastest growing geographies, Narsingi. It's a premium residential community with 12 mega residential towers consisting of only 1317 Flats for sale in Hyderabad.
+                                                HD Works has recently shifted to a new office location, marking a significant milestone in their growth journey. To capture this transition, we created a high-quality video showcasing both the old and new office spaces, using advanced drone footage and professional setups. The video highlights the evolution of the workspace, reflecting the brand’s progress and ambition, and serves as a powerful visual story of transformation and expansion.
                                             </p>
-                                            <h4 style={{
-                                                fontSize: "17px", color: "#fec436", fontWeight: "bold", marginTop: "8px"
-                                            }}>
-                                                Vikas Garg
 
-                                                <p style={{
-                                                    color: "#212529", marginTop: "8px"
-                                                }}>
-                                                    Marketing Head
-                                                </p>
-
-                                            </h4>
-                                            <button className='inside-tab-child-div-button'>
-                                                View Details
-                                            </button>
+                                            <Link to="/case-studies/head-digitals-wroks">
+                                                <button className='inside-tab-child-div-button'>
+                                                    View Details
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
                                         <a href='/case-studies'>
-                                            <img src={tab_img_1} alt='' className='case-study-tabs-img' />
+                                            <img src={tab_img_6} alt='' className='case-study-tabs-img' />
 
                                         </a>
                                     </div>
 
                                 </div>
-                                <div data-aos="fade-up" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row' style={{
-
-                                }}>
-                                    <div className='col-lg-6'>
-                                        <p style={{
-                                            fontSize: "18px", color: "gray", padding: "12px 0px"
-                                        }}>Branding</p>
-                                        <h3>
-                                            MagnAid Hospitals
-                                        </h3>
-                                        <div className='inside-tab-child-div' >
-                                            <p className=''>
-                                                MagnAid Hospitals – the Integrated Township is spanned across vast 32 acres of landscape at one of Hyderabad's fastest growing geographies, Narsingi. It's a premium residential community with 12 mega residential towers consisting of only 1317 Flats for sale in Hyderabad.
-                                            </p>
-                                            <h4 style={{
-                                                fontSize: "17px", color: "#fec436", fontWeight: "bold", marginTop: "8px"
-                                            }}>
-                                                Vikas Garg
-
-                                                <p style={{
-                                                    color: "#212529", marginTop: "8px"
-                                                }}>
-                                                    Marketing Head
-                                                </p>
-
-                                            </h4>
-                                            <button className='inside-tab-child-div-button'>
-                                                View Details
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies'>
-                                            <img src={tab_img_1} alt='' className='case-study-tabs-img' />
-
-                                        </a>
-                                    </div>
-
-                                </div> </TabPanel>
+                            </TabPanel>
                         </TabContext>
                     </Box>
                 </div>

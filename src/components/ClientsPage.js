@@ -16,6 +16,19 @@ import hdworks from "../images/Logo new.png";
 import navatris from "../images/navatris.png";
 import yard_22 from "../images/yard-22.png"
 import mapplestreet from "../images/MSB_1 FRONT.png"
+
+
+import ace2three from "../images/casestudies/a23-rummy-card.webp"
+import acet3poker from "../images/casestudies/a23-poker-card.webp"
+import cricket from "../images/casestudies/cricket-card.webp"
+import tic from "../images/casestudies/TIC LOGO REDESIGN-01.jpg"
+import endul from "../images/casestudies/ENDULA LOGO-01.png"
+import avis from "../images/casestudies/Avis_Logo.webp"
+import max from "../images/casestudies/Maxx Sleep Logo-01.png"
+import start from "../images/casestudies/Straunt Illusrator Logo l-01.png"
+import tttt from "../images/casestudies/TTT logo-01.png"
+import cdc from "../images/casestudies/CDC FINAL LOGO - 01 (1).png"
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const ClientsPage = () => {
@@ -89,6 +102,34 @@ const ClientsPage = () => {
           <div class="client-item">
             <img
               style={{
+                width: "150px",
+              }}
+              src={ace2three}
+              alt="Client 2"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "150px",
+              }}
+              src={acet3poker}
+              alt="Client 2"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "150px",
+              }}
+              src={cricket}
+              alt="Client 2"
+            />
+          </div>
+          
+          <div class="client-item">
+            <img
+              style={{
                 width: "250px",
               }}
               src={navatris}
@@ -102,6 +143,15 @@ const ClientsPage = () => {
               }}
               src={ekam}
               alt="Client 3"
+            />
+          </div>
+           <div class="client-item">
+            <img
+              style={{
+                width: "250px",
+              }}
+              src={cdc}
+              alt="Client 1"
             />
           </div>
           <div class="client-item">
@@ -131,6 +181,61 @@ const ClientsPage = () => {
               alt="Client 1"
             />
           </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "200px",
+              }}
+              src={tic}
+              alt="Client 1"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "200px",
+              }}
+              src={endul}
+              alt="Client 1"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "200px",
+              }}
+              src={avis}
+              alt="Client 1"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "300px",
+              }}
+              src={max}
+              alt="Client 2"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "200px",
+              }}
+              src={start}
+              alt="Client 2"
+            />
+          </div>
+          <div class="client-item">
+            <img
+              style={{
+                width: "200px",
+              }}
+              src={tttt}
+              alt="Client 1"
+            />
+          </div>
+         
           <div class="client-item">
             <img
               style={{

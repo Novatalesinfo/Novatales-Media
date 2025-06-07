@@ -3,16 +3,10 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import food_img_1 from "../images/portfolio/foof_img_1.avif"
-import food_img_2 from "../images/portfolio/foof_img_2.avif"
-import food_img_3 from "../images/portfolio/foof_img_3.avif"
-import food_img_4 from "../images/portfolio/foof_img_4.avif"
-import food_img_5 from "../images/portfolio/foof_img_5.avif"
-import food_img_6 from "../images/portfolio/foof_img_6.avif"
-import food_img_7 from "../images/portfolio/foof_img_7.avif"
-import food_img_8 from "../images/portfolio/foof_img_8.avif"
-import food_img_9 from "../images/portfolio/foof_img_9.avif"
-import food_img_10 from "../images/portfolio/foof_img_10.avif"
+import food_img_1 from "../images/portfolio/3d_img_1.png"
+import food_img_2 from "../images/portfolio/3d_img_2.png"
+import food_img_3 from "../images/portfolio/3d_img_3.png"
+import food_img_4 from "../images/portfolio/3d_img_4.png"
 import "../css/portfolio.css"
 const FoodBakery = () => {
     const itemData = [
@@ -32,58 +26,6 @@ const FoodBakery = () => {
             img: food_img_4,
             title: 'Tower',
         },
-        {
-            img: food_img_5,
-            title: 'Sea star',
-        },
-        {
-            img: food_img_6,
-            title: 'Honey',
-        },
-        {
-            img: food_img_7,
-            title: 'Basketball',
-        },
-        {
-            img: food_img_8,
-            title: 'Breakfast',
-        },
-        {
-            img: food_img_9,
-            title: 'Tree',
-        },
-        {
-            img: food_img_10,
-            title: 'Burger',
-        },
-        {
-            img: food_img_3,
-            title: 'Camera',
-        },
-        {
-            img: food_img_5,
-            title: 'Coffee',
-        },
-        {
-            img: food_img_1,
-            title: 'Camping Car',
-        },
-        {
-            img: food_img_6,
-            title: 'Hats',
-        },
-        {
-            img: food_img_9,
-            title: 'Tomato basil',
-        },
-        {
-            img: food_img_2,
-            title: 'Mountain',
-        },
-        {
-            img: food_img_8,
-            title: 'Bike',
-        },
     ];
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,9 +40,9 @@ const FoodBakery = () => {
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
-     useEffect(() => {
-            window.scrollTo(0, 0);
-        }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="foodbakery-parent">
             <div>
@@ -110,14 +52,7 @@ const FoodBakery = () => {
                             color: "#fec436",
                         }}
                     >
-                        Foods  <span
-                            style={{
-                                color: "#212529",
-                            }}
-                        >
-                
-                            &
-                        </span> Bakery
+                        3D
                     </span>
                 </h1>
                 <Box
@@ -130,46 +65,70 @@ const FoodBakery = () => {
                 >
                     <Masonry
                         columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
-                        spacing={2}
+                        spacing={4}
                     >
-                        {itemData.map((item, index) => (
-                            <div key={index} onClick={() => handleImageClick(index)} style={{
+                        <div
+                            onClick={() => setSelectedImage(true)} // just open modal
+                            style={{
                                 overflow: "hidden",
-                            }} >
-                                <img className='masonary-img'
-                                    srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=162&auto=format`}
+                                padding: "10px",
+                                borderRadius: "10px",
+                                minHeight: "280px",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                flexDirection: "column",
+                                cursor: "pointer"
+                            }}
+                        >
+                            {itemData.map((item, index) => (
+                                <img
+                                    key={index}
+                                    className={`threedimg${index + 1}`}
+                                    src={item.img}
                                     alt={item.title}
                                     loading="lazy"
-
                                     style={{
-                                        display: 'block',
-                                        width: '100%',
-                                        objectFit: 'cover',
+                                        display: "block",
+                                        width: "100%",
+                                        objectFit: "cover",
+                                        borderRadius: "8px",
+                                        transition: "transform 0.3s ease",
                                     }}
                                 />
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </Masonry>
                 </Box>
             </div>
             {selectedImage && (
                 <div className="fullscreen-modal">
                     <span className="close-btn" onClick={() => setSelectedImage(null)}>✖</span>
-                    <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
-                    <span className="nav-btn left" onClick={() => {
-                        const newIndex = (currentIndex - 1 + itemData.length) % itemData.length;
-                        setCurrentIndex(newIndex);
-                        setSelectedImage(itemData[newIndex].img);
-                    }}><ArrowBackIosNewIcon /></span>
-
-                    <span className="nav-btn right" onClick={() => {
-                        const newIndex = (currentIndex + 1) % itemData.length;
-                        setCurrentIndex(newIndex);
-                        setSelectedImage(itemData[newIndex].img);
-                    }}><ArrowForwardIosIcon /></span>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "1rem",
+                        }}
+                    >
+                        {itemData.map((item, index) => (
+                            <img
+                                key={index}
+                                src={item.img}
+                                alt={item.title}
+                                className={`threedimg${index + 1}`}
+                                style={{
+                                    maxWidth: "90%",
+                                    objectFit: "contain",
+                                }}
+                            />
+                        ))}
+                    </div>
                 </div>
             )}
+
         </div>
     )
 }

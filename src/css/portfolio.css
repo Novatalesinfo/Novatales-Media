@@ -2,9 +2,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  display: flex;
   padding: 8rem 1rem 4rem;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 .foodbakery-parent {
@@ -18,7 +16,6 @@
 }
 
 #topHeading {
-  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 4rem;
   text-transform: uppercase;
@@ -34,7 +31,7 @@
 .portfolio-grid-child {
   overflow: hidden;
   position: relative;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
 }
 .porfolio-grid-child-inner {
   position: absolute;
@@ -70,25 +67,31 @@
 @media screen and (min-width: 1024px) {
   .portfolio-grid-child img,
   .portfolio-grid-child video {
-    height: 500px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
   .portfolio-grid-child img,
   .portfolio-grid-child video {
-    height: 600px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1440px) {
   .portfolio-grid-child img,
   .portfolio-grid-child video {
-    height: 700px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1500px) {
   .portfolio-grid-child img,
   .portfolio-grid-child video {
-    height: 800px;
+    height: 650px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .portfolio-grid-child img,
+  .portfolio-grid-child video {
+    height: 750px;
   }
 }
 
@@ -216,4 +219,19 @@
 }
 .nav-btn.right {
   right: 30px;
+}
+.threedimagebox {
+  width: 100%;
+}
+.threedimagebox img {
+  width: 90%;
+  margin-top: -10px;
+}
+.threedimg1:hover,
+.threedimg2:hover,
+.threedimg3:hover,
+.threedimg4:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+  cursor: pointer;
 }

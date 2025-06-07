@@ -6,22 +6,22 @@ import Faqs from "./faq";
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hospital_image_1 from '../images/hospital_banner_1.jpg';
-import hospital_image_2 from '../images/hospital_banner_3.jpg';
+import hospital_image_1 from '../images/portfolio/side_img_healthcare.png';
+import hospital_image_2 from '../images/portfolio/benefits_img.png';
 import VerifiedIcon from '@mui/icons-material/Verified';
-import healthcareservice_1 from "../images/healthcareService_1.png"
-import healthcareservice_2 from "../images/healthcareService_2.png"
-import healthcareservice_3 from "../images/healthcareservice_3.png"
-import healthcareservice_4 from "../images/healthcareService_4.png"
-import healthcareservice_5 from "../images/healthcareService_5.png"
-import healthcareservice_6 from "../images/healthcareService_6.png"
-import healthcareservice_7 from "../images/healthcareService_7.png"
-import healthcareservice_8 from "../images/healthcareService_8.png"
+import healthcareservice_1 from "../images/portfolio/healthcare_img_4.png"
+import healthcareservice_2 from "../images/portfolio/seo_analysis.png"
+import healthcareservice_3 from "../images/portfolio/healthcare_img_6.png"
+import healthcareservice_4 from "../images/portfolio/email2.png"
+import healthcareservice_5 from "../images/portfolio/healthcare_img_7.png"
+import healthcareservice_6 from "../images/portfolio/9772701_103 (2).png"
+import healthcareservice_7 from "../images/portfolio/healthcare_img_2.png"
+import healthcareservice_8 from "../images/portfolio/healthcare_img_1.png"
 import icon1 from '../images/icon 1.png';
 import icon2 from '../images/icon 2.png';
 import icon3 from '../images/icon3.png';
 import icon4 from '../images/icon 4.png';
-import bannerImage from "../images/bg-7.png"
+import bannerImage from "../images/portfolio/health_bg.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 export default function HealthCare() {
@@ -40,7 +40,6 @@ export default function HealthCare() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setFaq(Faqs);
-
   }, []);
   return (
     <>
@@ -117,7 +116,7 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12}  data-aos="fade-up" className='my-md-5' >
+              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5' >
                 <div className='icon-1 text-center mx-md-4'>
                   <div>
                     <img src={icon2} alt="digital solutions in healthcare" width="90px" />
@@ -161,7 +160,7 @@ export default function HealthCare() {
         </div>
         <div className="health-Digital-Marketing">
           <Container>
-            <div  data-aos="fade-up" className="health-why-novatales">
+            <div data-aos="fade-up" className="health-why-novatales">
               <h3 className='text-center' style={{
                 textAlign: "center !important",
                 marginBottom: "80px",

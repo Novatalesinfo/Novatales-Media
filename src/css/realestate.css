@@ -32,7 +32,11 @@
     width: 90%;
   }
   .responsive-height-realestate {
-    height: 420px;
+    height: 420px !important;
+  }
+   .extraPadding{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
@@ -64,6 +68,13 @@
     width: 90%;
     margin-bottom: 80px;
   }
+  .responsive-height-realestate{
+    min-height: 420px !important;
+  }
+   .extraPadding{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -81,6 +92,7 @@
   #realestateImg {
     width: 300px;
   }
+  
 }
 
 @media screen and (min-width: 425px) {
@@ -98,6 +110,7 @@
   #realestateImg {
     width: 300px;
   }
+ 
 }
 
 @media screen and (min-width: 548px) {
@@ -220,6 +233,10 @@
   .realestate-topBanner {
     padding: 100px 16px 0px;
   }
+  .extraPadding{
+    padding-left: 0;
+    padding-right: 0;
+  }
   .realestate-heading {
     font-size: 3vw;
     color: white;
@@ -297,7 +314,7 @@
     margin-bottom: 150px;
   }
   .responsive-height-realestate {
-    height: 500px;
+    height: 470px;
   }
 }
 .whyneedRealestate2 {

@@ -123,69 +123,43 @@
 // export default VdoPortfolio
 
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect} from 'react';
 import Box from '@mui/material/Box';
-import Masonry from '@mui/lab/Masonry';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import _vdo_1 from "../images/portfolio/video_1.mp4"
-import _vdo_2 from "../images/portfolio/video_2.mp4"
-import _vdo_3 from "../images/portfolio/video_3.mp4"
-import _vdo_4 from "../images/portfolio/video_4.mp4"
-import _vdo_5 from "../images/portfolio/video_5.mp4"
-import poster from '../images/portfolio/cocktail_img_7.avif'
-import "../css/portfolio.css"
-const VdoPortfolio = () => {
-    const itemData = [
-        {
-            img: _vdo_1,
-            postImg: poster,
-            title: 'Fern',
-        },
-        {
-            img: _vdo_2, postImg: poster,
-            title: 'Snacks',
-        },
-        {
-            img: _vdo_3, postImg: poster,
-            title: 'Mushrooms',
-        },
-        {
-            img: _vdo_4, postImg: poster,
-            title: 'Tower',
-        },
-        {
-            img: _vdo_5, postImg: poster,
-            title: 'Sea star',
-        },
 
-    ];
-    const [selectedImage, setSelectedImage] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const handleImageClick = (index) => {
-        setCurrentIndex(index);
-        setSelectedImage(itemData[index].img);
-    };
-    const videoRefs = useRef([]);
+import "../css/portfolio.css"
+import VideoSequence from './VideoProduction';
+const VdoPortfolio = () => {
+   
+    // const [selectedImage, setSelectedImage] = useState(null);
+    // const [currentIndex, setCurrentIndex] = useState(0);
+    // const handleImageClick = (index) => {
+    //     setCurrentIndex(index);
+    //     setSelectedImage(itemData[index].img);
+    // };
+    // const videoRefs = useRef([]);
+    // useEffect(() => {
+    //     const handleKeyDown = (e) => {
+    //         if (e.key === "Escape") setSelectedImage(null);
+    //     };
+    //     window.addEventListener("keydown", handleKeyDown);
+    //     return () => window.removeEventListener("keydown", handleKeyDown);
+    // }, []);
     useEffect(() => {
-        const handleKeyDown = (e) => {
-            if (e.key === "Escape") setSelectedImage(null);
-        };
-        window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown);
-    }, []);
-    useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
     }, []);
     return (
-        <div className="portfolio-parent">
+        <div className="">
             <div>
                 <h1 id="topHeading" className="text-center">
                     <span
                         style={{
                             color: "#fec436",
+                            marginTop:"140px"
                         }}
-                    >VIDEOS
+                    > Videos
                     </span>
                 </h1>
                 <Box
@@ -196,7 +170,8 @@ const VdoPortfolio = () => {
                         overflowX: 'hidden',
                     }}
                 >
-                    <Masonry
+                    <VideoSequence />
+                    {/* <Masonry
                         columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
                         spacing={2}
                     >
@@ -229,10 +204,10 @@ const VdoPortfolio = () => {
 
                             </div>
                         ))}
-                    </Masonry>
+                    </Masonry> */}
                 </Box>
             </div>
-            {selectedImage && (
+            {/* {selectedImage && (
                 <div className="fullscreen-modal">
                     <span className="close-btn" onClick={() => setSelectedImage(null)}>✖</span>
                     <video
@@ -259,7 +234,7 @@ const VdoPortfolio = () => {
                         setSelectedImage(itemData[newIndex].img);
                     }}><ArrowForwardIosIcon /></span>
                 </div>
-            )}
+            )} */}
 
         </div>
     )

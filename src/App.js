@@ -48,6 +48,7 @@ import VdoPortfolio from './components/VdoPortfolio';
 import ProductPortfolio from './components/ProductPortfolio';
 import JewelPortfolio from './components/JewelPortfolio';
 import PhotShootPortfolio from './components/PhotoShootPortfolio';
+import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
 // Component to handle uppercase-to-lowercase redirects
 const RedirectToLowercase = () => {
   const location = useLocation();
@@ -82,12 +83,12 @@ const App = () => {
           <Route path="/real-estate" element={<RealEstate />} />
 
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/food-bakery" element={<FoodBakery />} />
-          <Route path="/portfolio/cocktail" element={<CockTail />} />
+          <Route path="/portfolio/3d" element={<FoodBakery />} />
+          <Route path="/portfolio/graphics" element={<CockTail />} />
           <Route path="/portfolio/video-portfolio" element={<VdoPortfolio />} />
           <Route path='/portfolio/products' element={<ProductPortfolio />} />
-          <Route path="/portfolio/jewellary" element={<JewelPortfolio />} />
-          <Route path="/portfolio/photoshoot" element={<PhotShootPortfolio />} />
+          <Route path="/portfolio/motion-graphics" element={<JewelPortfolio />} />
+          <Route path="/portfolio/people" element={<PhotShootPortfolio />} />
 
           <Route path='/case-studies' element={<CaseStudy />} />
           <Route path="/case-studies/magnaid-hospitals" element={<MagnAidCaseStudyDetails />} />
@@ -95,6 +96,7 @@ const App = () => {
           <Route path="/case-studies/22-yards" element={<TwentyCaseStudyDetails />} />
           <Route path="/case-studies/endula-infra" element={<EndulaCaseStudyDetails />} />
           <Route path="/case-studies/livvon-comforts" element={<LivvonCaseStudyDetails />} />
+          <Route path="/case-studies/head-digitals-wroks" element={<HeadDigitalCaseStudy />} />
 
           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />

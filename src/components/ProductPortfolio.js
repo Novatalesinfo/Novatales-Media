@@ -3,17 +3,26 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import product_img_1 from "../images/portfolio/product_img_1.avif"
-import product_img_2 from "../images/portfolio/product_img_2.avif"
-import product_img_3 from "../images/portfolio/product_img_3.avif"
-import product_img_4 from "../images/portfolio/product_img_4.avif"
-import product_img_5 from "../images/portfolio/product_img_5.avif"
-import product_img_6 from "../images/portfolio/product_img_6.avif"
-import product_img_7 from "../images/portfolio/product_img_7.avif"
-import product_img_8 from "../images/portfolio/product_img_8.avif"
-import product_img_9 from "../images/portfolio/product_img_9.avif"
-import product_img_10 from "../images/portfolio/product_img_10.avif"
-import product_img_11 from "../images/portfolio/product_img_11.avif"
+import product_img_1 from "../images/portfolio/product_img_1.jpg"
+import product_img_2 from "../images/portfolio/product_img_2.jpg"
+import product_img_3 from "../images/portfolio/product_img_3.jpg"
+import product_img_4 from "../images/portfolio/product_img_4.jpg"
+import product_img_5 from "../images/portfolio/product_img_5.jpg"
+import product_img_6 from "../images/portfolio/product_img_6.jpg"
+import product_img_7 from "../images/portfolio/product_img_7.jpg"
+import product_img_8 from "../images/portfolio/product_img_8.jpg"
+import product_img_9 from "../images/portfolio/product_img_9.jpg"
+import product_img_10 from "../images/portfolio/product_img_10.jpg"
+import product_img_11 from "../images/portfolio/product_img_11.jpg"
+import product_img_12 from "../images/portfolio/product_img_12.jpg"
+import product_img_13 from "../images/portfolio/product_img_13.jpg"
+import product_img_14 from "../images/portfolio/product_img_14.jpg"
+import product_img_15 from "../images/portfolio/product_img_15.jpg"
+import product_img_16 from "../images/portfolio/product_img_16.jpg"
+import product_img_17 from "../images/portfolio/product_img_17.jpg"
+import product_img_18 from "../images/portfolio/product_img_18.jpg"
+import product_img_19 from "../images/portfolio/product_img_19.jpg"
+import product_img_20 from "../images/portfolio/product_img_20.jpg"
 
 import "../css/portfolio.css"
 const ProductPortfolio = () => {
@@ -21,6 +30,18 @@ const ProductPortfolio = () => {
         {
             img: product_img_1,
             title: 'Fern',
+        },
+         {
+            img: product_img_20,
+            title: 'Burger',
+        },
+        {
+            img: product_img_13,
+            title: 'Burger',
+        },
+         {
+            img: product_img_19,
+            title: 'Burger',
         },
         {
             img: product_img_2,
@@ -31,12 +52,25 @@ const ProductPortfolio = () => {
             title: 'Mushrooms',
         },
         {
+            img: product_img_12,
+            title: 'Burger',
+        },
+        {
+            img: product_img_18,
+            title: 'Burger',
+        },
+        {
             img: product_img_4,
             title: 'Tower',
         },
         {
             img: product_img_5,
             title: 'Sea star',
+        },
+
+        {
+            img: product_img_14,
+            title: 'Burger',
         },
         {
             img: product_img_6,
@@ -47,6 +81,18 @@ const ProductPortfolio = () => {
             title: 'Basketball',
         },
         {
+            img: product_img_15,
+            title: 'Burger',
+        },
+        {
+            img: product_img_16,
+            title: 'Burger',
+        },
+        {
+            img: product_img_17,
+            title: 'Burger',
+        },
+        {
             img: product_img_8,
             title: 'Breakfast',
         },
@@ -54,14 +100,20 @@ const ProductPortfolio = () => {
             img: product_img_9,
             title: 'Tree',
         },
+        
         {
             img: product_img_10,
             title: 'Burger',
         },
+
+        
+       
         {
             img: product_img_11,
             title: 'Burger',
         },
+       
+
     ];
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);

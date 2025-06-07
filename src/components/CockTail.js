@@ -3,31 +3,20 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import cocktail_img_1 from "../images/portfolio/cocktail_img_1.avif"
-import cocktail_img_2 from "../images/portfolio/cocktail_img_2.avif"
-import cocktail_img_3 from "../images/portfolio/cocktail_img_3.avif"
-import cocktail_img_4 from "../images/portfolio/cocktail_img_4.avif"
-import cocktail_img_5 from "../images/portfolio/cocktail_img_5.avif"
-import cocktail_img_6 from "../images/portfolio/cocktail_img_6.avif"
-import cocktail_img_7 from "../images/portfolio/cocktail_img_7.avif"
-import cocktail_img_8 from "../images/portfolio/cocktail_img_8.avif"
-import cocktail_img_9 from "../images/portfolio/cocktail_img_9.avif"
-import cocktail_img_10 from "../images/portfolio/cocktail_img_10.avif"
-import cocktail_img_11 from "../images/portfolio/cocktail_img_11.webp"
-import cocktail_img_12 from "../images/portfolio/cocktail_img_12.webp"
-import cocktail_img_13 from "../images/portfolio/cocktail_img_13.webp"
-import cocktail_img_14 from "../images/portfolio/cocktail_img_14.webp"
-import cocktail_img_15 from "../images/portfolio/cocktail_img_15.webp"
-import cocktail_img_16 from "../images/portfolio/cocktail_img_16.webp"
-import cocktail_img_17 from "../images/portfolio/cocktail_img_17.webp"
-import cocktail_img_18 from "../images/portfolio/cocktail_img_18.webp"
-import cocktail_img_19 from "../images/portfolio/cocktail_img_19.webp"
-import cocktail_img_20 from "../images/portfolio/cocktail_img_20.webp"
-import cocktail_img_21 from "../images/portfolio/cocktail_img_21.webp"
-import cocktail_img_22 from "../images/portfolio/cocktail_img_22.webp"
-import cocktail_img_23 from "../images/portfolio/cocktail_img_23.webp"
-import cocktail_img_24 from "../images/portfolio/cocktail_img_24.webp"
-import cocktail_img_25 from "../images/portfolio/cocktail_img_25.webp"
+import cocktail_img_1 from "../images/casestudies/magnaid_post_1.jpg"
+import cocktail_img_2 from "../images/casestudies/magnaid_post_2.jpg"
+import cocktail_img_3 from "../images/casestudies/magnaid_post_3.jpg"
+import cocktail_img_4 from "../images/casestudies/magnaid_post_4.jpg"
+import cocktail_img_5 from "../images/casestudies/magnaid_post_5.jpg"
+import cocktail_img_6 from "../images/casestudies/magnaid_post_6.jpg"
+import cocktail_img_7 from "../images/casestudies/magnaid_post_7.jpg"
+import cocktail_img_8 from "../images/casestudies/Myth vs Fact post-01 (1).jpg"
+import cocktail_img_9 from "../images/casestudies/magnaid_post_9.jpg"
+import cocktail_img_10 from "../images/casestudies/ekam_fertility_1 (1).jpg"
+import cocktail_img_11 from "../images/casestudies/ekam_fertility_2 (1).jpg"
+import cocktail_img_12 from "../images/casestudies/ekam_fertility_3 (1).jpg"
+import cocktail_img_13 from "../images/casestudies/ekam_fertility_4 (1).jpg"
+import cocktail_img_14 from "../images/casestudies/ekam_fertility_5 (1).jpg"
 const CockTail = () => {
     const itemData = [
         {
@@ -43,12 +32,24 @@ const CockTail = () => {
             title: 'Mushrooms',
         },
         {
+            img: cocktail_img_10,
+            title: 'Burger',
+        },
+        {
             img: cocktail_img_4,
             title: 'Tower',
         },
         {
+            img: cocktail_img_11,
+            title: 'Camera',
+        },
+        {
             img: cocktail_img_5,
             title: 'Sea star',
+        },
+        {
+            img: cocktail_img_12,
+            title: 'Coffee',
         },
         {
             img: cocktail_img_6,
@@ -59,6 +60,10 @@ const CockTail = () => {
             title: 'Basketball',
         },
         {
+            img: cocktail_img_13,
+            title: 'Camping Car',
+        },
+        {
             img: cocktail_img_8,
             title: 'Breakfast',
         },
@@ -67,69 +72,10 @@ const CockTail = () => {
             title: 'Tree',
         },
         {
-            img: cocktail_img_10,
-            title: 'Burger',
-        },
-        {
-            img: cocktail_img_11,
-            title: 'Camera',
-        },
-        {
-            img: cocktail_img_12,
-            title: 'Coffee',
-        },
-        {
-            img: cocktail_img_13,
-            title: 'Camping Car',
-        },
-        {
             img: cocktail_img_14,
             title: 'Hats',
         },
-        {
-            img: cocktail_img_15,
-            title: 'Tomato basil',
-        },
-        {
-            img: cocktail_img_16,
-            title: 'Mountain',
-        },
-        {
-            img: cocktail_img_17,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_18,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_19,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_20,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_21,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_22,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_23,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_24,
-            title: 'Bike',
-        },
-        {
-            img: cocktail_img_25,
-            title: 'Bike',
-        },
+
     ];
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -144,9 +90,9 @@ const CockTail = () => {
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
-     useEffect(() => {
-            window.scrollTo(0, 0);
-        }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="foodbakery-parent">
             <div>
@@ -155,7 +101,7 @@ const CockTail = () => {
                         style={{
                             color: "#fec436",
                         }}
-                    >CockTail
+                    >Graphics
                     </span>
                 </h1>
                 <Box
@@ -171,8 +117,9 @@ const CockTail = () => {
                         spacing={2}
                     >
                         {itemData.map((item, index) => (
-                            <div key={index} onClick={() => handleImageClick(index)}  style={{
+                            <div key={index} onClick={() => handleImageClick(index)} style={{
                                 overflow: "hidden",
+                                backgroundColor: "#fafafa"
                             }} >
                                 <img className='masonary-img'
                                     srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}

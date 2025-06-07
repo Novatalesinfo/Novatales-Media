@@ -90,11 +90,14 @@ const RealEstateBookFrom = () => {
         }
     }
     return (
-        <div className="service-content LogoVisual " style={{
-            backgroundColor: "#f9f9f9",
-            padding: "30px 0px"
-        }}>
-            <div className="container">
+        <div className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding mb-2 " >
+             <div className="extraPadding" style={{
+                backgroundColor: "#f9f9f9", padding: "30px 0px",
+                border: "1px dashed #fec436",
+                borderRadius: "35px",
+                maxWidth: "1400px",
+                boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
+            }}>
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
                         <div className="col-xl-4">

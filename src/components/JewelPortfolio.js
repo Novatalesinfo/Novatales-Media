@@ -1,62 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import jewel_img_1 from "../images/portfolio/jewel_img_1.avif"
-import jewel_img_2 from "../images/portfolio/jewel_img_2.avif"
-import jewel_img_3 from "../images/portfolio/jewel_img_3.avif"
-import jewel_img_4 from "../images/portfolio/jewel_img_4.avif"
-import jewel_img_5 from "../images/portfolio/jewel_img_5.avif"
-import jewel_img_6 from "../images/portfolio/jewel_img_6.avif"
-import jewel_img_7 from "../images/portfolio/jewel_img_7.avif"
-import jewel_img_8 from "../images/portfolio/jewel_img_8.avif"
-import jewel_img_9 from "../images/portfolio/jewel_img_9.avif"
-import jewel_img_10 from "../images/portfolio/jewel_img_10.avif"
+
+import _vdo_1 from "../images/portfolio/video_1.mp4"
+import _vdo_2 from "../images/portfolio/video_2.mp4"
+import _vdo_3 from "../images/portfolio/video_3.mp4"
+
+
 import "../css/portfolio.css"
 const JewelPortfolio = () => {
     const itemData = [
         {
-            img: jewel_img_1,
-            title: 'Fern',
-        },
-        {
-            img: jewel_img_2,
+            img: _vdo_1,
             title: 'Snacks',
         },
         {
-            img: jewel_img_3,
+            img: _vdo_2,
+            title: 'Snacks',
+        },
+        {
+            img: _vdo_3,
             title: 'Mushrooms',
         },
-        {
-            img: jewel_img_4,
-            title: 'Tower',
-        },
-        {
-            img: jewel_img_5,
-            title: 'Sea star',
-        },
-        {
-            img: jewel_img_6,
-            title: 'Honey',
-        },
-        {
-            img: jewel_img_7,
-            title: 'Basketball',
-        },
-        {
-            img: jewel_img_8,
-            title: 'Breakfast',
-        },
-        {
-            img: jewel_img_9,
-            title: 'Tree',
-        },
-        {
-            img: jewel_img_10,
-            title: 'Burger',
-        },
-       
+
+
     ];
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,6 +33,7 @@ const JewelPortfolio = () => {
         setCurrentIndex(index);
         setSelectedImage(itemData[index].img);
     };
+    const videoRefs = useRef([]);
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === "Escape") setSelectedImage(null);
@@ -75,14 +45,14 @@ const JewelPortfolio = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div className="foodbakery-parent">
+        <div className="portfolio-parent">
             <div>
                 <h1 id="topHeading" className="text-center">
                     <span
                         style={{
                             color: "#fec436",
                         }}
-                    >jewellary
+                    > Motion Graphics
                     </span>
                 </h1>
                 <Box
@@ -94,25 +64,32 @@ const JewelPortfolio = () => {
                     }}
                 >
                     <Masonry
-                        columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
+                        columns={{ xs: 1, sm: 2, md: 3 }}
                         spacing={2}
                     >
                         {itemData.map((item, index) => (
                             <div key={index} onClick={() => handleImageClick(index)} style={{
                                 overflow: "hidden",
                             }} >
-                                <img className='masonary-img'
-                                    srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=162&auto=format`}
-                                    alt={item.title}
-                                    loading="lazy"
-
+                                <video
+                                    ref={(el) => (videoRefs.current[index] = el)}
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline preload="auto"
+                                    poster={`${item.postImg}?w=162&auto=format`}
                                     style={{
                                         display: 'block',
                                         width: '100%',
                                         objectFit: 'cover',
+                                        cursor: 'pointer',
                                     }}
-                                />
+
+                                >
+                                    <source src={item.img} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+
                             </div>
                         ))}
                     </Masonry>
@@ -121,13 +98,24 @@ const JewelPortfolio = () => {
             {selectedImage && (
                 <div className="fullscreen-modal">
                     <span className="close-btn" onClick={() => setSelectedImage(null)}>✖</span>
-                    <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
+                    <video
+                        key={selectedImage}
+                        controls
+                        autoPlay
+                        loop
+                        style={{
+                            width: '80%',
+                            height: 'calc(80% + 1px)',
+                        }}
+                    >
+                        <source src={selectedImage} type='video/mp4' />
+                        Your browser does not support the video tag.
+                    </video>
                     <span className="nav-btn left" onClick={() => {
                         const newIndex = (currentIndex - 1 + itemData.length) % itemData.length;
                         setCurrentIndex(newIndex);
                         setSelectedImage(itemData[newIndex].img);
                     }}><ArrowBackIosNewIcon /></span>
-
                     <span className="nav-btn right" onClick={() => {
                         const newIndex = (currentIndex + 1) % itemData.length;
                         setCurrentIndex(newIndex);
@@ -135,6 +123,7 @@ const JewelPortfolio = () => {
                     }}><ArrowForwardIosIcon /></span>
                 </div>
             )}
+
         </div>
     )
 }

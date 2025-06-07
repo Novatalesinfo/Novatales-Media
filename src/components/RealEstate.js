@@ -2,26 +2,30 @@ import React, { useEffect, useState } from 'react'
 import "../css/realestate.css"
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import realestatetopBanner from "../images/realestate-topBanner.png"
-import whatisrealestate from "../images/whatis-realestate-2.png"
-import online_realestate from "../images/online-realestate.png"
-import social from "../images/social-realestate.png"
-import gads from "../images/google-realestate.png"
-import data from "../images/data-realestate.png"
+import realestatetopBanner from "../images/portfolio/real_etate_banner.png"
+import whatisrealestate from "../images/portfolio/what_home.png"
+
+
+import online_realestate from "../images/inspection.png"
+import social from "../images/social-media-marketing (1).png"
+import gads from "../images/google.png"
+import data from "../images/web-analysis.png"
+import analyst from "../images/web.png"
+
+
 import { Col, Container, Row } from 'react-bootstrap'
-import analyst from "../images/analyis-realetate.png"
-import realestateservice_1 from "../images/realestate_service_10.png"
-import realestateservice_2 from "../images/realestate_service_12.png"
-import realestateservice_3 from "../images/realestate_service_2.png"
-import realestateservice_4 from "../images/realestate_service_3.png"
-import realestateservice_5 from "../images/realestate_service_9.png"
-import realestateservice_6 from "../images/realestate_service_5.png"
-import realestateservice_7 from "../images/realestate_service_15.png"
-import realestateservice_8 from "../images/realestate_service_11.png"
-import icons_1 from "../images/certificate.png"
+import realestateservice_1 from "../images/portfolio/seo-01.png"
+import realestateservice_2 from "../images/portfolio/sale_ads [Converted].png"
+import realestateservice_3 from "../images/portfolio/leads.png"
+import realestateservice_4 from "../images/portfolio/video_ads.png"
+import realestateservice_5 from "../images/portfolio/landing_page.png"
+import realestateservice_6 from "../images/portfolio/seocial_media.png"
+import realestateservice_7 from "../images/portfolio/email_marketing.png"
+import realestateservice_8 from "../images/portfolio/wp_ads.png"
+import icons_1 from "../images/diploma.png"
 import icons_2 from "../images/customer-acquisition.png"
 import icons_3 from "../images/profit.png"
-import icons_4 from "../images/contract.png"
+import icons_4 from "../images/time-management.png"
 import icons_5 from "../images/impression-rate.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -105,7 +109,7 @@ const RealEstate = () => {
 
       {/* What is Real Estate Digital Marketing  */}
 
-      <div   data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual">
+      <div data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 d-flex justify-content-center">
@@ -135,7 +139,7 @@ const RealEstate = () => {
       {/* Why Real Estate Needs Digital Marketing */}
 
 
-      <div  data-aos="fade-up" data-aos-delay="100" className="service-content LogoVisual text-center d-flex justify-content-center flex-column align-items-center pt-5 mt-5">
+      <div data-aos="fade-up" data-aos-delay="100" className="service-content LogoVisual text-center d-flex justify-content-center flex-column align-items-center pt-5 mt-5">
         <h2>
           Why Real Estate Needs <span style={{
             color: "#fec436"
@@ -235,7 +239,8 @@ const RealEstate = () => {
 
 
       {/* Services for real estate */}
-      <div className='d-flex justify-content-between flex-column align-items-center'>
+
+      <div className="health-Digital-Marketing">
         <Container>
           <div data-aos="fade-up" className="health-why-novatales">
             <h3 className='text-center' style={{
@@ -244,12 +249,11 @@ const RealEstate = () => {
             }}><span>NovaTales </span> Expert Digital Marketing Services for <span> Real Estate</span> </h3>
           </div>
         </Container>
-
         <Container fluid>
-          <Row className='health-Digital-Marketing-content xl-p-4' >
+          <Row className='health-Digital-Marketing-content p-xl-4' >
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
               <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_7} className="card-img-top" alt="Healthcare social media marketing" style={{
+                <img src={realestateservice_1} className="card-img-top" alt="Healthcare social media marketing" style={{
                   backgroundColor: "#FAFAFA"
 
                 }} />
@@ -265,7 +269,7 @@ const RealEstate = () => {
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4 '>
               <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_4} style={{
+                <img src={realestateservice_2} style={{
                   backgroundColor: "#FAFAFA"
                 }} className="card-img-top" alt="healthcare seo services" />
                 <div className="card-body">
@@ -279,8 +283,10 @@ const RealEstate = () => {
               </div>
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-              <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_2} className="card-img-top" alt="healthcare content marketing agency" style={{
+              <div className="card draggable shadow-sm responsive-height-realestate border-0" style={{
+              
+              }} >
+                <img src={realestateservice_6} className="card-img-top" alt="healthcare content marketing agency" style={{
                   backgroundColor: "#FAFAFA"
                 }} />
                 <div className="card-body">
@@ -294,8 +300,8 @@ const RealEstate = () => {
               </div>
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-              <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_6} className="card-img-top" alt="Email Marketing for healthcare" style={{
+              <div className="card draggable shadow-sm responsive-height-realestate border-0" >
+                <img src={realestateservice_5} className="card-img-top" alt="Email Marketing for healthcare" style={{
                   backgroundColor: "#FAFAFA"
                 }} />
                 <div className="card-body">
@@ -309,8 +315,8 @@ const RealEstate = () => {
               </div>
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-              <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_5} className="card-img-top" alt="reviews for hospitals" style={{
+              <div className="card draggable shadow-sm responsive-height-realestate border-0" >
+                <img src={realestateservice_7} className="card-img-top" alt="reviews for hospitals" style={{
                   backgroundColor: "#FAFAFA"
                 }} />
                 <div className="card-body">
@@ -325,7 +331,7 @@ const RealEstate = () => {
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
               <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_8} style={{
+                <img src={realestateservice_4} style={{
                   backgroundColor: "#FAFAFA"
                 }} className="card-img-top" alt="healthcare web development company" />
                 <div className="card-body">
@@ -340,7 +346,7 @@ const RealEstate = () => {
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
               <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_3} style={{
+                <img src={realestateservice_8} width="100%" style={{
                   backgroundColor: "#FAFAFA"
                 }} className="card-img-top" alt="ppc healthcare" />
                 <div className="card-body">
@@ -355,7 +361,7 @@ const RealEstate = () => {
             </Col>
             <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
               <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                <img src={realestateservice_1} style={{
+                <img src={realestateservice_3} style={{
                   backgroundColor: "#FAFAFA"
                 }} className="card-img-top" alt="Video Marketing for healthcare" />
                 <div className="card-body">
@@ -377,7 +383,7 @@ const RealEstate = () => {
       <RealEstateBookFrom />
       {/* Top Benefits for Real Estate digital marketing */}
 
-      <div  className='d-flex flex-column justify-content-center align-items-center  pt-5 mb-5'>
+      <div className='d-flex flex-column justify-content-center align-items-center  pt-5 mb-5'>
         <Container>
           <div data-aos="fade-up" className="health-why-novatales">
             <h3 className='text-center' style={{

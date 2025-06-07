@@ -3,12 +3,23 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import people_img_1 from "../images/portfolio/people_img_1.avif"
-import people_img_2 from "../images/portfolio/people_img_2.avif"
-import people_img_3 from "../images/portfolio/people_img_3.avif"
-import people_img_4 from "../images/portfolio/people_img_4.avif"
-import people_img_5 from "../images/portfolio/people_img_5.avif"
-import people_img_6 from "../images/portfolio/people_img_6.avif"
+import people_img_1 from "../images/portfolio/photoshoot_img_1.jpg";
+import people_img_2 from "../images/portfolio/photoshoot_img_2.jpg";
+import people_img_3 from "../images/portfolio/photoshoot_img_3.jpg";
+import people_img_4 from "../images/portfolio/photoshoot_img_4.jpg";
+
+import people_img_6 from "../images/portfolio/photoshoot_img_6.jpg";
+import people_img_7 from "../images/portfolio/photoshoot_img_7.jpg";
+import people_img_8 from "../images/portfolio/photoshoot_img_8.jpg";
+import people_img_9 from "../images/portfolio/photoshoot_img_9.jpg";
+import people_img_10 from "../images/portfolio/photoshoot_img_10.jpg";
+import people_img_11 from "../images/portfolio/photoshoot_img_11.jpg";
+import people_img_12 from "../images/portfolio/photoshoot_img_12.jpg";
+import people_img_13 from "../images/portfolio/photoshoot_img_13.jpg";
+import people_img_14 from "../images/portfolio/photoshoot_img_14.jpg";
+import people_img_15 from "../images/portfolio/photoshoot_img_15.jpg";
+import people_img_16 from "../images/portfolio/photoshoot_img_16.jpg";
+import people_img_17 from "../images/portfolio/photoshoot_img_17.jpg";
 
 import "../css/portfolio.css"
 const PhotShootPortfolio = () => {
@@ -29,15 +40,57 @@ const PhotShootPortfolio = () => {
             img: people_img_4,
             title: 'Tower',
         },
-        {
-            img: people_img_5,
-            title: 'Sea star',
-        },
+
         {
             img: people_img_6,
             title: 'Honey',
         },
+        {
+            img: people_img_7,
+            title: 'Meadow',
+        },
+        {
+            img: people_img_8,
+            title: 'Lantern',
+        },
+        {
+            img: people_img_9,
+            title: 'Fog',
+        },
+        {
+            img: people_img_10,
+            title: 'Breeze',
+        },
+        {
+            img: people_img_11,
+            title: 'Shadow',
+        },
+        {
+            img: people_img_12,
+            title: 'Canyon',
+        },
+        {
+            img: people_img_13,
+            title: 'Ripple',
+        },
+        {
+            img: people_img_14,
+            title: 'Whisper',
+        },
+        {
+            img: people_img_15,
+            title: 'Drizzle',
+        },
+        {
+            img: people_img_16,
+            title: 'Pebble',
+        },
+        {
+            img: people_img_17,
+            title: 'Glow',
+        },
     ];
+
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const handleImageClick = (index) => {
@@ -62,7 +115,7 @@ const PhotShootPortfolio = () => {
                         style={{
                             color: "#fec436",
                         }}
-                    >Photoshoot
+                    >People
                     </span>
                 </h1>
                 <Box
