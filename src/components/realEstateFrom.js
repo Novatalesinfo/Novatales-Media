@@ -62,13 +62,13 @@ const RealEstateBookFrom = () => {
         try {
             setLoading(true);
             const formWithPage = { ...formData, page: window.location.href };
-             axios.post("/realestate.php", formWithPage).then(
+            axios.post("/realestate.php", formWithPage).then(
                 res => {
                     setFormData(initialFormData);
                     setConsent(false);
                     navigate("/thankyou");
                 }
-             )                                                    
+            )
         } catch (error) {
             console.error('Error:', error);
             toast.error(
@@ -90,8 +90,10 @@ const RealEstateBookFrom = () => {
         }
     }
     return (
-        <div className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding mb-2 " >
-             <div className="extraPadding" style={{
+        <div style={{
+            marginTop: "60px"
+        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding  mb-2 pt-4 " >
+            <div className="extraPadding" style={{
                 backgroundColor: "#f9f9f9", padding: "30px 0px",
                 border: "1px dashed #fec436",
                 borderRadius: "35px",
