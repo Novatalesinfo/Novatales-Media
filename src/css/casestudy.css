@@ -1,17 +1,5 @@
 /* Top Banner of the page CSS */
 
-.case-study-banner {
-  width: 100%;
-  height: 450px;
-  text-align: center;
-  background-image: linear-gradient(to right, #fec436, #9523ff);
-  position: relative;
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 .case-study-details-banner {
   width: 100%;
   height: 350px;

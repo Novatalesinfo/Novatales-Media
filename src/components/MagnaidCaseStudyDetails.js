@@ -16,6 +16,8 @@ import magnaid_post_7 from "../images/casestudies/magnaid_post_7.jpg"
 import magnaid_post_8 from "../images/casestudies/Myth vs Fact post-01 (1).jpg"
 import magnaid_post_9 from "../images/casestudies/magnaid_post_9.jpg"
 import magnaid_post_10 from "../images/casestudies/piles sympotoms-02 (1).jpg"
+import aboutHeroImage from '../images/casestudies/magnaid_case_lap.jpg';
+import case_study_mobile_banner from '../images/casestudies/magnaid_case_mob.jpg';
 const MagnAidCaseStudyDetails = () => {
     useEffect(() => {
         AOS.init();
@@ -27,14 +29,11 @@ const MagnAidCaseStudyDetails = () => {
     return (
         <>
             {/* Top Banner of the page  */}
-            <div className='case-study-details-banner'>
-                <div>
-                    <h1 data-aos="fade-up" data-aos-delay="100" className='mb-3' style={{
-
-                    }}>MagnAid Hospitals</h1>
-
-                </div>
-            </div>
+             <div className="about-hero">
+                            <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
+                            <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
+            
+                        </div>
             <div className='case-study-tabs-parents'>
                 <div className='case-study-tabs-child'>
 

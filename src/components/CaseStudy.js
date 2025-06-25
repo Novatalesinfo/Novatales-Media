@@ -9,7 +9,8 @@ import tab_img_3 from "../images/casestudies/yards_22.png"
 import tab_img_4 from "../images/casestudies/endula.png"
 import tab_img_5 from "../images/casestudies/livvon.png"
 import tab_img_6 from "../images/casestudies/head-digital.png"
-
+import aboutHeroImage from '../images/casestudies/case_study_banner.jpg';
+import case_study_mobile_banner from '../images/casestudies/case_study_mobile_banner.jpg';
 import TabPanel from '@mui/lab/TabPanel';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,16 +34,10 @@ const CaseStudy = () => {
     return (
         <>
             {/* Top Banner of the page  */}
-            <div className='case-study-banner'>
-                <div>
-                    <h1 className='mb-3'>Case Study</h1>
-                    <p className='case-study-banner-para'>
-                        A showcase of our commitment to delivering innovative digital solutions.
-                    </p>
-                    <p className='case-study-banner-para'>
-                        Our commitment to quality and excellence is unparalleled.
-                    </p>
-                </div>
+            <div className="about-hero">
+                <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
+                <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
+
             </div>
             {/* Case studies Tabs Here I am using MUI tabs with some custom designs */}
             <div className='case-study-tabs-parents'>
