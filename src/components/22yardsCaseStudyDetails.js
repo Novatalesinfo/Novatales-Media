@@ -4,6 +4,8 @@ import graph from "../images/casestudies/graph.png"
 import "swiper/css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import aboutHeroImage from "../images/casestudies/case_study_22_lap.jpg"
+import case_study_mobile_banner from "../images/casestudies/case_study_22_mob.jpg"
 const TwentyCaseStudyDetails = () => {
     useEffect(() => {
         AOS.init();
@@ -15,22 +17,20 @@ const TwentyCaseStudyDetails = () => {
     return (
         <>
             {/* Top Banner of the page  */}
-            <div className='case-study-details-banner'>
-                <div>
-                    <h1 className='mb-3' data-aos="fade-up" data-aos-delay="100" style={{
-                    }}>22 Yards</h1>
-                </div>
-            </div>
+           <div className="about-hero">
+                                      <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
+                                      <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
+                                  </div>
             <div className='case-study-tabs-parents'>
                 <div className='case-study-tabs-child'>
 
                     {/* About the case  */}
                     <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex align-items-center case-study-details-row'  style={{
                     }}>
-                        <div className='col-lg-6 d-flex justify-content-center p-5'>
+                        <div className='col-lg-6 d-flex justify-content-center  p-lg-5'>
                             <img src={tab_img_1} alt='' className='case-study-tabs-img' />
                         </div>
-                        <div className='col-lg-6 ps-5'>
+                        <div className='col-lg-6 ps-lg-5'>
                             <p style={{
                                 fontSize: "18px", color: "gray", padding: "12px 0px"
                             }}>About the Client</p>
@@ -45,7 +45,7 @@ const TwentyCaseStudyDetails = () => {
                                 <p style={{
                                     paddingLeft: "0px !important"
                                 }} className=''>
-                                    Magnaid Hospitals is a multi-speciality healthcare institution based in Hyderabad, committed to providing compassionate and advanced medical care. Known for its expertise in obstetrics and gynecology, pediatrics, orthopedics, and general medicine, Magnaid Hospitals combines clinical excellence with patient-centric service.
+                                    22 Properties is a cutting-edge Fractional Real Estate Investment Platform that empowers individuals to invest in premium commercial and hospitality properties with a low capital entry point. Through fractional ownership, investors can enjoy rental income, property appreciation, and a stake in high-value assets such as hotels, resorts, and commercial spaces. With transparency, legal clarity, and professional asset management, 22 Properties is revolutionizing how Indians invest in real estate.
                                 </p>
                                 <a href="https://22yardsprop.com/" target="_blank" rel="noopener noreferrer">
                                     <button className='inside-tab-child-div-button'>

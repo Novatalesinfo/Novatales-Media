@@ -37,7 +37,6 @@ const CaseStudy = () => {
             <div className="about-hero">
                 <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
                 <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
-
             </div>
             {/* Case studies Tabs Here I am using MUI tabs with some custom designs */}
             <div className='case-study-tabs-parents'>

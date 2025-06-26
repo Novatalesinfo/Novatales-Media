@@ -29,21 +29,20 @@ const MagnAidCaseStudyDetails = () => {
     return (
         <>
             {/* Top Banner of the page  */}
-             <div className="about-hero">
-                            <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
-                            <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
-            
-                        </div>
+            <div className="about-hero">
+                <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
+                <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
+            </div>
             <div className='case-study-tabs-parents'>
                 <div className='case-study-tabs-child'>
 
                     {/* About the case  */}
                     <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex align-items-center case-study-details-row' style={{
                     }}>
-                        <div className='col-lg-6 d-flex justify-content-center p-5'>
+                        <div className='col-lg-6 d-flex justify-content-center  p-lg-5'>
                             <img src={tab_img_1} alt='' className='case-study-tabs-img' />
                         </div>
-                        <div className='col-lg-6 ps-5'>
+                        <div className='col-lg-6 ps-lg-5'>
                             <p style={{
                                 fontSize: "18px", color: "gray", padding: "12px 0px"
                             }}>About the Client</p>
