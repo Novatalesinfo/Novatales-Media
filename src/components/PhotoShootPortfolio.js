@@ -3,23 +3,23 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import people_img_1 from "../images/portfolio/photoshoot_img_1.jpg";
-import people_img_2 from "../images/portfolio/photoshoot_img_2.jpg";
-import people_img_3 from "../images/portfolio/photoshoot_img_3.jpg";
-import people_img_4 from "../images/portfolio/photoshoot_img_4.jpg";
+import people_img_1 from "../images/portfolio/photoshoot_img_1.webp";
+import people_img_2 from "../images/portfolio/photoshoot_img_2.webp";
+import people_img_3 from "../images/portfolio/photoshoot_img_3.webp";
+import people_img_4 from "../images/portfolio/photoshoot_img_4.webp";
 
-import people_img_6 from "../images/portfolio/photoshoot_img_6.jpg";
-import people_img_7 from "../images/portfolio/photoshoot_img_7.jpg";
-import people_img_8 from "../images/portfolio/photoshoot_img_8.jpg";
-import people_img_9 from "../images/portfolio/photoshoot_img_9.jpg";
-import people_img_10 from "../images/portfolio/photoshoot_img_10.jpg";
-import people_img_11 from "../images/portfolio/photoshoot_img_11.jpg";
-import people_img_12 from "../images/portfolio/photoshoot_img_12.jpg";
-import people_img_13 from "../images/portfolio/photoshoot_img_13.jpg";
-import people_img_14 from "../images/portfolio/photoshoot_img_14.jpg";
-import people_img_15 from "../images/portfolio/photoshoot_img_15.jpg";
-import people_img_16 from "../images/portfolio/photoshoot_img_16.jpg";
-import people_img_17 from "../images/portfolio/photoshoot_img_17.jpg";
+import people_img_6 from "../images/portfolio/photoshoot_img_6.webp";
+import people_img_7 from "../images/portfolio/photoshoot_img_7.webp";
+import people_img_8 from "../images/portfolio/photoshoot_img_8.webp";
+import people_img_9 from "../images/portfolio/photoshoot_img_9.webp";
+import people_img_10 from "../images/portfolio/photoshoot_img_10.webp";
+import people_img_11 from "../images/portfolio/photoshoot_img_11.webp";
+import people_img_12 from "../images/portfolio/photoshoot_img_12.webp";
+import people_img_13 from "../images/portfolio/photoshoot_img_13.webp";
+import people_img_14 from "../images/portfolio/photoshoot_img_14.webp";
+import people_img_15 from "../images/portfolio/photoshoot_img_15.webp";
+import people_img_16 from "../images/portfolio/photoshoot_img_16.webp";
+import people_img_17 from "../images/portfolio/photoshoot_img_17.webp";
 
 import "../css/portfolio.css"
 const PhotShootPortfolio = () => {

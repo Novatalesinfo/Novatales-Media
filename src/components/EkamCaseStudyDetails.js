@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
-import ekam from "../images/casestudies/ekam.png"
+import ekam from "../images/casestudies/ekam.webp"
 import graph from "../images/casestudies/graph.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ekam_post_1 from "../images/casestudies/ekam_fertility_1 (1).jpg"
-import ekam_post_2 from "../images/casestudies/ekam_fertility_2 (1).jpg"
-import ekam_post_3 from "../images/casestudies/ekam_fertility_3 (1).jpg"
-import ekam_post_4 from "../images/casestudies/ekam_fertility_4 (1).jpg"
-import ekam_post_5 from "../images/casestudies/ekam_fertility_5 (1).jpg"
+import ekam_post_1 from "../images/casestudies/ekam_fertility_1 (1).webp"
+import ekam_post_2 from "../images/casestudies/ekam_fertility_2 (1).webp"
+import ekam_post_3 from "../images/casestudies/ekam_fertility_3 (1).webp"
+import ekam_post_4 from "../images/casestudies/ekam_fertility_4 (1).webp"
+import ekam_post_5 from "../images/casestudies/ekam_fertility_5 (1).webp"
 
 import aboutHeroImage from "../images/casestudies/case_stude_ekam_lap.jpg"
 import case_study_mobile_banner from "../images/casestudies/case_stude_ekam_mob.jpg"

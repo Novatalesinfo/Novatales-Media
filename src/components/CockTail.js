@@ -3,20 +3,20 @@ import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import cocktail_img_1 from "../images/casestudies/magnaid_post_1.jpg"
-import cocktail_img_2 from "../images/casestudies/magnaid_post_2.jpg"
-import cocktail_img_3 from "../images/casestudies/magnaid_post_3.jpg"
-import cocktail_img_4 from "../images/casestudies/magnaid_post_4.jpg"
-import cocktail_img_5 from "../images/casestudies/magnaid_post_5.jpg"
-import cocktail_img_6 from "../images/casestudies/magnaid_post_6.jpg"
-import cocktail_img_7 from "../images/casestudies/magnaid_post_7.jpg"
-import cocktail_img_8 from "../images/casestudies/Myth vs Fact post-01 (1).jpg"
-import cocktail_img_9 from "../images/casestudies/magnaid_post_9.jpg"
-import cocktail_img_10 from "../images/casestudies/ekam_fertility_1 (1).jpg"
-import cocktail_img_11 from "../images/casestudies/ekam_fertility_2 (1).jpg"
-import cocktail_img_12 from "../images/casestudies/ekam_fertility_3 (1).jpg"
-import cocktail_img_13 from "../images/casestudies/ekam_fertility_4 (1).jpg"
-import cocktail_img_14 from "../images/casestudies/ekam_fertility_5 (1).jpg"
+import cocktail_img_1 from "../images/casestudies/magnaid_post_1.webp"
+import cocktail_img_2 from "../images/casestudies/magnaid_post_2.webp"
+import cocktail_img_3 from "../images/casestudies/magnaid_post_3.webp"
+import cocktail_img_4 from "../images/casestudies/magnaid_post_4.webp"
+import cocktail_img_5 from "../images/casestudies/magnaid_post_5.webp"
+import cocktail_img_6 from "../images/casestudies/magnaid_post_6.webp"
+import cocktail_img_7 from "../images/casestudies/magnaid_post_7.webp"
+import cocktail_img_8 from "../images/casestudies/Myth vs Fact post-01 (1).webp"
+import cocktail_img_9 from "../images/casestudies/magnaid_post_9.webp"
+import cocktail_img_10 from "../images/casestudies/ekam_fertility_1 (1).webp"
+import cocktail_img_11 from "../images/casestudies/ekam_fertility_2 (1).webp"
+import cocktail_img_12 from "../images/casestudies/ekam_fertility_3 (1).webp"
+import cocktail_img_13 from "../images/casestudies/ekam_fertility_4 (1).webp"
+import cocktail_img_14 from "../images/casestudies/ekam_fertility_5 (1).webp"
 const CockTail = () => {
     const itemData = [
         {

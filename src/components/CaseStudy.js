@@ -3,12 +3,12 @@ import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
-import tab_img_1 from "../images/casestudies/magnaid.png"
-import tab_img_2 from "../images/casestudies/ekam.png"
-import tab_img_3 from "../images/casestudies/yards_22.png"
-import tab_img_4 from "../images/casestudies/endula.png"
-import tab_img_5 from "../images/casestudies/livvon.png"
-import tab_img_6 from "../images/casestudies/head-digital.png"
+import tab_img_1 from "../images/casestudies/magnaid.webp"
+import tab_img_2 from "../images/casestudies/ekam.webp"
+import tab_img_3 from "../images/casestudies/yards_22.webp"
+import tab_img_4 from "../images/casestudies/endula.webp"
+import tab_img_5 from "../images/casestudies/livvon.webp"
+import tab_img_6 from "../images/casestudies/head-digital.webp"
 import aboutHeroImage from '../images/casestudies/case_study_banner.jpg';
 import case_study_mobile_banner from '../images/casestudies/case_study_mobile_banner.jpg';
 import TabPanel from '@mui/lab/TabPanel';
@@ -72,6 +72,8 @@ const CaseStudy = () => {
                                         onChange={handleChange}
                                         value={value} // make sure you bind the selected value
                                         aria-label="styled pill tabs"
+                                        scrollButtons
+                                        allowScrollButtonsMobile
                                         sx={{
                                             display: "flex",
                                             overflowX: "auto",

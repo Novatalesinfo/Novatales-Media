@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react'
-import tab_img_1 from "../images/casestudies/magnaid.png"
+import tab_img_1 from "../images/casestudies/magnaid.webp"
 import graph from "../images/casestudies/graph.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import magnaid_post_1 from "../images/casestudies/magnaid_post_1.jpg"
-import magnaid_post_2 from "../images/casestudies/magnaid_post_2.jpg"
-import magnaid_post_3 from "../images/casestudies/magnaid_post_3.jpg"
-import magnaid_post_4 from "../images/casestudies/magnaid_post_4.jpg"
-import magnaid_post_5 from "../images/casestudies/magnaid_post_5.jpg"
-import magnaid_post_6 from "../images/casestudies/magnaid_post_6.jpg"
-import magnaid_post_7 from "../images/casestudies/magnaid_post_7.jpg"
-import magnaid_post_8 from "../images/casestudies/Myth vs Fact post-01 (1).jpg"
-import magnaid_post_9 from "../images/casestudies/magnaid_post_9.jpg"
-import magnaid_post_10 from "../images/casestudies/piles sympotoms-02 (1).jpg"
+import magnaid_post_1 from "../images/casestudies/magnaid_post_1.webp";
+import magnaid_post_2 from "../images/casestudies/magnaid_post_2.webp";
+import magnaid_post_3 from "../images/casestudies/magnaid_post_3.webp";
+import magnaid_post_4 from "../images/casestudies/magnaid_post_4.webp";
+import magnaid_post_5 from "../images/casestudies/magnaid_post_5.webp";
+import magnaid_post_6 from "../images/casestudies/magnaid_post_6.webp";
+import magnaid_post_7 from "../images/casestudies/magnaid_post_7.webp";
+import magnaid_post_8 from "../images/casestudies/Myth vs Fact post-01 (1).webp"
+import magnaid_post_9 from "../images/casestudies/magnaid_post_9.webp"
+import magnaid_post_10 from "../images/casestudies/piles sympotoms-02 (1).webp"
 import aboutHeroImage from '../images/casestudies/magnaid_case_lap.jpg';
 import case_study_mobile_banner from '../images/casestudies/magnaid_case_mob.jpg';
 const MagnAidCaseStudyDetails = () => {

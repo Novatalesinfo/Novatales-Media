@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import tab_img_1 from "../images/casestudies/endula.png"
+import tab_img_1 from "../images/casestudies/endula.webp"
 import graph from "../images/casestudies/graph.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';

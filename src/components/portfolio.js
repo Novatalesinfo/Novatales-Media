@@ -5,9 +5,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import foodPoster from "../images/portfolio/collage_3d.png";
 import videoPoster from "../images/portfolio/output_000.mp4";
-import prodcutPoster from "../images/portfolio/product_img_7.jpg";
-import cocktailPoster from "../images/casestudies/magnaid_post_2.jpg";
-import humanPoster from "../images/portfolio/photoshoot_img_1.jpg";
+import prodcutPoster from "../images/portfolio/product_img_7.webp";
+import cocktailPoster from "../images/casestudies/magnaid_post_2.webp";
+import humanPoster from "../images/portfolio/photoshoot_img_1.webp";
 import _vdo_1 from "../images/portfolio/video_1.mp4"
 import "../css/portfolio.css";
 const Portfolio = () => {
