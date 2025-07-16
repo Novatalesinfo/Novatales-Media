@@ -59,7 +59,7 @@ const FoodBakery = () => {
                     sx={{
                         width: '100vw',
                         padding: { xs: 2, sm: 4, md: 6 },
-                        minHeight: '100vh',
+                        minHeight: 'auto',
                         overflowX: 'hidden',
                     }}
                 >

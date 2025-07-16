@@ -59,7 +59,7 @@ const ClientsPage = () => {
 
         <div class="client-row-layout">
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -68,16 +68,14 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
-              style={{
-                width: "500px",
-              }}
+            <img loading="lazy"
+            
               src={livvonconforts}
               alt="Client 2"
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -86,12 +84,12 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img style={{
+            <img loading="lazy" style={{
               width: "150px"
             }} src={magnaid} alt="Client 1" />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "300px",
               }}
@@ -100,7 +98,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "150px",
               }}
@@ -109,7 +107,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "150px",
               }}
@@ -118,7 +116,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "150px",
               }}
@@ -128,7 +126,7 @@ const ClientsPage = () => {
           </div>
           
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -137,7 +135,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "150px",
               }}
@@ -146,7 +144,7 @@ const ClientsPage = () => {
             />
           </div>
            <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -155,7 +153,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -164,7 +162,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -173,7 +171,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -182,7 +180,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -191,7 +189,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -200,7 +198,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -209,7 +207,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "300px",
               }}
@@ -218,7 +216,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -227,7 +225,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -237,7 +235,7 @@ const ClientsPage = () => {
           </div>
          
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -246,7 +244,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "250px",
               }}
@@ -255,7 +253,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "240px",
               }}
@@ -264,7 +262,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -273,7 +271,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "200px",
               }}
@@ -282,7 +280,7 @@ const ClientsPage = () => {
             />
           </div>
           <div class="client-item">
-            <img
+            <img loading="lazy"
               style={{
                 width: "280px",
               }}
