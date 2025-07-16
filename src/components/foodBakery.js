@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+// import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import food_img_1 from "../images/portfolio/3d_img_1.png"
 import food_img_2 from "../images/portfolio/3d_img_2.png"
 import food_img_3 from "../images/portfolio/3d_img_3.png"
@@ -28,11 +28,11 @@ const FoodBakery = () => {
         },
     ];
     const [selectedImage, setSelectedImage] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const handleImageClick = (index) => {
-        setCurrentIndex(index);
-        setSelectedImage(itemData[index].img);
-    };
+    // const [currentIndex, setCurrentIndex] = useState(0);
+    // const handleImageClick = (index) => {
+    //     setCurrentIndex(index);
+    //     setSelectedImage(itemData[index].img);
+    // };
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === "Escape") setSelectedImage(null);
