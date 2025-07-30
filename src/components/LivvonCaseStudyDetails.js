@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import tab_img_1 from "../images/casestudies/livvon.webp"
 import graph from "../images/casestudies/graph.png"
 import AOS from 'aos';
+import aboutHeroImage from "../images/casestudies/livvon_lap.jpg"
+import case_study_mobile_banner from "../images/casestudies/livvon_mob.jpg"
+
 import 'aos/dist/aos.css';
 const LivvonCaseStudyDetails = () => {
     useEffect(() => {
@@ -14,12 +17,10 @@ const LivvonCaseStudyDetails = () => {
     return (
         <>
             {/* Top Banner of the page  */}
-            <div className='case-study-details-banner'>
-                <div>
-                    <h1 data-aos="fade-up" data-aos-delay="100" className='mb-3' style={{
-                    }}>Livvon Comforts</h1>
-                </div>
-            </div>
+             <div className="about-hero">
+                                      <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
+                                      <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
+                                  </div>
             <div className='case-study-tabs-parents'>
                 <div className='case-study-tabs-child'>
                     {/* About the case  */}

@@ -318,9 +318,12 @@ const CaseStudy = () => {
                                 }}>
                                     <div className='col-lg-6'>
                                         <p style={{
-                                            fontSize: "18px", color: "gray", padding: "12px 0px"
+                                            fontSize: "18px", color: "#52377b", padding: "12px 0px"
                                         }}>Video Production</p>
-                                        <h3>
+                                        <h3  style={{
+                                            color: "#9b499c",
+                                            fontWeight: "500"
+                                        }}>
                                             Head Digital Works
                                         </h3>
                                         <div className='inside-tab-child-div' >
