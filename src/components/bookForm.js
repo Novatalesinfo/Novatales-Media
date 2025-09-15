@@ -62,13 +62,13 @@ const BookForm = () => {
         try {
             setLoading(true);
             const formWithPage = { ...formData, page: window.location.href };
-             axios.post("/healthform.php", formWithPage).then(
+            axios.post("/healthform.php", formWithPage).then(
                 res => {
                     setFormData(initialFormData);
                     setConsent(false);
                     navigate("/thankyou");
                 }
-             )                                                    
+            )
         } catch (error) {
             console.error('Error:', error);
             toast.error(
@@ -90,26 +90,21 @@ const BookForm = () => {
         }
     }
     return (
-        <div className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding mb-2" style={{
-
+        <div className="service-content LogoVisual " style={{
+            backgroundColor: "#f9f9f9",
+            padding: "30px 0px"
         }}>
-            <div className="extraPadding" style={{
-                backgroundColor: "#f9f9f9", padding: "30px 0px",
-                border: "1px dashed #fec436",
-                borderRadius: "35px",
-                maxWidth: "1400px",
-                boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
-            }}>
+            <div className="container">
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
-                        <div className="col-xl-3">
+                        <div className="col-xl-4">
                             <h3 className='text-center ' style={{
                                 fontSize: "38px"
                             }}>
                                 Get a Free Consultation
                             </h3>
                         </div>
-                        <div className="col-xl-9 d-flex flex-column px-5 justify-content-center align-items-center">
+                        <div className="col-xl-8 d-flex flex-column justify-content-center align-items-center">
                             <div className='row w-100'>
                                 <div className='col-lg-6 col-xl-3 my-2'>
                                     <input className='form-control w-100 py-2' disabled={loading} type='text' name='fullName' onChange={handleChange} value={formData.fullName} placeholder='Name' />

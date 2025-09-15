@@ -45,9 +45,9 @@ const Header = () => {
   const handleMouseEnterIndustries = () => {
     setShowIndustries(true)
   }
-  const handleMouseEnterClients = () => {
-    setShowClients(true)
-  }
+  // const handleMouseEnterClients = () => {
+  //   setShowClients(true)
+  // }
 
   // Handle mouse leave event to hide dropdown
   const handleMouseLeave = () => {
@@ -160,7 +160,17 @@ const Header = () => {
               >
                 About
               </Nav.Link>
-              <NavDropdown title="Clients" id="industries-dropdown"
+              <Nav.Link
+                as={Link}
+                to='/technologies'
+                onClick={() => {
+                  handleNavigation('about')
+                  handleNavCollapse()
+                }}
+              >
+                Technologies
+              </Nav.Link>
+              {/* <NavDropdown title="Clients" id="industries-dropdown"
                 show={showClients} // Use state to control visibility
                 onMouseEnter={handleMouseEnterClients}
                 onMouseLeave={handleMouseLeaveClients}
@@ -186,7 +196,7 @@ const Header = () => {
                 >
                   case studies
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <NavDropdown
                 title='Services'
                 id='navbarScrollingDropdown'
@@ -489,14 +499,15 @@ const Header = () => {
                 >
                   Health Care
                 </NavDropdown.Item>
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   as={Link}
                   to="/real-estate"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                   Real Estate
-                </NavDropdown.Item>
-              
+                </NavDropdown.Item> */}
+
+
               </NavDropdown>
 
               <Nav.Link
