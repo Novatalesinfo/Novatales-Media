@@ -34,22 +34,22 @@ import Blog from './components/Blog';
 import HealthCare from './components/HealthCare';
 import ThankYou from './components/thankyou';
 import ClientsPage from './components/ClientsPage';
-// import RealEstate from './components/RealEstate';
-// import CaseStudy from './components/CaseStudy';
-// import MagnAidCaseStudyDetails from './components/MagnaidCaseStudyDetails';
-// import EkamCaseStudyDetails from './components/EkamCaseStudyDetails';
-// import TwentyCaseStudyDetails from './components/22yardsCaseStudyDetails';
-// import EndulaCaseStudyDetails from './components/EndulCaseStudyDetails';
-// import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
-// import Portfolio from './components/portfolio';
-// import FoodBakery from './components/foodBakery';
-// import CockTail from './components/CockTail';
-// import VdoPortfolio from './components/VdoPortfolio';
-// import ProductPortfolio from './components/ProductPortfolio';
-// import JewelPortfolio from './components/JewelPortfolio';
-// import PhotShootPortfolio from './components/PhotoShootPortfolio';
-// import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
-// Component to handle uppercase-to-lowercase redirects
+import RealEstate from './components/RealEstate';
+import CaseStudy from './components/CaseStudy';
+import MagnAidCaseStudyDetails from './components/MagnaidCaseStudyDetails';
+import EkamCaseStudyDetails from './components/EkamCaseStudyDetails';
+import TwentyCaseStudyDetails from './components/22yardsCaseStudyDetails';
+import EndulaCaseStudyDetails from './components/EndulCaseStudyDetails';
+import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
+import Portfolio from './components/portfolio';
+import FoodBakery from './components/foodBakery';
+import CockTail from './components/CockTail';
+import VdoPortfolio from './components/VdoPortfolio';
+import ProductPortfolio from './components/ProductPortfolio';
+import JewelPortfolio from './components/JewelPortfolio';
+import PhotShootPortfolio from './components/PhotoShootPortfolio';
+import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
+
 const RedirectToLowercase = () => {
   const location = useLocation();
   useEffect(() => {
@@ -80,7 +80,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
-          {/* <Route path="/real-estate" element={<RealEstate />} />
+          <Route path="/real-estate" element={<RealEstate />} />
 
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/3d" element={<FoodBakery />} />
@@ -96,7 +96,7 @@ const App = () => {
           <Route path="/case-studies/22-yards" element={<TwentyCaseStudyDetails />} />
           <Route path="/case-studies/endula-infra" element={<EndulaCaseStudyDetails />} />
           <Route path="/case-studies/livvon-comforts" element={<LivvonCaseStudyDetails />} />
-          <Route path="/case-studies/head-digitals-wroks" element={<HeadDigitalCaseStudy />} /> */}
+          <Route path="/case-studies/head-digitals-wroks" element={<HeadDigitalCaseStudy />} />
 
           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />
