@@ -87,7 +87,7 @@ const RealEstate = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Best Real Estate Digital Marketing Agency | Novatales</title>
+        <title>Best Real Estate Digital Marketing Agency | NovaTales</title>
         <meta
           name="description"
           content="NovaTales is a leading real estate digital marketing agency helping builders and property agents increase sales through SEO, ads, and smart lead generation."
