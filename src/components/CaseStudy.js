@@ -175,9 +175,9 @@ const CaseStudy = () => {
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies/magnaid-hospitals'>
+                                   
                                             <img src={tab_img_1} alt='' className='case-study-tabs-img' />
-                                        </a>
+                                      
                                     </div>
                                 </div>
                                 <div data-aos="fade-up" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row' style={{
@@ -204,9 +204,9 @@ const CaseStudy = () => {
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies/ekam-fertility'>
+                                    
                                             <img src={tab_img_2} alt='' className='case-study-tabs-img' />
-                                        </a>
+                                      
                                     </div>
                                 </div>
                                 <div data-aos="fade-up" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row' style={{
@@ -234,9 +234,7 @@ const CaseStudy = () => {
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies/22-yards'>
                                             <img src={tab_img_3} alt='' className='case-study-tabs-img' />
-                                        </a>
                                     </div>
                                 </div>
 
@@ -271,10 +269,9 @@ const CaseStudy = () => {
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies/endula-infra'>
                                             <img src={tab_img_4} alt='' className='case-study-tabs-img' />
 
-                                        </a>
+                                       
                                     </div>
 
                                 </div>
@@ -303,10 +300,10 @@ const CaseStudy = () => {
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies'>
+                                        
                                             <img src={tab_img_5} alt='' className='case-study-tabs-img' />
 
-                                        </a>
+                                        
                                     </div>
 
                                 </div> </TabPanel>
@@ -330,19 +327,19 @@ const CaseStudy = () => {
                                             <p className=''>
                                                 HD Works has recently shifted to a new office location, marking a significant milestone in their growth journey. To capture this transition, we created a high-quality video showcasing both the old and new office spaces, using advanced drone footage and professional setups. The video highlights the evolution of the workspace, reflecting the brand’s progress and ambition, and serves as a powerful visual story of transformation and expansion.
                                             </p>
-
+{/* 
                                             <Link to="/case-studies/head-digitals-wroks">
                                                 <button className='inside-tab-child-div-button'>
                                                     View Details
                                                 </button>
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
-                                        <a href='/case-studies'>
+                                       
                                             <img src={tab_img_6} alt='' className='case-study-tabs-img' />
 
-                                        </a>
+                                        
                                     </div>
 
                                 </div>

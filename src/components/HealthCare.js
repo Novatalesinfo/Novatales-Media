@@ -54,7 +54,7 @@ export default function HealthCare() {
         <div className='landing-health-care'>
           <div className='row d-flex flex-column-reverse flex-lg-row'>
             <div className='col-lg-6 d-flex justify-content-end align-items-center'>
-              <img src={bannerImage} alt='healthcare digital marketing agency' width="110%" />
+              <img src={bannerImage} alt='healthcare digital marketing agency' width="100%" />
             </div>
             <div className='col-lg-6 d-flex justify-content-start align-items-center  text-center'>
               <h1 id='topHeading' className='text-center'>Transform Your Hospital with <br></br> <span style={{

@@ -182,13 +182,13 @@ const Header = () => {
                 >
                   Clients
                 </NavDropdown.Item>
-                  <NavDropdown.Item
+                  {/* <NavDropdown.Item
                   as={Link}
                   to="/portfolio"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                  Portfolio
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item
                   as={Link}
                   to="/case-studies"
@@ -501,7 +501,7 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/real-estate"
+                  to="/real-estate-digital-marketing"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                   Real Estate
