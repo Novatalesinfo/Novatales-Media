@@ -48,7 +48,7 @@ export default function HealthCare() {
           <title>NovaTales - Hospital Digital Marketing Agency for Healthcare</title>
           <meta
             name="description"
-            content="Novatales specializes in hospital digital marketing, helping hospitals and doctors. We offer expert doctor digital marketing solutions to attract more patients."
+            content="NovaTales specializes in hospital digital marketing, helping hospitals and doctors. We offer expert doctor digital marketing solutions to attract more patients."
           />
         </Helmet>
         <div className='landing-health-care'>
