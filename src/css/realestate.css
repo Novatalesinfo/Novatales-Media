@@ -214,7 +214,7 @@
   }
   .whyNeedListCards {
     flex-direction: column;
-    padding: 20px 8px;
+    padding: 20px 8px;height: 240px;
   }
   .whyneedRealestate {
     width: 90%;
@@ -247,10 +247,18 @@
     width: 500px;
   }
   .responsive-height-realestate {
-    height: 500px;
+    height: 550px;
+  }
+  .realestate-paraheading{
+    padding-right: 20px;
   }
 }
+@media screen and (min-width:1380px) {
 
+  .real-estate-faq{
+    height: 96px !important;
+  }
+}
 @media screen and (min-width: 1440px) {
   .realestate-topBanner {
     padding: 100px 16px 0px;
@@ -267,6 +275,7 @@
   .whyNeedListCards {
     flex-direction: row;
     padding: 20px 30px;
+    height: 160px;
   }
   .whyneedRealestate {
     width: 95%;
@@ -316,6 +325,8 @@
   }
   .responsive-height-realestate {
     height: 480px;
+  }.realEstatebenefitspoints{
+    height: 200px;
   }
 }
 .whyneedRealestate2 {

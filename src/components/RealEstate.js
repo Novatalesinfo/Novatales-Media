@@ -62,8 +62,8 @@ const RealEstate = () => {
       q: "Will my business appear as a top result with GEO?",
       a: "At Novatales, we improve the chances of your business getting featured on the GEO search results, which requires certain criteria to be fulfilled."
     }, {
-      q: "Is Weather Marketing Automation essential in Real Estate?",
-      a: "It is a need of an hour because it saves a lot of time in addressing the follow-up questions and increases the lead conversion."
+      q: "Is Marketing Automation essential in Real Estate?",
+      a: "Yes, there is a need because it saves a lot of time in addressing the follow-up questions and increases the lead conversion."
     },
     {
       q: "How do Virtual tours help sell properties?",
@@ -87,7 +87,7 @@ const RealEstate = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Best real estate digital marketing agency | Novatales</title>
+        <title>Best Real Estate Digital Marketing Agency | Novatales</title>
         <meta
           name="description"
           content="NovaTales is a leading real estate digital marketing agency helping builders and property agents increase sales through SEO, ads, and smart lead generation."
@@ -131,8 +131,8 @@ const RealEstate = () => {
               </div>
               <div className="col-lg-6">
                 <div className="service-para mt-3">
-                  <div className="health-why-novatales text-center text-lg-start">
-                    <h3 >Upgrade your Real Estate game with <span>Digital Marketing</span></h3>
+                  <div className="health-why-novatales text-center realestate-paraheading text-lg-start">
+                    <h3>Upgrade your Real Estate game with  <span>Digital Marketing</span></h3>
                   </div>
                   <p className='healthcareTopPara'>Today’s real estate leaders are leveraging powerful digital platforms to connect with genuine clients. At NovaTales, we help you grow dynamically with creative strategies, SEO, engaging content, and advanced AI, elevating your brand’s presence. </p>
                   <p className='healthcareTopPara'>At NovaTales, we integrate AI to match your listings with qualified buyers, optimize campaigns, and enhance engagement. Our AI-driven tools personalize the buyer’s journey, while chatbots handle inquiries in real time. With our exclusive Generative Engine Optimization (GEO) service, your listings gain visibility across emerging AI-powered search platforms. GEO ensures your properties appear exactly where buyers are searching, boosting both local and global reach. Together, AI and GEO make your real estate business future-ready, efficient, and highly profitable.</p>
@@ -516,7 +516,7 @@ const RealEstate = () => {
                 {/* Left Column */}
                 <Col lg={6}>
                   {faqs.slice(0, 5).map((item, index) => (
-                    <div className="accordion" data-aos="fade-up" key={index}>
+                    <div className="accordion " data-aos="fade-up" key={index}>
                       <div
                         className={`accordion__item ${activeIndexLeft === index
                           ? "accordion__item--active"
@@ -524,7 +524,7 @@ const RealEstate = () => {
                           }`}
                         onClick={() => toggleAccLeft(index)}
                       >
-                        <button className="accordion__btn">
+                        <button className="accordion__btn real-estate-faq">
                           <span className="accordion__caption">
                             <FontAwesomeIcon icon={faLightbulb} />
                             {item.q}
@@ -543,7 +543,7 @@ const RealEstate = () => {
                 {/* Right Column */}
                 <Col lg={6}>
                   {faqs.slice(5, 10).map((item, index) => (
-                    <div className="accordion" data-aos="fade-up" key={index}>
+                    <div className="accordion " data-aos="fade-up" key={index}>
                       <div
                         className={`accordion__item ${activeIndexRight === index
                           ? "accordion__item--active"
@@ -551,7 +551,7 @@ const RealEstate = () => {
                           }`}
                         onClick={() => toggleAccRight(index)}
                       >
-                        <button className="accordion__btn">
+                        <button className="accordion__btn real-estate-faq" >
                           <span className="accordion__caption">
                             <FontAwesomeIcon icon={faLightbulb} />
                             {item.q}
