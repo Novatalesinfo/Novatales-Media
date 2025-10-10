@@ -77,7 +77,9 @@ export default function HealthCare() {
                   <div className="health-why-novatales text-center text-lg-start">
                     <h3 data-aos="fade-up">Boost Your <span>Hospital's Growth</span> with  <span>Hospital Digital Marketing</span></h3>
                   </div>
-                  <p className='healthcareTopPara'>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</p>
+                  <p className='healthcareTopPara' style={{
+                    fontSize:"15px"
+                  }}>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</p>
                   <p className='healthcareTopPara'>With the increasing competition in the healthcare industry, relying solely on traditional marketing isn’t enough. Our digital marketing agency for healthcare specializes in boosting hospital and clinic visibility using cutting-edge online strategies.</p>
                 </div>
               </div>
@@ -102,7 +104,7 @@ export default function HealthCare() {
                 marginBottom: "80px",
               }}>Why Choose <span>NovaTales</span> for Your Healthcare <span>Marketing Strategies?</span></h3>
             </div>
-            <Row className='justify-content-center my-5 '>
+            <Row className='justify-content-center mt-2 '>
               <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4' >
                 <div className='icon-1 text-center '>
                   <div>
@@ -168,7 +170,7 @@ export default function HealthCare() {
             </div>
           </Container>
           <Container fluid>
-            <Row className='health-Digital-Marketing-content xl-p-4' >
+            <Row className='health-Digital-Marketing-content xl-p-4 py-3' >
               <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
                 <div class="card draggable shadow-sm responsive-height border-0" >
                   <img src={healthcareservice_1} id='socialMedia' className="card-img-top" alt="Healthcare social media marketing" height="100%" style={{
@@ -179,8 +181,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Social Media Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Engage with potential patients on Facebook, Instagram, and LinkedIn.</p>
-                    <p>Build a strong online presence for your hospital.</p>
+                    <p className='healthcareTopPara'>Engage with potential patients on Facebook, Instagram, and LinkedIn.</p>
+                    <p className='healthcareTopPara'>Build a strong online presence for your hospital.</p>
                   </div>
                 </div>
               </Col>
@@ -194,8 +196,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>SEO and SEM</h4>
                     <div className="bottom-underline"></div>
-                    <p>Optimize your hospital’s website to rank higher on Google.</p>
-                    <p>Implement effective hospital digital marketing strategies for better visibility</p>
+                    <p className='healthcareTopPara'>Optimize your hospital’s website to rank higher on Google.</p>
+                    <p className='healthcareTopPara'>Implement effective hospital digital marketing strategies for better visibility</p>
                   </div>
                 </div>
               </Col>
@@ -209,8 +211,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Content Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Provide valuable healthcare content to educate and attract patients.</p>
-                    <p>Establish your hospital as a trusted authority.</p>
+                    <p className='healthcareTopPara'>Provide valuable healthcare content to educate and attract patients.</p>
+                    <p className='healthcareTopPara'>Establish your hospital as a trusted authority.</p>
                   </div>
                 </div>
               </Col>
@@ -224,8 +226,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Email Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Personalized communication with patients</p>
-                    <p>Increase patient retention through informative email campaigns</p>
+                    <p className='healthcareTopPara'>Personalized communication with patients</p>
+                    <p className='healthcareTopPara'>Increase patient retention through informative email campaigns</p>
                   </div>
                 </div>
               </Col>
@@ -239,8 +241,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Reputation Management</h4>
                     <div className="bottom-underline"></div>
-                    <p>Monitor and manage online reviews.</p>
-                    <p>Enhance your hospital’s credibility.</p>
+                    <p className='healthcareTopPara'>Monitor and manage online reviews.</p>
+                    <p className='healthcareTopPara'>Enhance your hospital’s credibility.</p>
                   </div>
                 </div>
               </Col>
@@ -254,8 +256,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Website Development</h4>
                     <div className="bottom-underline"></div>
-                    <p>Improve user experience with a professionally designed website.</p>
-                    <p>Ensure mobile-friendly and fast-loading pages.</p>
+                    <p className='healthcareTopPara'>Improve user experience with a professionally designed website.</p>
+                    <p className='healthcareTopPara'>Ensure mobile-friendly and fast-loading pages.</p>
                   </div>
                 </div>
               </Col>
@@ -269,8 +271,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Paid Advertising (PPC)</h4>
                     <div className="bottom-underline"></div>
-                    <p>Generate instant visibility through targeted ads.</p>
-                    <p>Optimize ad campaigns for maximum ROI.</p>
+                    <p className='healthcareTopPara'>Generate instant visibility through targeted ads.</p>
+                    <p className='healthcareTopPara'>Optimize ad campaigns for maximum ROI.</p>
                   </div>
                 </div>
               </Col>
@@ -284,8 +286,8 @@ export default function HealthCare() {
                       color: "#fec436"
                     }}>Video Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Increase engagement with informative hospital-related videos.</p>
-                    <p>Highlight patient testimonials and success stories.</p>
+                    <p className='healthcareTopPara'>Increase engagement with informative hospital-related videos.</p>
+                    <p className='healthcareTopPara'>Highlight patient testimonials and success stories.</p>
                   </div>
                 </div>
               </Col>
@@ -293,13 +295,13 @@ export default function HealthCare() {
           </Container>
         </div>
         <BookForm />
-        <div className="service-content LogoVisual mb-5 pb-5">
+        <div className="service-content LogoVisual mb-5 pb-2">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 d-flex justify-content-center" data-aos="fade-up">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={hospital_image_2} alt="benefits of digital marketing for healthcare" className="img-fluid topBottom" />
+``                    <img src={hospital_image_2} alt="benefits of digital marketing for healthcare" className="img-fluid topBottom" />
                   </div>
                 </div>
               </div>
@@ -319,9 +321,9 @@ export default function HealthCare() {
                         <p style={{
                           width: "auto"
                         }}> <span style={{
-                          fontSize: "18px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
+                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
                         }}>Brand Awareness :</span> <span style={{
-                          fontSize: "16px", fontWeight: "400"
+                          fontSize: "15px", fontWeight: "400"
                         }} > Strengthen your hospital’s reputation and trust.</span></p>
                       </div>
                     </div>
@@ -335,9 +337,9 @@ export default function HealthCare() {
                         <p style={{
                           width: "auto"
                         }}> <span style={{
-                          fontSize: "18px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
+                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
                         }}>Increased Online Presence :</span> <span style={{
-                          fontSize: "16px", fontWeight: "400"
+                          fontSize: "15px", fontWeight: "400"
                         }} >Patients can find your hospital easily.</span></p>
                       </div>
                     </div>
@@ -350,9 +352,9 @@ export default function HealthCare() {
                         <p style={{
                           width: "auto"
                         }}> <span style={{
-                          fontSize: "18px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
+                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
                         }}>Higher Patient Footfall :</span> <span style={{
-                          fontSize: "16px", fontWeight: "400"
+                          fontSize: "15px", fontWeight: "400"
                         }} >Attract more local and international patients.</span></p>
                       </div>
                     </div>
@@ -365,9 +367,9 @@ export default function HealthCare() {
                         <p style={{
                           width: "auto"
                         }}> <span style={{
-                          fontSize: "18px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
+                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
                         }}>Better Patient Engagement:</span> <span style={{
-                          fontSize: "16px", fontWeight: "400"
+                          fontSize: "15px", fontWeight: "400"
                         }} >Provide seamless communication and support.</span></p>
                       </div>
                     </div>
@@ -381,10 +383,13 @@ export default function HealthCare() {
           <Container>
             <div className="health-faqs-heading">
               <h3 className='text-center'> <span style={{
-                color: "#fec436"
+                color: "#fec436",
+           
               }}>Frequently</span> Asked  Questions</h3>
             </div>
-            <div className="faq-accordion">
+            <div className="faq-accordion" style={{
+                   paddingTop:"40px"
+            }}>
               <Row>
                 {/* Left Column */}
                 <Col lg={6}>
@@ -442,7 +447,7 @@ export default function HealthCare() {
                 </Col>
               </Row>
             </div>
-            <div className="conclusion mb-5">
+            <div className="conclusion mb-5 pb-3">
               <div className="concl-heading">
                 <div></div>
               </div>

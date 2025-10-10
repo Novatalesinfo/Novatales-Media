@@ -91,8 +91,8 @@ const RealEstateBookFrom = () => {
     }
     return (
         <div style={{
-            marginTop: "60px"
-        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding  mb-2 pt-4 " >
+           
+        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
             <div className="extraPadding" style={{
                 backgroundColor: "#f9f9f9", padding: "30px 0px",
                 border: "1px dashed #fec436",

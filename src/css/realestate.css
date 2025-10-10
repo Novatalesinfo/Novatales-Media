@@ -26,7 +26,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .whyneedRealestate2 {
     width: 90%;
@@ -62,11 +62,11 @@
   }
   .whyneedRealestate {
     width: 90%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .whyneedRealestate2 {
     width: 90%;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
   .responsive-height-realestate{
     min-height: 420px !important;
@@ -154,7 +154,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 }
 
@@ -177,7 +177,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .responsive-height-realestate {
     height: 480px;
@@ -218,11 +218,11 @@
   }
   .whyneedRealestate {
     width: 90%;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
   .whyneedRealestate2 {
     width: 90%;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
   }
   .responsive-height-realestate {
     height: 500px;
@@ -279,11 +279,11 @@
   }
   .whyneedRealestate {
     width: 95%;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
   .whyneedRealestate2 {
     width: 95%;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
   }
   .responsive-height-realestate {
     height: 480px;
@@ -317,11 +317,11 @@
   }
   .whyneedRealestate {
     width: 85%;
-    margin-top: 150px;
+    margin-top: 80px;
   }
   .whyneedRealestate2 {
     width: 82%;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
   }
   .responsive-height-realestate {
     height: 480px;

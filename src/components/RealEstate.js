@@ -93,7 +93,9 @@ const RealEstate = () => {
           content="NovaTales is a leading real estate digital marketing agency helping builders and property agents increase sales through SEO, ads, and smart lead generation."
         />
       </Helmet>
-      <div className='d-flex justify-content-center flex-column w-100'>
+      <div className='d-flex justify-content-center flex-column w-100' style={{
+        paddingBottom: "40px"
+      }}>
 
         {/* Top Banner and heading Section  */}
 
@@ -119,7 +121,7 @@ const RealEstate = () => {
 
         {/* What is Real Estate Digital Marketing  */}
 
-        <div data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual">
+        <div data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual pb-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 d-flex justify-content-center">
@@ -264,12 +266,12 @@ const RealEstate = () => {
 
         {/* Services for real estate */}
 
-        <div className="health-Digital-Marketing">
+        <div className="health-Digital-Marketing pb-4">
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
               <h3 className='text-center' style={{
                 textAlign: "center !important",
-                marginBottom: "80px",
+                marginBottom: "60px",
               }}><span>NovaTales </span> Expert Digital Marketing Services for <span> Real Estate</span> </h3>
             </div>
           </Container>
@@ -286,8 +288,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>SEO and SEM</h4>
                     <div className="bottom-underline"></div>
-                    <p>Enhance your property’s visibility with SEO strategies</p>
-                    <p>Position your brand with SEM campaigns among active buyers.</p>
+                    <p className='healthcareTopPara'>Enhance your property’s visibility with SEO strategies</p>
+                    <p className='healthcareTopPara'>Position your brand with SEM campaigns among active buyers.</p>
                   </div>
                 </div>
               </Col>
@@ -301,8 +303,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Paid Advertising (PPC)</h4>
                     <div className="bottom-underline"></div>
-                    <p>Reach the right buyers at the right time.</p>
-                    <p>Optimized campaigns for maximum ROI.</p>
+                    <p className='healthcareTopPara'>Reach the right buyers at the right time.</p>
+                    <p className='healthcareTopPara'>Optimized campaigns for maximum ROI.</p>
                   </div>
                 </div>
               </Col>
@@ -318,8 +320,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Social Media Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Actively engage with potential buyers and investors on social platforms.</p>
-                    <p>Show property listings and build a strong digital presence for your real estate brand.</p>
+                    <p className='healthcareTopPara'>Actively engage with potential buyers and investors on social platforms.</p>
+                    <p className='healthcareTopPara'>Show property listings and build a strong digital presence for your real estate brand.</p>
                   </div>
                 </div>
               </Col>
@@ -333,8 +335,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Website Development</h4>
                     <div className="bottom-underline"></div>
-                    <p>Create visually appealing websites showcasing properties effectively.</p>
-                    <p>Ensure fast-loading with seamless browsing.</p>
+                    <p className='healthcareTopPara'>Create visually appealing websites showcasing properties effectively.</p>
+                    <p className='healthcareTopPara'>Ensure fast-loading with seamless browsing.</p>
                   </div>
                 </div>
               </Col>
@@ -348,8 +350,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Email Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Targeted communication with potential buyers and sellers.</p>
-                    <p>Increase the leads by providing personalized updates and market insights.</p>
+                    <p className='healthcareTopPara'>Targeted communication with potential buyers and sellers.</p>
+                    <p className='healthcareTopPara'>Increase the leads by providing personalized updates and market insights.</p>
                   </div>
                 </div>
               </Col>
@@ -363,8 +365,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Video Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Build trust by showcasing a satisfied buyer experience.</p>
-                    <p>Share engaging virtual tours.</p>
+                    <p className='healthcareTopPara'>Build trust by showcasing a satisfied buyer experience.</p>
+                    <p className='healthcareTopPara'>Share engaging virtual tours.</p>
                   </div>
                 </div>
               </Col>
@@ -378,8 +380,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Content Marketing</h4>
                     <div className="bottom-underline"></div>
-                    <p>Engage potential buyers with insightful information about your property.</p>
-                    <p>Establish a reliable real estate brand in the market.</p>
+                    <p className='healthcareTopPara'>Engage potential buyers with insightful information about your property.</p>
+                    <p className='healthcareTopPara'>Establish a reliable real estate brand in the market.</p>
                   </div>
                 </div>
               </Col>
@@ -393,8 +395,8 @@ const RealEstate = () => {
                       color: "#fec436"
                     }}>Reputation Management</h4>
                     <div className="bottom-underline"></div>
-                    <p>Keep an active eye on property reviews and client feedback.</p>
-                    <p>Create a strong, trustworthy, and credible image of your real estate brand in the market.</p>
+                    <p className='healthcareTopPara'>Keep an active eye on property reviews and client feedback.</p>
+                    <p className='healthcareTopPara'>Create a strong, trustworthy, and credible image of your real estate brand in the market.</p>
                   </div>
                 </div>
               </Col>
@@ -407,7 +409,7 @@ const RealEstate = () => {
         <RealEstateBookFrom />
         {/* Top Benefits for Real Estate digital marketing */}
 
-        <div className='d-flex flex-column justify-content-center align-items-center  pt-5 mb-5'>
+        <div className='d-flex flex-column justify-content-center align-items-center '>
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
               <h3 className='text-center' style={{
@@ -504,10 +506,11 @@ const RealEstate = () => {
         <div className="Health-faqs">
           <Container>
 
-            <div data-aos="fade-up" className="health-why-novatales">
+            <div data-aos="fade-up" className="">
               <h3 className='text-center' style={{
                 textAlign: "center !important",
-                marginBottom: "80px",
+                marginBottom: "60px",
+                marginTop: "60px",
               }}><span>Frequently </span> Asked  Questions </h3>
             </div>
 
@@ -585,6 +588,9 @@ const RealEstate = () => {
 
         {/* Book Appointment Form */}
         <RealEstateBookFrom />
+        <div className='w-100 mb-5'>
+
+        </div>
       </div></HelmetProvider>
 
 

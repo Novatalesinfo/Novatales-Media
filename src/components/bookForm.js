@@ -90,9 +90,10 @@ const BookForm = () => {
         }
     }
     return (
-        <div className="service-content LogoVisual " style={{
+        <div className="service-content LogoVisual mt-5" style={{
             backgroundColor: "#f9f9f9",
             padding: "30px 0px"
+            , 
         }}>
             <div className="container">
                 <form onSubmit={handleSubmit}>
