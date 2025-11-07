@@ -90,15 +90,20 @@ const BookForm = () => {
         }
     }
     return (
-        <div className="service-content LogoVisual mt-5" style={{
-            backgroundColor: "#f9f9f9",
-            padding: "30px 0px"
-            , 
-        }}>
-            <div className="container">
+         <div style={{
+            padding:"30px 0px"
+           
+        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
+            <div className="extraPadding" style={{
+                backgroundColor: "#ffffffff", padding: "30px 0px",
+                border: "1px",
+                borderRadius: "10px",
+                maxWidth: "1400px",
+                boxShadow: "0px 1rem 2.6rem rgba(36, 73, 168, 0.15)",
+            }}>
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
-                       <div className="col-xl-4">
+                        <div className="col-xl-4">
                             <h3 className='text-center ' style={{
                                 fontSize: "38px",
                                    color: "#52377b",

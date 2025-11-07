@@ -7,35 +7,43 @@ import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import hospital_image_1 from '../images/casestudies/boost_hospital.png';
-import healthcareservice_1 from "../images/casestudies/Social Media Marketing-01.png"
-import healthcareservice_2 from "../images/casestudies/SEO and SEM-01.png"
-import healthcareservice_3 from "../images/casestudies/Content Marketing-01 (3).png"
-import healthcareservice_4 from "../images/casestudies/Email Marketing-01.png"
-import healthcareservice_5 from "../images/casestudies/Reputation Management-01.png"
-import healthcareservice_6 from "../images/casestudies/Website Development-01.png"
-import healthcareservice_7 from "../images/casestudies/Paid Advertising (PPC)-01.png"
-import healthcareservice_8 from "../images/casestudies/Video Marketing-01.png"
+// import healthcareservice_1 from "../images/casestudies/Social Media Marketing-01.png"
+// import healthcareservice_2 from "../images/casestudies/SEO and SEM-01.png"
+// import healthcareservice_3 from "../images/casestudies/Content Marketing-01 (3).png"
+// import healthcareservice_4 from "../images/casestudies/Email Marketing-01.png"
+// import healthcareservice_5 from "../images/casestudies/Reputation Management-01.png"
+// import healthcareservice_6 from "../images/casestudies/Website Development-01.png"
+// import healthcareservice_7 from "../images/casestudies/Paid Advertising (PPC)-01.png"
+// import healthcareservice_8 from "../images/casestudies/Video Marketing-01.png"
+
+// import digitalIcon from '../images/digital marketing icon-01.png';
+// import videoProductionIcon from '../images/video production icon-01.png';
+// import webAppIcon from '../images/web &app DVP icon-01.png';
+// import seoIcon from '../images/seo icon-01.png';
+// import smmIcon from '../images/social media M icon-01.png';
+// import contentMarketingIcon from '../images/content marketing icon-01.png';
+// import ECommerceIcon from '../images/e commerce icon-01.png';
+// import paidAdvertisingIcon from '../images/paid advertising icon-01.png';
+
+import '../css/Home.css';
 import icon1 from '../images/icon 1.png';
 // import icon2 from '../images/portfolio/customize_1-01.png';
 // import icon2 from '../images/portfolio/bgi_bulb_y.png';
 import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
-// import icon3 from '../images/portfolio/budget_friendly.png';
-// import icon3 from '../images/portfolio/budget_y.png';
+
 import icon3 from '../images/portfolio/donation_1-01.png';
 import icon4 from '../images/icon 4.png';
 import bannerImage from "../images/casestudies/Healthcare page Header-01.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import ServicesCards from './ServicesCards';
 export default function HealthCare() {
   const [faq, setFaq] = useState([]);
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
   };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
+ 
   useEffect(() => {
     AOS.init();
   }, []);
@@ -44,57 +52,57 @@ export default function HealthCare() {
     setFaq(Faqs);
   }, []);
 
-  const healthServices = [
-    {
-      id: 1,
-      title: "Social Media-Marketing",
-      description: "Engage with potential patients on Facebook, Instagram, and LinkedIn.",
-      image: healthcareservice_1,
-    },
-    {
-      id: 2,
-      title: "SEO and SEM",
-      description: "Optimize your hospital’s website to rank higher on Google.",
-      image: healthcareservice_2,
-    },
-    {
-      id: 3,
-      title: "Content-Marketing",
-      description: "Provide valuable healthcare content to educate and attract patients.",
-      image: healthcareservice_3,
-    },
-    {
-      id: 4,
-      title: "Email-Marketing",
-      description: "Increase patient retention through informative email campaigns",
-      image: healthcareservice_4,
-    },
-    {
-      id: 5,
-      title: "Reputation-Management",
+  // const healthServices = [
+  //   {
+  //     id: 1,
+  //     title: "Social Media-Marketing",
+  //     description: "Engage with potential patients on Facebook, Instagram, and LinkedIn.",
+  //     image: smmIcon,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "SEO and SEM",
+  //     description: "Optimize your hospital’s website to rank higher on Google.",
+  //     image: seoIcon,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Content-Marketing",
+  //     description: "Provide valuable healthcare content to educate and attract patients.",
+  //     image: contentMarketingIcon,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Email-Marketing",
+  //     description: "Increase patient retention through informative email campaigns",
+  //     image: ECommerceIcon,
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Reputation-Management",
 
-      description: "Monitor and manage online reviews.Enhance your hospital’s credibility.",
-      image: healthcareservice_5,
-    },
-    {
-      id: 6,
-      title: "Website-Development",
-      description: "Improve user experience with a professionally designed website.",
-      image: healthcareservice_6,
-    },
-    {
-      id: 7,
-      title: "Paid-Advertising (PPC)",
-      description: "Generate instant visibility through targeted ads. Optimize ad campaigns for maximum ROI.",
-      image: healthcareservice_7,
-    },
-    {
-      id: 8,
-      title: "Video-Marketing",
-      description: "Increase engagement with informative hospital-related videos.",
-      image: healthcareservice_8,
-    },
-  ];
+  //     description: "Monitor and manage online reviews.Enhance your hospital’s credibility.",
+  //     image: digitalIcon,
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Website-Development",
+  //     description: "Improve user experience with a professionally designed website.",
+  //     image: webAppIcon,
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Paid-Advertising (PPC)",
+  //     description: "Generate instant visibility through targeted ads. Optimize ad campaigns for maximum ROI.",
+  //     image: paidAdvertisingIcon,
+  //   },
+  //   {
+  //     id: 8,
+  //     title: "Video-Marketing",
+  //     description: "Increase engagement with informative hospital-related videos.",
+  //     image: videoProductionIcon,
+  //   },
+  // ];
   return (
     <>
       <HelmetProvider>
@@ -219,7 +227,7 @@ export default function HealthCare() {
 
           </div>
         </div>
-        <div className="health-Digital-Marketing">
+        {/* <div className="health-Digital-Marketing">
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
               <h2 className='text-center' style={{
@@ -252,13 +260,14 @@ export default function HealthCare() {
               }
             </Row>
           </div>
-        </div>
+        </div> */}
         <div className="service-content LogoVisual mb-1 pb-2">
           <div className="container">
             <div className="row align-items-center">
             </div>
           </div>
         </div>
+        <ServicesCards/>
         <div className="Health-faqs">
           <Container>
             <div className="health-faqs-heading">
@@ -300,10 +309,7 @@ export default function HealthCare() {
                   </div>
                 ))}
               </div>
-
-
             </div>
-
             <div className="conclusion mb-5 pb-3">
               <div className="concl-heading">
                 <div></div>

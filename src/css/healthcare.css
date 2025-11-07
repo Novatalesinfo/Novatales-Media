@@ -236,11 +236,11 @@
 
 .accordion {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 20px;
   margin: 40px 0px;
   color: #2f2143;
-  background: white;
-  box-shadow: 0 0 5rem lightgrey;
+ border: 2px solid #52377b;
+ overflow: hidden;
 }
 
 .accordion__heading {

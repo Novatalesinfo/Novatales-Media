@@ -303,8 +303,17 @@
   color: #212529;
   font-weight: 500;
 }
-
-@media screen and  (min-width: 1520px) and (max-width:2000px) {
+@media screen and  (min-width: 1810px) and (max-width:2200px){
+.whyneedRealestate {
+    width: 70%;
+    margin-top: 70px;
+  }
+  .whyneedRealestate2 {
+    width: 60%;
+    /* margin-bottom: 150px; */
+  }
+}
+@media screen and  (min-width: 1520px) and (max-width:1800px) {
   .realestate-topBanner {
     padding: 100px 25px 0px;
   }
@@ -327,7 +336,7 @@
     margin-top: 70px;
   }
   .whyneedRealestate2 {
-    width: 75%;
+    width: 70%;
     /* margin-bottom: 150px; */
   }
   .responsive-height-realestate {

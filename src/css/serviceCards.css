@@ -1,0 +1,211 @@
+.section-get {
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.section-heading {
+  padding: 0 0 1.4rem 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fb5472;
+}
+.section-heading span {
+  padding-left: 1.8rem;
+  position: relative;
+}
+.h-center {
+  text-align: center;
+}
+.h-decor-1,
+.h-decor-2 {
+  position: relative;
+}
+.get-list {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.get-list__item {
+  background: #fff;
+  box-shadow: 0px 1rem 2.6rem rgba(36, 73, 168, 0.15);
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+}
+.get-list__item:before {
+  content: "";
+  width: 10.5rem;
+  height: 10.5rem;
+  border: 3rem solid 0px 1rem 2.6rem rgba(36, 73, 168, 0.15);
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translate(-36%, -36%);
+  z-index: 0;
+}
+.get-list__heading {
+  padding-left: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.get-list__icon {
+  width: 70px;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.get-list__title {
+  font-family: Aleo, arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1b2b7c;
+  text-transform: capitalize;
+}
+.get-list__text {
+  padding-left: 0.3rem;
+  margin-top: 1.9rem;
+  font-size: 16px;
+  line-height: 170%;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 1500px) {
+  .get-list__item {
+    width: 320px;
+    margin-top: 30px;
+    height: 250px;
+    padding: 2rem;
+  }
+  .extraTop {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1380px) and (max-width: 1499px) {
+  .get-list__item {
+    width: 320px;
+    padding: 2rem;
+    height: 250px;
+  }
+  .extraTop {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1378px) {
+  .get-list__item {
+    width: 320px;
+    margin-top: 30px;
+    height: 250px;
+    padding: 1.5rem;
+  }
+  .extraTop {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .get-list__item {
+    width: 290px;
+    margin-top: 30px;
+    height: 250px;
+    padding: 1.5rem;
+  }
+  .extraTop {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+  .get-list__item {
+    width: 350px;
+    margin-top: 30px;
+    height: 200px;
+    padding: 1.5rem;
+  }
+  .extraTop {
+    margin-top: 32px;
+  }
+}
+/* ✅ RESPONSIVE FIXES */
+
+/* Tablets and medium devices */
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+  .get-list {
+    margin: 3rem 0 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .get-list__item {
+    width: 320px;
+    margin: 1rem;
+    padding: 2rem;
+    margin-top: 30px;
+    height: 250px;
+  }
+
+  .col-lg-3 {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .extraTop {
+    margin-top: 1.5rem !important;
+  }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .get-list {
+    margin: 3rem 0 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .get-list__item {
+    width: 350px;
+    padding: 2rem;
+    margin-top: 30px;
+    height: 250px;
+  }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 480px) {
+  .get-list__item {
+   
+    margin: 1rem;
+    padding: 1.5rem;
+    height: 220px;
+  }
+.health-why-novatales h2{
+    font-size: 28px;
+}
+  .get-list__icon {
+    width: 70px;
+  }
+}

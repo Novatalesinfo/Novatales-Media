@@ -18,13 +18,14 @@ import realestateservice_5 from "../images/casestudies/Realestate_web-01 (1).png
 import realestateservice_6 from "../images/casestudies/find_home-01 (1).png"
 import realestateservice_7 from "../images/casestudies/email-01 (1).png"
 import realestateservice_8 from "../images/casestudies/Content Marketing-01 (1).png"
+import serviceCardimg_1 from "../images/portfolio/serviceCardim_1.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RealEstateBookFrom from './realEstateFrom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 const RealEstate = () => {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // window.scrollTo({ top: 0, behavior: "smooth" });
     AOS.init();
   }, []);
   const faqs = [
@@ -120,13 +121,10 @@ const RealEstate = () => {
     },
   ];
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
   };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
+ 
   return (
     <HelmetProvider>
       <Helmet>
@@ -207,7 +205,7 @@ const RealEstate = () => {
           <div className='row whyneedRealestate' >
             <div className='col-lg-4'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
-                backgroundColor: "#f7f7f7",
+                backgroundColor: "rgba(36, 73, 168, 0.03)",
                 margin: "4px",
 
                 borderRadius: "10px",
@@ -227,7 +225,7 @@ const RealEstate = () => {
             </div>
             <div className='col-lg-4'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
-                backgroundColor: "#f7f7f7",
+                backgroundColor: "rgba(36, 73, 168, 0.03)",
                 margin: "4px",
                 borderRadius: "10px",
               }}>
@@ -246,7 +244,7 @@ const RealEstate = () => {
             </div>
             <div className='col-lg-4'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
-                backgroundColor: "#f7f7f7",
+                backgroundColor: "rgba(36, 73, 168, 0.03)",
                 margin: "4px",
 
                 borderRadius: "10px",
@@ -271,7 +269,7 @@ const RealEstate = () => {
           <div className='row whyneedRealestate2 mt-md-4 ' >
             <div className='col-lg-5'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
-                backgroundColor: "#f7f7f7",
+                backgroundColor: "rgba(36, 73, 168, 0.03)",
                 margin: "4px",
 
                 borderRadius: "10px",
@@ -291,7 +289,7 @@ const RealEstate = () => {
             </div>
             <div className='col-lg-5'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
-                backgroundColor: "#f7f7f7",
+                backgroundColor: "rgba(36, 73, 168, 0.03)",
                 margin: "4px",
 
                 borderRadius: "10px",
@@ -315,7 +313,7 @@ const RealEstate = () => {
 
         {/* Services for real estate */}
 
-        <div className="health-Digital-Marketing">
+        {/* <div className="health-Digital-Marketing">
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
               <h2 className='text-center' style={{
@@ -350,6 +348,139 @@ const RealEstate = () => {
               }
             </Row>
           </div>
+        </div> */}
+          <div className="section-get">
+            <div className="wrapper">
+                <div data-aos="fade-up" className="health-why-novatales">
+                    <h2
+                        className="text-center"
+                        style={{
+                            textAlign: "center",
+                            color: "#52377b",
+                            marginTop: "80px",
+                            marginBottom:"20px"
+                        }}
+                    >
+                        NovaTales Expert Digital Marketing Services <br /> for Real Estate
+                    </h2>
+                </div>
+
+                <div className="get-list row">
+                    {/* -------- COLUMN 1 -------- */}
+                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+                        <div className="get-list__item">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">Social Media Marketing</div>
+                            </div>
+                            <div className="get-list__text">
+                               
+Improve search visibility and reach buyers actively looking for properties.
+                            </div>
+                        </div>
+                        <div className="get-list__item extraTop">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">SEO and SEM</div>
+                            </div>
+                            <div className="get-list__text">
+                               Improve search visibility and reach buyers actively looking for properties.
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* -------- COLUMN 2 -------- */}
+                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
+                        <div className="get-list__item">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">Content Marketing</div>
+                            </div>
+                            <div className="get-list__text">
+                               
+Share valuable property updates to capture buyer interest effectively.
+                            </div>
+                        </div>
+
+                        <div className="get-list__item extraTop">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">Email Marketing</div>
+                            </div>
+                            <div className="get-list__text">
+                                Send personalized messages to potential buyers and sellers consistently.
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* -------- COLUMN 3 -------- */}
+                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+                        <div className="get-list__item">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">Reputation Management</div>
+                            </div>
+                            <div className="get-list__text">
+                              Track reviews and maintain a strong, credible brand image.
+                            </div>
+                        </div>
+
+                        <div className="get-list__item extraTop">
+                            <div className="get-list__heading">
+                                <div className="get-list__icon">
+                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                </div>
+                                <div className="get-list__title">Paid Advertising (PPC)</div>
+                            </div>
+                            <div className="get-list__text">
+                                Reach the right buyers at the right time to boost ROI.
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* -------- COLUMN 4 -------- */}
+                    <div className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
+                        <div className='row d-flex justify-content-center align-items-center flex-column flex-lg-row'>
+                            <div className='col-xl-12 col-lg-6'>
+                                <div className="get-list__item">
+                                    <div className="get-list__heading">
+                                        <div className="get-list__icon">
+                                            <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                        </div>
+                                        <div className="get-list__title">Website Development</div>
+                                    </div>
+                                    <div className="get-list__text">
+                                        Design fast, user-friendly websites that highlight your properties.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-12 col-lg-6'>
+                                <div className="get-list__item extraTop">
+                                    <div className="get-list__heading">
+                                        <div className="get-list__icon">
+                                            <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                        </div>
+                                        <div className="get-list__title">Video Marketing</div>
+                                    </div>
+                                    <div className="get-list__text">
+                                      Showcase properties and client experiences with engaging videos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         {/* FAQs */}
         <div className="Health-faqs">

@@ -94,11 +94,11 @@ const RealEstateBookFrom = () => {
            
         }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
             <div className="extraPadding" style={{
-                backgroundColor: "#f9f9f9", padding: "30px 0px",
-                border: "1px dashed #fec436",
-                borderRadius: "35px",
+                backgroundColor: "#ffffffff", padding: "30px 0px",
+                border: "1px",
+                borderRadius: "10px",
                 maxWidth: "1400px",
-                boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
+                boxShadow: "0px 1rem 2.6rem rgba(36, 73, 168, 0.15)",
             }}>
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
