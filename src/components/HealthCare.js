@@ -144,7 +144,7 @@ export default function HealthCare() {
           </div>
         </div>
         <div className="topHeading text-center" style={{}}></div>
-        <div className="service-content LogoVisual pt-4">
+        <div className="service-content LogoVisual pt-4 pb-4">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
