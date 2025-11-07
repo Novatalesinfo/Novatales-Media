@@ -9,15 +9,15 @@ import social from "../images/casestudies/SEO 01-01.png"
 import gads from "../images/casestudies/brand voice.png"
 import data from "../images/casestudies/Creative Storytelling-01.png"
 import analyst from "../images/casestudies/Advanced Analytics-01.png"
-import { Col, Container, Row } from 'react-bootstrap'
-import realestateservice_1 from "../images/casestudies/Home SEO-01 (1).png"
-import realestateservice_2 from "../images/casestudies/Sale_ads-01 (1).png"
-import realestateservice_3 from "../images/casestudies/Leads-01 (1).png"
-import realestateservice_4 from "../images/casestudies/Video_ads-01 (1).png"
-import realestateservice_5 from "../images/casestudies/Realestate_web-01 (1).png"
-import realestateservice_6 from "../images/casestudies/find_home-01 (1).png"
-import realestateservice_7 from "../images/casestudies/email-01 (1).png"
-import realestateservice_8 from "../images/casestudies/Content Marketing-01 (1).png"
+import {Container } from 'react-bootstrap'
+// import realestateservice_1 from "../images/casestudies/Home SEO-01 (1).png"
+// import realestateservice_2 from "../images/casestudies/Sale_ads-01 (1).png"
+// import realestateservice_3 from "../images/casestudies/Leads-01 (1).png"
+// import realestateservice_4 from "../images/casestudies/Video_ads-01 (1).png"
+// import realestateservice_5 from "../images/casestudies/Realestate_web-01 (1).png"
+// import realestateservice_6 from "../images/casestudies/find_home-01 (1).png"
+// import realestateservice_7 from "../images/casestudies/email-01 (1).png"
+// import realestateservice_8 from "../images/casestudies/Content Marketing-01 (1).png"
 import serviceCardimg_1 from "../images/portfolio/serviceCardim_1.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +25,7 @@ import RealEstateBookFrom from './realEstateFrom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 const RealEstate = () => {
   useEffect(() => {
-    // window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
     AOS.init();
   }, []);
   const faqs = [
@@ -70,56 +70,56 @@ const RealEstate = () => {
     },
 
   ];
-  const realEstateServices = [
-    {
-      id: 1,
-      title: "Social Media-Marketing",
-      description: "Engage buyers and investors while promoting property listings online.",
-      image: realestateservice_6,
-    },
-    {
-      id: 2,
-      title: "SEO and SEM",
-      description: "Improve search visibility and reach buyers actively looking for properties.",
-      image: realestateservice_1,
-    },
-    {
-      id: 3,
-      title: "Content-Marketing",
-      description: "Share valuable property updates to capture buyer interest effectively.",
-      image: realestateservice_8,
-    },
-    {
-      id: 4,
-      title: "Email-Marketing",
-      description: "Send personalized messages to potential buyers and sellers consistently.",
-      image: realestateservice_7,
-    },
-    {
-      id: 5,
-      title: "Reputation-Management",
-      description: "Track reviews and maintain a strong, credible brand image.",
-      image: realestateservice_3,
-    },
-    {
-      id: 6,
-      title: "Website-Development",
-      description: "Design fast, user-friendly websites that highlight your properties.",
-      image: realestateservice_5,
-    },
-    {
-      id: 7,
-      title: "Paid-Advertising (PPC)",
-      description: "Reach the right buyers at the right time to boost ROI.",
-      image: realestateservice_2,
-    },
-    {
-      id: 8,
-      title: "Video-Marketing",
-      description: "Showcase properties and client experiences with engaging videos.",
-      image: realestateservice_4,
-    },
-  ];
+  // const realEstateServices = [
+  //   {
+  //     id: 1,
+  //     title: "Social Media-Marketing",
+  //     description: "Engage buyers and investors while promoting property listings online.",
+  //     image: realestateservice_6,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "SEO and SEM",
+  //     description: "Improve search visibility and reach buyers actively looking for properties.",
+  //     image: realestateservice_1,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Content-Marketing",
+  //     description: "Share valuable property updates to capture buyer interest effectively.",
+  //     image: realestateservice_8,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Email-Marketing",
+  //     description: "Send personalized messages to potential buyers and sellers consistently.",
+  //     image: realestateservice_7,
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Reputation-Management",
+  //     description: "Track reviews and maintain a strong, credible brand image.",
+  //     image: realestateservice_3,
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Website-Development",
+  //     description: "Design fast, user-friendly websites that highlight your properties.",
+  //     image: realestateservice_5,
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Paid-Advertising (PPC)",
+  //     description: "Reach the right buyers at the right time to boost ROI.",
+  //     image: realestateservice_2,
+  //   },
+  //   {
+  //     id: 8,
+  //     title: "Video-Marketing",
+  //     description: "Showcase properties and client experiences with engaging videos.",
+  //     image: realestateservice_4,
+  //   },
+  // ];
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);

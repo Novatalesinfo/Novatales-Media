@@ -318,7 +318,7 @@
 
 /*-Why choose Strategy-*/
 .whyStrategies {
-  padding: 80px 0px;
+  padding: 80px 0px 0px;
   width: 80%;
   margin: auto;
 }
@@ -331,6 +331,7 @@
 }
 .whyStrategies .whyStrategiesContent {
   margin: 80px auto;
+  padding: 40px 0px;
 }
 /* .whyStrategies .whyStrategiesContent .content
 {

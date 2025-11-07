@@ -90,10 +90,7 @@ const BookForm = () => {
         }
     }
     return (
-         <div style={{
-            padding:"30px 0px"
-           
-        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
+         <div className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
             <div className="extraPadding" style={{
                 backgroundColor: "#ffffffff", padding: "30px 0px",
                 border: "1px",

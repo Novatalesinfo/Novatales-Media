@@ -104,7 +104,9 @@ export default function HealthCare() {
   //   },
   // ];
   return (
-    <>
+    <div style={{
+      marginBottom:"80px"
+    }}>
       <HelmetProvider>
         <Helmet>
           <title>
@@ -408,11 +410,6 @@ export default function HealthCare() {
             </Row>
           </div>
         </div> */}
-        <div className="service-content LogoVisual mb-1 pb-2">
-          <div className="container">
-            <div className="row align-items-center"></div>
-          </div>
-        </div>
         <ServicesCards/>
         <div className="Health-faqs">
           <Container>
@@ -421,6 +418,7 @@ export default function HealthCare() {
                 className="text-center"
                 style={{
                   color: "#52377b",
+                  fontWeight:"bold"
                 }}
               >
                 Frequently Asked Questions
@@ -480,6 +478,6 @@ export default function HealthCare() {
         </div>
         <BookForm />
       </HelmetProvider>
-    </>
+    </div>
   );
 }
