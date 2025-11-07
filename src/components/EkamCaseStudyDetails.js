@@ -1,16 +1,10 @@
 import React, { useEffect } from 'react'
 import ekam from "../images/casestudies/ekam.webp"
 import graph from "../images/casestudies/graph.png"
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ekam_post_1 from "../images/casestudies/ekam_fertility_1 (1).webp"
-import ekam_post_2 from "../images/casestudies/ekam_fertility_2 (1).webp"
-import ekam_post_3 from "../images/casestudies/ekam_fertility_3 (1).webp"
-import ekam_post_4 from "../images/casestudies/ekam_fertility_4 (1).webp"
-import ekam_post_5 from "../images/casestudies/ekam_fertility_5 (1).webp"
+
 
 import aboutHeroImage from "../images/casestudies/case_stude_ekam_lap.jpg"
 import case_study_mobile_banner from "../images/casestudies/case_stude_ekam_mob.jpg"
@@ -222,74 +216,6 @@ const EkamCaseStudyDetails = () => {
                             }}>Video Marketing</span> : Produced engaging reels with doctors addressing FAQs, success case highlights, and behind-the-scenes footage of the clinic.</p>
 
                     </div>
-
-                    {/* Swiper Cards */}
-                    <div className='mt-5 mb-3 d-flex flex-column' data-aos="fade-up" data-aos-delay="100">
-                        <Swiper
-                            slidesPerView={3}
-                            spaceBetween={30}
-                            loop={true}
-                            mousewheel
-                            autoplay={{
-                                delay: 3000, // 3 seconds delay
-                                disableOnInteraction: false,
-                            }}
-
-                            breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 10,
-                                },
-                                480: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 15,
-                                },
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 20,
-                                },
-                                1024: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 30,
-                                },
-                            }}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide className="case-details-slider">
-                                <img src={ekam_post_1} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={ekam_post_2} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={ekam_post_3} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={ekam_post_4} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={ekam_post_5} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                        </Swiper>
-
-                    </div>
-
                     {/* Results */}
                     <div className='row mt-5 mb-3 d-flex align-items-center ' data-aos="fade-up" data-aos-delay="100" style={{
 

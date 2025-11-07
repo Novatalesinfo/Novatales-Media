@@ -49,6 +49,11 @@ import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
 // import JewelPortfolio from './components/JewelPortfolio';
 // import PhotShootPortfolio from './components/PhotoShootPortfolio';
 import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
+import EndulaWebDesign from './components/EndulaWebDesign';
+import ConceivaWebDesign from './components/ConceivaWebDesign';
+import CdcCenter from './components/Cdc';
+import MagnaidWebDesign from './components/MagnaidWebDesign';
+import LivvonWebDesign from './components/LivvonWebDesign';
 
 const RedirectToLowercase = () => {
   const location = useLocation();
@@ -97,6 +102,11 @@ const App = () => {
           <Route path="/case-studies/endula-infra" element={<EndulaCaseStudyDetails />} />
           <Route path="/case-studies/livvon-comforts" element={<LivvonCaseStudyDetails />} />
           <Route path="/case-studies/head-digitals-wroks" element={<HeadDigitalCaseStudy />} />
+          <Route path="/case-studies/web-designing/endula-infra" element={<EndulaWebDesign />} />
+          <Route path="/case-studies/web-designing/conceiva-fertility" element={<ConceivaWebDesign />} />
+          <Route path="/case-studies/web-designing/citrus-diagnostic-center" element={<CdcCenter />} />
+          <Route path="/case-studies/web-designing/magnaid-hospitals" element={<MagnaidWebDesign />} />
+          <Route path="/case-studies/web-designing/livon-techno-foams" element={<LivvonWebDesign />} />
 
           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />

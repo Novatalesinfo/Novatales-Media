@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../css/servisesCss/branding.css'
 import '../../css/servisesCss/sevices-mediaquery.css'
 import AOS from 'aos';
@@ -12,7 +12,49 @@ import webImage from '../../images/BRANDING WEB IMAGE.png';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Col, Container, Row } from 'react-bootstrap';
 export default function BrandingStrategy() {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [{
+    q: "How to start building a branding strategy?",
+    a: "Begin with brand audits, market research, and customer profiling.",
+  },
+  {
+    q: "What’s the difference between short-term and long-term branding strategies?",
+    a: "Short-term focuses on quick visibility; long-term ensures sustainable brand equity.",
+  },
+  {
+    q: "Why should startups invest in branding early?",
+    a: "Early branding creates credibility and makes scaling smoother when entering bigger markets.",
+  },
+  {
+    q: "How often should businesses revisit their branding strategy?",
+    a: "At least once a year, or whenever major market or customer changes occur.",
+  },
+  {
+    q: "What’s the cost of not having a branding strategy?",
+    a: "It leads to weak differentiation, low recall, and wasted marketing efforts.",
+  },
+  {
+    q: "How does Novatales Media ensure strategies work globally?",
+    a: "By blending universal brand principles with region-specific adaptations.",
+  },
+
+  {
+    q: "Can a branding strategy directly impact ROI?",
+    a: "Yes, clear strategies improve customer loyalty, reduce acquisition costs, and increase profitability.",
+  },
+  ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -85,12 +127,80 @@ export default function BrandingStrategy() {
               <div className="col-lg-6 d-flex justify-content-center">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={webImage} alt="brand marketing strategy"className="img-fluid topBottom" />
+                    <img src={webImage} alt="brand marketing strategy" className="img-fluid topBottom" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="Health-faqs">
+          <Container>
+            <div className="health-faqs-heading">
+               <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+            </div>
+            <div className="faq-accordion" style={{
+              paddingTop: "40px"
+            }}>
+              <Row>
+                {/* Left Column */}
+                <Col lg={6}>
+                  {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccLeft(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexLeft === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+
+                {/* Right Column */}
+                <Col lg={6}>
+                  {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccRight(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexRight === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+              </Row>
+            </div>
+
+          </Container>
         </div>
         <AllServices />
         <ServiceContactForm />

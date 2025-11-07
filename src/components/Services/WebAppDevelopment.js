@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import lapImage from '../../images/WEB &UI AND UX N.svg';
 import tabImage from '../../images/WEB &UI AND UX TAB.svg';
 import serviceImage from '../../images/Web & App Development M.png';
@@ -7,7 +7,48 @@ import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Col, Container, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const WebAppDevelopment = () => {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [ {
+    q: "I need my website and apps to be mobile-friendly and responsive. Is it possible?",
+    a: "Absolutely yes. Our developers specialize in building fully responsive websites and apps that deliver seamless user experiences across all devices.",
+  },{
+    q: "What technologies do you use for websites and apps?",
+    a: "We use React, Angular, Node.js, WordPress, Shopify, Swift, Kotlin, and more — selecting the stack that best fits your project’s goals and requirements.",
+  },
+   {
+    q: "What makes NovaTales’ website and app development service different from other agencies?",
+    a: "At NovaTales, we focus on combining advanced technology with intuitive UI/UX and scalable architecture — delivering tailor-made digital solutions that perfectly align with your business goals.",
+  },
+ 
+ 
+  {
+    q: "I need to migrate my existing website or app to a new platform. Is that possible?",
+    a: "Yes, with NovaTales, seamless migration is possible with minimal downtime and zero data loss. We handle the transition carefully to ensure continuity.",
+  },
+  {
+    q: "Will you be able to handle bugs or issues post-launch?",
+    a: "Yes, our support team quickly addresses and resolves any bugs or post-launch technical issues to ensure your product runs smoothly at all times.",
+  },
+   {
+    q: "Will my site or app be SEO optimized?",
+    a: "Yes, at NovaTales we implement SEO best practices including optimized speed, proper metadata, and semantic HTML structures for better search visibility.",
+  },
+ 
+  ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -26,8 +67,8 @@ const WebAppDevelopment = () => {
           name="description"
           content="Elevate your online presence with NovaTales website and app development company offering customized solutions using React JS and Node JS for your web needs."
         />
-             <meta name="keywords"
-        content="Web Development Services, Website and App Development Company, Best Web Development Agencies, Web Development Services, Website Development Company,web development agency,best website development company."/>
+        <meta name="keywords"
+          content="Web Development Services, Website and App Development Company, Best Web Development Agencies, Web Development Services, Website Development Company,web development agency,best website development company." />
       </Helmet>
       <div className="service-heading">
         <img src={lapImage} width="100%" alt="Web Development Services" className="lap" />
@@ -61,6 +102,74 @@ const WebAppDevelopment = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="Health-faqs">
+        <Container>
+          <div className="health-faqs-heading">
+            <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+          </div>
+          <div className="faq-accordion" style={{
+            paddingTop: "40px"
+          }}>
+            <Row>
+              {/* Left Column */}
+              <Col lg={6}>
+                {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccLeft(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexLeft === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+
+              {/* Right Column */}
+              <Col lg={6}>
+                {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccRight(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexRight === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+            </Row>
+          </div>
+
+        </Container>
       </div>
       <AllServices />
       <ServiceContactForm />

@@ -2,28 +2,22 @@ import React, { useEffect, useState } from 'react'
 import "../css/realestate.css"
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import realestatetopBanner from "../images/casestudies/Property -01.png"
-import whatisrealestate from "../images/casestudies/what_home_2.png"
-import online_realestate from "../images/inspection.png"
-import social from "../images/casestudies/Seo-01.png"
-import gads from "../images/casestudies/Brand voice-01.png"
-import data from "../images/casestudies/story-telling.png"
-import analyst from "../images/casestudies/web-01.png"
+import realestatetopBanner from "../images/casestudies/Property -01 (1).png"
+import whatisrealestate from "../images/casestudies/what_home_3.png"
+import online_realestate from "../images/casestudies/NEXT GEN-01.png"
+import social from "../images/casestudies/SEO 01-01.png"
+import gads from "../images/casestudies/brand voice.png"
+import data from "../images/casestudies/Creative Storytelling-01.png"
+import analyst from "../images/casestudies/Advanced Analytics-01.png"
 import { Col, Container, Row } from 'react-bootstrap'
-import realestateservice_1 from "../images/casestudies/Home SEO-01.png"
-import realestateservice_2 from "../images/casestudies/Sale_ads-01.png"
-import realestateservice_3 from "../images/casestudies/Leads-01.png"
-import realestateservice_4 from "../images/casestudies/Video_ads-01.png"
-import realestateservice_5 from "../images/casestudies/Realestate_web-01.png"
-import realestateservice_6 from "../images/casestudies/find_home-01.png"
-import realestateservice_7 from "../images/casestudies/email-01.png"
-import realestateservice_8 from "../images/casestudies/Content Marketing-01.png"
-import icons_1 from "../images/diploma.png"
-import icons_2 from "../images/customer-acquisition.png"
-import icons_3 from "../images/profit.png"
-import icons_4 from "../images/time-management.png"
-import icons_6 from "../images/casestudies/conversion-01.png"
-import icons_5 from "../images/impression-rate.png"
+import realestateservice_1 from "../images/casestudies/Home SEO-01 (1).png"
+import realestateservice_2 from "../images/casestudies/Sale_ads-01 (1).png"
+import realestateservice_3 from "../images/casestudies/Leads-01 (1).png"
+import realestateservice_4 from "../images/casestudies/Video_ads-01 (1).png"
+import realestateservice_5 from "../images/casestudies/Realestate_web-01 (1).png"
+import realestateservice_6 from "../images/casestudies/find_home-01 (1).png"
+import realestateservice_7 from "../images/casestudies/email-01 (1).png"
+import realestateservice_8 from "../images/casestudies/Content Marketing-01 (1).png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RealEstateBookFrom from './realEstateFrom';
@@ -75,8 +69,57 @@ const RealEstate = () => {
     },
 
   ];
-
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const realEstateServices = [
+    {
+      id: 1,
+      title: "Social Media-Marketing",
+      description: "Engage buyers and investors while promoting property listings online.",
+      image: realestateservice_6,
+    },
+    {
+      id: 2,
+      title: "SEO and SEM",
+      description: "Improve search visibility and reach buyers actively looking for properties.",
+      image: realestateservice_1,
+    },
+    {
+      id: 3,
+      title: "Content-Marketing",
+      description: "Share valuable property updates to capture buyer interest effectively.",
+      image: realestateservice_8,
+    },
+    {
+      id: 4,
+      title: "Email-Marketing",
+      description: "Send personalized messages to potential buyers and sellers consistently.",
+      image: realestateservice_7,
+    },
+    {
+      id: 5,
+      title: "Reputation-Management",
+      description: "Track reviews and maintain a strong, credible brand image.",
+      image: realestateservice_3,
+    },
+    {
+      id: 6,
+      title: "Website-Development",
+      description: "Design fast, user-friendly websites that highlight your properties.",
+      image: realestateservice_5,
+    },
+    {
+      id: 7,
+      title: "Paid-Advertising (PPC)",
+      description: "Reach the right buyers at the right time to boost ROI.",
+      image: realestateservice_2,
+    },
+    {
+      id: 8,
+      title: "Video-Marketing",
+      description: "Showcase properties and client experiences with engaging videos.",
+      image: realestateservice_4,
+    },
+  ];
+  const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const [activeIndexRight, setActiveIndexRight] = useState(null);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
@@ -103,13 +146,12 @@ const RealEstate = () => {
           <div className='row d-flex flex-lg-row flex-column-reverse'>
 
             <div className='col-lg-7 d-flex justify-content-center align-items-center'>
-              <h1 id="topHeading" data-aos="fade-up" data-aos-delay="100" className='text-center'>Take your <span style={{
+              <h1 id="topHeading" data-aos="fade-up" data-aos-delay="100" className='text-center'>Your <span style={{
                 color: "#fec436"
-              }}>Real Estate Business
-              </span> to New Heights with <span style={{
+              }}>Real Estate
+              </span> Brand Deserves a Smarter<span style={{
                 color: "#fec436"
-              }}>Digital Marketing </span>
-
+              }}> Digital Strategy </span>
 
               </h1>
             </div>
@@ -124,20 +166,24 @@ const RealEstate = () => {
         <div data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual pb-5">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 d-flex justify-content-center">
-                <div className="service-image mt-5">
-                  <div className="info-img position-relative d-flex justify-content-center align-items-center mt-5">
+              <div className="col-lg-6 d-flex justify-content-between">
+                <div className="service-image mt-5 pe-4">
+                  <div className="info-img position-relative d-flex justify-content-start align-items-center mt-5">
                     <img src={whatisrealestate} width="100%" alt="digital marketing and real estate" className="img-fluid topBottom" />
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="service-para mt-3">
-                  <div className="health-why-novatales text-center realestate-paraheading text-lg-start">
-                    <h3>Upgrade your Real Estate game with  <span>Digital Marketing</span></h3>
+                <div className="service-para mt-3 ps-xl-5">
+                  <div className="health-why-novatales text-center realestate-paraheading text-lg-start mt-4 mt-lg-0" style={{
+                    padding: "0px 12px"
+                  }}>
+                    <h3 className='fw-bold pb-3' style={{
+                      color: "#52377b"
+                    }}>Elevate Your Real Estate Business with Smart Digital Marketing</h3>
                   </div>
-                  <p className='healthcareTopPara'>Today’s real estate leaders are leveraging powerful digital platforms to connect with genuine clients. At NovaTales, we help you grow dynamically with creative strategies, SEO, engaging content, and advanced AI, elevating your brand’s presence. </p>
-                  <p className='healthcareTopPara'>At NovaTales, we integrate AI to match your listings with qualified buyers, optimize campaigns, and enhance engagement. Our AI-driven tools personalize the buyer’s journey, while chatbots handle inquiries in real time. With our exclusive Generative Engine Optimization (GEO) service, your listings gain visibility across emerging AI-powered search platforms. GEO ensures your properties appear exactly where buyers are searching, boosting both local and global reach. Together, AI and GEO make your real estate business future-ready, efficient, and highly profitable.</p>
+                  <div className='healthcareTopPara'>Say goodbye to traditional ads that burn budgets with minimal results. Today’s top real estate professionals are turning to digital platforms to connect directly with serious buyers. At NovaTales, we help your brand grow through creative campaigns, SEO strategies, compelling content and AI-driven solutions that put your listings in front of the right audience.</div>
+                  <div className='healthcareTopPara'>Our AI-powered tools do more than automate, they match your properties with qualified buyers, optimize campaigns for maximum ROI and ensure every inquiry is addressed instantly through intelligent chatbots. With Generative Engine Optimization (GEO), your listings get the visibility they deserve across emerging AI search platforms, reaching both local and global audiences. Combine AI and GEO, and your real estate business becomes smarter, faster and more profitable future-ready for the next era of property marketing.</div>
                 </div>
               </div>
 
@@ -151,12 +197,12 @@ const RealEstate = () => {
         {/* Why Real Estate Needs Digital Marketing */}
 
 
-        <div data-aos="fade-up" data-aos-delay="100" className="service-content LogoVisual text-center d-flex justify-content-center flex-column align-items-center pt-5 mt-5">
-          <h2>
-            Why Choose NovaTales for your <span style={{
-              color: "#fec436"
-            }}>
-              Real Estate Marketing? </span>
+        <div data-aos="fade-up" data-aos-delay="100" className="health-why-novatales text-center d-flex justify-content-center flex-column align-items-center">
+          <h2 className=' px-3' style={{
+            color: "#52377b"
+          }}>
+            Why Choose NovaTales for your
+            Real Estate Marketing?
           </h2>
           <div className='row whyneedRealestate' >
             <div className='col-lg-4'>
@@ -171,10 +217,10 @@ const RealEstate = () => {
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
-                    color: "#fec436", fontSize: "20px", fontWeight: "bold"
+                    color: "#52377b", fontSize: "20px", fontWeight: "bold"
                   }}>Next-Gen Technology</span>
                   <p className='text-left' id='whyNeedRealP'>
-                    We use AI to match properties with buyers in real-time.
+                    AI connects your properties instantly with the right buyers.
                   </p>
                 </div>
               </div>
@@ -190,10 +236,10 @@ const RealEstate = () => {
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
-                    color: "#fec436", fontSize: "20px", fontWeight: "bold"
+                    color: "#52377b", fontSize: "20px", fontWeight: "bold"
                   }}>Local Market Mastery</span>
                   <p className='text-left' id='whyNeedRealP'>
-                    Our SEO strategies display properties to potential buyers when they search.
+                    SEO ensures your listings appear when buyers search locally.
                   </p>
                 </div>
               </div>
@@ -206,20 +252,23 @@ const RealEstate = () => {
                 borderRadius: "10px",
               }}>
                 <div>
-                  <img src={gads} alt='advertising for real estate' />
+                  <img src={gads} alt='advertising for real estate' className='w-16' style={{
+                    width: "80px"
+                  }} />
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
-                    color: "#fec436", fontSize: "20px", fontWeight: "bold"
+                    color: "#52377b", fontSize: "20px", fontWeight: "bold"
                   }}>Boost Brand Voice</span>
                   <p className='text-left' id='whyNeedRealP'>
-                    Personalized campaigns with a unique narrative, helping build client trust.
+                    Personalized campaigns build trust and recognition for your b
+                    rand.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='row whyneedRealestate2 ' >
+          <div className='row whyneedRealestate2 mt-md-4 ' >
             <div className='col-lg-5'>
               <div className=' d-flex justify-content-center align-items-center whyNeedListCards' style={{
                 backgroundColor: "#f7f7f7",
@@ -232,10 +281,10 @@ const RealEstate = () => {
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
-                    color: "#fec436", fontSize: "20px", fontWeight: "bold"
+                    color: "#52377b", fontSize: "20px", fontWeight: "bold"
                   }}>Advanced Analytics</span>
                   <p className='text-left' id='whyNeedRealP'>
-                    We drive smarter decisions with advanced analytics.
+                    Advanced analytics guide smarter marketing decisions every time.
                   </p>
                 </div>
               </div>
@@ -252,10 +301,10 @@ const RealEstate = () => {
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
-                    color: "#fec436", fontSize: "20px", fontWeight: "bold"
+                    color: "#52377b", fontSize: "20px", fontWeight: "bold"
                   }}>Creative Storytelling</span>
                   <p className='text-left' id='whyNeedRealP'>
-                    Appealing & emotional visuals highlighting your property's true value.
+                    Visuals and narratives highlight your property’s true value.
                   </p>
                 </div>
               </div>
@@ -266,330 +315,94 @@ const RealEstate = () => {
 
         {/* Services for real estate */}
 
-        <div className="health-Digital-Marketing pb-4">
+        <div className="health-Digital-Marketing">
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
-              <h3 className='text-center' style={{
+              <h2 className='text-center' style={{
                 textAlign: "center !important",
                 marginBottom: "60px",
-              }}><span>NovaTales </span> Expert Digital Marketing Services for <span> Real Estate</span> </h3>
+                color: "#52377b"
+              }}>NovaTales Expert Digital Marketing Services for Real Estate</h2>
             </div>
           </Container>
-          <Container fluid>
-            <Row className='health-Digital-Marketing-content p-xl-4' >
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_1} className="card-img-top" alt="search engine optimization for real estate" style={{
-                    backgroundColor: "#FAFAFA"
+          <div className='real-estate-serive-card-parent d-flex justify-content-center align-content-center w-100'>
 
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>SEO and SEM</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Enhance your property’s visibility with SEO strategies</p>
-                    <p className='healthcareTopPara'>Position your brand with SEM campaigns among active buyers.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4 '>
-                <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_2} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="real estate ppc advertising" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Paid Advertising (PPC)</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Reach the right buyers at the right time.</p>
-                    <p className='healthcareTopPara'>Optimized campaigns for maximum ROI.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div className="card draggable shadow-sm responsive-height-realestate border-0" style={{
 
-                }} >
-                  <img src={realestateservice_6} className="card-img-top" alt="best real estate social media marketing companies" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Social Media Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Actively engage with potential buyers and investors on social platforms.</p>
-                    <p className='healthcareTopPara'>Show property listings and build a strong digital presence for your real estate brand.</p>
+            <Row className='real-estate-content'>
+              {
+                realEstateServices.map((item, index) => <Col key={index * item.id} className='realestate-card-wrapper mb-4' data-aos="fade-up">
+                  <div className="realestate-service-card">
+                    <div className="realestate-card-image-container">
+                      <img src={item.image} className="realestate-card-image" alt="search engine optimization for real estate" />
+                    </div>
+                    <div className="realestate-card-content">
+                      <h4 className="realestate-service-title" > {
+                        item.title.split("-")[0]
+                      }
+                        <br />{
+                          item.title.split("-")[1]
+                        }</h4>
+                      <div className="realestate-title-underline"></div>
+                      <p className='realestate-card-description'>{item.description}</p>
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div className="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_5} className="card-img-top" alt="best real estate web design companies" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Website Development</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Create visually appealing websites showcasing properties effectively.</p>
-                    <p className='healthcareTopPara'>Ensure fast-loading with seamless browsing.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div className="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_7} className="card-img-top" alt="best email marketing service for real estate" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Email Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Targeted communication with potential buyers and sellers.</p>
-                    <p className='healthcareTopPara'>Increase the leads by providing personalized updates and market insights.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_4} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="video marketing for real estate" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Video Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Build trust by showcasing a satisfied buyer experience.</p>
-                    <p className='healthcareTopPara'>Share engaging virtual tours.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_8} width="100%" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="content marketing for real estate" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Content Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Engage potential buyers with insightful information about your property.</p>
-                    <p className='healthcareTopPara'>Establish a reliable real estate brand in the market.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height-realestate border-0" >
-                  <img src={realestateservice_3} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="reputation management for real estate" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Reputation Management</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Keep an active eye on property reviews and client feedback.</p>
-                    <p className='healthcareTopPara'>Create a strong, trustworthy, and credible image of your real estate brand in the market.</p>
-                  </div>
-                </div>
-              </Col>
+                </Col>)
+              }
             </Row>
-          </Container>
-        </div>
-
-
-        {/* Book Appointment Form */}
-        <RealEstateBookFrom />
-        {/* Top Benefits for Real Estate digital marketing */}
-
-        <div className='d-flex flex-column justify-content-center align-items-center '>
-          <Container>
-            <div data-aos="fade-up" className="health-why-novatales">
-              <h3 className='text-center' style={{
-                textAlign: "center !important",
-                marginBottom: "60px",
-              }}><span>NovaTales </span> Expert Digital Marketing Top Benefits for <span> Real Estate</span> </h3>
-            </div>
-          </Container>
-          <div className='row realEstateBenefits p-3 '>
-            <div className='col-lg-6' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  <img src={icons_2} alt='internet marketing for real estate' />
-                </div>
-                <h4>
-                  Expanded Reach
-                </h4>
-                <p>
-                  Instantly connect with buyers and sellers globally.
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-6' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  <img src={icons_5} alt='geographical targeting for real estate' />
-                </div>
-                <h4>
-                  GEO Visibility
-                </h4>
-                <p>
-                  Get featured by top AI search engines and build trust.
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-6 mt-3 mb-3' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  <img src={icons_4} alt='digital marketing agency for real estate' />
-                </div>
-                <h4>
-                  24/7 Lead Generation
-                </h4>
-                <p>
-                  Attract clients with automated platforms.
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-6 mt-3 mb-3' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  < img src={icons_3} alt='real estate marketing agency' />
-                </div>
-                <h4>
-                  Real-Time Insights
-                </h4>
-                <p>Grow faster by adapting to clients’ feedback.
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-6' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  <img src={icons_6} alt='real estate social media agency' />
-                </div>
-                <h4>
-                  Boost Conversion
-                </h4>
-                <p>
-                  Reach the right audiences based on their location, interest, and intent.
-
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-6' data-aos="fade-up">
-              <div className='realEstatebenefitspoints'>
-                <div>
-                  <img src={icons_1} alt='top real estate social media marketing companies' />
-                </div>
-                <h4>
-                  Brand Authority
-                </h4>
-                <p>
-                  Become a trusted real estate leader with a strong digital footprint.
-                </p>
-              </div>
-            </div>
           </div>
-
         </div>
-
         {/* FAQs */}
-
         <div className="Health-faqs">
           <Container>
-
-            <div data-aos="fade-up" className="">
-              <h3 className='text-center' style={{
+            <div data-aos="fade-up" className="health-why-novatales">
+              <h2 className='text-center' style={{
                 textAlign: "center !important",
-                marginBottom: "60px",
-                marginTop: "60px",
-              }}><span>Frequently </span> Asked  Questions </h3>
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
             </div>
-
             <div className="faq-accordion">
-              <Row>
-                {/* Left Column */}
-                <Col lg={6}>
-                  {faqs.slice(0, 5).map((item, index) => (
-                    <div className="accordion " data-aos="fade-up" key={index}>
-                      <div
-                        className={`accordion__item ${activeIndexLeft === index
-                          ? "accordion__item--active"
-                          : ""
-                          }`}
-                        onClick={() => toggleAccLeft(index)}
-                      >
-                        <button className="accordion__btn real-estate-faq">
-                          <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} />
-                            {item.q}
-                          </span>
-                          <span className="accordion__icon">
-                            <FontAwesomeIcon icon={faPlus} />
-                          </span>
-                        </button>
-                        {activeIndexLeft === index && (
-                          <div className="accordion__content">{item.a}</div>
-                        )}
-                      </div>
+
+              {/* Left Column */}
+              <div className='faq_container' data-aos="fade-up">
+
+
+                {faqs.slice(0, 5).map((item, index) => (
+                  <div className="accordion "  key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexLeft === index
+                        ? "accordion__item--active"
+                        : ""
+                        }`}
+                      onClick={() => toggleAccLeft(index)}
+                    >
+                      <button className="accordion__btn real-estate-faq">
+                        <span className="accordion__caption fw-medium">
+                          <FontAwesomeIcon icon={faLightbulb} />
+                          {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexLeft === index && (
+                        <div className="accordion__content fw-normal">{item.a}</div>
+                      )}
                     </div>
-                  ))}
-                </Col>
-                {/* Right Column */}
-                <Col lg={6}>
-                  {faqs.slice(5, 10).map((item, index) => (
-                    <div className="accordion " data-aos="fade-up" key={index}>
-                      <div
-                        className={`accordion__item ${activeIndexRight === index
-                          ? "accordion__item--active"
-                          : ""
-                          }`}
-                        onClick={() => toggleAccRight(index)}
-                      >
-                        <button className="accordion__btn real-estate-faq" >
-                          <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} />
-                            {item.q}
-                          </span>
-                          <span className="accordion__icon">
-                            <FontAwesomeIcon icon={faPlus} />
-                          </span>
-                        </button>
-                        {activeIndexRight === index && (
-                          <div className="accordion__content">{item.a}.</div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </Col>
-              </Row>
+                  </div>
+                ))}
+              </div>
+
+
             </div>
             <div className="conclusion mb-5">
-              <div className="concl-heading">
-                <div></div>
-              </div>
-              <p>
-                In today’s digital-first world, real estate success isn’t just about properties — it’s about visibility, strategy, and trust. Whether you’re a solo agent or a growing agency, digital marketing gives you the tools to attract quality leads, close deals faster, and build a lasting brand. Don't just list properties — build a presence that sells. Let's make your real estate brand unmissable.
-              </p>
-              <p>
-                Contact us today to get started!
-              </p>
             </div>
           </Container>
         </div>
-
         {/* Book Appointment Form */}
         <RealEstateBookFrom />
         <div className='w-100 mb-5'>
-
         </div>
       </div></HelmetProvider>
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import videoScreenLaptop from '../../images/video production-01.jpg';
 import videoScreenTab from '../../images/video production tab-01.jpg';
 import AOS from 'aos';
@@ -13,8 +13,55 @@ import explainerVideos from '../../images/expainer videos.png';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Col, Container, Row } from 'react-bootstrap';
 export default function VideoProduction() {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [
+     {
+    q: "What types of videos is NovaTales an expert in producing?",
+    a: "We produce a wide range of videos including promotional videos, explainer videos, corporate films, training videos, product demos, testimonials, and event coverage.",
+  },
+  {
+    q: "Can Novatales assist with video concept and script writing?",
+    a: "Yes. Our creative team works closely with you to develop fresh ideas and craft compelling, audience-focused scripts that bring your message to life.",
+  },
+  {
+    q: "What kind of equipment do you use?",
+    a: "At NovaTales, we use high-end professional cameras, lighting systems, and industry-standard editing suites to ensure premium video quality.",
+  },
+  {
+    q: "Are voiceover services available at Novatales?",
+    a: "Yes. We provide professional voiceover services with access to skilled voice actors — or we can work with your preferred talent if you have one.",
+  },
+  {
+    q: "Do you provide services like live streaming or event videography?",
+    a: "Yes, we offer live streaming and full-scale event videography using multi-camera setups for complete event coverage.",
+  },
+  {
+    q: "Why choose NovaTales for your video production project?",
+    a: "At NovaTales, we combine creative storytelling, technical expertise, and marketing insight to produce impactful videos that engage audiences and drive measurable results.",
+  },
+  {
+    q: "Do you produce animation or motion graphic videos?",
+    a: "Absolutely yes. We specialize in creating captivating 2D and 3D animations, as well as motion graphics, customized to your brand’s message and tone.",
+  },
+  {
+    q: "Will the videos produced align with my brand identity?",
+    a: "Yes, of course. Our team ensures every video reflects your brand’s identity through consistent tone, visuals, and messaging.",
+  },
+  
+  ]
   // Scroll to the top of the page when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -129,6 +176,74 @@ export default function VideoProduction() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="Health-faqs">
+          <Container>
+            <div className="health-faqs-heading">
+             <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+            </div>
+            <div className="faq-accordion" style={{
+              paddingTop: "40px"
+            }}>
+              <Row>
+                {/* Left Column */}
+                <Col lg={6}>
+                  {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccLeft(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexLeft === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+
+                {/* Right Column */}
+                <Col lg={6}>
+                  {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccRight(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexRight === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+              </Row>
+            </div>
+
+          </Container>
         </div>
         <AllServices />
         <ServiceContactForm />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import digitalMarketingIllustration from '../../images/digital marketing illustration.svg';
 import digitalMarketingTab from '../../images/digital marketing tab.svg';
 import digitalMarketingWebImage from '../../images/DIGITAL MARKETING WEB IMAGE.png';
@@ -17,8 +17,63 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+import { Col, Container, Row } from 'react-bootstrap';
 export default function DigitalMarketing() {
 
+
+    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+    const [activeIndexRight, setActiveIndexRight] = useState(null);
+    const toggleAccLeft = (index) => {
+      setActiveIndexLeft(activeIndexLeft === index ? null : index);
+    };
+    const toggleAccRight = (index) => {
+      setActiveIndexRight(activeIndexRight === index ? null : index);
+    };
+  
+    const faq = [  {
+    q: "What digital marketing services do you offer?",
+    a: "We provide Branding, Web Design, Video Production, Podcasting, Paid Advertising, and Digital Campaigns, using AI insights and GEO-targeted strategies where relevant.",
+  },
+  {
+    q: "How do you create a digital marketing strategy for a business?",
+    a: "We analyze audience behavior, competitors, and business goals to design a tailored strategy for measurable results.",
+  },
+  {
+    q: "How do you measure the success of a digital marketing campaign?",
+    a: "Campaign performance is tracked using KPIs like website traffic, engagement, conversions, and ROI to optimize future campaigns.",
+  },
+  {
+    q: "Can GEO-targeting improve campaign performance?",
+    a: "Yes, location-based targeting ensures campaigns reach the right audiences, reducing wasted spend and improving conversions.",
+  },
+  {
+    q: "How do you decide which platforms are best for a business?",
+    a: "We evaluate audience presence, campaign objectives, and industry trends to select the most effective platforms.",
+  },
+  {
+    q: "Can AI help improve my marketing campaigns?",
+    a: "AI is applied selectively to analyze data, optimize targeting, and provide insights that enhance campaign performance.",
+  },
+  {
+    q: "Do you offer services for both small businesses and large enterprises?",
+    a: "Yes, our strategies scale effectively for startups and global companies, optimizing budgets and resources efficiently.",
+  },
+  {
+    q: "How long does it take to see results from digital marketing?",
+    a: "Paid campaigns can show quick traction, while SEO, GEO, and content strategies gradually build sustainable growth over a few months.",
+  },
+  {
+    q: "How often do you update campaigns or strategies?",
+    a: "Campaigns are monitored continuously, with updates made based on performance data and emerging trends.",
+  },
+  {
+    q: "Can digital marketing improve customer retention?",
+    a: "Yes, personalized campaigns, remarketing, and consistent engagement help strengthen customer loyalty over time.",
+  },
+  
+    ]
   useEffect(() => {
     // Initialize AOS library for animations
     AOS.init();
@@ -206,6 +261,74 @@ export default function DigitalMarketing() {
             </div>
           </div>
         </div>
+          <div className="Health-faqs">
+                  <Container>
+                    <div className="health-faqs-heading">
+                       <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+                    </div>
+                    <div className="faq-accordion" style={{
+                      paddingTop: "40px"
+                    }}>
+                      <Row>
+                        {/* Left Column */}
+                        <Col lg={6}>
+                          {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                            <div className="accordion" data-aos="fade-up" key={index}>
+                              <div
+                                className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                                  }`}
+                                onClick={() => toggleAccLeft(index)}
+                              >
+                                <button className="accordion__btn">
+                                  <span className="accordion__caption">
+                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                  </span>
+                                  <span className="accordion__icon">
+                                    <FontAwesomeIcon icon={faPlus} />
+                                  </span>
+                                </button>
+                                {activeIndexLeft === index && (
+                                  <div className="accordion__content">{item.a}</div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </Col>
+        
+                        {/* Right Column */}
+                        <Col lg={6}>
+                          {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                            <div className="accordion" data-aos="fade-up" key={index}>
+                              <div
+                                className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                                  }`}
+                                onClick={() => toggleAccRight(index)}
+                              >
+                                <button className="accordion__btn">
+                                  <span className="accordion__caption">
+                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                  </span>
+                                  <span className="accordion__icon">
+                                    <FontAwesomeIcon icon={faPlus} />
+                                  </span>
+                                </button>
+                                {activeIndexRight === index && (
+                                  <div className="accordion__content">{item.a}</div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </Col>
+                      </Row>
+                    </div>
+        
+                  </Container>
+                </div>
         <AllServices />
         <ServiceContactForm />
       </div>

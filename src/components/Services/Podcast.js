@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import podcastPlanningProduction6 from '../../images/podcast planning & production6.svg';
 import podcastPlanningProductionTab from '../../images/podcast planning & production tab.svg';
 import podcastM from '../../images/PODCAST M.png';
@@ -6,8 +6,56 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Col, Container, Row } from 'react-bootstrap';
 export default function Podcast() {
+    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+    const [activeIndexRight, setActiveIndexRight] = useState(null);
+    const toggleAccLeft = (index) => {
+      setActiveIndexLeft(activeIndexLeft === index ? null : index);
+    };
+    const toggleAccRight = (index) => {
+      setActiveIndexRight(activeIndexRight === index ? null : index);
+    };
+  
+    const faq = [ {
+    q: "What steps does Novatales take while planning a podcast?",
+    a: "We begin with in-depth topic research, followed by concept development, audience research, episode formatting, guest selection, and finally, strategic marketing to ensure reach and impact.",
+  },
+  {
+    q: "Can NovaTales help me with selecting the podcast topics and content ideas?",
+    a: "Yes. Our creative team brainstorms trending and relevant topics, prepares episode outlines, and crafts a content strategy tailored to your brand goals.",
+  },
+  {
+    q: "How do you promote podcasts post-launch?",
+    a: "We promote each podcast across major platforms like Spotify, YouTube, Instagram, and through email marketing and strategic collaborations for maximum visibility.",
+  },
+ 
+  {
+    q: "How efficiently do you handle audio editing and the post-production process?",
+    a: "At NovaTales, our qualified team handles complete post-production — cleaning audio, removing noise, adding intros/outros with licensed music, and ensuring professional sound quality.",
+  },
+  {
+    q: "Will you ensure consistent audio quality across every episode?",
+    a: "Yes, of course. We use standardized setups, professional-grade editing, and strict quality checks to maintain consistent audio across all episodes.",
+  },
+  
+   {
+    q: "Does NovaTales provide an option of studio recording or remote recording?",
+    a: "Yes, we offer both. We have our own professional studio setup with high-end recording equipment, and we also support remote recording with premium audio quality.",
+  },
+  {
+    q: "How is podcast analytics handled?",
+    a: "We provide detailed analytics reports including downloads, listener demographics, engagement trends, and growth tracking for data-driven insights.",
+  },
+  {
+    q: "Why choose NovaTales for podcast planning and production?",
+    a: "At NovaTales, we blend creative storytelling, technical expertise, professional equipment, and growth-driven marketing strategies to ensure your podcast’s success.",
+  },
+    ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -74,6 +122,74 @@ export default function Podcast() {
             </div>
           </div>
         </div>
+         <div className="Health-faqs">
+                  <Container>
+                    <div className="health-faqs-heading">
+                    <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+                    </div>
+                    <div className="faq-accordion" style={{
+                      paddingTop: "40px"
+                    }}>
+                      <Row>
+                        {/* Left Column */}
+                        <Col lg={6}>
+                          {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                            <div className="accordion" data-aos="fade-up" key={index}>
+                              <div
+                                className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                                  }`}
+                                onClick={() => toggleAccLeft(index)}
+                              >
+                                <button className="accordion__btn">
+                                  <span className="accordion__caption">
+                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                  </span>
+                                  <span className="accordion__icon">
+                                    <FontAwesomeIcon icon={faPlus} />
+                                  </span>
+                                </button>
+                                {activeIndexLeft === index && (
+                                  <div className="accordion__content">{item.a}</div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </Col>
+        
+                        {/* Right Column */}
+                        <Col lg={6}>
+                          {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                            <div className="accordion" data-aos="fade-up" key={index}>
+                              <div
+                                className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                                  }`}
+                                onClick={() => toggleAccRight(index)}
+                              >
+                                <button className="accordion__btn">
+                                  <span className="accordion__caption">
+                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                  </span>
+                                  <span className="accordion__icon">
+                                    <FontAwesomeIcon icon={faPlus} />
+                                  </span>
+                                </button>
+                                {activeIndexRight === index && (
+                                  <div className="accordion__content">{item.a}</div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </Col>
+                      </Row>
+                    </div>
+        
+                  </Container>
+                </div>
         <AllServices />
         <ServiceContactForm />
       </div>

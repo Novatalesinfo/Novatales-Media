@@ -18,7 +18,7 @@
   .client-row-layout {
     row-gap: 80px;
     column-gap: 70px;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .client-item {
     width: 300px;

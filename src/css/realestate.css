@@ -26,7 +26,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    /* margin-top: 80px; */
+    margin-top: 60px;
   }
   .whyneedRealestate2 {
     width: 90%;
@@ -34,7 +34,7 @@
   .responsive-height-realestate {
     height: 420px !important;
   }
-   .extraPadding{
+  .extraPadding {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -62,16 +62,16 @@
   }
   .whyneedRealestate {
     width: 90%;
-    /* margin-top: 80px; */
+    margin-top: 60px;
   }
   .whyneedRealestate2 {
     width: 90%;
     /* margin-bottom: 80px; */
   }
-  .responsive-height-realestate{
+  .responsive-height-realestate {
     min-height: 420px !important;
   }
-   .extraPadding{
+  .extraPadding {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -92,7 +92,6 @@
   #realestateImg {
     width: 300px;
   }
-  
 }
 
 @media screen and (min-width: 425px) {
@@ -110,7 +109,6 @@
   #realestateImg {
     width: 300px;
   }
- 
 }
 
 @media screen and (min-width: 548px) {
@@ -132,6 +130,7 @@
     flex-direction: column;
     padding: 12px 20px;
   }
+  
 }
 
 @media screen and (min-width: 648px) {
@@ -154,7 +153,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    /* margin-top: 80px; */
+    margin-top: 60px;
   }
 }
 
@@ -177,7 +176,7 @@
   }
   .whyneedRealestate {
     width: 90%;
-    /* margin-top: 80px; */
+    margin-top: 60px;
   }
   .responsive-height-realestate {
     height: 480px;
@@ -214,11 +213,12 @@
   }
   .whyNeedListCards {
     flex-direction: column;
-    padding: 20px 8px;height: 240px;
+    padding: 20px 8px;
+    height: 240px;
   }
   .whyneedRealestate {
-    width: 90%;
-    /* margin-top: 150px; */
+    width: 95%;
+    margin-top: 60px;
   }
   .whyneedRealestate2 {
     width: 90%;
@@ -233,7 +233,7 @@
   .realestate-topBanner {
     padding: 100px 16px 0px;
   }
-  .extraPadding{
+  .extraPadding {
     padding-left: 0;
     padding-right: 0;
   }
@@ -249,14 +249,16 @@
   .responsive-height-realestate {
     height: 550px;
   }
-  .realestate-paraheading{
+  .realestate-paraheading {
     padding-right: 20px;
   }
+  .realEstateBenefits {
+    width: 95%;
+  }
 }
-@media screen and (min-width:1380px) {
-
-  .real-estate-faq{
-    height: 96px !important;
+@media screen and (min-width: 1380px) {
+  .real-estate-faq {
+    height: 80px !important;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -268,18 +270,19 @@
     color: white;
     line-height: 4vw;
     padding: 0 8px 0 8px;
+    font-weight: 500;
   }
   #realestateImg {
     width: 500px;
   }
   .whyNeedListCards {
     flex-direction: row;
-    padding: 20px 30px;
-    height: 160px;
+    padding: 12px 30px;
+    height: 140px;
   }
   .whyneedRealestate {
     width: 95%;
-    /* margin-top: 150px; */
+    margin-top: 80px;
   }
   .whyneedRealestate2 {
     width: 95%;
@@ -294,14 +297,14 @@
 }
 
 #whyNeedRealP {
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 5px;
   margin-bottom: 1px;
   color: #212529;
   font-weight: 500;
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and  (min-width: 1520px) and (max-width:2000px) {
   .realestate-topBanner {
     padding: 100px 25px 0px;
   }
@@ -312,22 +315,42 @@
     padding: 0 20px 0 20px;
     letter-spacing: 0px;
   }
+  h2{
+    font-size: 32px;
+    font-weight: bold;
+  }
   #realestateImg {
     width: 500px;
   }
   .whyneedRealestate {
-    width: 85%;
-    margin-top: 80px;
+    width: 80%;
+    margin-top: 70px;
   }
   .whyneedRealestate2 {
-    width: 82%;
+    width: 75%;
     /* margin-bottom: 150px; */
   }
   .responsive-height-realestate {
-    height: 480px;
-  }.realEstatebenefitspoints{
-    height: 200px;
+    height: 200px !important;
   }
+  .realEstatebenefitspoints {
+    height: 180px;
+  }
+  .real-estate-content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1636px) and (max-width:2000px) {
+.real-estate-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 .whyneedRealestate2 {
   display: flex;
@@ -342,4 +365,181 @@
   margin-bottom: 16px;
   border: 1px solid #fec436;
   border-radius: 24px;
+}
+/* Real Estate Services Cards - Centered Layout */
+@media screen and (min-width:767px) and (max-width:1500px) {
+  .real-estate-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0.5rem;
+  width: 98%;
+}
+
+}
+.real-estate-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0.5rem;
+}
+
+.realestate-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.realestate-service-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 360px;
+}
+
+.realestate-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.realestate-card-image-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.realestate-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.realestate-service-card:hover .realestate-card-image {
+  transform: scale(1.05);
+}
+
+.realestate-card-content {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.realestate-service-title {
+  color: #52377b;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  
+}
+
+.realestate-title-underline {
+  width: 50px;
+  height: 3px;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+}
+
+.realestate-card-description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Responsive Design */
+@media (min-width: 1400px) {
+  .realestate-card-wrapper {
+    flex: 0 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+  }
+  .realestate-service-title{
+    height: 59px;
+  }
+  .faq_container{
+  width: 80%;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .realestate-card-wrapper {
+    flex: 0 1 calc(33% - 1.5rem);
+    max-width: calc(33% - 1.5rem);
+  }
+  .realestate-service-title{
+    height: 59px;
+  }
+  .faq_container{
+  width: 80%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .realestate-card-wrapper {
+    flex: 0 1 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .realestate-card-wrapper {
+    flex: 0 1 100%;
+    max-width: 400px;
+  }
+
+  .real-estate-content {
+    padding: 1rem;
+  }
+
+  .realestate-service-card {
+    min-height: 350px;
+  }
+}
+
+/* Optional: Animation on scroll */
+.realestate-card-wrapper[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.realestate-card-wrapper[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.realestate-title-underline {
+  width: 50px;
+  height: 3px;
+  margin-bottom: 0.3rem;
+  border-radius: 2px;
+  background-color: transparent !important;
+}
+.faq-accordion{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }

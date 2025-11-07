@@ -7,11 +7,6 @@
   font-size: 15px;
   color: #2d1f44;
 }
-
-/* .health-Digital-Marketing {
-  padding: 40px 0px;
-} */
-
 .health-Digital-Marketing .container-fluid {
   width: 90%;
 }
@@ -73,10 +68,6 @@
   width: 100%;
   height: 100%;
 }
-
-/* .health-Digital-Marketing-content {
-  margin: 40px 0px;
-} */
 .concl-heading {
   width: 100%;
   display: flex;
@@ -104,20 +95,27 @@
 }
 .healthcareTopPara {
   font-size: 15px !important;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
+  font-weight: Regular 400;
+  line-height: 1.8;
+  color: #2f2144;
+  text-align: left !important;
 }
 
-.health-why-novatales h3 {
+.health-why-novatales h2 {
   font-weight: 500;
   font-family: "Outfit", sans-serif;
   font-size: 32px;
   line-height: 1.5;
   margin-bottom: 25px;
   margin-top: 80px;
+  font-weight: bold;
 }
 @media (max-width: 1050px) {
   #topHeading {
     font-size: 40px;
+  } #healthpagebanner{
+    width: 550px;
   }
 }
 @media (max-width: 800px) {
@@ -132,10 +130,19 @@
   .accordion__btn {
     font-size: 1.1rem !important;
   }
+  .healthcareTopPara {
+    padding: 0px 20px;
+  }
+  #healthpagebanner{
+    width: 380px;
+  }
 }
 @media screen and (max-width: 374px) {
   .responsive-height {
     height: 450px;
+  }
+  .healthcareTopPara {
+    padding: 0px 12px;
   }
 }
 
@@ -143,11 +150,17 @@
   .responsive-height {
     height: 550px;
   }
+  .healthcareTopPara {
+    padding: 0px 12px;
+  }
 }
 /* MD */
 @media (min-width: 768px) {
   .responsive-height {
     height: 450px;
+  }
+  .healthcareTopPara {
+    padding: 0px 12px;
   }
 }
 /* LG */
@@ -158,12 +171,16 @@
   .landing-health-care {
     padding: 60px 60px 0;
   }
+  .healthcareTopPara {
+    padding: 0px 12px;
+  }
 }
 /* XL */
 @media (min-width: 1200px) {
   .responsive-height {
     height: 470px;
   }
+  
 }
 /* XXL */
 @media (min-width: 1400px) {

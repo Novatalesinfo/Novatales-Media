@@ -6,27 +6,29 @@ import Faqs from "./faq";
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hospital_image_1 from '../images/portfolio/side_img_healthcare.png';
-import hospital_image_2 from '../images/portfolio/benefits_img.png';
-import VerifiedIcon from '@mui/icons-material/Verified';
-import healthcareservice_1 from "../images/portfolio/healthcare_img_4.png"
-import healthcareservice_2 from "../images/portfolio/seo_analysis.png"
-import healthcareservice_3 from "../images/portfolio/healthcare_img_6.png"
-import healthcareservice_4 from "../images/portfolio/email2.png"
-import healthcareservice_5 from "../images/portfolio/healthcare_img_7.png"
-import healthcareservice_6 from "../images/portfolio/9772701_103 (2).png"
-import healthcareservice_7 from "../images/portfolio/healthcare_img_2.png"
-import healthcareservice_8 from "../images/portfolio/healthcare_img_1.png"
+import hospital_image_1 from '../images/casestudies/boost_hospital.png';
+import healthcareservice_1 from "../images/casestudies/Social Media Marketing-01.png"
+import healthcareservice_2 from "../images/casestudies/SEO and SEM-01.png"
+import healthcareservice_3 from "../images/casestudies/Content Marketing-01 (3).png"
+import healthcareservice_4 from "../images/casestudies/Email Marketing-01.png"
+import healthcareservice_5 from "../images/casestudies/Reputation Management-01.png"
+import healthcareservice_6 from "../images/casestudies/Website Development-01.png"
+import healthcareservice_7 from "../images/casestudies/Paid Advertising (PPC)-01.png"
+import healthcareservice_8 from "../images/casestudies/Video Marketing-01.png"
 import icon1 from '../images/icon 1.png';
-import icon2 from '../images/icon 2.png';
-import icon3 from '../images/icon3.png';
+// import icon2 from '../images/portfolio/customize_1-01.png';
+// import icon2 from '../images/portfolio/bgi_bulb_y.png';
+import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
+// import icon3 from '../images/portfolio/budget_friendly.png';
+// import icon3 from '../images/portfolio/budget_y.png';
+import icon3 from '../images/portfolio/donation_1-01.png';
 import icon4 from '../images/icon 4.png';
-import bannerImage from "../images/portfolio/health_bg.png"
+import bannerImage from "../images/casestudies/Healthcare page Header-01.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 export default function HealthCare() {
   const [faq, setFaq] = useState([]);
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const [activeIndexRight, setActiveIndexRight] = useState(null);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
@@ -41,6 +43,58 @@ export default function HealthCare() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setFaq(Faqs);
   }, []);
+
+  const healthServices = [
+    {
+      id: 1,
+      title: "Social Media-Marketing",
+      description: "Engage with potential patients on Facebook, Instagram, and LinkedIn.",
+      image: healthcareservice_1,
+    },
+    {
+      id: 2,
+      title: "SEO and SEM",
+      description: "Optimize your hospital’s website to rank higher on Google.",
+      image: healthcareservice_2,
+    },
+    {
+      id: 3,
+      title: "Content-Marketing",
+      description: "Provide valuable healthcare content to educate and attract patients.",
+      image: healthcareservice_3,
+    },
+    {
+      id: 4,
+      title: "Email-Marketing",
+      description: "Increase patient retention through informative email campaigns",
+      image: healthcareservice_4,
+    },
+    {
+      id: 5,
+      title: "Reputation-Management",
+
+      description: "Monitor and manage online reviews.Enhance your hospital’s credibility.",
+      image: healthcareservice_5,
+    },
+    {
+      id: 6,
+      title: "Website-Development",
+      description: "Improve user experience with a professionally designed website.",
+      image: healthcareservice_6,
+    },
+    {
+      id: 7,
+      title: "Paid-Advertising (PPC)",
+      description: "Generate instant visibility through targeted ads. Optimize ad campaigns for maximum ROI.",
+      image: healthcareservice_7,
+    },
+    {
+      id: 8,
+      title: "Video-Marketing",
+      description: "Increase engagement with informative hospital-related videos.",
+      image: healthcareservice_8,
+    },
+  ];
   return (
     <>
       <HelmetProvider>
@@ -52,11 +106,12 @@ export default function HealthCare() {
           />
         </Helmet>
         <div className='landing-health-care'>
-          <div className='row d-flex flex-column-reverse flex-lg-row'>
-            <div className='col-lg-6 d-flex justify-content-end align-items-center'>
-              <img src={bannerImage} alt='healthcare digital marketing agency' width="100%" />
+          <div className='row
+           d-flex flex-column-reverse flex-lg-row'>
+            <div className='col-lg-6 d-flex justify-content-center align-items-center'>
+              <img id='healthpagebanner' src={bannerImage} alt='healthcare digital marketing agency' />
             </div>
-            <div className='col-lg-6 d-flex justify-content-start align-items-center  text-center'>
+            <div className='col-lg-6 d-flex justify-content-lg-start justify-content-center align-items-center  text-center'>
               <h1 id='topHeading' className='text-center'>Transform Your Hospital with <br></br> <span style={{
                 color: "#fec436"
               }}>
@@ -68,19 +123,19 @@ export default function HealthCare() {
         <div className='topHeading text-center' style={{
         }}>
         </div>
-        <div className="service-content LogoVisual">
+        <div className="service-content LogoVisual pt-4">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
 
                 <div className="service-para mt-3">
                   <div className="health-why-novatales text-center text-lg-start">
-                    <h3 data-aos="fade-up">Boost Your <span>Hospital's Growth</span> with  <span>Hospital Digital Marketing</span></h3>
+                    <h3 className='fw-bold pb-3' style={{
+                      lineHeight: "40px", padding: "0px 12px", color: "#52377b"
+                    }}>Boost Your Hospital's Growth with  Hospital Digital Marketing</h3>
                   </div>
-                  <p className='healthcareTopPara' style={{
-                    fontSize:"15px"
-                  }}>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</p>
-                  <p className='healthcareTopPara'>With the increasing competition in the healthcare industry, relying solely on traditional marketing isn’t enough. Our digital marketing agency for healthcare specializes in boosting hospital and clinic visibility using cutting-edge online strategies.</p>
+                  <div className='healthcareTopPara'>Is your hospital struggling to reach potential patients? In today's digital era, establishing a strong online presence is crucial. Hospital digital marketing helps healthcare providers to enhance their visibility, attract more patients, and build trust.</div>
+                  <div className='healthcareTopPara'>With the increasing competition in the healthcare industry, relying solely on traditional marketing isn’t enough. Our digital marketing agency for healthcare specializes in boosting hospital and clinic visibility using cutting-edge online strategies.</div>
                 </div>
               </div>
               <div className="col-lg-6 d-flex justify-content-center">
@@ -94,19 +149,22 @@ export default function HealthCare() {
           </div>
         </div>
         <BookForm />
-        <div className="health-care-why-choose">
-          <Container>
-            <div className="health-why-novatales" style={{
-              textAlign: "center !important"
-            }}>
-              <h3 className='text-center' style={{
-                textAlign: "center !important",
-                marginBottom: "80px",
-              }}>Why Choose <span>NovaTales</span> for Your Healthcare <span>Marketing Strategies?</span></h3>
-            </div>
-            <Row className='justify-content-center mt-2 '>
-              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4' >
-                <div className='icon-1 text-center '>
+        <div className="health-Digital-Marketing">
+
+          <div className="health-why-novatales" style={{
+            textAlign: "center !important"
+          }}>
+            <h2 className='text-center' style={{
+              textAlign: "center !important",
+
+              color: "#52377b"
+            }}>Why Choose NovaTales for Your Healthcare Marketing Strategies?</h2>
+          </div>
+          <div className='real-estate-serive-card-parent d-flex justify-content-center align-content-center w-100'>
+
+            <Row className='real-estate-content gap-0'>
+              <Col xl={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4 ' >
+                <div className='icon-1 text-center px-2 '>
                   <div>
                     <img src={icon1} alt="healthcare marketing expertise" width="90px" />
                   </div>
@@ -118,10 +176,10 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5' >
-                <div className='icon-1 text-center mx-md-4'>
+              <Col xl={3} md={6} sm={12} data-aos="fade-up" className='my-md-5' >
+                <div className='icon-1 text-center  px-2'>
                   <div>
-                    <img src={icon2} alt="digital solutions in healthcare" width="90px" />
+                    <img src={icon2} alt="digital solutions in healthcare" />
                   </div>
                   <div className="heading">
                     <p className="title text-center mt-1">Customized Solutions</p>
@@ -131,10 +189,10 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4'>
-                <div className='icon-1 text-center mt-2'>
+              <Col xl={3} md={6} sm={12} data-aos="fade-up" className='my-md-5 my-4'>
+                <div className='icon-1 text-center mt-2 px-2'>
                   <div>
-                    <img src={icon3} alt="healthcare marketing budget" width="90px" />
+                    <img src={icon3} alt="healthcare marketing budget" />
                   </div>
                   <div className="heading">
                     <p className="title text-center mt-1">Budget-Friendly Approach</p>
@@ -144,8 +202,8 @@ export default function HealthCare() {
                   </div>
                 </div>
               </Col>
-              <Col lg={3} md={6} sm={12} data-aos="fade-up" className='my-md-5'>
-                <div className='icon-1 mx-md-3 text-center'>
+              <Col xl={3} md={6} sm={12} data-aos="fade-up" className='my-md-5'>
+                <div className='icon-1 mx-md-3 text-center px-2 pt-2'>
                   <div>
                     <img src={icon4} alt="reputation management for healthcare" width="90px" />
                   </div>
@@ -158,295 +216,94 @@ export default function HealthCare() {
                 </div>
               </Col>
             </Row>
-          </Container>
+
+          </div>
         </div>
         <div className="health-Digital-Marketing">
           <Container>
             <div data-aos="fade-up" className="health-why-novatales">
-              <h3 className='text-center' style={{
+              <h2 className='text-center' style={{
                 textAlign: "center !important",
-                marginBottom: "80px",
-              }}><span>NovaTales </span> Expert Digital Marketing Services for <span> Healthcare and Clinics</span> </h3>
+                marginBottom: "80px", color: "#52377b", marginTop: "20px"
+              }}>NovaTales Expert Digital Marketing Services for Healthcare and Clinics</h2>
             </div>
           </Container>
-          <Container fluid>
-            <Row className='health-Digital-Marketing-content xl-p-4 py-3' >
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_1} id='socialMedia' className="card-img-top" alt="Healthcare social media marketing" height="100%" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Social Media Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Engage with potential patients on Facebook, Instagram, and LinkedIn.</p>
-                    <p className='healthcareTopPara'>Build a strong online presence for your hospital.</p>
+          <div className='real-estate-serive-card-parent d-flex justify-content-center align-content-center w-100'>
+            <Row className='real-estate-content'>
+              {
+                healthServices.map((item, index) => <Col key={index * item.id} className='realestate-card-wrapper mb-4' data-aos="fade-up">
+                  <div className="realestate-service-card">
+                    <div className="realestate-card-image-container">
+                      <img src={item.image} className="realestate-card-image" alt="search engine optimization for real estate" />
+                    </div>
+                    <div className="realestate-card-content">
+
+                      <h4 className="realestate-service-title" > {
+                        item.title.split("-")[0]
+                      }
+                        <br />{
+                          item.title.split("-")[1]
+                        }</h4>
+                      <div className="realestate-title-underline"></div>
+                      <p className='realestate-card-description'>{item.description}</p>
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4 '>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_2} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="healthcare seo services" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>SEO and SEM</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Optimize your hospital’s website to rank higher on Google.</p>
-                    <p className='healthcareTopPara'>Implement effective hospital digital marketing strategies for better visibility</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_3} className="card-img-top" alt="healthcare content marketing agency" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Content Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Provide valuable healthcare content to educate and attract patients.</p>
-                    <p className='healthcareTopPara'>Establish your hospital as a trusted authority.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_4} className="card-img-top" alt="Email Marketing for healthcare" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Email Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Personalized communication with patients</p>
-                    <p className='healthcareTopPara'>Increase patient retention through informative email campaigns</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_5} className="card-img-top" alt="reviews for hospitals" style={{
-                    backgroundColor: "#FAFAFA"
-                  }} />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Reputation Management</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Monitor and manage online reviews.</p>
-                    <p className='healthcareTopPara'>Enhance your hospital’s credibility.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_6} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="healthcare web development company" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Website Development</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Improve user experience with a professionally designed website.</p>
-                    <p className='healthcareTopPara'>Ensure mobile-friendly and fast-loading pages.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_7} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="ppc healthcare" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Paid Advertising (PPC)</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Generate instant visibility through targeted ads.</p>
-                    <p className='healthcareTopPara'>Optimize ad campaigns for maximum ROI.</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={4} xxl={3} md={6} sm={12} data-aos="fade-up" className='mb-4 xl-p-4'>
-                <div class="card draggable shadow-sm responsive-height border-0" >
-                  <img src={healthcareservice_8} style={{
-                    backgroundColor: "#FAFAFA"
-                  }} className="card-img-top" alt="Video Marketing for healthcare" />
-                  <div className="card-body">
-                    <h4 style={{
-                      color: "#fec436"
-                    }}>Video Marketing</h4>
-                    <div className="bottom-underline"></div>
-                    <p className='healthcareTopPara'>Increase engagement with informative hospital-related videos.</p>
-                    <p className='healthcareTopPara'>Highlight patient testimonials and success stories.</p>
-                  </div>
-                </div>
-              </Col>
+                </Col>)
+              }
             </Row>
-          </Container>
+          </div>
         </div>
-        <BookForm />
-        <div className="service-content LogoVisual mb-5 pb-2">
+        <div className="service-content LogoVisual mb-1 pb-2">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 d-flex justify-content-center" data-aos="fade-up">
-                <div className="service-image">
-                  <div className="info-img position-relative">
-``                    <img src={hospital_image_2} alt="benefits of digital marketing for healthcare" className="img-fluid topBottom" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6" data-aos="fade-up">
-                <div>
-                  <div className="service-para mt-3">
-                    {/* <h1 className="content-main-heading mb-3">Logo & Visual Elements</h1> */}
-                    <div className="health-why-novatales text-center text-lg-start">
-                      <h3><span>Benefits</span> of Hospital Digital Marketing</h3>
-                    </div>
-                    <div className='row'>
-                      <div className='col-1'> <VerifiedIcon fontSize='60px' sx={{
-                        color: "#fec436", fontSize: "30px"
-                      }} />
-                      </div>
-                      <div className='col-11'>
-                        <p style={{
-                          width: "auto"
-                        }}> <span style={{
-                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
-                        }}>Brand Awareness :</span> <span style={{
-                          fontSize: "15px", fontWeight: "400"
-                        }} > Strengthen your hospital’s reputation and trust.</span></p>
-                      </div>
-                    </div>
-                    <div className='row'>
-
-                      <div className='col-1'> <VerifiedIcon fontSize='60px' sx={{
-                        color: "#fec436", fontSize: "30px"
-                      }} />
-                      </div>
-                      <div className='col-11'>
-                        <p style={{
-                          width: "auto"
-                        }}> <span style={{
-                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
-                        }}>Increased Online Presence :</span> <span style={{
-                          fontSize: "15px", fontWeight: "400"
-                        }} >Patients can find your hospital easily.</span></p>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col-1'> <VerifiedIcon fontSize='60px' sx={{
-                        color: "#fec436", fontSize: "30px"
-                      }} />
-                      </div>
-                      <div className='col-11'>
-                        <p style={{
-                          width: "auto"
-                        }}> <span style={{
-                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
-                        }}>Higher Patient Footfall :</span> <span style={{
-                          fontSize: "15px", fontWeight: "400"
-                        }} >Attract more local and international patients.</span></p>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col-1'> <VerifiedIcon fontSize='60px' sx={{
-                        color: "#fec436", fontSize: "30px"
-                      }} />
-                      </div>
-                      <div className='col-11'>
-                        <p style={{
-                          width: "auto"
-                        }}> <span style={{
-                          fontSize: "16px", fontWeight: "bold", color: "#2d1f44", wordSpacing: "0px"
-                        }}>Better Patient Engagement:</span> <span style={{
-                          fontSize: "15px", fontWeight: "400"
-                        }} >Provide seamless communication and support.</span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
         <div className="Health-faqs">
           <Container>
             <div className="health-faqs-heading">
-              <h3 className='text-center'> <span style={{
-                color: "#fec436",
-           
-              }}>Frequently</span> Asked  Questions</h3>
+              <h2 className='text-center' style={{
+                color: "#52377b"
+              }}>Frequently Asked  Questions</h2>
             </div>
+
             <div className="faq-accordion" style={{
-                   paddingTop:"40px"
+              paddingTop: "40px"
             }}>
-              <Row>
-                {/* Left Column */}
-                <Col lg={6}>
-                  {faq.slice(0, 6).map((item, index) => (
-                    <div className="accordion" data-aos="fade-up" key={index}>
-                      <div
-                        className={`accordion__item ${activeIndexLeft === index
-                          ? "accordion__item--active"
-                          : ""
-                          }`}
-                        onClick={() => toggleAccLeft(index)}
-                      >
-                        <button className="accordion__btn">
-                          <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} />
-                            {item.q}
-                          </span>
-                          <span className="accordion__icon">
-                            <FontAwesomeIcon icon={faPlus} />
-                          </span>
-                        </button>
-                        {activeIndexLeft === index && (
-                          <div className="accordion__content">{item.a}</div>
-                        )}
-                      </div>
+
+              {/* Left Column */}
+              <div className='faq_container' data-aos="fade-up">
+
+
+                {faq.slice(0, 5).map((item, index) => (
+                  <div className="accordion "  key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexLeft === index
+                        ? "accordion__item--active"
+                        : ""
+                        }`}
+                      onClick={() => toggleAccLeft(index)}
+                    >
+                      <button className="accordion__btn real-estate-faq">
+                        <span className="accordion__caption fw-medium">
+                          <FontAwesomeIcon icon={faLightbulb} />
+                          {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexLeft === index && (
+                        <div className="accordion__content fw-normal">{item.a}</div>
+                      )}
                     </div>
-                  ))}
-                </Col>
-                {/* Right Column */}
-                <Col lg={6}>
-                  {faq.slice(6, 12).map((item, index) => (
-                    <div className="accordion" data-aos="fade-up" key={index}>
-                      <div
-                        className={`accordion__item ${activeIndexRight === index
-                          ? "accordion__item--active"
-                          : ""
-                          }`}
-                        onClick={() => toggleAccRight(index)}
-                      >
-                        <button className="accordion__btn">
-                          <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} />
-                            {item.q}
-                          </span>
-                          <span className="accordion__icon">
-                            <FontAwesomeIcon icon={faPlus} />
-                          </span>
-                        </button>
-                        {activeIndexRight === index && (
-                          <div className="accordion__content">{item.a}.</div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </Col>
-              </Row>
+                  </div>
+                ))}
+              </div>
+
+
             </div>
+
             <div className="conclusion mb-5 pb-3">
               <div className="concl-heading">
                 <div></div>

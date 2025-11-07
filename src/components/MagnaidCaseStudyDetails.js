@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react'
 import tab_img_1 from "../images/casestudies/magnaid.webp"
 import graph from "../images/casestudies/graph.png"
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import magnaid_post_1 from "../images/casestudies/magnaid_post_1.webp";
-import magnaid_post_2 from "../images/casestudies/magnaid_post_2.webp";
-import magnaid_post_3 from "../images/casestudies/magnaid_post_3.webp";
-import magnaid_post_4 from "../images/casestudies/magnaid_post_4.webp";
-import magnaid_post_5 from "../images/casestudies/magnaid_post_5.webp";
-import magnaid_post_6 from "../images/casestudies/magnaid_post_6.webp";
-import magnaid_post_7 from "../images/casestudies/magnaid_post_7.webp";
-import magnaid_post_8 from "../images/casestudies/Myth vs Fact post-01 (1).webp"
-import magnaid_post_9 from "../images/casestudies/magnaid_post_9.webp"
-import magnaid_post_10 from "../images/casestudies/piles sympotoms-02 (1).webp"
 import aboutHeroImage from '../images/casestudies/magnaid_case_lap.jpg';
 import case_study_mobile_banner from '../images/casestudies/magnaid_case_mob.jpg';
 const MagnAidCaseStudyDetails = () => {
@@ -233,103 +221,6 @@ const MagnAidCaseStudyDetails = () => {
                             <span style={{
                                 fontWeight: "bold", color: "#f3bc50"
                             }}>Video Marketing</span> : Helped script and promote short videos featuring Dr. Sindhu Kodali, an in-house obstetrician, to increase trust and visibility.</p>
-
-                    </div>
-
-                    {/* Swiper Cards */}
-                    <div data-aos="fade-up" data-aos-delay="100" className='mt-5 mb-3 d-flex flex-column'>
-                        <Swiper
-                            slidesPerView={3}
-                            spaceBetween={30}
-                            loop={true}
-                            mousewheel
-                            autoplay={{
-                                delay: 3000, // 3 seconds delay
-                                disableOnInteraction: false,
-                            }}
-
-                            breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 10,
-                                },
-                                480: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 15,
-                                },
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 20,
-                                },
-                                1024: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 30,
-                                },
-                            }}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_2} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_1} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_3} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_4} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_5} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_6} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_7} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_8} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_9} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                            <SwiperSlide className="case-details-slider">
-                                <img src={magnaid_post_10} alt='swiper-images' style={{
-                                    width: "100%",
-
-                                }} />
-                            </SwiperSlide>
-                        </Swiper>
 
                     </div>
 

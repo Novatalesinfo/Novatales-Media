@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import advertisingMarketingImg from '../../images/ADVERTISING & MARKETING MATERIALS 6.jpg';
 import advertisingMarketingTabImg from '../../images/advertising & marketing tab.jpg';
 import brochureIcon from '../../images/brochure icon N.png';
@@ -17,8 +17,47 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+import { Col, Container, Row } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 export default function Advertising() {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [{
+    q: "Can NovaTales design marketing materials that match exactly to my brand?",
+    a: "Absolutely yes. We first understand your brand’s voice, guidelines, motto, and visual identity so that every brochure, flyer, poster, ad campaign, or any creative work feels authentic and your brand remains consistent across all platforms.",
+  },
+  {
+    q: "How do you ensure advertising materials are unique from competitors?",
+    a: "Our team performs deep research to craft unique materials and keeps an eye on trends to grab attention and drive engagement.",
+  },
+  {
+    q: "Digital or print materials,which one is highly recommended?",
+    a: "Digital materials are optimized for online activities, while print is great for events or direct mail. We help clients choose the best option based on goals, target audience, and budget.",
+  },
+  {
+    q: "How long does it take for marketing materials to get designed?",
+    a: "We produce the first drafts within 3–5 business days and provide quick revisions based on feedback.",
+  },
+  {
+    q: "Is it possible for NovaTales to handle ads in multiple languages?",
+    a: "Yes, we offer multilingual designs to help your brand reach a diverse audience.",
+  },
+  {
+    q: "Can I rely on NovaTales for both designing and printing?",
+    a: "Yes, we manage everything from concept to high-quality print and delivery.",
+  },
+  
+  ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -103,7 +142,7 @@ export default function Advertising() {
                       <div className="row">
                         <div className="col-lg-2 col-md-2 col-sm-2">
                           <div className="media-image">
-                            <img src={businessCardIcon}  alt="Icon representing a business card" width="100%" />
+                            <img src={businessCardIcon} alt="Icon representing a business card" width="100%" />
                           </div>
                         </div>
                         <div className="col-lg-10 col-md-10 col-sm-12">
@@ -235,7 +274,7 @@ export default function Advertising() {
                 <div className="row mb-5">
                   <div className="col-lg-2 col-md-2 col-sm-2">
                     <div className="media-image mt-2">
-                      <img src={socialMediaMarketingIcon} alt="Icon representing social media marketing"  width="100%" />
+                      <img src={socialMediaMarketingIcon} alt="Icon representing social media marketing" width="100%" />
                     </div>
                   </div>
                   <div className="col-lg-10 col-md-10 col-sm-12">
@@ -288,6 +327,74 @@ export default function Advertising() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="Health-faqs">
+          <Container>
+            <div className="health-faqs-heading">
+              <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+            </div>
+            <div className="faq-accordion" style={{
+              paddingTop: "40px"
+            }}>
+              <Row>
+                {/* Left Column */}
+                <Col lg={6}>
+                  {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccLeft(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexLeft === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+
+                {/* Right Column */}
+                <Col lg={6}>
+                  {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                    <div className="accordion" data-aos="fade-up" key={index}>
+                      <div
+                        className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                          }`}
+                        onClick={() => toggleAccRight(index)}
+                      >
+                        <button className="accordion__btn">
+                          <span className="accordion__caption">
+                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                          </span>
+                          <span className="accordion__icon">
+                            <FontAwesomeIcon icon={faPlus} />
+                          </span>
+                        </button>
+                        {activeIndexRight === index && (
+                          <div className="accordion__content">{item.a}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </Col>
+              </Row>
+            </div>
+
+          </Container>
         </div>
         <AllServices />
         <ServiceContactForm />

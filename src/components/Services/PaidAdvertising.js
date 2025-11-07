@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import paidAdvertisingLap from '../../images/PAID ADVERSTISING 6.svg';
 import paidAdvertisingTab from '../../images/paid advertising tab.svg';
 import paidAdvertisingM from '../../images/PAID ADVERTISING M.png';
@@ -9,7 +9,52 @@ import 'aos/dist/aos.css';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { Col, Container, Row } from 'react-bootstrap';
 export default function PaidAdvertising() {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [
+     {
+    q: "Do you handle both ad creative design and copywriting?",
+    a: "Yes. We provide full end-to-end ad services including creative design, copywriting, and platform optimization tailored for your audience.",
+  },
+  {
+    q: "What if my competitors are aggressively advertising too?",
+    a: "Our team identifies unique positioning angles and optimizes bidding strategies to outperform competitors without overspending.",
+  },
+    {
+    q: "Do paid advertisements guarantee immediate sales?",
+    a: "No. Paid ads quickly boost visibility, but converting visitors into buyers depends on multiple factors such as audience targeting, landing page quality, and product relevance.",
+  },
+  {
+    q: "How is success measured for paid ad campaigns?",
+    a: "Our team tracks conversions, cost-per-acquisition, click-through rates, and ROI — all aligned with your specific business objectives.",
+  },
+ 
+  {
+    q: "I have a small business. Will I benefit from paid advertising?",
+    a: "Absolutely yes. We create targeted campaigns and manage budgets efficiently to drive meaningful growth for small and mid-sized businesses.",
+  },
+  {
+    q: "Why should one choose NovaTales for paid advertising over other agencies?",
+    a: "At NovaTales, we combine deep industry expertise with data-driven optimization and transparent reporting focused entirely on your brand’s growth.",
+  },
+  {
+    q: "How often do you optimize ads?",
+    a: "We perform daily performance monitoring and make weekly optimizations in bids, targeting, and creatives to maximize results.",
+  },
+  ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -28,8 +73,8 @@ export default function PaidAdvertising() {
           name="description"
           content="Maximize your reach with our PPC advertising services. Our expert digital marketing team creates targeted campaigns, boost conversions and enhance your ROI."
         />
-             <meta name="keywords"
-        content="ppc ad agency, ppc advertising services, ppc advertising in digital marketing, youtube marketing agency, instagram marketing agency, facebook ad agency,google ppc campaigns,facebook and google ads agency."/>
+        <meta name="keywords"
+          content="ppc ad agency, ppc advertising services, ppc advertising in digital marketing, youtube marketing agency, instagram marketing agency, facebook ad agency,google ppc campaigns,facebook and google ads agency." />
       </Helmet>
       <div className="service-heading">
         <img src={paidAdvertisingLap} width="100%" alt="ppc advertising services" className="lap" />
@@ -112,6 +157,74 @@ export default function PaidAdvertising() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="Health-faqs">
+        <Container>
+          <div className="health-faqs-heading">
+            <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+          </div>
+          <div className="faq-accordion" style={{
+            paddingTop: "40px"
+          }}>
+            <Row>
+              {/* Left Column */}
+              <Col lg={6}>
+                {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccLeft(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexLeft === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+
+              {/* Right Column */}
+              <Col lg={6}>
+                {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccRight(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexRight === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+            </Row>
+          </div>
+
+        </Container>
       </div>
       <AllServices />
       <ServiceContactForm />

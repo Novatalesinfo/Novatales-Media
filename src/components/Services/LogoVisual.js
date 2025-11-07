@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logoVisualImage from '../../images/LOGO & VISUAL ELEMENTS 6.svg';
 import logoVisualTabImage from '../../images/logo & visual elements tab.svg';
 import logoVisualMImage from '../../images/logo & visual elements m.png';
@@ -11,7 +11,54 @@ import '../../css/servisesCss/logo.css'
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Col, Container, Row } from 'react-bootstrap';
+
 export default function LogoVisual() {
+    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+    const [activeIndexRight, setActiveIndexRight] = useState(null);
+    const toggleAccLeft = (index) => {
+        setActiveIndexLeft(activeIndexLeft === index ? null : index);
+    };
+    const toggleAccRight = (index) => {
+        setActiveIndexRight(activeIndexRight === index ? null : index);
+    };
+
+    const faq = [{
+        q: "How does a logo reflect brand personality?",
+        a: "Shapes, colors, and fonts communicate whether a brand is bold, elegant, or trustworthy.",
+    },
+    {
+        q: "What industries require highly symbolic logos?",
+        a: "Healthcare, finance, and education often need trust-driven symbolic designs.",
+    },
+    {
+        q: "Should logos look different for global vs. local audiences?",
+        a: "Yes, but they must retain core recognition to remain consistent worldwide.",
+    },
+    {
+        q: "Why do some logos fail in the market?",
+        a: "Over-complexity, poor scalability, and lack of relevance often cause failure.",
+    },
+    {
+        q: "How important is typography in branding visuals?",
+        a: "Typography sets the tone — formal, playful, or innovative — affecting customer perception.",
+    },
+    {
+        q: "What file formats should a logo be delivered in?",
+        a: "Logos should be provided in vector (Adobe Illustrator), PNG, SVG, and JPG formats for flexible usage.",
+    },
+    {
+        q: "What’s the difference between brand visuals and marketing visuals?",
+        a: "Brand visuals are permanent identity elements, while marketing visuals change with campaigns.",
+    },
+    {
+        q: "Can a logo redesign harm business identity?",
+        a: "Not if communicated well — refreshing logos can modernize perception without confusing customers.",
+    },
+
+    ]
     return (
         <HelmetProvider >
             {/* Set the HTML head metadata */}
@@ -148,6 +195,74 @@ export default function LogoVisual() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="Health-faqs">
+                <Container>
+                    <div className="health-faqs-heading">
+                         <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+                    </div>
+                    <div className="faq-accordion" style={{
+                        paddingTop: "30px"
+                    }}>
+                        <Row>
+                            {/* Left Column */}
+                            <Col lg={6}>
+                                {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                                    <div className="accordion" data-aos="fade-up" key={index}>
+                                        <div
+                                            className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                                                }`}
+                                            onClick={() => toggleAccLeft(index)}
+                                        >
+                                            <button className="accordion__btn">
+                                                <span className="accordion__caption">
+                                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                </span>
+                                                <span className="accordion__icon">
+                                                    <FontAwesomeIcon icon={faPlus} />
+                                                </span>
+                                            </button>
+                                            {activeIndexLeft === index && (
+                                                <div className="accordion__content">{item.a}</div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </Col>
+
+                            {/* Right Column */}
+                            <Col lg={6}>
+                                {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                                    <div className="accordion" data-aos="fade-up" key={index}>
+                                        <div
+                                            className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                                                }`}
+                                            onClick={() => toggleAccRight(index)}
+                                        >
+                                            <button className="accordion__btn">
+                                                <span className="accordion__caption">
+                                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                </span>
+                                                <span className="accordion__icon">
+                                                    <FontAwesomeIcon icon={faPlus} />
+                                                </span>
+                                            </button>
+                                            {activeIndexRight === index && (
+                                                <div className="accordion__content">{item.a}</div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </Col>
+                        </Row>
+                    </div>
+
+                </Container>
             </div>
             <AllServices />
             <ServiceContactForm />

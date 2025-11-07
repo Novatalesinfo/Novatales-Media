@@ -246,6 +246,7 @@ export default function AllServices() {
                         </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
+            </div>
     )
 }

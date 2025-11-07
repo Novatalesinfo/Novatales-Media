@@ -17,14 +17,13 @@ import yard from "../images/yard-22.png"
 import mapplestreet from "../images/MSB_1 FRONT.png"
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
-
+import cdc from "../images/casestudies/CDC FINAL LOGO - 01 (1).png"
 export default function Clients() {
     useEffect(() => {
         const logoSlide = document.querySelector(".logos-slide");
         const copy = logoSlide.cloneNode(true);
         document.querySelector(".logo-slider").appendChild(copy);
     }, []);
-
     return (
         <div className='Clients Ourservice-heading' id='our-clients'>
             <h2 >Our Clients</h2>
@@ -36,6 +35,7 @@ export default function Clients() {
                     <img src={mdOfficelogo} alt="Md Office" width="250px" height="auto" className='mdOffice'/>
                     <img src={FaxtoneLogo} alt="Faxtone" width="250px" height="auto"/>
                     <img src={TavasLogo} alt="Tavas" width="250px" height="auto"/> 
+                    <img src={cdc} alt="CDC" width="280px" height="auto"/> 
                     <img src={conceiva} alt="Conceiva" width="200px" height="auto"/> 
                     <img src={magnaid} alt="Magnaid" width="auto" height="auto"/> 
                     <img src={navatris} alt="Navatris" width="180px" height="auto"/> 

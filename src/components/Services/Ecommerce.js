@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ecommerceLap from '../../images/E-Commerce 6.svg';
 import ecommerceTab from '../../images/E-commerce tab.svg';
 import ecommerceImage from '../../images/Ecommerce M.png';
@@ -7,7 +7,55 @@ import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Col, Container, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export default function Ecommerce() {
+
+  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+  const toggleAccLeft = (index) => {
+    setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  };
+  const toggleAccRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index);
+  };
+
+  const faq = [ {
+    q: "What e-commerce platforms does Novatales use?",
+    a: "At NovaTales, we generally work with platforms like Shopify, WooCommerce, Magento, and Wix. We also develop customized solutions based on your product size, complexity, and scalability needs.",
+  },
+  {
+    q: "How long will it take to launch a fully functional e-commerce site?",
+    a: "The timeline depends on your specific requirements, features, design complexity, and integrations — typically taking around 8 weeks for a complete launch.",
+  },
+  {
+    q: "How is the security of customer data and transactions secured?",
+    a: "We implement SSL certificates, PCI compliance, and strong encryption while following strict security practices to safeguard customer privacy and payment data.",
+  },
+  {
+    q: "I need a payment gateway integration that also accepts international transactions. Will Novatales be able to add the option?",
+    a: "Absolutely yes. We integrate multiple payment gateways such as PayPal, Stripe, and Razorpay to support both domestic and international transactions.",
+  },
+ 
+   {
+    q: "Will my e-commerce website be mobile-friendly?",
+    a: "Yes, every e-commerce site we build is fully responsive, ensuring seamless and consistent shopping experiences across all devices.",
+  },
+  {
+    q: "Is it possible to develop customized features like customer accounts, loyalty programs, or subscriptions?",
+    a: "Yes, we can build customized features like user accounts, loyalty programs, subscriptions, and other advanced functionalities to enhance engagement and retention.",
+  },
+  {
+    q: "Do you provide ongoing support for maintenance and updates?",
+    a: "Yes, we offer complete post-launch support, including feature updates, security patches, and performance monitoring to ensure your store runs smoothly.",
+  },
+  {
+    q: "Why should one choose NovaTales for their e-commerce project?",
+    a: "At NovaTales, we combine deep technical expertise, strategic thinking, and customer-focused design to build high-performing online stores that accelerate business growth.",
+  },
+  ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -26,8 +74,8 @@ export default function Ecommerce() {
           name="description"
           content="Transform your online store with NovaTales, the best ecommerce website development company, delivering a smooth user experience and boosting sales growth."
         />
-             <meta name="keywords"
-        content="Ecommerce Website Development Agency, Best Ecommerce Website Development Company, Ecommerce Web Development Agency, Ecommerce Web Development, Ecommerce Website Design & Development Company,ecommerce website development services."/>
+        <meta name="keywords"
+          content="Ecommerce Website Development Agency, Best Ecommerce Website Development Company, Ecommerce Web Development Agency, Ecommerce Web Development, Ecommerce Website Design & Development Company,ecommerce website development services." />
       </Helmet>
       <div className="service-heading">
         <img src={ecommerceLap} width="100%" alt="Ecommerce Website Development Agency" className="lap" />
@@ -127,6 +175,74 @@ export default function Ecommerce() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="Health-faqs">
+        <Container>
+          <div className="health-faqs-heading">
+           <h2 className='text-center' style={{
+                textAlign: "center !important",
+                marginBottom: "40px",
+                marginTop: "40px",
+                color: "#52377b"
+              }}>Frequently Asked  Questions </h2>
+          </div>
+          <div className="faq-accordion" style={{
+            paddingTop: "40px"
+          }}>
+            <Row>
+              {/* Left Column */}
+              <Col lg={6}>
+                {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccLeft(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexLeft === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+
+              {/* Right Column */}
+              <Col lg={6}>
+                {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
+                  <div className="accordion" data-aos="fade-up" key={index}>
+                    <div
+                      className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
+                        }`}
+                      onClick={() => toggleAccRight(index)}
+                    >
+                      <button className="accordion__btn">
+                        <span className="accordion__caption">
+                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                        </span>
+                        <span className="accordion__icon">
+                          <FontAwesomeIcon icon={faPlus} />
+                        </span>
+                      </button>
+                      {activeIndexRight === index && (
+                        <div className="accordion__content">{item.a}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </Col>
+            </Row>
+          </div>
+
+        </Container>
       </div>
       <AllServices />
       <ServiceContactForm />

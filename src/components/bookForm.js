@@ -98,9 +98,11 @@ const BookForm = () => {
             <div className="container">
                 <form onSubmit={handleSubmit}>
                     <div className="row align-items-center">
-                        <div className="col-xl-4">
+                       <div className="col-xl-4">
                             <h3 className='text-center ' style={{
-                                fontSize: "38px"
+                                fontSize: "38px",
+                                   color: "#52377b",
+                                   fontFamily:"Poppins , sans-serif",fontWeight:"600", 
                             }}>
                                 Get a Free Consultation
                             </h3>
