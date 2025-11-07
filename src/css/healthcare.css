@@ -114,7 +114,8 @@
 @media (max-width: 1050px) {
   #topHeading {
     font-size: 40px;
-  } #healthpagebanner{
+  }
+  #healthpagebanner {
     width: 550px;
   }
 }
@@ -133,7 +134,7 @@
   .healthcareTopPara {
     padding: 0px 20px;
   }
-  #healthpagebanner{
+  #healthpagebanner {
     width: 380px;
   }
 }
@@ -180,7 +181,6 @@
   .responsive-height {
     height: 470px;
   }
-  
 }
 /* XXL */
 @media (min-width: 1400px) {
@@ -314,4 +314,61 @@
   transform: translateX(16px);
   transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
   max-height: 100vh;
+}
+
+/*-Why choose Strategy-*/
+.whyStrategies {
+  padding: 80px 0px;
+  width: 80%;
+  margin: auto;
+}
+.whyStrategies .whyStrategiesHeading h2 {
+  text-align: center;
+  margin: auto;
+  color: rgb(82, 55, 123);
+  line-height: 50px;
+  font-weight: bold;
+}
+.whyStrategies .whyStrategiesContent {
+  margin: 80px auto;
+}
+/* .whyStrategies .whyStrategiesContent .content
+{
+  width: 80%;
+  margin: auto;
+} */
+@media screen and (min-width: 1920px) {
+  .whyStrategies .whyStrategiesHeading h2 {
+    width: 40%;
+  }
+  .whyStrategies {
+    width: 80%;
+    margin: auto;
+  }
+  .whyStrategies .whyStrategiesContent {
+    margin: 80px auto;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .whyStrategies .whyStrategiesHeading h2 {
+    width: 50%;
+  }
+  .whyStrategies {
+    width: 100%;
+    margin: auto;
+  }
+  .whyStrategies .whyStrategiesContent {
+    margin: 80px auto;
+    margin-left: 30px;
+  }
+  .content p 
+  {
+      width: 95%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .whyStrategies .whyStrategiesHeading h2 {
+    width: 70%;
+  }
 }
