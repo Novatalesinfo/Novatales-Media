@@ -9,51 +9,51 @@ import '../../css/servisesCss/analytics.css';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import { Col, Container, Row } from 'react-bootstrap';
+// import { Col, Container, Row } from 'react-bootstrap';
 export default function Analytics() {
 
-    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-    const [activeIndexRight, setActiveIndexRight] = useState(null);
-    const toggleAccLeft = (index) => {
-        setActiveIndexLeft(activeIndexLeft === index ? null : index);
-    };
-    const toggleAccRight = (index) => {
-        setActiveIndexRight(activeIndexRight === index ? null : index);
-    };
+    // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+    // const [activeIndexRight, setActiveIndexRight] = useState(null);
+    // const toggleAccLeft = (index) => {
+    //     setActiveIndexLeft(activeIndexLeft === index ? null : index);
+    // };
+    // const toggleAccRight = (index) => {
+    //     setActiveIndexRight(activeIndexRight === index ? null : index);
+    // };
 
-    const faq = [{
-        q: "What exactly is business analytics, and how does it help my company?",
-        a: "Business analytics is our specialized service that uses data to identify trends and guide smarter decisions, boosting efficiency and driving growth for your company.",
-    },
-     {
-        q: "Is it possible to identify hidden customer opportunities using analytics?",
-        a: "Yes, our team performs advanced segmentation and data mining to uncover untapped niches and potential marketing opportunities.",
-    },
-    {
-        q: "What kind of data do you analyze for my business?",
-        a: "At NovaTales, we focus on sales analysis, customer behavior, website traffic, operational metrics, and market trends that align with your business goals.",
-    },
-     {
-        q: "How often will Novatales update and revise the analytics reports?",
-        a: "We provide analytics updates and revisions monthly, quarterly, or as needed — depending on your chosen plan and real-time performance alerts.",
-    },
+//     const faq = [{
+//         q: "What exactly is business analytics, and how does it help my company?",
+//         a: "Business analytics is our specialized service that uses data to identify trends and guide smarter decisions, boosting efficiency and driving growth for your company.",
+//     },
+//      {
+//         q: "Is it possible to identify hidden customer opportunities using analytics?",
+//         a: "Yes, our team performs advanced segmentation and data mining to uncover untapped niches and potential marketing opportunities.",
+//     },
+//     {
+//         q: "What kind of data do you analyze for my business?",
+//         a: "At NovaTales, we focus on sales analysis, customer behavior, website traffic, operational metrics, and market trends that align with your business goals.",
+//     },
+//      {
+//         q: "How often will Novatales update and revise the analytics reports?",
+//         a: "We provide analytics updates and revisions monthly, quarterly, or as needed — depending on your chosen plan and real-time performance alerts.",
+//     },
     
-    {
-        q: "Do you integrate analytics with our existing business systems?",
-        a: "Yes, we ensure seamless integration with CRMs, ERPs, and marketing tools to create a unified data ecosystem for your business.",
-    },
-    {
-        q: "Will my data remain secure and compliant with privacy laws?",
-        a: "Absolutely. We strictly follow data protection best practices and comply with GDPR, HIPAA, and other standard privacy regulations.",
-    },
-   {
-        q: "How is Novatales’ analytic report different?",
-        a: "We don’t just deliver raw data — we provide predictive insights and actionable recommendations that directly support your business objectives.",
-    },
+//     {
+//         q: "Do you integrate analytics with our existing business systems?",
+//         a: "Yes, we ensure seamless integration with CRMs, ERPs, and marketing tools to create a unified data ecosystem for your business.",
+//     },
+//     {
+//         q: "Will my data remain secure and compliant with privacy laws?",
+//         a: "Absolutely. We strictly follow data protection best practices and comply with GDPR, HIPAA, and other standard privacy regulations.",
+//     },
+//    {
+//         q: "How is Novatales’ analytic report different?",
+//         a: "We don’t just deliver raw data — we provide predictive insights and actionable recommendations that directly support your business objectives.",
+//     },
    
-    ]
+//     ]
     return (
         <HelmetProvider >
             {/* Set the HTML head metadata */}
@@ -138,7 +138,7 @@ export default function Analytics() {
                         </div>
                     </div>
                 </div>
-                <div className="Health-faqs">
+                {/* <div className="Health-faqs">
                     <Container>
                         <div className="health-faqs-heading">
                             <h2 className='text-center' style={{
@@ -152,7 +152,7 @@ export default function Analytics() {
                             paddingTop: "40px"
                         }}>
                             <Row>
-                                {/* Left Column */}
+                        
                                 <Col lg={6}>
                                     {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                                         <div className="accordion" data-aos="fade-up" key={index}>
@@ -163,7 +163,7 @@ export default function Analytics() {
                                             >
                                                 <button className="accordion__btn">
                                                     <span className="accordion__caption">
-                                                        <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                          {item.q}
                                                     </span>
                                                     <span className="accordion__icon">
                                                         <FontAwesomeIcon icon={faPlus} />
@@ -177,7 +177,7 @@ export default function Analytics() {
                                     ))}
                                 </Col>
 
-                                {/* Right Column */}
+                            
                                 <Col lg={6}>
                                     {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                                         <div className="accordion" data-aos="fade-up" key={index}>
@@ -188,7 +188,7 @@ export default function Analytics() {
                                             >
                                                 <button className="accordion__btn">
                                                     <span className="accordion__caption">
-                                                        <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                          {item.q}
                                                     </span>
                                                     <span className="accordion__icon">
                                                         <FontAwesomeIcon icon={faPlus} />
@@ -205,7 +205,7 @@ export default function Analytics() {
                         </div>
 
                     </Container>
-                </div>
+                </div> */}
                 <AllServices />
                 <ServiceContactForm />
             </div>

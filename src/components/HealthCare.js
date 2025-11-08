@@ -445,7 +445,7 @@ export default function HealthCare() {
                     >
                       <button className="accordion__btn real-estate-faq">
                         <span className="accordion__caption fw-medium">
-                          <FontAwesomeIcon icon={faLightbulb} />
+                           
                           {item.q}
                         </span>
                         <span className="accordion__icon">

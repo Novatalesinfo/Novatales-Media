@@ -1,7 +1,14 @@
 
 import '../css/HomeMediaQuery.css';
 import 'react-toastify/dist/ReactToastify.css';
-import serviceCardimg_1 from "../images/portfolio/serviceCardim_1.svg"
+import serviceCardimg_1 from "../images/portfolio/icons/smi.png"
+import serviceCardimg_2 from "../images/portfolio/icons/seosmm.png"
+import serviceCardimg_3 from "../images/portfolio/icons/content.png"
+import serviceCardimg_4 from "../images/portfolio/icons/webDev.png"
+import serviceCardimg_5 from "../images/portfolio/icons/vdoicon.png"
+import serviceCardimg_6 from "../images/portfolio/icons/email.png"
+import serviceCardimg_7 from "../images/portfolio/icons/ppc.png"
+import serviceCardimg_8 from "../images/portfolio/icons/reputaion.png"
 import "../css/serviceCards.css"
 const ServicesCards = () => {
     return (
@@ -37,7 +44,7 @@ const ServicesCards = () => {
                         <div className="get-list__item extraTop">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
-                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                    <img src={serviceCardimg_2} alt="" loading="lazy" />
                                 </div>
                                 <div className="get-list__title">SEO and SEM</div>
                             </div>
@@ -52,7 +59,7 @@ const ServicesCards = () => {
                         <div className="get-list__item">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
-                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                    <img src={serviceCardimg_3} alt="" loading="lazy" />
                                 </div>
                                 <div className="get-list__title">Content Marketing</div>
                             </div>
@@ -64,7 +71,7 @@ const ServicesCards = () => {
                         <div className="get-list__item extraTop">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
-                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                    <img src={serviceCardimg_6} alt="" loading="lazy" />
                                 </div>
                                 <div className="get-list__title">Email Marketing</div>
                             </div>
@@ -79,7 +86,7 @@ const ServicesCards = () => {
                         <div className="get-list__item">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
-                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                    <img src={serviceCardimg_8} alt="" loading="lazy" />
                                 </div>
                                 <div className="get-list__title">Reputation Management</div>
                             </div>
@@ -92,7 +99,7 @@ const ServicesCards = () => {
                         <div className="get-list__item extraTop">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
-                                    <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                    <img src={serviceCardimg_7} alt="" loading="lazy" />
                                 </div>
                                 <div className="get-list__title">Paid Advertising (PPC)</div>
                             </div>
@@ -110,7 +117,7 @@ const ServicesCards = () => {
                                 <div className="get-list__item">
                                     <div className="get-list__heading">
                                         <div className="get-list__icon">
-                                            <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                            <img src={serviceCardimg_4} alt="" loading="lazy" />
                                         </div>
                                         <div className="get-list__title">Website Development</div>
                                     </div>
@@ -123,7 +130,7 @@ const ServicesCards = () => {
                                 <div className="get-list__item extraTop">
                                     <div className="get-list__heading">
                                         <div className="get-list__icon">
-                                            <img src={serviceCardimg_1} alt="" loading="lazy" />
+                                            <img src={serviceCardimg_5} alt="" loading="lazy" />
                                         </div>
                                         <div className="get-list__title">Video Marketing</div>
                                     </div>

@@ -30,7 +30,7 @@ const LivvonWebDesign = () => {
           width="100%"
         />
       </div>
-      <div className="case-study-tabs-parents">
+      <div className="case-study-tabs-parents" style={{fontFamily: "Poppins"  }}>
         <div className="case-study-tabs-child">
           {/* About the case  */}
           <div
@@ -120,7 +120,7 @@ const LivvonWebDesign = () => {
                 <h3
                   style={{
                     fontSize: "32px",
-                    color: "#2f2144",
+                    color: "#52377b",
                   }}
                 >
                   Challenges
@@ -179,7 +179,7 @@ const LivvonWebDesign = () => {
               <h3
                 style={{
                   fontSize: "32px",
-                  color: "#2f2144",
+                   color: "#52377b",
                 }}
               >
                 Solution
@@ -241,7 +241,7 @@ const LivvonWebDesign = () => {
             <div className="col-xl-6 extra-padding-case-details">
               <h3
                 style={{
-                  fontSize: "32px",
+                  fontSize: "32px", color: "#52377b",
                 }}
               >
                 Results

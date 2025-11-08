@@ -21,7 +21,7 @@ const ConceivaWebDesign = () => {
                 <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
                 <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
             </div>
-            <div className='case-study-tabs-parents'>
+            <div className='case-study-tabs-parents' style={{fontFamily: "Poppins"  }}>
                 <div className='case-study-tabs-child'>
 
                     {/* About the case  */}
@@ -66,7 +66,7 @@ const ConceivaWebDesign = () => {
                             <div>
                                 <h3 style={{
                                     fontSize: "32px"
-                                    , color: "#2f2144"
+                                    ,  color: "#52377b",
                                 }}>
                                     Challenges
                                 </h3>
@@ -115,7 +115,7 @@ const ConceivaWebDesign = () => {
 
                         <div className='col-lg-6 d-flex flex-column p-3 ps-xl-5'>
                             <h3 style={{
-                                fontSize: "32px", color: "#2f2144"
+                                fontSize: "32px",  color: "#52377b",
                             }}>
                                 Solution
                             </h3>
@@ -183,7 +183,7 @@ const ConceivaWebDesign = () => {
                     }}>
                         <div className='col-xl-6 extra-padding-case-details'>
                             <h3 style={{
-                                fontSize: "32px"
+                                fontSize: "32px", color: "#52377b",
                             }}>
                                 Results
                             </h3>

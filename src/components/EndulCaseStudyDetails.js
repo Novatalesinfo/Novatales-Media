@@ -22,7 +22,7 @@ const EndulaCaseStudyDetails = () => {
                                       <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
                                   </div>
             <div className='case-study-tabs-parents'>
-                <div className='case-study-tabs-child'>
+                <div className='case-study-tabs-child' style={{fontFamily: "Poppins"  }}>
 
                     {/* About the case  */}
                     <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex align-items-center case-study-details-row' style={{
@@ -62,7 +62,7 @@ const EndulaCaseStudyDetails = () => {
                         <div className='col-lg-6 d-flex flex-column gap-2 p-3'>
                             <div>
                                 <h3 style={{
-                                    fontSize: "32px", color: "#2f2144"
+                                    fontSize: "32px", color: "#52377b",
                                 }}>
                                     Challenges
                                 </h3>
@@ -113,7 +113,7 @@ const EndulaCaseStudyDetails = () => {
 
                         <div className='col-lg-6 d-flex flex-column p-3'>
                             <h3 style={{
-                                fontSize: "32px", color: "#2f2144"
+                                fontSize: "32px", color: "#52377b",
                             }}>
                                 Niche Analysis
                             </h3>
@@ -170,7 +170,7 @@ const EndulaCaseStudyDetails = () => {
                     {/* Solutions */}
                     <div className='mt-5 mb-3 d-flex flex-column' data-aos="fade-up" data-aos-delay="100">
                         <h3 style={{
-                            fontSize: "32px"
+                            fontSize: "32px", color: "#52377b",
                         }}>
                             Our Solutions
                         </h3>

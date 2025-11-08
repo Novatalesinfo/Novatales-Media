@@ -21,7 +21,7 @@ const CdcCenter = () => {
                 <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
             </div>
             <div className='case-study-tabs-parents'>
-                <div className='case-study-tabs-child'>
+                <div className='case-study-tabs-child' style={{fontFamily: "Poppins"  }}>
 
                     {/* About the case  */}
                     <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex align-items-center case-study-details-row' style={{
@@ -65,7 +65,7 @@ const CdcCenter = () => {
                             <div>
                                 <h3 style={{
                                     fontSize: "32px"
-                                    , color: "#2f2144"
+                                    ,  color: "#52377b",
                                 }}>
                                     Challenges
                                 </h3>
@@ -104,7 +104,7 @@ const CdcCenter = () => {
                         </div>
                         <div className='col-lg-6 d-flex flex-column p-3  ps-xl-5'>
                             <h3 style={{
-                                fontSize: "32px", color: "#2f2144"
+                                fontSize: "32px",  color: "#52377b",
                             }}>
                                 Solution
                             </h3>
@@ -150,7 +150,7 @@ const CdcCenter = () => {
                     <div data-aos="fade-up" data-aos-delay="100" className='row mt-5 mb-5 pb-5 d-flex align-items-center'>
                         <div className='col-xl-6 extra-padding-case-details'>
                             <h3 style={{
-                                fontSize: "32px"
+                                fontSize: "32px", color: "#52377b",
                             }}>
                                 Results
                             </h3>

@@ -6,53 +6,53 @@ import positioningMImage from '../../images/brand postioning M.png';
 import AllServices from '../AllServices';
 import ServiceContactForm from './ServiceContactForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Col, Container, Row } from 'react-bootstrap';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { Col, Container, Row } from 'react-bootstrap';
 
 export default function BrandPositioning() {
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
-  const toggleAccLeft = (index) => {
-    setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
-  const faq = [{
-    q: "What does brand positioning really mean?",
-    a: "Brand positioning defines the unique space your brand occupies in the customer’s mind compared to competitors.",
-  },
-  {
-    q: "Why is brand positioning important for business growth?",
-    a: "Clear positioning helps customers instantly understand your value and builds long-term loyalty.",
-  },
-  {
-    q: "How does Novatales approach brand positioning?",
-    a: "We analyze competitors, audience behavior, and brand strengths to design a differentiated market position.",
-  },
-  {
-    q: "How is brand positioning different from branding?",
-    a: "Branding is your identity, while positioning is how that identity stands out against competitors.",
-  },
-  {
-    q: "What happens if a brand has no clear positioning?",
-    a: "Without positioning, brands blend in, leading to weak recall and lost opportunities.",
-  },
-  {
-    q: "How can businesses measure the success of brand positioning?",
-    a: "Success is tracked through customer recall, loyalty, perception studies, and market share growth.",
-  },
-  {
-    q: "Can brand positioning change over time?",
-    a: "Yes, brands must adapt positioning when markets, customer needs, or industry trends evolve.",
-  },
-  {
-    q: "How does storytelling enhance brand positioning?",
-    a: "Storytelling creates emotional connections that make your positioning more relatable and memorable.",
-  },
+  // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  // const [activeIndexRight, setActiveIndexRight] = useState(null);
+  // const toggleAccLeft = (index) => {
+  //   setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  // };
+  // const toggleAccRight = (index) => {
+  //   setActiveIndexRight(activeIndexRight === index ? null : index);
+  // };
+  // const faq = [{
+  //   q: "What does brand positioning really mean?",
+  //   a: "Brand positioning defines the unique space your brand occupies in the customer’s mind compared to competitors.",
+  // },
+  // {
+  //   q: "Why is brand positioning important for business growth?",
+  //   a: "Clear positioning helps customers instantly understand your value and builds long-term loyalty.",
+  // },
+  // {
+  //   q: "How does Novatales approach brand positioning?",
+  //   a: "We analyze competitors, audience behavior, and brand strengths to design a differentiated market position.",
+  // },
+  // {
+  //   q: "How is brand positioning different from branding?",
+  //   a: "Branding is your identity, while positioning is how that identity stands out against competitors.",
+  // },
+  // {
+  //   q: "What happens if a brand has no clear positioning?",
+  //   a: "Without positioning, brands blend in, leading to weak recall and lost opportunities.",
+  // },
+  // {
+  //   q: "How can businesses measure the success of brand positioning?",
+  //   a: "Success is tracked through customer recall, loyalty, perception studies, and market share growth.",
+  // },
+  // {
+  //   q: "Can brand positioning change over time?",
+  //   a: "Yes, brands must adapt positioning when markets, customer needs, or industry trends evolve.",
+  // },
+  // {
+  //   q: "How does storytelling enhance brand positioning?",
+  //   a: "Storytelling creates emotional connections that make your positioning more relatable and memorable.",
+  // },
 
-  ]
+  // ]
   // Scroll to the top of the page when the component is rendered
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -102,7 +102,7 @@ export default function BrandPositioning() {
           </div>
         </div>
       </div>
-      <div className="Health-faqs">
+      {/* <div className="Health-faqs">
         <Container>
           <div className="health-faqs-heading">
             <h2 className='text-center' style={{
@@ -116,7 +116,7 @@ export default function BrandPositioning() {
             paddingTop: "50px"
           }}>
             <Row>
-              {/* Left Column */}
+            
               <Col lg={6}>
                 {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                   <div className="accordion" data-aos="fade-up" key={index}>
@@ -127,7 +127,7 @@ export default function BrandPositioning() {
                     >
                       <button className="accordion__btn">
                         <span className="accordion__caption">
-                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                            {item.q}
                         </span>
                         <span className="accordion__icon">
                           <FontAwesomeIcon icon={faPlus} />
@@ -141,7 +141,7 @@ export default function BrandPositioning() {
                 ))}
               </Col>
 
-              {/* Right Column */}
+        
               <Col lg={6}>
                 {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                   <div className="accordion" data-aos="fade-up" key={index}>
@@ -152,7 +152,7 @@ export default function BrandPositioning() {
                     >
                       <button className="accordion__btn">
                         <span className="accordion__caption">
-                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                            {item.q}
                         </span>
                         <span className="accordion__icon">
                           <FontAwesomeIcon icon={faPlus} />
@@ -170,7 +170,7 @@ export default function BrandPositioning() {
           </div>
 
         </Container>
-      </div>
+      </div> */}
       <AllServices />
       <ServiceContactForm />
     </HelmetProvider>

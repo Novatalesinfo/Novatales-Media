@@ -9,52 +9,52 @@ import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { Col, Container, Row } from 'react-bootstrap';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { Col, Container, Row } from 'react-bootstrap';
 export default function Seo() {
 
-    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-    const [activeIndexRight, setActiveIndexRight] = useState(null);
-    const toggleAccLeft = (index) => {
-      setActiveIndexLeft(activeIndexLeft === index ? null : index);
-    };
-    const toggleAccRight = (index) => {
-      setActiveIndexRight(activeIndexRight === index ? null : index);
-    };
+  //   const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  //   const [activeIndexRight, setActiveIndexRight] = useState(null);
+  //   const toggleAccLeft = (index) => {
+  //     setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  //   };
+  //   const toggleAccRight = (index) => {
+  //     setActiveIndexRight(activeIndexRight === index ? null : index);
+  //   };
   
-    const faq = [  {
-    q: "Can Novatales guarantee top rankings on Google?",
-    a: "No reliable agency can promise top positions on any search engine. However, we constantly work and aim for the highest possible visibility through strategic, data-driven SEO practices.",
-  },
-  {
-    q: "How long will SEO take to show results?",
-    a: "SEO is a long-term investment that usually shows initial improvements within 3–6 months.",
-  },
-  {
-    q: "What kind of SEO techniques does Novatales follow?",
-    a: "At NovaTales, we follow 100% ethical and Google-approved practices to ensure safe and sustainable growth.",
-  },
-  {
-    q: "Can Novatales help fix Google penalties?",
-    a: "Yes, we specialize in penalty analysis, cleanup, and recovery for affected sites.",
-  },
-  {
-    q: "Is SEO a one-time service?",
-    a: "No, SEO is an ongoing process that requires regular updates, monitoring, and optimization to maintain and improve rankings.",
-  },
-  {
-    q: "How will I get to know about the progress?",
-    a: "Our team provides clear monthly reports with updates on rankings, traffic, and goal performance metrics.",
-  },
-  {
-    q: "What services are included in your SEO process?",
-    a: "We cover site audits, keyword research, on-page optimization, technical fixes, content creation, link building, and monthly performance reporting.",
-  },
-  {
-    q: "Can I skip paid ads if I completely rely on SEO?",
-    a: "We recommend combining both SEO and paid ads for the best results. SEO drives long-term organic traffic cost-effectively, while paid ads offer instant visibility.",
-  },
-    ]
+  //   const faq = [  {
+  //   q: "Can Novatales guarantee top rankings on Google?",
+  //   a: "No reliable agency can promise top positions on any search engine. However, we constantly work and aim for the highest possible visibility through strategic, data-driven SEO practices.",
+  // },
+  // {
+  //   q: "How long will SEO take to show results?",
+  //   a: "SEO is a long-term investment that usually shows initial improvements within 3–6 months.",
+  // },
+  // {
+  //   q: "What kind of SEO techniques does Novatales follow?",
+  //   a: "At NovaTales, we follow 100% ethical and Google-approved practices to ensure safe and sustainable growth.",
+  // },
+  // {
+  //   q: "Can Novatales help fix Google penalties?",
+  //   a: "Yes, we specialize in penalty analysis, cleanup, and recovery for affected sites.",
+  // },
+  // {
+  //   q: "Is SEO a one-time service?",
+  //   a: "No, SEO is an ongoing process that requires regular updates, monitoring, and optimization to maintain and improve rankings.",
+  // },
+  // {
+  //   q: "How will I get to know about the progress?",
+  //   a: "Our team provides clear monthly reports with updates on rankings, traffic, and goal performance metrics.",
+  // },
+  // {
+  //   q: "What services are included in your SEO process?",
+  //   a: "We cover site audits, keyword research, on-page optimization, technical fixes, content creation, link building, and monthly performance reporting.",
+  // },
+  // {
+  //   q: "Can I skip paid ads if I completely rely on SEO?",
+  //   a: "We recommend combining both SEO and paid ads for the best results. SEO drives long-term organic traffic cost-effectively, while paid ads offer instant visibility.",
+  // },
+  //   ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -117,7 +117,7 @@ export default function Seo() {
           </div>
         </div>
       </div>
-        <div className="Health-faqs">
+        {/* <div className="Health-faqs">
                 <Container>
                   <div className="health-faqs-heading">
                    <h2 className='text-center' style={{
@@ -131,7 +131,7 @@ export default function Seo() {
                     paddingTop: "40px"
                   }}>
                     <Row>
-                      {/* Left Column */}
+                    
                       <Col lg={6}>
                         {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                           <div className="accordion" data-aos="fade-up" key={index}>
@@ -142,7 +142,7 @@ export default function Seo() {
                             >
                               <button className="accordion__btn">
                                 <span className="accordion__caption">
-                                  <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                    {item.q}
                                 </span>
                                 <span className="accordion__icon">
                                   <FontAwesomeIcon icon={faPlus} />
@@ -156,7 +156,7 @@ export default function Seo() {
                         ))}
                       </Col>
       
-                      {/* Right Column */}
+                  
                       <Col lg={6}>
                         {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                           <div className="accordion" data-aos="fade-up" key={index}>
@@ -167,7 +167,7 @@ export default function Seo() {
                             >
                               <button className="accordion__btn">
                                 <span className="accordion__caption">
-                                  <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                    {item.q}
                                 </span>
                                 <span className="accordion__icon">
                                   <FontAwesomeIcon icon={faPlus} />
@@ -184,7 +184,7 @@ export default function Seo() {
                   </div>
       
                 </Container>
-              </div>
+              </div> */}
       <AllServices />
       <ServiceContactForm />
     </HelmetProvider>

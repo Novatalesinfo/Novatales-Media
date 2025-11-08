@@ -16,7 +16,7 @@ const HeadDigitalCaseStudy = () => {
     }, [])
     return (
         <>
-            <div className="about-hero">
+            <div className="about-hero" style={{fontFamily: "Poppins"  }}>
                 <img src={aboutHeroImage} width="100%" alt="best digital advertising agencies" className="lap" />
                 <img src={case_study_mobile_banner} alt="best digital advertising agencies" className="tab" width="100%" />
             </div>

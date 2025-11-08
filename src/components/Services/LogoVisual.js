@@ -11,54 +11,54 @@ import '../../css/servisesCss/logo.css'
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Col, Container, Row } from 'react-bootstrap';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { Col, Container, Row } from 'react-bootstrap';
 
 export default function LogoVisual() {
-    const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-    const [activeIndexRight, setActiveIndexRight] = useState(null);
-    const toggleAccLeft = (index) => {
-        setActiveIndexLeft(activeIndexLeft === index ? null : index);
-    };
-    const toggleAccRight = (index) => {
-        setActiveIndexRight(activeIndexRight === index ? null : index);
-    };
+    // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+    // const [activeIndexRight, setActiveIndexRight] = useState(null);
+    // const toggleAccLeft = (index) => {
+    //     setActiveIndexLeft(activeIndexLeft === index ? null : index);
+    // };
+    // const toggleAccRight = (index) => {
+    //     setActiveIndexRight(activeIndexRight === index ? null : index);
+    // };
 
-    const faq = [{
-        q: "How does a logo reflect brand personality?",
-        a: "Shapes, colors, and fonts communicate whether a brand is bold, elegant, or trustworthy.",
-    },
-    {
-        q: "What industries require highly symbolic logos?",
-        a: "Healthcare, finance, and education often need trust-driven symbolic designs.",
-    },
-    {
-        q: "Should logos look different for global vs. local audiences?",
-        a: "Yes, but they must retain core recognition to remain consistent worldwide.",
-    },
-    {
-        q: "Why do some logos fail in the market?",
-        a: "Over-complexity, poor scalability, and lack of relevance often cause failure.",
-    },
-    {
-        q: "How important is typography in branding visuals?",
-        a: "Typography sets the tone — formal, playful, or innovative — affecting customer perception.",
-    },
-    {
-        q: "What file formats should a logo be delivered in?",
-        a: "Logos should be provided in vector (Adobe Illustrator), PNG, SVG, and JPG formats for flexible usage.",
-    },
-    {
-        q: "What’s the difference between brand visuals and marketing visuals?",
-        a: "Brand visuals are permanent identity elements, while marketing visuals change with campaigns.",
-    },
-    {
-        q: "Can a logo redesign harm business identity?",
-        a: "Not if communicated well — refreshing logos can modernize perception without confusing customers.",
-    },
+    // const faq = [{
+    //     q: "How does a logo reflect brand personality?",
+    //     a: "Shapes, colors, and fonts communicate whether a brand is bold, elegant, or trustworthy.",
+    // },
+    // {
+    //     q: "What industries require highly symbolic logos?",
+    //     a: "Healthcare, finance, and education often need trust-driven symbolic designs.",
+    // },
+    // {
+    //     q: "Should logos look different for global vs. local audiences?",
+    //     a: "Yes, but they must retain core recognition to remain consistent worldwide.",
+    // },
+    // {
+    //     q: "Why do some logos fail in the market?",
+    //     a: "Over-complexity, poor scalability, and lack of relevance often cause failure.",
+    // },
+    // {
+    //     q: "How important is typography in branding visuals?",
+    //     a: "Typography sets the tone — formal, playful, or innovative — affecting customer perception.",
+    // },
+    // {
+    //     q: "What file formats should a logo be delivered in?",
+    //     a: "Logos should be provided in vector (Adobe Illustrator), PNG, SVG, and JPG formats for flexible usage.",
+    // },
+    // {
+    //     q: "What’s the difference between brand visuals and marketing visuals?",
+    //     a: "Brand visuals are permanent identity elements, while marketing visuals change with campaigns.",
+    // },
+    // {
+    //     q: "Can a logo redesign harm business identity?",
+    //     a: "Not if communicated well — refreshing logos can modernize perception without confusing customers.",
+    // },
 
-    ]
+    // ]
     return (
         <HelmetProvider >
             {/* Set the HTML head metadata */}
@@ -196,7 +196,7 @@ export default function LogoVisual() {
                     </div>
                 </div>
             </div>
-            <div className="Health-faqs">
+            {/* <div className="Health-faqs">
                 <Container>
                     <div className="health-faqs-heading">
                          <h2 className='text-center' style={{
@@ -210,7 +210,7 @@ export default function LogoVisual() {
                         paddingTop: "30px"
                     }}>
                         <Row>
-                            {/* Left Column */}
+                            
                             <Col lg={6}>
                                 {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -221,7 +221,7 @@ export default function LogoVisual() {
                                         >
                                             <button className="accordion__btn">
                                                 <span className="accordion__caption">
-                                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                      {item.q}
                                                 </span>
                                                 <span className="accordion__icon">
                                                     <FontAwesomeIcon icon={faPlus} />
@@ -235,8 +235,7 @@ export default function LogoVisual() {
                                 ))}
                             </Col>
 
-                            {/* Right Column */}
-                            <Col lg={6}>
+                      <Col lg={6}>
                                 {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                                     <div className="accordion" data-aos="fade-up" key={index}>
                                         <div
@@ -246,7 +245,7 @@ export default function LogoVisual() {
                                         >
                                             <button className="accordion__btn">
                                                 <span className="accordion__caption">
-                                                    <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                                                      {item.q}
                                                 </span>
                                                 <span className="accordion__icon">
                                                     <FontAwesomeIcon icon={faPlus} />
@@ -263,7 +262,7 @@ export default function LogoVisual() {
                     </div>
 
                 </Container>
-            </div>
+            </div> */}
             <AllServices />
             <ServiceContactForm />
         </HelmetProvider>

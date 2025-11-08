@@ -8,47 +8,47 @@ import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { Col, Container, Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { Col, Container, Row } from 'react-bootstrap';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Photoshoot() {
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
-  const toggleAccLeft = (index) => {
-    setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
+  // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  // const [activeIndexRight, setActiveIndexRight] = useState(null);
+  // const toggleAccLeft = (index) => {
+  //   setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  // };
+  // const toggleAccRight = (index) => {
+  //   setActiveIndexRight(activeIndexRight === index ? null : index);
+  // };
 
-  const faq = [{
-    q: "What kinds of photoshoots does NovaTales specialize in?",
-    a: "We offer professional photoshoots for every need — including corporate portraits, fashion shoots, product photography, business events, and customized shoots for e-commerce platforms.",
-  },
-  {
-    q: "I’m concerned about the confidentiality and privacy of my photos. How would NovaTales take care of it?",
-    a: "We take client privacy seriously — all photo data is securely stored with restricted access, ensuring complete confidentiality and peace of mind.",
-  },
+  // const faq = [{
+  //   q: "What kinds of photoshoots does NovaTales specialize in?",
+  //   a: "We offer professional photoshoots for every need — including corporate portraits, fashion shoots, product photography, business events, and customized shoots for e-commerce platforms.",
+  // },
+  // {
+  //   q: "I’m concerned about the confidentiality and privacy of my photos. How would NovaTales take care of it?",
+  //   a: "We take client privacy seriously — all photo data is securely stored with restricted access, ensuring complete confidentiality and peace of mind.",
+  // },
  
-  {
-    q: "How long will a photoshoot session last?",
-    a: "Depending on the theme and requirements, a session typically lasts between 1 to 4 hours. Our focus always remains on delivering top-quality visuals.",
-  },
-  {
-    q: "What if the weather is bad on my scheduled outdoor shoot?",
-    a: "If the weather doesn’t cooperate, NovaTales will promptly reschedule the shoot or offer an alternative indoor setup to ensure your project stays on track.",
-  },
-  {
-    q: "What if I’m not satisfied with the photos? Do you offer a re-shooting option?",
-    a: "Yes. After every session, we review the photos together. If you're not fully satisfied, we’ll arrange a convenient date for a re-shoot to meet your expectations.",
-  },
+  // {
+  //   q: "How long will a photoshoot session last?",
+  //   a: "Depending on the theme and requirements, a session typically lasts between 1 to 4 hours. Our focus always remains on delivering top-quality visuals.",
+  // },
+  // {
+  //   q: "What if the weather is bad on my scheduled outdoor shoot?",
+  //   a: "If the weather doesn’t cooperate, NovaTales will promptly reschedule the shoot or offer an alternative indoor setup to ensure your project stays on track.",
+  // },
+  // {
+  //   q: "What if I’m not satisfied with the photos? Do you offer a re-shooting option?",
+  //   a: "Yes. After every session, we review the photos together. If you're not fully satisfied, we’ll arrange a convenient date for a re-shoot to meet your expectations.",
+  // },
   
-   {
-    q: "Do NovaTales offer outdoor photoshoots?",
-    a: "Absolutely. We’re highly flexible and can conduct shoots at any location of your choice, depending on your project’s requirements and creative direction.",
-  },
-  ]
+  //  {
+  //   q: "Do NovaTales offer outdoor photoshoots?",
+  //   a: "Absolutely. We’re highly flexible and can conduct shoots at any location of your choice, depending on your project’s requirements and creative direction.",
+  // },
+  // ]
   // Scroll to the top of the page when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -97,7 +97,7 @@ export default function Photoshoot() {
             </div>
           </div>
         </div>
-        <div className="Health-faqs">
+        {/* <div className="Health-faqs">
           <Container>
             <div className="health-faqs-heading">
                <h2 className='text-center' style={{
@@ -111,7 +111,7 @@ export default function Photoshoot() {
               paddingTop: "40px"
             }}>
               <Row>
-                {/* Left Column */}
+       
                 <Col lg={6}>
                   {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -122,7 +122,7 @@ export default function Photoshoot() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -136,7 +136,7 @@ export default function Photoshoot() {
                   ))}
                 </Col>
 
-                {/* Right Column */}
+              
                 <Col lg={6}>
                   {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -147,7 +147,7 @@ export default function Photoshoot() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -164,7 +164,7 @@ export default function Photoshoot() {
             </div>
 
           </Container>
-        </div>
+        </div> */}
         <AllServices />
         <ServiceContactForm />
       </div>

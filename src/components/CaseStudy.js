@@ -170,9 +170,8 @@ const CaseStudy = () => {
                                 </Box>
                             </Box>
                             {/* Digital Marketing Case studies  */}
-                            <TabPanel value="1">
-                                <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row' style={{
-                                }}>
+                            <TabPanel value="1" >
+                                <div style={{fontFamily: "Poppins"  }} data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row'>
                                     <div className='col-lg-6'>
                                         <p style={{
                                             fontSize: "18px", color: "#52377b", padding: "12px 0px"
@@ -184,9 +183,7 @@ const CaseStudy = () => {
                                             MagnAid Hospitals
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className='' style={{
-
-                                            }}>
+                                            <p className='' style={{fontFamily: "Poppins"  }} >
                                                 MagnAid Hospitals is a multi-speciality healthcare institution based in Hyderabad, committed to providing compassionate and advanced medical care. Known for its expertise in obstetrics and gynecology, pediatrics, orthopedics, and general medicine, Magnaid Hospitals combines clinical excellence with patient-centric service.
                                             </p>
                                             <Link to="/case-studies/magnaid-hospitals">
@@ -215,7 +212,7 @@ const CaseStudy = () => {
                                             Ekam Fertility
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className=''>
+                                            <p className='' style={{fontFamily: "Poppins"  }}>
                                                 Ekam Fertility & Women is a specialized women’s healthcare and fertility center located in Hyderabad, offering advanced treatments in IVF, IUI, fertility evaluations, PCOS management, and gynecological care. Led by expert fertility specialists, Ekam is known for providing empathetic, ethical, and result-driven care. The center focuses on both cutting-edge fertility treatments and holistic women’s wellness.
                                             </p>
                                             <Link to="/case-studies/ekam-fertility">
@@ -244,7 +241,7 @@ const CaseStudy = () => {
                                             22 Yards
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className=''>
+                                            <p className='' style={{fontFamily: "Poppins"  }}>
                                                 22 Yards is a cutting-edge Fractional Real Estate Investment Platform that empowers individuals to invest in premium commercial and hospitality properties with a low capital entry point. Through fractional ownership, investors can enjoy rental income, property appreciation, and a stake in high-value assets such as hotels, resorts, and commercial spaces. With transparency, legal clarity, and professional asset management, 22 Yards is revolutionizing how Indians invest in real estate.
                                             </p>
 
@@ -279,7 +276,7 @@ const CaseStudy = () => {
                                             Endula Infra LLP
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className=''>
+                                            <p className='' style={{fontFamily: "Poppins"  }}>
                                                 Endula Infra is a Stone Crushing Industry based in Hyderabad and has been in existence for more than three decades, placing the company as an industry legend in Stone crushing.
                                             </p>
 
@@ -311,7 +308,7 @@ const CaseStudy = () => {
                                             Livvon Comforts
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className=''>
+                                            <p className='' style={{fontFamily: "Poppins"  }}>
                                                 Livvon Comforts is a premium lifestyle brand offering 100% natural latex mattresses, organic cotton bedding, and eco-friendly sleep essentials. With sustainability at its core, Livvon Comforts caters to health-conscious individuals and families who seek chemical-free, breathable, and long-lasting sleep products.
                                             </p>
                                             <Link to="/case-studies/livvon-comforts">
@@ -346,7 +343,7 @@ const CaseStudy = () => {
                                             Head Digital Works
                                         </h3>
                                         <div className='inside-tab-child-div' >
-                                            <p className=''>
+                                            <p className='' style={{fontFamily: "Poppins"  }}>
                                                 HD Works has recently shifted to a new office location, marking a significant milestone in their growth journey. To capture this transition, we created a high-quality video showcasing both the old and new office spaces, using advanced drone footage and professional setups. The video highlights the evolution of the workspace, reflecting the brand’s progress and ambition, and serves as a powerful visual story of transformation and expansion.
                                             </p>
 
@@ -370,13 +367,17 @@ const CaseStudy = () => {
                                         <div className="row align-items-center flex-column-reverse flex-lg-row">
 
                                             <div className="col-lg-6">
-                                                <div className="service-para mt-3 pe-xl-5">
+                                                <div className="service-para mt-3">
                                                     <div className="health-why-novatales text-center realestate-paraheading text-lg-start mt-4 mt-lg-0" style={{
-                                                        padding: "0px 12px"
+                                                     
                                                     }}>
-                                                        <h3 className='fw-bold pb-3'>Helping Clients Build Powerful Digital Identities</h3>
+                                                        <h2 className='fw-bold pb-3' style={{
+                                                             color: "#52377b",
+                                                             marginLeft:"0px",
+                                                             paddingLeft:"0px !important"
+                                                        }}>Helping Clients Build Powerful Digital Identities</h2>
                                                     </div>
-                                                    <div className='healthcareTopPara'>At NovaTales, we believe that a website is more than just a digital storefront; it’s a strategic tool that communicates your values, elevates your brand, and drives growth. Below are recent projects we designed and developed, each with its own challenges, solutions, and outcomes.</div>
+                                                    <div className='ps-lg-3'>At NovaTales, we believe that a website is more than just a digital storefront; it’s a strategic tool that communicates your values, elevates your brand, and drives growth. Below are recent projects we designed and developed, each with its own challenges, solutions, and outcomes.</div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 d-flex justify-content-center">
@@ -386,13 +387,11 @@ const CaseStudy = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-
-                                <div  data-aos="fade-up"  className='mb-5'>
-                                    <h3 style={{
+                                <div data-aos="fade-up" className='mb-5'>
+                                    <h3 className='text-md-start text-center mt-5 mt-md-0' style={{
                                         fontSize: "32px",
                                         color: "#9b499c"
                                     }}>
@@ -409,7 +408,7 @@ const CaseStudy = () => {
                                         <p style={{
                                             paddingLeft: "px !important",
                                             paddingBottom: "10px"
-                                        }} className=''>
+                                        }} className='' >
                                             Endula Infra is a Stone Crushing Industry based in Hyderabad and has been in existence for more than three decades, placing the company as an industry legend in Stone crushing.
                                         </p>
                                         <Link to="/case-studies/web-designing/endula-infra" className='inside-tab-child-div-button m'>
@@ -417,8 +416,8 @@ const CaseStudy = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div  data-aos="fade-up"  className='mb-5'>
-                                    <h3 style={{
+                                <div data-aos="fade-up" className='mb-5'>
+                                    <h3 className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         color: "#9b499c"
                                     }}>
@@ -443,8 +442,8 @@ const CaseStudy = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div  data-aos="fade-up"  className='mb-5'>
-                                    <h3 style={{
+                                <div data-aos="fade-up" className='mb-5'>
+                                    <h3 className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         color: "#9b499c"
                                     }}>
@@ -469,8 +468,8 @@ const CaseStudy = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div  data-aos="fade-up"  className='mb-5'>
-                                    <h3 style={{
+                                <div data-aos="fade-up" className='mb-5'>
+                                    <h3 className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         color: "#9b499c"
                                     }}>
@@ -495,8 +494,8 @@ const CaseStudy = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up"  className='mb-5'>
-                                    <h3 style={{
+                                <div data-aos="fade-up" className='mb-5'>
+                                    <h3 className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         color: "#9b499c"
                                     }}>
@@ -522,57 +521,59 @@ const CaseStudy = () => {
                                     </div>
                                 </div>
                                 {/* Approach */}
-                                <div data-aos="fade-up" data-aos-delay="100" className='mt-5 mb-3 pt-5 pb-5 d-flex flex-column'>
-                                    <h3 className='text-left' style={{
+                                <div style={{
+                                    fontFamily: "Poppins"
+                                }} data-aos="fade-up" data-aos-delay="100" className='mt-5 mb-3 pt-5 pb-5 d-flex flex-column'>
+                                    <h3  className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         fontWeight: "bold", color: "#f3bc50"
                                     }}>
                                         Our Approach
                                     </h3>
-                                    <h3 style={{
+                                    <h3 className='text-md-start text-center' style={{
                                         fontSize: "32px",
                                         fontWeight: "bold",
-                                        padding: "12px 14px 0px"
+                                        padding: "12px 14px 0px" , color: "#52377b",
                                     }}>
                                         How Novatales Delivers Value
                                     </h3>
                                     <div className='px-3'>
                                         <p style={{
-                                            fontSize: "16px", color: "gray", padding: "12px 0px 12px 0"
+                                            fontSize: "16px", color: "gray", padding: "12px 0px 12px 0" , fontFamily: "Poppins"
                                         }}>At Novatales, we believe every project we take should solve real problems, drive engagement, and reflect the client’s core identity. We perform extensive research in our web development process, understand business goals for seamless user experiences, we follow a structured, end-to-end approach that ensures every website we deliver is strategic, scalable, and performance-driven.</p>
                                         <p style={{
                                             paddingTop: "16px",
                                         }}>
                                             <span style={{
-                                                fontWeight: "bold", color: "#f3bc50"
+                                                fontWeight: "bold", color: "#f3bc50" ,fontFamily: "Poppins"
                                             }}>Discovery & Strategy</span> : Understanding client goals, target audiences, competitive landscape, and growth objectives.</p>
                                         <p style={{
                                             paddingTop: "16px",
                                             // fontSize: "18px" 
                                         }}>
                                             <span style={{
-                                                fontWeight: "bold", color: "#f3bc50"
+                                                fontWeight: "bold", color: "#f3bc50",fontFamily: "Poppins"
                                             }}>User-Centric Design</span> :  Creating wireframes and prototypes that ensure intuitive navigation, conversion-focused layouts, and consistent branding.</p>
                                         <p style={{
                                             paddingTop: "16px",
                                             // fontSize: "18px" 
                                         }}>
                                             <span style={{
-                                                fontWeight: "bold", color: "#f3bc50"
+                                                fontWeight: "bold", color: "#f3bc50" ,fontFamily: "Poppins"
                                             }}>Responsive & Performance Optimization</span> :  Ensuring sites load quickly, adapt to all devices, and provide optimal user experience across platforms</p>
                                         <p style={{
                                             paddingTop: "16px",
                                             // fontSize: "18px" 
                                         }}>
                                             <span style={{
-                                                fontWeight: "bold", color: "#f3bc50"
+                                                fontWeight: "bold", color: "#f3bc50",fontFamily: "Poppins"
                                             }}>SEO, Accessibility & CMS Integration</span> : Making sure clients can update content easily, and that sites are discoverable, compliant, and inclusive.</p>
                                         <p style={{
                                             paddingTop: "16px",
                                             // fontSize: "18px" 
                                         }}>
                                             <span style={{
-                                                fontWeight: "bold", color: "#f3bc50"
+                                                fontWeight: "bold", color: "#f3bc50",fontFamily: "Poppins"
                                             }}>Quality Assurance & Launch Support</span> : Rigorous testing, stakeholder feedback loops, and post-launch analytics and support.</p>
                                     </div>
                                 </div>
