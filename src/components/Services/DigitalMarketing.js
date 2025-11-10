@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import digitalMarketingIllustration from '../../images/digital marketing illustration.svg';
 import digitalMarketingTab from '../../images/digital marketing tab.svg';
 import digitalMarketingWebImage from '../../images/DIGITAL MARKETING WEB IMAGE.png';
 import seoIcon from '../../images/SEO icon.png';
 import emailMarketingIcon from '../../images/email marketing icon N.png';
 import analyticsIcon from '../../images/analytics and business insights icon.png';
-import affiliateMarketingIcon from '../../images/affliated marketing icon N.png';
+// import affiliateMarketingIcon from '../../images/affliated marketing icon N.png';
 import socialMediaMarketingIcon from '../../images/social m marketing icon N.png';
 import paidAdvertisingIcon from '../../images/paid advertising.png';
 import '../../css/servisesCss/digital.css';
@@ -31,7 +31,7 @@ export default function DigitalMarketing() {
   //   const toggleAccRight = (index) => {
   //     setActiveIndexRight(activeIndexRight === index ? null : index);
   //   };
-  
+
   //   const faq = [  {
   //   q: "What digital marketing services do you offer?",
   //   a: "We provide Branding, Web Design, Video Production, Podcasting, Paid Advertising, and Digital Campaigns, using AI insights and GEO-targeted strategies where relevant.",
@@ -72,17 +72,17 @@ export default function DigitalMarketing() {
   //   q: "Can digital marketing improve customer retention?",
   //   a: "Yes, personalized campaigns, remarketing, and consistent engagement help strengthen customer loyalty over time.",
   // },
-  
+
   //   ]
   useEffect(() => {
     // Initialize AOS library for animations
     AOS.init();
   }, []);
 
-  useEffect(() => {
-    // Scroll to the top of the window
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <HelmetProvider >
@@ -109,13 +109,13 @@ export default function DigitalMarketing() {
                   <div className="service-para mt-3">
                     <h1>Digital marketing</h1>
                     <p className="mt-3">
-                      Digital marketing involves the promotion of brands to reach, engage and convert customers using different forms of digital technologies and platforms. It is essential for all companies big or small to market digitally in today’s business landscape.
+                      Digital marketing enables brands to reach, engage, and convert customers through online platforms, smart analytics, and personalized communication. Today, every business, small, medium, or enterprise, needs digital marketing to stay competitive, attract customers, and scale faster.
                     </p>
                     <p>
-                      Digital marketing is one of the most cost-effective forms of marketing that offers huge returns on investment and the best part is, it can be measured and tailored based on real-time data to provide immediate benefits. Digital marketing allows communication to be targeted to the demographic of our choice, personalized in order to hook the customer, and interactive through messaging, comments and likes.
+                      It is one of the most cost-effective and measurable marketing methods. Every campaign can be optimized in real-time based on performance data, ensuring better ROI and smarter decisions.
                     </p>
                     <p>
-                      Through the digital marketing services provided by Nova Tales, our expert team creates digital marketing campaigns that are unique to each customer. Based on your needs, we tailor campaigns to include a combination of website creation, Search Engine Optimization (SEO), Pay per click Ads, Social media marketing (SMM), Email Marketing, and Affiliate Marketing.
+                      At NovaTales, we build digital marketing strategies that combines Data, Creativity, Technology, GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) together helping your brand appear not only on Google, but also on AI-powered search, generative engines, and voice-based platforms like ChatGPT, Google Gemini, Bard, Siri & Alexa.
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function DigitalMarketing() {
           <div className="container">
             <div className="row mt-5">
               <div className="col-lg-6 left-media" style={{ paddingRight: '70px' }}>
-                <Link to="/Search-Engine-optmization-MarketingAnalytics-Business-Insights">
+                <Link to="/search-engine-optmization-marketing">
                   <div className="media">
                     <div className="row">
                       <div className="col-lg-2 col-md-2 col-sm-2">
@@ -144,9 +144,18 @@ export default function DigitalMarketing() {
                       </div>
                       <div className="col-lg-10 col-md-10 col-sm-12">
                         <div className="media-body">
-                          <h4 className="point-head">Search Engine Optimization</h4>
+                          <h4 className="point-head">Search Engine Optimization (SEO+AEO+GEO)</h4>
                           <p>
-                            Search Engine Optimization is the process of improving the visibility of your website organically in various search engines. The greater the visibility your page achieves in search results, the higher the clicks. Even though it takes time and effort to achieve search engine optimization, you will reap lasting benefits for the efforts.
+                            SEO increases your website’s visibility on search engines. But modern search has evolved, people ask questions, use voice queries, and depend on AI chatbots for answers.
+                          </p>
+                          <p>That’s why we optimize for:</p>
+                          <ul>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Traditional SEO</span> : keywords, backlinks, and technical SEO</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>AEO</span> : Answer Engine Optimization for “People Also Ask”, voice search, and direct answers.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>GEO</span> : Generative Engine Optimization for AI search results, ChatGPT, and generative AI responses.</li>
+                          </ul>
+                          <p>
+                            This makes your brand visible in Google Search, Google Voice, ChatGPT Search, Bard / Gemini, Bing Copilot, and AI-generated summaries & recommendations.
                           </p>
                         </div>
                       </div>
@@ -165,7 +174,19 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Email Marketing</h4>
                           <p>
-                            Email marketing is an effective way to promote your products and services and incentivize your customers for showing loyalty to your brand. Promotional emails are used to keep customers on your mailing list up-to-date with product announcements, provide discount coupons for their next purchase and engage with customers with creative content to stay top of the mind between purchases.
+                            Email marketing helps brands maintain long-term customer relationships.
+                          </p>
+                          <p>
+                            We design automated and personalized email flows that:
+                          </p>
+                          <ul>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Increase repeat purchases </span> : It encourages customers to buy again by sending targeted reminders, personalized recommendations, and post-purchase follow-up messages.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Share offers & product launches </span> :  It offers a chance to introduce and announce the new products, create appealing newsletters, broadcast seasonal offers and exclusive discounts, which helps your audience engage.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Nurture leads with valuable content </span> :  It provides a platform to share educational resources, your brand stories, and how-to guides, helping to build trust among potential customers.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Reward loyal customers </span> : Personalized emails help you strengthen your long-term connections with your customers by notifying them of loyalty points, early access to offers, and sending thank-you emails after purchase.</li>
+                          </ul>
+                          <p>
+                            From welcome series to festival campaigns, your brand stays connected
                           </p>
                         </div>
                       </div>
@@ -184,14 +205,27 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Analytics and Business Insights</h4>
                           <p>
-                            Analytics and business insights services involve collection of data points from various digital platforms, analyzing it and generating reports to gain valuable insights on the current situation of our client’s online presence. Actionable steps are then laid out to make improved decisions for long-term success of their online business strategies.
+                            Data-driven marketing outperforms guesswork.
+                          </p>
+                          <p>
+                            We track, measure, and analyze digital performance to help you make smarter decisions.
+                          </p>
+                          <ul>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Customer behavior tracking</span> : Tracking customer behavior by understanding how they interact with your brand, what they are clicking, how they are spending time, and what drives their purchasing decision. All this data helps understand customer behavior.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Campaign performance reports </span> : It provides accurate insights about the performance of the campaign, about what’s working and what’s not. With the data obtained, the strategies can be adjusted accordingly for better engagement and ROI.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Website analytics </span> : With website analytics, all the data about traffic, top-performing pages, and user experience can be obtained, which helps to improve the conversion rates.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>ROI measurement </span> : Every penny spent in marketing is measured against the business results. The ROI helps your business to spend wisely and grow efficiently.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Growth recommendations </span> : The data-driven insights play a significant role in enhancing the performance of your brand through actionable steps for your business growth.</li>
+                          </ul>
+                          <p>
+                            These insights help optimize spending and increase conversions.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </Link>
-                <Link to="#">
+                {/* <Link to="#">
                   <div className="media">
                     <div className="row">
                       <div className="col-lg-2 col-md-2 col-sm-2">
@@ -205,11 +239,18 @@ export default function DigitalMarketing() {
                           <p>
                             Boost your product sales through Nova Tales’ affiliate marketing services. We have a wide network of key publishers, advertisers and influencers that enable us to connect you with the right marketer and maximize returns. Our services include Display ads, video ads, blogs, social media posts, etc.
                           </p>
+                          <ul>
+                            <li><FontAwesomeIcon icon={faAnglesRight} /> Instagram Marketing</li>
+                            <li><FontAwesomeIcon icon={faAnglesRight} /> Facebook Marketing</li>
+                            <li><FontAwesomeIcon icon={faAnglesRight} /> Twitter Marketing</li>
+                            <li><FontAwesomeIcon icon={faAnglesRight} /> LinkedIn Marketing</li>
+                            <li><FontAwesomeIcon icon={faAnglesRight} /> YouTube Marketing</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </Link>
+                </Link> */}
               </div>
               <div className="col-lg-6 side-points">
                 <Link to="/social-media-marketing">
@@ -224,15 +265,24 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Social Media Marketing</h4>
                           <p>
-                            As of today, 61% of the world’s population that is about 4.95 Billion is on Social Media and the numbers are rising by the day. Research shows that a vast majority of users’ buying habits are influenced by social media usage, making it one of the most important platforms for marketing in today’s business landscape.
+                            4.95 billion people are active on social media. Their buying decisions are influenced by reels, ads, reviews & brand stories.
+                          </p>
+                          <p>
+                            We create brand-focused digital content across Instagram, Facebook, LinkedIn, YouTube, and Twitter (X).
+                          </p>
+                          <p>
+                            Our SMM services include :
                           </p>
                           <ul>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Instagram Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Facebook Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Twitter Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> LinkedIn Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> YouTube Marketing</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Creative posts & reels</span> : We create visually appealing and engaging content that captures attention by encouraging them to interact and increasing the brand identity.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Paid social ads </span> : We run highly targeted campaigns that are intended to reach your potential audience, which helps boost the visibility and generate measurable results.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Influencer collaborations </span> : Collaborating with authentic creators who resonate with your brand's ideas closely will help expand your visibility, credibility, and reach among wide audiences .</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Comments & community engagement</span> : Actively engaging and interacting with your audiences and followers online helps to build positive relationships by replying to their comments or actively handling their queries, boosting the loyalty around your brand.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Brand storytelling</span> : Creating an emotional connection with your audience through consistently sharing relatable and emotional stories about the brand helps to strengthen the brand’s connection with your audience.</li>
                           </ul>
+                          <p>
+                            Turn followers into customers and customers into brand fans.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -248,9 +298,12 @@ export default function DigitalMarketing() {
                       </div>
                       <div className="col-lg-10 col-md-10 col-sm-12">
                         <div className="media-body">
-                          <h4 className="point-head">Paid Advertising</h4>
+                          <h4 className="point-head">Paid Advertising (PPC + Social Ads)</h4>
                           <p>
-                            Paid advertising is the practice of placing promotional content or advertisements in various digital platforms to promote businesses and reach more customers. It enables us to reach specific audiences within the allocated budget and attain positive business outcomes that are measurable and immediate.
+                            Paid ads help your business reach customers instantly. We manage platforms like Google Ads (search, display, and YouTube), Meta Ads (Facebook and Instagram), LinkedIn Ads, and E-commerce Ads.
+                          </p>
+                          <p>
+                            With advanced targeting, retargeting, conversion tracking, and budget control, you get measurable, fast results.
                           </p>
                         </div>
                       </div>
@@ -261,7 +314,7 @@ export default function DigitalMarketing() {
             </div>
           </div>
         </div>
-          {/* <div className="Health-faqs">
+        {/* <div className="Health-faqs">
                   <Container>
                     <div className="health-faqs-heading">
                        <h2 className='text-center' style={{

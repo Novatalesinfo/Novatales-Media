@@ -371,5 +371,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .whyStrategies .whyStrategiesHeading h2 {
     width: 70%;
+    font-size: 20pt;
   }
 }
