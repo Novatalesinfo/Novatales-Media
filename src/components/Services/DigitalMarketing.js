@@ -146,13 +146,13 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Search Engine Optimization (SEO+AEO+GEO)</h4>
                           <p>
-                            SEO increases your website’s visibility on search engines. But modern search has evolved, people ask questions, use voice queries, and depend on AI chatbots for answers.
-                          </p>
-                          <p>That’s why we optimize for:</p>
+                            SEO increases your website’s visibility on search engines. But modern search has evolved; people ask questions, use voice queries, and depend on AI chatbots for answers.
+                            That’s why we optimize for:                          </p>
+
                           <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Traditional SEO</span> : keywords, backlinks, and technical SEO</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>AEO</span> : Answer Engine Optimization for “People Also Ask”, voice search, and direct answers.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>GEO</span> : Generative Engine Optimization for AI search results, ChatGPT, and generative AI responses.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Traditional SEO</span> : We improve your ranking on Google and other search engines by enhancing your website structure, including meaningful keywords, reputable backlinks, and other on-page elements. This approach makes your content technically strong and relevant to the audience, driving long-term organic traffic.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Answer Engine Optimization</span> : We optimize your content so that it appears in “People Also Ask” sections and voice search. We structure your content so that it sounds more direct and conversational, helping your brand become a go-to response by users for various queries</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Generative Engine Optimization</span> : We follow the strategies that let the AI discover your content over ChatGPT or Gemini, AI chat results, and summaries by aligning with the generative engine algorithms.</li>
                           </ul>
                           <p>
                             This makes your brand visible in Google Search, Google Voice, ChatGPT Search, Bard / Gemini, Bing Copilot, and AI-generated summaries & recommendations.
@@ -174,11 +174,9 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Email Marketing</h4>
                           <p>
-                            Email marketing helps brands maintain long-term customer relationships.
+                            Email marketing helps brands maintain long-term customer relationships. We design automated and personalized email flows that:
                           </p>
-                          <p>
-                            We design automated and personalized email flows that:
-                          </p>
+
                           <ul>
                             <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Increase repeat purchases </span> : It encourages customers to buy again by sending targeted reminders, personalized recommendations, and post-purchase follow-up messages.</li>
                             <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Share offers & product launches </span> :  It offers a chance to introduce and announce the new products, create appealing newsletters, broadcast seasonal offers and exclusive discounts, which helps your audience engage.</li>
@@ -205,10 +203,7 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Analytics and Business Insights</h4>
                           <p>
-                            Data-driven marketing outperforms guesswork.
-                          </p>
-                          <p>
-                            We track, measure, and analyze digital performance to help you make smarter decisions.
+                            Data-driven marketing outperforms guesswork. We track, measure, and analyze digital performance to help you make smarter decisions.
                           </p>
                           <ul>
                             <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Customer behavior tracking</span> : Tracking customer behavior by understanding how they interact with your brand, what they are clicking, how they are spending time, and what drives their purchasing decision. All this data helps understand customer behavior.</li>
@@ -265,14 +260,8 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Social Media Marketing</h4>
                           <p>
-                            4.95 billion people are active on social media. Their buying decisions are influenced by reels, ads, reviews & brand stories.
-                          </p>
-                          <p>
-                            We create brand-focused digital content across Instagram, Facebook, LinkedIn, YouTube, and Twitter (X).
-                          </p>
-                          <p>
-                            Our SMM services include :
-                          </p>
+                            4.95 billion people are active on social media. Their buying decisions are influenced by reels, ads, reviews & brand stories. We create brand-focused digital content across Instagram, Facebook, LinkedIn, YouTube, and Twitter (X). Our SMM services include:                          </p>
+
                           <ul>
                             <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Creative posts & reels</span> : We create visually appealing and engaging content that captures attention by encouraging them to interact and increasing the brand identity.</li>
                             <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Paid social ads </span> : We run highly targeted campaigns that are intended to reach your potential audience, which helps boost the visibility and generate measurable results.</li>
@@ -300,10 +289,17 @@ export default function DigitalMarketing() {
                         <div className="media-body">
                           <h4 className="point-head">Paid Advertising (PPC + Social Ads)</h4>
                           <p>
-                            Paid ads help your business reach customers instantly. We manage platforms like Google Ads (search, display, and YouTube), Meta Ads (Facebook and Instagram), LinkedIn Ads, and E-commerce Ads.
+                            Paid ads help your business reach customers instantly. We manage platforms like Google Ads, Meta Ads, LinkedIn Ads, and E-commerce Ads. With advanced targeting, retargeting, conversion tracking, and budget control, you get measurable, fast results.
                           </p>
+                          <ul>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Google Ads</span> : We design and manage campaigns to capture your audience’s attention, no matter if they are on Google, browsers, or on YouTube. Our strategies ensure maximum reach and high conversion rates.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Paid social ads </span> : We run highly targeted campaigns that are intended to reach your potential audience, which helps boost the visibility and generate measurable results.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'>Meta Ads </span> : We help your brand stand out in the crowd of feeds by creating appealing posts to drive engagement and sales that precisely target your audience on Facebook and Instagram.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>LinkedIn Ads</span> : It is one of the best platforms for B2B connections, so we professionally optimize campaigns to build qualified leads and professional networking, and credibility.</li>
+                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>E-commerce Ads</span> : We help your brand boost return on ad spend by attracting customers who are ready to make purchases from your online store through our dynamic product ads and strategies.</li>
+                          </ul>
                           <p>
-                            With advanced targeting, retargeting, conversion tracking, and budget control, you get measurable, fast results.
+                            Through our continuous monitoring system and retargeting, we ensure every campaign brings boosts in growth and ROI.
                           </p>
                         </div>
                       </div>
@@ -328,7 +324,6 @@ export default function DigitalMarketing() {
                       paddingTop: "40px"
                     }}>
                       <Row>
-                       
                         <Col lg={6}>
                           {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                             <div className="accordion" data-aos="fade-up" key={index}>
@@ -352,8 +347,6 @@ export default function DigitalMarketing() {
                             </div>
                           ))}
                         </Col>
-        
-                 
                         <Col lg={6}>
                           {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                             <div className="accordion" data-aos="fade-up" key={index}>
@@ -379,7 +372,6 @@ export default function DigitalMarketing() {
                         </Col>
                       </Row>
                     </div>
-        
                   </Container>
                 </div> */}
         <AllServices />
