@@ -26,13 +26,13 @@ import hospital_image_1 from '../images/casestudies/boost_hospital.png';
 // import paidAdvertisingIcon from '../images/paid advertising icon-01.png';
 
 import '../css/Home.css';
-import icon1 from '../images/icon 1.png';
+import icon1 from '../images/Industry Expertise-01.png';
 // import icon2 from '../images/portfolio/customize_1-01.png';
 // import icon2 from '../images/portfolio/bgi_bulb_y.png';
-import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
+import icon2 from '../images/Customized Solutions-01.png';
 
-import icon3 from '../images/portfolio/donation_1-01.png';
-import icon4 from '../images/icon 4.png';
+import icon3 from '../images/Budget-Friendly Approach-01.png';
+import icon4 from '../images/Reputation Management.png';
 import bannerImage from "../images/casestudies/Healthcare page Header-01.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -144,7 +144,7 @@ export default function HealthCare() {
           </div>
         </div>
         <div className="topHeading text-center" style={{}}></div>
-        <div className="service-content LogoVisual pt-4">
+        <div className="service-content LogoVisual pt-4 pb-4">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -282,7 +282,6 @@ export default function HealthCare() {
                     <img
                       src={icon1}
                       alt="healthcare marketing expertise"
-                      width="60px"
                     />
                   </div>
                   <div className="heading">
@@ -299,7 +298,7 @@ export default function HealthCare() {
               <Col xl={3} md={6} sm={12} data-aos="fade-up" >
                 <div className="icon-1 text-left  px-2">
                   <div>
-                    <img src={icon2} alt="digital solutions in healthcare" width="60px"/>
+                    <img src={icon2} alt="digital solutions in healthcare" />
                   </div>
                   <div className="heading">
                     <p className="title text-left">
@@ -321,7 +320,7 @@ export default function HealthCare() {
               >
                 <div className="icon-1 text-left  px-2">
                   <div>
-                    <img src={icon3} alt="healthcare marketing budget" width="60px"/>
+                    <img src={icon3} alt="healthcare marketing budget" />
                   </div>
                   <div className="heading">
                     <p className="title text-left">
@@ -342,7 +341,7 @@ export default function HealthCare() {
                     <img
                       src={icon4}
                       alt="reputation management for healthcare"
-                    width="60px"
+                    
                     />
                   </div>
                   <div className="heading">
