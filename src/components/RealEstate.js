@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import real_estate from "../images/portfolio/real_1.png"
 import online_realestate from "../images/casestudies/NEXT GEN-01.png"
 import social from "../images/casestudies/SEO 01-01.png"
-import gads from "../images/casestudies/brand voice.png"
+import gads from "../images/casestudies/brand_voice.png"
 import data from "../images/casestudies/Creative Storytelling-01.png"
 import analyst from "../images/casestudies/Advanced Analytics-01.png"
 import aboutHeroImage from '../images/portfolio/realestate_l.jpg';
@@ -236,9 +236,7 @@ const RealEstate = () => {
                 borderRadius: "10px",
               }}>
                 <div>
-                  <img src={gads} alt='advertising for real estate' className='w-16' style={{
-                    width: "80px"
-                  }} />
+                  <img src={gads} alt='advertising for real estate'/>
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
