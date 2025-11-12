@@ -5,60 +5,60 @@ import packagingDesignTab from '../../images/packaging design & production tab.s
 import packagingDesignMobile from '../../images/package design & production m.png';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { Col, Container, Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { Col, Container, Row } from 'react-bootstrap';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async'; // Import Helmet  from 'react-helmet' to set the HTML head metadata
 export default function PackageDesign() {
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
-  const toggleAccLeft = (index) => {
-    setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
-  const faq = [{
-    q: "How does packaging affect brand perception?",
-    a: "It’s often the first physical interaction customers have with your brand.",
-  },
-  {
-    q: "How does packaging design influence buying decisions?",
-    a: "Colors, typography, and layout subconsciously impact perception, making consumers more likely to choose your product over competitors.",
-  },
-   {
-    q: "How often should brands update their packaging design?",
-    a: "We recommend refreshing designs every few years or when customer trends and market positioning shift.",
-  },
+  // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  // const [activeIndexRight, setActiveIndexRight] = useState(null);
+  // const toggleAccLeft = (index) => {
+  //   setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  // };
+  // const toggleAccRight = (index) => {
+  //   setActiveIndexRight(activeIndexRight === index ? null : index);
+  // };
+  // const faq = [{
+  //   q: "How does packaging affect brand perception?",
+  //   a: "It’s often the first physical interaction customers have with your brand.",
+  // },
+  // {
+  //   q: "How does packaging design influence buying decisions?",
+  //   a: "Colors, typography, and layout subconsciously impact perception, making consumers more likely to choose your product over competitors.",
+  // },
+  //  {
+  //   q: "How often should brands update their packaging design?",
+  //   a: "We recommend refreshing designs every few years or when customer trends and market positioning shift.",
+  // },
   
-  {
-    q: "Why is packaging design so important for a brand?",
-    a: "Packaging design is the first touchpoint customers have with your product—it communicates quality, trust, and brand personality instantly.",
-  },
-    {
-    q: "Can packaging influence online sales?",
-    a: "Yes, visually appealing packaging boosts unboxing experiences and social sharing.",
-  },
-  {
-    q: "Can packaging design improve e-commerce sales?",
-    a: "Absolutely—unique and attractive designs enhance unboxing experiences, driving repeat purchases and social sharing.",
-  },
-  {
-    q: "Can great packaging design increase customer loyalty?",
-    a: "Yes, memorable packaging creates positive associations, making customers more likely to repurchase and recommend your brand.",
-  },
-  {
-    q: "How do you balance creativity with functionality in packaging design?",
-    a: "We ensure designs are visually appealing while staying practical for storage, handling, and customer usability.",
-  },
-  {
-    q: "What industries benefit most from creative packaging?",
-    a: "FMCG, cosmetics, luxury goods, and e-commerce brands.",
-  },
+  // {
+  //   q: "Why is packaging design so important for a brand?",
+  //   a: "Packaging design is the first touchpoint customers have with your product—it communicates quality, trust, and brand personality instantly.",
+  // },
+  //   {
+  //   q: "Can packaging influence online sales?",
+  //   a: "Yes, visually appealing packaging boosts unboxing experiences and social sharing.",
+  // },
+  // {
+  //   q: "Can packaging design improve e-commerce sales?",
+  //   a: "Absolutely—unique and attractive designs enhance unboxing experiences, driving repeat purchases and social sharing.",
+  // },
+  // {
+  //   q: "Can great packaging design increase customer loyalty?",
+  //   a: "Yes, memorable packaging creates positive associations, making customers more likely to repurchase and recommend your brand.",
+  // },
+  // {
+  //   q: "How do you balance creativity with functionality in packaging design?",
+  //   a: "We ensure designs are visually appealing while staying practical for storage, handling, and customer usability.",
+  // },
+  // {
+  //   q: "What industries benefit most from creative packaging?",
+  //   a: "FMCG, cosmetics, luxury goods, and e-commerce brands.",
+  // },
   
  
-  ]
+  // ]
   return (
     <HelmetProvider >
       {/* Set the HTML head metadata */}
@@ -105,7 +105,7 @@ export default function PackageDesign() {
           </div>
         </div>
       </div>
-      <div className="Health-faqs">
+      {/* <div className="Health-faqs">
         <Container>
           <div className="health-faqs-heading">
             <h2 className='text-center' style={{
@@ -119,7 +119,7 @@ export default function PackageDesign() {
             paddingTop: "30px"
           }}>
             <Row>
-              {/* Left Column */}
+          
               <Col lg={6}>
                 {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                   <div className="accordion" data-aos="fade-up" key={index}>
@@ -130,7 +130,7 @@ export default function PackageDesign() {
                     >
                       <button className="accordion__btn">
                         <span className="accordion__caption">
-                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                            {item.q}
                         </span>
                         <span className="accordion__icon">
                           <FontAwesomeIcon icon={faPlus} />
@@ -144,7 +144,7 @@ export default function PackageDesign() {
                 ))}
               </Col>
 
-              {/* Right Column */}
+            
               <Col lg={6}>
                 {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                   <div className="accordion" data-aos="fade-up" key={index}>
@@ -155,7 +155,7 @@ export default function PackageDesign() {
                     >
                       <button className="accordion__btn">
                         <span className="accordion__caption">
-                          <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                            {item.q}
                         </span>
                         <span className="accordion__icon">
                           <FontAwesomeIcon icon={faPlus} />
@@ -172,7 +172,7 @@ export default function PackageDesign() {
           </div>
 
         </Container>
-      </div>
+      </div> */}
       <AllServices />
       <ServiceContactForm />
     </HelmetProvider>

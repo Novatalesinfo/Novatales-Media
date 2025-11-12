@@ -13,38 +13,38 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GreenScreenVideo from './GreenScreenVideo';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 export default function GreenScreen() {
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
-  const toggleAccLeft = (index) => {
-    setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
+  // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  // const [activeIndexRight, setActiveIndexRight] = useState(null);
+  // const toggleAccLeft = (index) => {
+  //   setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  // };
+  // const toggleAccRight = (index) => {
+  //   setActiveIndexRight(activeIndexRight === index ? null : index);
+  // };
 
-  const faq = [{
-    q: "What’s included in your basic green screen rental package?",
-    a: "Our green screen studio rental package includes standard lighting, premium camera lenses, a technical support team, a dressing room, and optional advanced equipment for complex shoots.",
-  }, {
-    q: "What is the standard duration you provide for the Green Screen studio on rent?",
-    a: "We typically provide our green screen studio for 4-hour sessions. However, custom time slots can be arranged based on your project requirements.",
-  },
-  {
-    q: "Can I bring my own crew and equipment for the shoot?",
-    a: "Yes, absolutely. You’re welcome to bring your own team and equipment. Our in-house experts are also available for support if you need assistance during the shoot.",
-  },
+  // const faq = [{
+  //   q: "What’s included in your basic green screen rental package?",
+  //   a: "Our green screen studio rental package includes standard lighting, premium camera lenses, a technical support team, a dressing room, and optional advanced equipment for complex shoots.",
+  // }, {
+  //   q: "What is the standard duration you provide for the Green Screen studio on rent?",
+  //   a: "We typically provide our green screen studio for 4-hour sessions. However, custom time slots can be arranged based on your project requirements.",
+  // },
+  // {
+  //   q: "Can I bring my own crew and equipment for the shoot?",
+  //   a: "Yes, absolutely. You’re welcome to bring your own team and equipment. Our in-house experts are also available for support if you need assistance during the shoot.",
+  // },
 
-  {
-    q: "How are the lighting and background noises controlled in the studio?",
-    a: "Our studio uses high-quality chroma fabrics, professional-grade lighting, and full soundproofing to ensure a flawless shooting experience and easy post-production editing.",
-  },
-  {
-    q: "How early do I need to book in advance, and what are your cancellation policies?",
-    a: "We recommend booking at least one week in advance for confirmed slot availability. We also accommodate last-minute requests when possible. Cancellation terms can be discussed with our team during booking.",
-  },
-  ]
+  // {
+  //   q: "How are the lighting and background noises controlled in the studio?",
+  //   a: "Our studio uses high-quality chroma fabrics, professional-grade lighting, and full soundproofing to ensure a flawless shooting experience and easy post-production editing.",
+  // },
+  // {
+  //   q: "How early do I need to book in advance, and what are your cancellation policies?",
+  //   a: "We recommend booking at least one week in advance for confirmed slot availability. We also accommodate last-minute requests when possible. Cancellation terms can be discussed with our team during booking.",
+  // },
+  // ]
   // Scroll to the top of the page when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -105,7 +105,7 @@ export default function GreenScreen() {
             </Row>
           </Container>
         </div>
-        <div className="Health-faqs">
+        {/* <div className="Health-faqs">
           <Container>
             <div className="health-faqs-heading">
                <h2 className='text-center' style={{
@@ -119,7 +119,7 @@ export default function GreenScreen() {
               paddingTop: "40px"
             }}>
               <Row>
-                {/* Left Column */}
+            
                 <Col lg={6}>
                   {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -130,7 +130,7 @@ export default function GreenScreen() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -144,7 +144,7 @@ export default function GreenScreen() {
                   ))}
                 </Col>
 
-                {/* Right Column */}
+           
                 <Col lg={6}>
                   {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -155,7 +155,7 @@ export default function GreenScreen() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -172,7 +172,7 @@ export default function GreenScreen() {
             </div>
 
           </Container>
-        </div>
+        </div> */}
         <AllServices />
         <ServiceContactForm />
       </div>

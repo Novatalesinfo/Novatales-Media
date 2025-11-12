@@ -6,7 +6,9 @@ import Faqs from "./faq";
 import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hospital_image_1 from '../images/casestudies/boost_hospital.png';
+import aboutHeroImage from '../images/portfolio/healthcare_banner_l.jpg';
+import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jpg';
+import hospital_image_1 from '../images/portfolio/healthcare_about.png';
 // import healthcareservice_1 from "../images/casestudies/Social Media Marketing-01.png"
 // import healthcareservice_2 from "../images/casestudies/SEO and SEM-01.png"
 // import healthcareservice_3 from "../images/casestudies/Content Marketing-01 (3).png"
@@ -117,7 +119,7 @@ export default function HealthCare() {
             content="NovaTales specializes in hospital digital marketing, helping hospitals and doctors. We offer expert doctor digital marketing solutions to attract more patients."
           />
         </Helmet>
-        <div className="landing-health-care">
+        {/* <div className="landing-health-care">
           <div
             className="row
            d-flex flex-column-reverse flex-lg-row"
@@ -142,7 +144,12 @@ export default function HealthCare() {
               </h1>
             </div>
           </div>
-        </div>
+        </div> */}
+         {/* Top Banner of the page  */}
+            <div className="about-hero">
+                <img src={aboutHeroImage} width="100%" alt="healthcare digital marketing agency" className="lap" />
+                <img src={case_study_mobile_banner} alt="healthcare digital marketing agency" className="tab" width="100%" />
+            </div>
         <div className="topHeading text-center" style={{}}></div>
         <div className="service-content LogoVisual pt-4 pb-4">
           <div className="container">
@@ -444,7 +451,7 @@ export default function HealthCare() {
                     >
                       <button className="accordion__btn real-estate-faq">
                         <span className="accordion__caption fw-medium">
-                          <FontAwesomeIcon icon={faLightbulb} />
+                           
                           {item.q}
                         </span>
                         <span className="accordion__icon">

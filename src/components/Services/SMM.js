@@ -12,49 +12,49 @@ import 'aos/dist/aos.css';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Col, Container, Row } from 'react-bootstrap';
+// import { Col, Container, Row } from 'react-bootstrap';
 export default function SMM() {
 
 
-  const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  const [activeIndexRight, setActiveIndexRight] = useState(null);
-  const toggleAccLeft = (index) => {
-    setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  };
-  const toggleAccRight = (index) => {
-    setActiveIndexRight(activeIndexRight === index ? null : index);
-  };
+  // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
+  // const [activeIndexRight, setActiveIndexRight] = useState(null);
+  // const toggleAccLeft = (index) => {
+  //   setActiveIndexLeft(activeIndexLeft === index ? null : index);
+  // };
+  // const toggleAccRight = (index) => {
+  //   setActiveIndexRight(activeIndexRight === index ? null : index);
+  // };
 
-  const faq = [
-    {
-      q: "Can you handle negative comments on our social handles?",
-      a: "Yes. We proactively monitor and provide professional responses to protect your brand’s reputation and de-escalate issues effectively.",
-    },
-    {
-      q: "How do you decide the ideal platforms for my brand?",
-      a: "The right platforms for your brand are determined by analyzing where your audience spends most of their time. At NovaTales, our specialized team studies audience behavior and focuses your presence on those platforms.",
-    },
+  // const faq = [
+  //   {
+  //     q: "Can you handle negative comments on our social handles?",
+  //     a: "Yes. We proactively monitor and provide professional responses to protect your brand’s reputation and de-escalate issues effectively.",
+  //   },
+  //   {
+  //     q: "How do you decide the ideal platforms for my brand?",
+  //     a: "The right platforms for your brand are determined by analyzing where your audience spends most of their time. At NovaTales, our specialized team studies audience behavior and focuses your presence on those platforms.",
+  //   },
 
-    {
-      q: "How do you stay on top of algorithm changes?",
-      a: "Our SMM team stays updated with platform trends and algorithm updates, allowing us to adapt strategies quickly and keep your brand performing at its best.",
-    },
-    {
-      q: "I want fresh and engaging content every month for my brand.",
-      a: "We create research-based content calendars using trending formats and audience insights to maintain engagement and keep your content fresh every month.",
-    },
-    {
-      q: "Is it possible to track sales or ROI from social media?",
-      a: "Yes, our team tracks and records every lead and purchase generated through campaigns so you can see real business results from your social presence.",
-    },
-    {
-      q: "How is our brand voice kept consistent everywhere?",
-      a: "We follow comprehensive brand guidelines and approval workflows to ensure every post matches your tone and maintains consistency across all platforms.",
-    },
-  ]
+  //   {
+  //     q: "How do you stay on top of algorithm changes?",
+  //     a: "Our SMM team stays updated with platform trends and algorithm updates, allowing us to adapt strategies quickly and keep your brand performing at its best.",
+  //   },
+  //   {
+  //     q: "I want fresh and engaging content every month for my brand.",
+  //     a: "We create research-based content calendars using trending formats and audience insights to maintain engagement and keep your content fresh every month.",
+  //   },
+  //   {
+  //     q: "Is it possible to track sales or ROI from social media?",
+  //     a: "Yes, our team tracks and records every lead and purchase generated through campaigns so you can see real business results from your social presence.",
+  //   },
+  //   {
+  //     q: "How is our brand voice kept consistent everywhere?",
+  //     a: "We follow comprehensive brand guidelines and approval workflows to ensure every post matches your tone and maintains consistency across all platforms.",
+  //   },
+  // ]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -174,7 +174,7 @@ export default function SMM() {
             </div>
           </div>
         </div>
-        <div className="Health-faqs">
+        {/* <div className="Health-faqs">
           <Container>
             <div className="health-faqs-heading">
              <h2 className='text-center' style={{
@@ -188,7 +188,7 @@ export default function SMM() {
               paddingTop: "40px"
             }}>
               <Row>
-                {/* Left Column */}
+          
                 <Col lg={6}>
                   {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -199,7 +199,7 @@ export default function SMM() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -213,7 +213,7 @@ export default function SMM() {
                   ))}
                 </Col>
 
-                {/* Right Column */}
+       
                 <Col lg={6}>
                   {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
                     <div className="accordion" data-aos="fade-up" key={index}>
@@ -224,7 +224,7 @@ export default function SMM() {
                       >
                         <button className="accordion__btn">
                           <span className="accordion__caption">
-                            <FontAwesomeIcon icon={faLightbulb} /> {item.q}
+                              {item.q}
                           </span>
                           <span className="accordion__icon">
                             <FontAwesomeIcon icon={faPlus} />
@@ -241,7 +241,7 @@ export default function SMM() {
             </div>
 
           </Container>
-        </div>
+        </div> */}
         <AllServices />
         <ServiceContactForm />
       </div>
