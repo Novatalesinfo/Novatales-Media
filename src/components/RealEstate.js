@@ -294,45 +294,6 @@ const RealEstate = () => {
           </div>
         </div>
 
-
-        {/* Services for real estate */}
-
-        {/* <div className="health-Digital-Marketing">
-          <Container>
-            <div data-aos="fade-up" className="health-why-novatales">
-              <h2 className='text-center' style={{
-                textAlign: "center !important",
-                marginBottom: "60px",
-                color: "#52377b"
-              }}>NovaTales Expert Digital Marketing Services for Real Estate</h2>
-            </div>
-          </Container>
-          <div className='real-estate-serive-card-parent d-flex justify-content-center align-content-center w-100'>
-
-
-            <Row className='real-estate-content'>
-              {
-                realEstateServices.map((item, index) => <Col key={index * item.id} className='realestate-card-wrapper mb-4' data-aos="fade-up">
-                  <div className="realestate-service-card">
-                    <div className="realestate-card-image-container">
-                      <img src={item.image} className="realestate-card-image" alt="search engine optimization for real estate" />
-                    </div>
-                    <div className="realestate-card-content">
-                      <h4 className="realestate-service-title" > {
-                        item.title.split("-")[0]
-                      }
-                        <br />{
-                          item.title.split("-")[1]
-                        }</h4>
-                      <div className="realestate-title-underline"></div>
-                      <p className='realestate-card-description'>{item.description}</p>
-                    </div>
-                  </div>
-                </Col>)
-              }
-            </Row>
-          </div>
-        </div> */}
         <div className="section-get">
           <div className="wrapper">
             <div data-aos="fade-up" className="health-why-novatales">
@@ -351,7 +312,7 @@ const RealEstate = () => {
 
             <div className="get-list row">
               {/* -------- COLUMN 1 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -378,7 +339,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 2 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -406,7 +367,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 3 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -433,7 +394,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 4 -------- */}
-              <div className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
                 <div className='row d-flex justify-content-center align-items-center flex-column flex-lg-row'>
                   <div className='col-xl-12 col-lg-6'>
                     <div className="get-list__item">

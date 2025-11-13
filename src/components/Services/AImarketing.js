@@ -85,7 +85,7 @@ const AImarketing = () => {
                     <div className="container pt-5">
                         <div className="row mt-5">
                             <div className="col-lg-6 left-media" style={{ paddingRight: '70px' }}>
-                                <div className="media">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -107,16 +107,14 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Analyze search sentiment to create content that matches user tone.</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold' >Result  : </span>
                                                     Better rankings, AI visibility, and higher trust in search and conversational platforms.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="media">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -138,16 +136,14 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Automate technical audits & backlink quality checks.</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold' >Result  : </span>
                                                     Higher open rates, lower churn, and strong brand recall.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="media">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -171,16 +167,14 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Give real-time insights for smarter decisions</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold'>Result  : </span>
                                                     Faster, data-driven marketing decisions that scale your performance month after month.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="media">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -195,9 +189,7 @@ const AImarketing = () => {
                                                 </p>
                                                 <p>We track engagement rates, audience demographics, and performance data to match the right influencer to your brand personality.</p>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold' >Result  : </span>
                                                     Authentic partnerships and measurable reach that actually convert.
                                                 </p>
                                             </div>
@@ -205,8 +197,8 @@ const AImarketing = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="media">
+                            <div data-aos="fade-up" className="col-lg-6">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -226,22 +218,18 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Use AI tools to edit reels and analyze performance instantly.</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Example  : </span>
+                                                    <span className='fw-bold' >Example  : </span>
                                                     Our AI tools can scan your competitors' content strategies and auto-suggest what to post next to outperform them.
                                                 </p>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold' >Result  : </span>
                                                     Consistent growth in followers, engagement, and brand visibility across platforms like Instagram, Facebook, LinkedIn, YouTube, and X (Twitter).
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="media">
+                                <div  data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className="media-image mt-2">
@@ -266,22 +254,18 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> GEO & interest-based targeting for maximum ROI.</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Example  : </span>
+                                                    <span className='fw-bold' >Example  : </span>
                                                     Our AI engine predicts which creatives will perform best — before spending a single rupee
                                                 </p>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold'>Result  : </span>
                                                     Up to 40% better ad performance and higher ROI on Google, Meta, and LinkedIn Ads.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="media">
+                                <div data-aos="fade-up" className="media">
                                     <div className="row">
                                         <div className="col-lg-2 col-md-2 col-sm-2">
                                             <div className=" mt-2">
@@ -305,15 +289,11 @@ const AImarketing = () => {
                                                     <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Automatic metadata and schema tagging.</li>
                                                 </ul>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Example  : </span>
+                                                    <span className='fw-bold' >Example  : </span>
                                                     Our AI-driven content system ensures every piece is SEO-ready, voice-friendly, and conversion-focused.
                                                 </p>
                                                 <p>
-                                                    <span className='fw-bold' style={{
-                                                        color: "#fec436"
-                                                    }}>Result  : </span>
+                                                    <span className='fw-bold' >Result  : </span>
                                                     Content that ranks across search, AI engines, and voice assistants like Siri, Alexa, and Google Assistant.
                                                 </p>
                                             </div>
@@ -435,6 +415,118 @@ const AImarketing = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" className="health-why-novatales text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 className=' px-3' style={{
+                        color: "#52377b"
+                    }}>
+                     Industries We Serve
+                    </h2>
+                    {/* <div className='row whyneedRealestate' >
+                        <div className='col-lg-4'>
+                            <div className=' d-flex flex-column justify-content-center align-items-center whyNeedListCards' style={{
+                                backgroundColor: "rgba(36, 73, 168, 0.03)",
+                                margin: "4px",
+                                height: "210px",
+                                borderRadius: "10px",
+                            }}>
+                                <div>
+                                    <img src={online_realestate} alt='real estate digital agency' />
+                                </div>
+                                <div className='d-flex justify-content-center gap-0 flex-column align-items-center'>
+                                    <span style={{
+                                        color: "#52377b", fontSize: "20px", fontWeight: "bold"
+                                    }}>AI + Human Expertise</span>
+                                    <p className='text-left' id='whyNeedRealP'>
+                                        The perfect blend of intelligent automation and creative storytelling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-4'>
+                            <div className=' d-flex flex-column justify-content-center align-items-center whyNeedListCards' style={{
+                                backgroundColor: "rgba(36, 73, 168, 0.03)",
+                                margin: "4px",
+                                height: "210px",
+                                borderRadius: "10px",
+                            }}>
+                                <div>
+                                    <img src={social} alt='real estate seo company' />
+                                </div>
+                                <div className='d-flex justify-content-center gap-0 flex-column align-items-center'>
+                                    <span style={{
+                                        color: "#52377b", fontSize: "20px", fontWeight: "bold"
+                                    }}>Full-Funnel Digital Strategy</span>
+                                    <p className='text-left' id='whyNeedRealP'>
+                                        From discovery to conversion everything is AI-optimized.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-4'>
+                            <div className=' d-flex flex-column justify-content-center align-items-center whyNeedListCards' style={{
+                                backgroundColor: "rgba(36, 73, 168, 0.03)",
+                                margin: "4px",
+                                height: "210px",
+                                borderRadius: "10px",
+                            }}>
+                                <div>
+                                    <img src={data} alt='online marketing real estate' />
+                                </div>
+                                <div className=' d-flex justify-content-center gap-0 flex-column align-items-center'>
+                                    <span style={{
+                                        color: "#52377b", fontSize: "20px", fontWeight: "bold"
+                                    }}>Customized Dashboards</span>
+                                    <p className='text-left' id='whyNeedRealP'>
+                                        Real-time visibility into your marketing performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='row whyneedRealestate2 mt-md-4 ' >
+                        <div className='col-lg-5'>
+                            <div className=' d-flex flex-column justify-content-center align-items-center whyNeedListCards' style={{
+                                backgroundColor: "rgba(36, 73, 168, 0.03)",
+                                margin: "4px",
+                                borderRadius: "10px", height: "210px",
+                            }}>
+                                <div>
+                                    <img src={analyst} alt='digital agency for real estate' />
+                                </div>
+                                <div className=' d-flex justify-content-center gap-0 flex-column align-items-center'>
+                                    <span style={{
+                                        color: "#52377b", fontSize: "20px", fontWeight: "bold"
+                                    }}>Proven Results</span>
+                                    <p className='text-left' id='whyNeedRealP'>
+                                        Improved ROI, reduced ad spend waste, and 24/7 campaign optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-5'>
+                            <div className=' d-flex flex-column justify-content-center align-items-center whyNeedListCards' style={{
+                                backgroundColor: "rgba(36, 73, 168, 0.03)",
+                                margin: "4px",
+                                height: "210px",
+                                borderRadius: "10px",
+                            }}>
+                                <div>
+                                    <img src={gads} alt='advertising for real estate'  style={{
+                                        width: "50px"
+                                    }} />
+                                </div>
+                                <div className=' d-flex justify-content-center gap-0 flex-column align-items-center'>
+                                    <span className='' style={{
+                                        color: "#52377b", fontSize: "20px", fontWeight: "bold"
+                                    }}>Future-Ready Optimization (GEO+AEO)</span>
+                                    <p className='text-left' id='whyNeedRealP'>
+                                        Appear in search, voice, and generative results.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
                 <AllServices />
                 <ServiceContactForm />
