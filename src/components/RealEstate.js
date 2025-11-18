@@ -70,56 +70,6 @@ const RealEstate = () => {
     },
 
   ];
-  // const realEstateServices = [
-  //   {
-  //     id: 1,
-  //     title: "Social Media-Marketing",
-  //     description: "Engage buyers and investors while promoting property listings online.",
-  //     image: realestateservice_6,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "SEO and SEM",
-  //     description: "Improve search visibility and reach buyers actively looking for properties.",
-  //     image: realestateservice_1,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Content-Marketing",
-  //     description: "Share valuable property updates to capture buyer interest effectively.",
-  //     image: realestateservice_8,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Email-Marketing",
-  //     description: "Send personalized messages to potential buyers and sellers consistently.",
-  //     image: realestateservice_7,
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Reputation-Management",
-  //     description: "Track reviews and maintain a strong, credible brand image.",
-  //     image: realestateservice_3,
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Website-Development",
-  //     description: "Design fast, user-friendly websites that highlight your properties.",
-  //     image: realestateservice_5,
-  //   },
-  //   {
-  //     id: 7,
-  //     title: "Paid-Advertising (PPC)",
-  //     description: "Reach the right buyers at the right time to boost ROI.",
-  //     image: realestateservice_2,
-  //   },
-  //   {
-  //     id: 8,
-  //     title: "Video-Marketing",
-  //     description: "Showcase properties and client experiences with engaging videos.",
-  //     image: realestateservice_4,
-  //   },
-  // ];
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);

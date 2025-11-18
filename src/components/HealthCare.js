@@ -50,7 +50,6 @@ export default function HealthCare() {
                 <img src={aboutHeroImage} width="100%" alt="healthcare digital marketing agency" className="lap" />
                 <img src={case_study_mobile_banner} alt="healthcare digital marketing agency" className="tab" width="100%" />
             </div>
-        <div className="topHeading text-center" style={{}}></div>
         <div className="service-content LogoVisual pt-4 pb-4">
           <div className="container">
             <div className="row align-items-center">

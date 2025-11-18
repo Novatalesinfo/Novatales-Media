@@ -55,6 +55,7 @@ import CdcCenter from './components/Cdc';
 import MagnaidWebDesign from './components/MagnaidWebDesign';
 import LivvonWebDesign from './components/LivvonWebDesign';
 import AImarketing from './components/Services/AImarketing';
+import EducationService from './components/EducationService';
 
 const RedirectToLowercase = () => {
   const location = useLocation();
@@ -87,6 +88,7 @@ const App = () => {
 
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
           <Route path="/real-estate-digital-marketing" element={<RealEstate />} />
+          <Route path="/education-digital-marketing" element={<EducationService />} />
 
           {/* <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/3d" element={<FoodBakery />} />
