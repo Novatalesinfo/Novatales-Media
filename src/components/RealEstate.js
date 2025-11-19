@@ -186,7 +186,7 @@ const RealEstate = () => {
                 borderRadius: "10px",
               }}>
                 <div>
-                  <img src={gads} alt='advertising for real estate'/>
+                  <img src={gads} alt='advertising for real estate' />
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
@@ -392,35 +392,267 @@ const RealEstate = () => {
 
               {/* Left Column */}
               <div className='faq_container' data-aos="fade-up">
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 1
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(1)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        Why should builders partner with NovaTales Media for real estate marketing?
 
-
-                {faqs.slice(0, 5).map((item, index) => (
-                  <div className="accordion " key={index}>
-                    <div
-                      className={`accordion__item ${activeIndexLeft === index
-                        ? "accordion__item--active"
-                        : ""
-                        }`}
-                      onClick={() => toggleAccLeft(index)}
-                    >
-                      <button className="accordion__btn real-estate-faq">
-                        <span className="accordion__caption fw-medium">
-
-                          {item.q}
-                        </span>
-                        <span className="accordion__icon">
-                          <FontAwesomeIcon icon={faPlus} />
-                        </span>
-                      </button>
-                      {activeIndexLeft === index && (
-                        <div className="accordion__content fw-normal">{item.a}</div>
-                      )}
-                    </div>
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 1 && (
+                      <div className="accordion__content fw-normal">
+                        NovaTales Media specializes in real estate digital marketing with proven strategies designed for Hyderabad’s competitive property market. We combine lead generation funnels, hyper-local targeting, project branding, and conversion-focused campaigns to deliver high-quality buyer, investor, and NRI leads. With deep industry experience, we ensure faster sales cycles and a strong online presence for your project.
+                      </div>
+                    )}
                   </div>
-                ))}
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 2
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(2)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        Can NovaTales Media generate NRI leads for real estate projects?
+
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 2 && (
+                      <div className="accordion__content fw-normal">
+                        Yes. NovaTales runs highly targeted Meta and Google campaigns across the GCC, USA, UK, Australia, and other NRI hotspots. We use interest-based targeting, custom audiences, and optimized landing pages to attract qualified NRI buyers who are actively exploring investment opportunities in India.
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 3
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(3)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        What services does NovaTales Media provide for real estate developers?
+
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 3 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>We offer end-to-end real estate marketing solutions, including:</p>
+                        <ul className='mt-0 flex flex-column gap-2' >
+                          <li style={{ listStyleType: "disc" }}> Google Search, Display & Performance Max campaigns </li>
+                          <li style={{ listStyleType: "disc" }}> Meta lead generation ads</li>
+                          <li style={{ listStyleType: "disc" }}> NRI lead generation</li>
+                          <li style={{ listStyleType: "disc" }}> SEO for project websites </li>
+                          <li style={{ listStyleType: "disc" }}> Landing page development</li>
+                          <li style={{ listStyleType: "disc" }}> Social media management & creative design</li>
+                          <li style={{ listStyleType: "disc" }}> Project branding & launch campaigns</li>
+                          <li style={{ listStyleType: "disc" }}> CRM setup and automated lead nurturing </li>
+                          <li style={{ listStyleType: "disc" }}> Video ads & walkthrough reels</li>
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 4
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(4)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        How long does it take to see results from real estate digital marketing?
+
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 4 && (
+                      <div className="accordion__content fw-normal">
+                        With well-optimized campaigns, you can start receiving leads within 7–10 days. SEO and brand-building activities take longer—typically 2 to 3 months for measurable improvements. The overall timeline depends on your project type, competition, budget, and the marketing channels used.
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 5
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(5)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        How can NovaTales help generate more qualified leads?
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 5 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>We use a multi-step strategy focused on quality over quantity:</p>
+                        <ul className='mt-0 flex flex-column gap-2' >
+                          <li style={{ listStyleType: "disc" }}> Targeting audiences based on behavior, geolocation, and purchase intent </li>
+                          <li style={{ listStyleType: "disc" }}> Creating compelling ads and landing pages</li>
+                          <li style={{ listStyleType: "disc" }}> Running A/B testing for better conversions</li>
+                          <li style={{ listStyleType: "disc" }}> Reducing lead leakage through quick CRM automations </li>
+                          <li style={{ listStyleType: "disc" }}> Driving high-intent traffic through Google Search Ads</li>
+                        </ul>
+                        <p style={{ padding: "0" }} className='py-1'>This ensures your sales team receives leads that are more interested, relevant, and ready to engage.</p>
+
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 6
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(6)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        How can NovaTales enhance my project's website visibility?
+
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 6 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>Our SEO specialists optimize your project website so it ranks for high-intent keywords like “2BHK flats in Hyderabad” or “gated community in location.” We improve on-page SEO, technical SEO, local SEO, Google Business Profile visibility, and content marketing to drive organic traffic that converts into enquiries.</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 7
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(7)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        How can I track the success of my campaigns?
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 7 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>You get complete transparency. NovaTales provides:</p>
+                        <ul className='mt-0 flex flex-column gap-2' >
+                          <li style={{ listStyleType: "disc" }}> Monthly performance reports</li>
+                          <li style={{ listStyleType: "disc" }}> Lead dashboards</li>
+                          <li style={{ listStyleType: "disc" }}> Google Analytics & Ads reports</li>
+                          <li style={{ listStyleType: "disc" }}> Meta performance insights</li>
+                          <li style={{ listStyleType: "disc" }}> Call tracking & lead quality analysis </li>
+                        </ul>
+                        <p style={{ padding: "0" }} className='py-1'> You’ll always know how many leads were generated, their quality, cost per lead, and ROI.</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 8
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(8)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        Can NovaTales help with project branding and launch strategies?
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 8 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>Yes. We handle the entire branding pipeline, including:</p>
+                        <ul className='mt-0 flex flex-column gap-2' >
+                          <li style={{ listStyleType: "disc" }}> Project naming & brand identity</li>
+                          <li style={{ listStyleType: "disc" }}> Brochures, hoardings, and creative design</li>
+                          <li style={{ listStyleType: "disc" }}> Launch campaigns for digital & offline</li>
+                          <li style={{ listStyleType: "disc" }}> Teaser and reveal campaigns</li>
+                          <li style={{ listStyleType: "disc" }}> 360° digital promotion across all platforms </li>
+                        </ul>
+                        <p style={{ padding: "0" }} className='py-1'> This ensures your project makes a strong impact right from the launch stage.</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="accordion " >
+                  <div
+                    className={`accordion__item ${activeIndexLeft === 9
+                      ? "accordion__item--active"
+                      : ""
+                      }`}
+                    onClick={() => toggleAccLeft(9)}
+                  >
+                    <button className="accordion__btn real-estate-faq">
+                      <span className="accordion__caption fw-medium">
+                        Why should I hire a real estate digital marketing agency?
+
+                      </span>
+                      <span className="accordion__icon">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </span>
+                    </button>
+                    {activeIndexLeft === 9 && (
+                      <div className="accordion__content fw-normal">
+                        <p style={{ padding: "0" }} className='py-1'>Real estate is highly competitive and requires specialized marketing expertise. A dedicated real estate agency like NovaTales:</p>
+                        <ul className='mt-0 flex flex-column gap-2' >
+                          <li style={{ listStyleType: "disc" }}> Understands buyer psychology</li>
+                          <li style={{ listStyleType: "disc" }}> Knows how to generate high-intent leads</li>
+                          <li style={{ listStyleType: "disc" }}> Uses data-driven strategies</li>
+                          <li style={{ listStyleType: "disc" }}> Builds consistent branding</li>
+                          <li style={{ listStyleType: "disc" }}> Helps your sales team close faster </li>
+
+                        </ul>
+                        <p style={{ padding: "0", margin: "0" }}>
+                           Instead of trial and error, you get proven systems that deliver measurable results.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
-
-
             </div>
             <div className="conclusion mb-5">
             </div>
