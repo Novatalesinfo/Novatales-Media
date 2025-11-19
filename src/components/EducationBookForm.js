@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import AOS from "aos";
 import "aos/dist/aos.css";
-const BookForm = () => {
+const EducationBookForm = () => {
     const initialFormData = {
         fullName: "",
         email: "",
         phoneNumber: "",
-        hospitalname: ""
+        institutename: ""
     }
     const [formData, setFormData] = useState(initialFormData);
     const [consent, setConsent] = useState(false);
@@ -38,7 +38,7 @@ const BookForm = () => {
     const validate = () => {
         const newErrors = {};
         if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
-        if (!formData.hospitalname.trim()) newErrors.hospitalname = "Hospital name is required";
+        if (!formData.institutename.trim()) newErrors.institutename = "Hospital name is required";
         if (!formData.email.trim()) {
             newErrors.email = "Email is required";
         } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
@@ -130,8 +130,8 @@ const BookForm = () => {
                                     {errors.phoneNumber && <small className="text-danger">{errors.phoneNumber}</small>}
                                 </div>
                                 <div className='col-lg-6 col-xl-3 my-2'>
-                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='hospitalname' onChange={handleChange} value={formData.hospitalname} placeholder='Hospital Name' />
-                                    {errors.hospitalname && <small className="text-danger">{errors.hospitalname}</small>}
+                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='hospitalname' onChange={handleChange} value={formData.institutename} placeholder='Institute Name' />
+                                    {errors.institutename && <small className="text-danger">{errors.institutename}</small>}
                                 </div>
                             </div>
                             <div className='text-center d-flex justify-content-center gap-3 flex-md-row flex-column align-items-center mb-2 mt-4'>
@@ -158,4 +158,4 @@ const BookForm = () => {
     )
 }
 
-export default BookForm;
+export default EducationBookForm;

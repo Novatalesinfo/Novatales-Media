@@ -53,13 +53,12 @@ export default function AllServices() {
                                 <div className="card border-0 shadow" >
                                     <div className="card-body">
                                         <div className="tailored_made_hed">
-                                            <h5 className="card-title">Digital Marketing</h5>
+                                            <h5 className="card-title">360° Marketing</h5>
                                             <img src={digitalIcon} alt="Digital Marketing Icon" />
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Digital marketing is the ultimate guide to online success by
-                                            combining strategy with the right tools to spark engagement and ignite businesses.
+                                        <p className="card-text">A 360° solution combining brand strategy, data, creative assets, and performance-driven campaigns.
                                         </p>
                                     </div>
                                 </div>
@@ -75,8 +74,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Visual solutions are the most important resources to provide
-                                            maximum information in minimal time.</p>
+                                        <p className="card-text">Product videos, corporate films, reels, ads, drone shoots—visual content that attracts and converts customers.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -91,8 +89,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Web design and development is not just about the look and feel it
-                                            is also about how well it works and serves the purpose.</p>
+                                        <p className="card-text">Mobile-responsive, fast, secure, and SEO-friendly websites & apps that improve customer experience.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -102,13 +99,12 @@ export default function AllServices() {
                                 <div className="card border-0 shadow" >
                                     <div className="card-body">
                                         <div className="tailored_made_hed">
-                                            <h5 className="card-title">Search Engine Optimization </h5>
+                                            <h5 className="card-title">SEO + AEO + GEO </h5>
                                             <img src={seoIcon} alt="Search Engine Optimization Icon" />
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">SEO improves your visibility, gets you more eyeballs, more
-                                            enquiries and ultimately more conversions.</p>
+                                        <p className="card-text">Rank on Google, appear in “People Also Ask”, voice search, and AI-generated results.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -123,8 +119,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">SMM is the most creative and far-reaching tool to strategically
-                                            connect with new and existing customers.</p>
+                                        <p className="card-text">Consistent branding, creative communication, and viral content that builds trust.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -139,8 +134,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Content creation is about creating messages that people connect
-                                            with, capturing attention and standing out in a world of ideas.</p>
+                                        <p className="card-text">Blogs, scripts, posts, ad copies—content that educates, engages, and influences buying decisions.</p>
                                     </div>
                                 </Link>
                             </div>
@@ -155,8 +149,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Brand positioning involves communicating the distinct value that
-                                            your brand offers to set your business apart from the rest.</p>
+                                        <p className="card-text">Define your brand identity, tone, values, and market differentiation.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -171,8 +164,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Let us help you take your sales online - From creating attractive
-                                            online displays to establishing secure backend transactions.</p>
+                                        <p className="card-text">Online stores with secure payments, smooth UI/UX, catalog setup, and conversion optimization.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -187,9 +179,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Whether it is at our Exclusive studio or your outdoor unit, our
-                                            latest equipment and highly skilled photographers and editors are ready to serve
-                                            your business needs.</p>
+                                        <p className="card-text">Studio and outdoor product shoots with professional editing for catalogues, websites & ads.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -204,8 +194,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Advertising makes the world curious about your business! Let us
-                                            help you create the buzz to drive your business to new heights.</p>
+                                        <p className="card-text">Create demand, boost visibility, and generate leads at scale.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -220,10 +209,7 @@ export default function AllServices() {
                                         </div>
 
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Podcast is a place for stories, voices and vibrant conversations
-                                            that
-                                            connect minds one episode
-                                            after another.</p>
+                                        <p className="card-text">Professional recording, editing & publishing – craft conversations that build community and authority.</p>
                                     </div>
                                 </div>
                             </Link>
@@ -238,8 +224,7 @@ export default function AllServices() {
                                             <img src={BrandingIcon} alt="Branding Icon" className='ms-lg-4 ms-md-0' />
                                         </div>
                                         <div className="tailored_made_border hidden-xs"></div>
-                                        <p className="card-text">Your company’s perception and recognition is dependent on your
-                                            brand. Let us help you stand out.</p>
+                                        <p className="card-text">Logos, brand guidelines, packaging, and visual identity that create trust and recall.</p>
                                     </div>
                                 </div>
                             </Link>

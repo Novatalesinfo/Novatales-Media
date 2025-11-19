@@ -160,16 +160,7 @@ const Header = () => {
               >
                 About
               </Nav.Link>
-              {/* <Nav.Link
-                as={Link}
-                to='/technologies'
-                onClick={() => {
-                  handleNavigation('about')
-                  handleNavCollapse()
-                }}
-              >
-                Technologies
-              </Nav.Link> */}
+
               <NavDropdown title="Clients" id="industries-dropdown"
                 show={showClients} // Use state to control visibility
                 onMouseEnter={handleMouseEnterClients}
@@ -182,7 +173,7 @@ const Header = () => {
                 >
                   Clients
                 </NavDropdown.Item>
-                  {/* <NavDropdown.Item
+                {/* <NavDropdown.Item
                   as={Link}
                   to="/portfolio"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
@@ -330,6 +321,16 @@ const Header = () => {
                           </NavDropdown.Item>
                           <NavDropdown.Item
                             as={Link}
+                            to='/ai-powered-marketing'
+                            onClick={() => {
+                              handleNavigation('about')
+                              handleNavCollapse()
+                            }}
+                          >
+                            AI-Powered Digital Marketing
+                          </NavDropdown.Item>
+                          <NavDropdown.Item
+                            as={Link}
                             to='/ppc-advertising'
                             onClick={() => {
                               handleNavigation('about')
@@ -348,6 +349,7 @@ const Header = () => {
                           >
                             Email marketing
                           </NavDropdown.Item>
+
                         </ul>
                       </div>
                       <div className='col-xl-3 col-lg-4 col-sm-12'>
@@ -505,6 +507,13 @@ const Header = () => {
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                   Real Estate
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/education-digital-marketing"
+                  onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
+                >
+                  Education Service
                 </NavDropdown.Item>
 
 

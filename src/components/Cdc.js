@@ -50,11 +50,7 @@ const CdcCenter = () => {
                                     paddingLeft: "0px !important"
                                 }} className=''>
                                     Citrus Diagnostic Center is a patient-centered, modern medical imaging facility based in Citrus County, dedicated to delivering accurate, accessible, and high-quality diagnostic services. It is known for its state-of-the-art technology with compassionate care, quick turnaround, and a comfortable experience for patients while supporting healthcare professionals with trusted diagnostic insights                                </p>
-                                {/* <a href="https://endulainfra.com/" target="_blank" rel="noopener noreferrer">
-                                    <button className='inside-tab-child-div-button'>
-                                        Visit website
-                                    </button>
-                                </a> */}
+                              
                             </div>
                         </div>
                     </div>

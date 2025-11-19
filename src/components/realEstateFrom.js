@@ -1,7 +1,9 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const RealEstateBookFrom = () => {
     const initialFormData = {
         fullName: "",
@@ -89,10 +91,11 @@ const RealEstateBookFrom = () => {
             setLoading(false);
         }
     }
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div style={{
-           
-        }} className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
+        <div data-aos="fade-up" className="service-content LogoVisual d-flex justify-content-center align-items-center extraPadding " >
             <div className="extraPadding" style={{
                 backgroundColor: "#ffffffff", padding: "30px 0px",
                 border: "1px",
@@ -105,8 +108,8 @@ const RealEstateBookFrom = () => {
                         <div className="col-xl-4">
                             <h3 className='text-center ' style={{
                                 fontSize: "38px",
-                                   color: "#52377b",
-                                   fontFamily:"Poppins , sans-serif",fontWeight:"600", 
+                                color: "#52377b",
+                                fontFamily: "Poppins , sans-serif", fontWeight: "600",
                             }}>
                                 Get a Free Consultation
                             </h3>

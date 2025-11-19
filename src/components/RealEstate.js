@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import real_estate from "../images/portfolio/real_1.png"
 import online_realestate from "../images/casestudies/NEXT GEN-01.png"
 import social from "../images/casestudies/SEO 01-01.png"
-import gads from "../images/casestudies/brand voice.png"
+import gads from "../images/casestudies/brand_voice.png"
 import data from "../images/casestudies/Creative Storytelling-01.png"
 import analyst from "../images/casestudies/Advanced Analytics-01.png"
 import aboutHeroImage from '../images/portfolio/realestate_l.jpg';
@@ -70,56 +70,6 @@ const RealEstate = () => {
     },
 
   ];
-  // const realEstateServices = [
-  //   {
-  //     id: 1,
-  //     title: "Social Media-Marketing",
-  //     description: "Engage buyers and investors while promoting property listings online.",
-  //     image: realestateservice_6,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "SEO and SEM",
-  //     description: "Improve search visibility and reach buyers actively looking for properties.",
-  //     image: realestateservice_1,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Content-Marketing",
-  //     description: "Share valuable property updates to capture buyer interest effectively.",
-  //     image: realestateservice_8,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Email-Marketing",
-  //     description: "Send personalized messages to potential buyers and sellers consistently.",
-  //     image: realestateservice_7,
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Reputation-Management",
-  //     description: "Track reviews and maintain a strong, credible brand image.",
-  //     image: realestateservice_3,
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Website-Development",
-  //     description: "Design fast, user-friendly websites that highlight your properties.",
-  //     image: realestateservice_5,
-  //   },
-  //   {
-  //     id: 7,
-  //     title: "Paid-Advertising (PPC)",
-  //     description: "Reach the right buyers at the right time to boost ROI.",
-  //     image: realestateservice_2,
-  //   },
-  //   {
-  //     id: 8,
-  //     title: "Video-Marketing",
-  //     description: "Showcase properties and client experiences with engaging videos.",
-  //     image: realestateservice_4,
-  //   },
-  // ];
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
@@ -236,9 +186,7 @@ const RealEstate = () => {
                 borderRadius: "10px",
               }}>
                 <div>
-                  <img src={gads} alt='advertising for real estate' className='w-16' style={{
-                    width: "80px"
-                  }} />
+                  <img src={gads} alt='advertising for real estate'/>
                 </div>
                 <div className='ps-3 d-flex justify-content-center gap-0 flex-column align-items-center'>
                   <span style={{
@@ -296,45 +244,6 @@ const RealEstate = () => {
           </div>
         </div>
 
-
-        {/* Services for real estate */}
-
-        {/* <div className="health-Digital-Marketing">
-          <Container>
-            <div data-aos="fade-up" className="health-why-novatales">
-              <h2 className='text-center' style={{
-                textAlign: "center !important",
-                marginBottom: "60px",
-                color: "#52377b"
-              }}>NovaTales Expert Digital Marketing Services for Real Estate</h2>
-            </div>
-          </Container>
-          <div className='real-estate-serive-card-parent d-flex justify-content-center align-content-center w-100'>
-
-
-            <Row className='real-estate-content'>
-              {
-                realEstateServices.map((item, index) => <Col key={index * item.id} className='realestate-card-wrapper mb-4' data-aos="fade-up">
-                  <div className="realestate-service-card">
-                    <div className="realestate-card-image-container">
-                      <img src={item.image} className="realestate-card-image" alt="search engine optimization for real estate" />
-                    </div>
-                    <div className="realestate-card-content">
-                      <h4 className="realestate-service-title" > {
-                        item.title.split("-")[0]
-                      }
-                        <br />{
-                          item.title.split("-")[1]
-                        }</h4>
-                      <div className="realestate-title-underline"></div>
-                      <p className='realestate-card-description'>{item.description}</p>
-                    </div>
-                  </div>
-                </Col>)
-              }
-            </Row>
-          </div>
-        </div> */}
         <div className="section-get">
           <div className="wrapper">
             <div data-aos="fade-up" className="health-why-novatales">
@@ -353,7 +262,7 @@ const RealEstate = () => {
 
             <div className="get-list row">
               {/* -------- COLUMN 1 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -380,7 +289,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 2 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -408,7 +317,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 3 -------- */}
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -435,7 +344,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 4 -------- */}
-              <div className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
                 <div className='row d-flex justify-content-center align-items-center flex-column flex-lg-row'>
                   <div className='col-xl-12 col-lg-6'>
                     <div className="get-list__item">
