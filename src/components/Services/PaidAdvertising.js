@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import paidAdvertisingLap from '../../images/PAID ADVERSTISING 6.svg';
-import paidAdvertisingTab from '../../images/paid advertising tab.svg';
-import paidAdvertisingM from '../../images/PAID ADVERTISING M.png';
-import googleAdsIcon from '../../images/Google ads icon N.png';
-import youtubeAdsIcon from '../../images/youtube ads.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import ServiceContactForm from './ServiceContactForm';
-import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect, useState } from "react";
+import paidAdvertisingLap from "../../images/PAID ADVERSTISING 6.svg";
+import paidAdvertisingTab from "../../images/paid advertising tab.svg";
+import paidAdvertisingM from "../../images/PAID ADVERTISING M.png";
+import googleAdsIcon from "../../images/Google ads icon N.png";
+import youtubeAdsIcon from "../../images/youtube ads.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ServiceContactForm from "./ServiceContactForm";
+import AllServices from "../AllServices";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // import { Col, Container, Row } from 'react-bootstrap';
 export default function PaidAdvertising() {
-
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
   // const [activeIndexRight, setActiveIndexRight] = useState(null);
   // const toggleAccLeft = (index) => {
@@ -41,7 +42,7 @@ export default function PaidAdvertising() {
   //   q: "How is success measured for paid ad campaigns?",
   //   a: "Our team tracks conversions, cost-per-acquisition, click-through rates, and ROI — all aligned with your specific business objectives.",
   // },
- 
+
   // {
   //   q: "I have a small business. Will I benefit from paid advertising?",
   //   a: "Absolutely yes. We create targeted campaigns and manage budgets efficiently to drive meaningful growth for small and mid-sized businesses.",
@@ -65,7 +66,7 @@ export default function PaidAdvertising() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    <HelmetProvider>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>PPC Ad Agency | Maximize ROI with Expert Ad Strategies</title>
@@ -73,12 +74,24 @@ export default function PaidAdvertising() {
           name="description"
           content="Maximize your reach with our PPC advertising services. Our expert digital marketing team creates targeted campaigns, boost conversions and enhance your ROI."
         />
-        <meta name="keywords"
-          content="ppc ad agency, ppc advertising services, ppc advertising in digital marketing, youtube marketing agency, instagram marketing agency, facebook ad agency,google ppc campaigns,facebook and google ads agency." />
+        <meta
+          name="keywords"
+          content="ppc ad agency, ppc advertising services, ppc advertising in digital marketing, youtube marketing agency, instagram marketing agency, facebook ad agency,google ppc campaigns,facebook and google ads agency."
+        />
       </Helmet>
       <div className="service-heading">
-        <img src={paidAdvertisingLap} width="100%" alt="ppc advertising services" className="lap" />
-        <img src={paidAdvertisingTab} alt="ppc advertising services" className="tab" width="100%" />
+        <img
+          src={paidAdvertisingLap}
+          width="100%"
+          alt="ppc advertising services"
+          className="lap"
+        />
+        <img
+          src={paidAdvertisingTab}
+          alt="ppc advertising services"
+          className="tab"
+          width="100%"
+        />
       </div>
       <div className="service-content">
         <div className="container">
@@ -87,15 +100,37 @@ export default function PaidAdvertising() {
               <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="service-para">
                   <h1>Paid Advertising</h1>
-                  <p>Pay-Per-Click Advertising (PPC) is a way to quickly drive traffic to your website through online paid ads. At Nova Tales we have experts who manage PPC campaigns based on specific budgets, timeframes, and target areas for your business. Our Search Engine Marketing experts cover all aspects of PPC Campaign Guidelines, delivering detailed reports on each campaign's performance. We analyze these reports to suggest strategies for a great return on your investments.</p>
-                  <p>Using Google Pay Per Click (PPC) advertising can put your website at the top of search engine results pages when searched for specific keywords. We excel in services like Keyword research, setting up campaigns, managing high Click-Through Rates (CTR), and creating attractive landing pages. We adhere to search engine policies and algorithms, making our PPC Services beneficial for displaying your ads at the top of search results and generating more business lead at a low cost per click (CPC).</p>
+                  <p>
+                    Pay-Per-Click Advertising (PPC) is one of the fastest and
+                    most effective ways to drive targeted traffic to your
+                    website. At NovaTales Media, our PPC specialists design,
+                    launch, and manage ad campaigns that align with your goals,
+                    optimizing every rupee of your budget for maximum ROI. We
+                    handle everything from keyword strategy and ad creation to
+                    audience targeting and analytics tracking, ensuring your
+                    brand stays visible where it matters most.
+                  </p>
+                  <p>
+                    With Google Pay-Per-Click (PPC) campaigns, your website
+                    appears at the top of search results for relevant keywords,
+                    instantly connecting you with potential customers. Our
+                    expertise spans keyword research, campaign setup, ad copy
+                    optimization, high CTR management, and landing page design.
+                    By following Google’s ad policies and algorithm updates, we
+                    make sure your campaigns achieve high-quality leads at the
+                    lowest possible cost per click (CPC).
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 d-flex justify-content-center">
               <div className="service-image">
                 <div className="info-img position-relative">
-                  <img src={paidAdvertisingM} alt="ppc advertising in digital marketing" className="img-fluid topBottom" />
+                  <img
+                    src={paidAdvertisingM}
+                    alt="ppc advertising in digital marketing"
+                    className="img-fluid topBottom"
+                  />
                 </div>
               </div>
             </div>
@@ -104,20 +139,74 @@ export default function PaidAdvertising() {
       </div>
       <div className="service-points">
         <div className="container">
+          <div className="points-main-heading">
+            <h2>Why NovaTales Media is the best for your Paid Advertising?</h2>
+            <p>
+              At NovaTales Media, we not only create ads, but we also add
+              emotions with our creative storytelling and data-driven targeting
+              strategies that aim for higher conversion. We make sure that every
+              penny spent brings real growth to your business.
+            </p>
+          </div>
           <div className="row">
             <div className="col-lg-6 left-media">
               <div className="media">
                 <div className="row mt-5">
                   <div className="col-lg-2 col-md-2 col-sm-2">
                     <div className="media-image">
-                      <img src={googleAdsIcon} alt="Google Ads icon" width="100%" />
+                      <img
+                        src={googleAdsIcon}
+                        alt="Google Ads icon"
+                        width="100%"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-10 col-md-10 col-sm-12">
                     <div className="media-body">
                       <h4>Google Ads</h4>
-                      <p>Grow your brand with ads across Google’s platforms such as the most powerful search engine, Google Search, the world’s largest video sharing website, YouTube and the most used tool to look up local businesses, Google Maps. Our Ad campaigns are designed to deliver quick and effective results to the task at hand.</p>
-                      <p>Ads could be used to market your product or service when someone is actively searching for it, drive highly relevant traffic to your website, generate sales and enquires, boost your brand awareness and consideration, or increase calls and visits to your local store. We tailor your campaign by choosing a combination of various types of Google Ad formats including Google Search Ads, Display Ads, Video Ads, Discovery Ads, Local Ads, Performance Max Ads, Smart Ads and Shopping Ads.</p>
+                      <p>
+                        Grow your brand’s reach across Google’s powerful
+                        platforms, from Search and YouTube to Maps and the
+                        Display Network. Our data-driven ad campaigns are
+                        designed to deliver quick and impactful results, whether
+                        your goal is lead generation, sales, website traffic, or
+                        brand awareness.
+                      </p>
+                      <p>
+                        We create tailored strategies that combine the most
+                        effective ad formats, including:
+                      </p>
+                      <ul>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                           Search Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                           Display Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />{" "}
+                          Video Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />{" "}
+                           Discovery Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                           Local Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                           Performance Max Ads
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                          Shopping Ads
+                        </li>
+                      </ul>
+                      <p>Each campaign is built to engage your audience at the right time, on the right platform, driving measurable outcomes and sustainable growth.</p>
                     </div>
                   </div>
                 </div>
@@ -128,13 +217,20 @@ export default function PaidAdvertising() {
                 <div className="row mt-5">
                   <div className="col-lg-2 col-md-2 col-sm-2">
                     <div className="media-image">
-                      <img src={googleAdsIcon} alt="Facebook, Instagram and Twitter Marketing icon" width="100%" />
+                      <img
+                        src={googleAdsIcon}
+                        alt="Facebook, Instagram and Twitter Marketing icon"
+                        width="100%"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-10 col-md-10 col-sm-12">
                     <div className="media-body">
-                      <h4>Facebook, Instagram and Twitter Marketing</h4>
-                      <p>Facebook, Instagram and Twitter (X) are the most prominent online marketing platforms that expand your brand recognition and increase conversions and leads exponentially. We identify your target audience and ensure that your brand visibility multiplies considerably with smart ad investments as well as organic growth on various social media platforms.</p>
+                      <h4>Facebook, Instagram & Twitter (X) Ads</h4>
+                      <p>
+                        Social media advertising is where creativity meets conversion. We help your brand stand out on Facebook, Instagram, and Twitter (X) with impactful visuals, compelling ad copy, and precise audience targeting.
+                      </p>
+                      <p>Our team identifies and segments your ideal audience based on demographics, interests, and behavior, ensuring every campaign delivers visibility, engagement, and tangible results. With a balanced mix of paid promotion and organic growth strategies, we help you amplify reach, build loyal communities, and convert followers into customers.</p>
                     </div>
                   </div>
                 </div>
@@ -143,13 +239,25 @@ export default function PaidAdvertising() {
                 <div className="row mt-5">
                   <div className="col-lg-2 col-md-2 col-sm-2">
                     <div className="media-image">
-                      <img src={youtubeAdsIcon} alt="YouTube Ads icon" width="100%" />
+                      <img
+                        src={youtubeAdsIcon}
+                        alt="YouTube Ads icon"
+                        width="100%"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-10 col-md-10 col-sm-12">
                     <div className="media-body">
                       <h4>YouTube Ads</h4>
-                      <p>We create visually appealing content that encourage clicks such as skippable ads and non-skippable ads, host live Q&A sessions and other interactive content to encourage viewers to like, share and subscribe.</p>
+                      <p>
+                       As video consumption continues to rise, YouTube Ads offer unmatched visibility and engagement. We create visually compelling video content, from skippable and non-skippable ads to interactive formats, that captivates viewers and drives action.
+                      </p>
+                      <p>
+                      Our YouTube strategies go beyond just views; we focus on engagement, brand recall, and conversion. Through live Q&A sessions, product explainers, and storytelling-driven videos, we help your brand connect authentically with audiences and inspire them to like, share, and subscribe.
+                      </p>
+                      <p>
+                      Our team at NovaTales continuously monitors, refines, and optimizes every campaign to create maximum impact and ROI. 
+                      </p>
                     </div>
                   </div>
                 </div>

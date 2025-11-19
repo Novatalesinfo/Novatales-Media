@@ -1,4 +1,24 @@
+.middle-text {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.middle-text p,
+.points-main-heading p {
+  font-weight: Regular 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2f2144;
+  word-spacing: 0.1em;
+}
+.points-main-heading h2 {
 
+  font-size: 25px;
+  color: #52377b;
+  font-weight: 800;
+  font-family: "Segoe UI";
+  text-transform: capitalize;
+}
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .smm .service-image {
     margin-top: 20%;

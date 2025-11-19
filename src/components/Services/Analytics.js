@@ -78,7 +78,8 @@ export default function Analytics() {
                                 <div data-aos="fade-up" data-aos-duration="1000">
                                     <div className="service-para mt-3">
                                         <h1 className="content-main-heading mb-3">Analytics & Business Insights</h1>
-                                        <p className="mt-3">Nova Tales Analytics and Business Insights services help organizations use data analysis to gain valuable insights about their business to make smart choices for long-term success. Our team has an extensive knowledge on various technologies to create a unique approach based on data to help customers.</p>
+                                        <p className="mt-3">At NovaTales Media, our Analytics and Business Insights services empower organizations to make smarter, data-backed decisions for long-term growth. We transform raw data into actionable intelligence, helping brands uncover trends, measure performance, and identify new opportunities in an ever-changing digital landscape.</p>
+                                        <p>Our team combines deep analytical expertise with the latest technologies to create custom data-driven strategies for each client. Using advanced tools like:</p>
                                         <ul>
                                             <li>
                                                 <FontAwesomeIcon icon={faAnglesRight} size="lg" /> Google Analytics
@@ -93,15 +94,15 @@ export default function Analytics() {
                                                 <FontAwesomeIcon icon={faAnglesRight} size="lg" /> Facebook Insights
                                             </li>
                                             <li>
-                                                <FontAwesomeIcon icon={faAnglesRight} size="lg" /> Twitter (X) Analytics Dashboard
+                                                <FontAwesomeIcon icon={faAnglesRight} size="lg" /> Twitter (X) Analytics
                                             </li>
                                             <li>
                                                 <FontAwesomeIcon icon={faAnglesRight} size="lg" /> LinkedIn Analytics
                                             </li>
                                         </ul>
-                                        <p>These technologies let organizations find important data, discover new trends, and adapt to a changing market easily. We believe every piece of data has a story and are dedicated to help our clients get the most value from their data through careful planning, advanced analytics tools, and the latest technology in report generation.</p>
-                                        <p>Nova Tales Analytics services help turn data into valuable insights for business growth and innovation. Whether you want to improve how things work, serve customers better, or find new ways to make money, we have the knowledge and tools to help. We customize our data analytics services to fit each client's needs, giving them useful information to move their organization in the right direction.</p>
-                                        <p>From collecting and processing data to analyzing it, we cover every step to provide our clients with accurate and helpful information for important decisions. We stay up-to-date with the latest data analytics technology so we can offer the best consulting services as our clients' needs evolve. We also make use of tools like MailChimp, SemRush and Hootsuite Analytics to give our clients an edge in the market and increase productivity.</p>
+                                        <p>We help businesses interpret data effectively, adapt quickly, and stay ahead of competitors. At NovaTales, we believe every number tells a story, and our mission is to decode it for growth and innovation. Through precise tracking, advanced analytics, and intuitive reporting, we help clients make informed, confident business decisions.</p>
+                                        <p>Whether your goal is to enhance performance, improve customer engagement, or uncover new revenue opportunities, our analytics framework provides clear direction. From data collection and visualization to real-time reporting, we ensure accuracy, insight, and impact at every step.</p>
+                                        <p>We also integrate tools like Mailchimp, SEMrush, and Hootsuite Analytics to offer a 360° performance view, giving your business a competitive edge and greater marketing efficiency.</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,9 +130,10 @@ export default function Analytics() {
                                 <div className="media">
                                     <div className="media-body">
                                         <h4>CONVERSION RATE OPTIMIZATION</h4>
-                                        <p>Conversion Rate Optimization (CRO) is a strategy that focuses on improving the percentage of website visitors who take a desired action, such as making a purchase, filling out a form, or subscribing. At Nova Tales we conduct thorough analysis to understand user behavior on your business website. By identifying pages with high bounce rates or drop-offs in conversions, we pinpoint areas that need improvement. Analyzing user data helps in implementing targeted changes to enhance the overall user experience and increase the probability of conversion.</p>
-                                        <p>Testing is a continuous process, allowing us to refine and optimize various elements on your website to achieve optimal conversion results. It involves creating multiple variations on a webpage such as call-to-action (CTA) button and presenting them in different segments of the website. By comparing the performance of these variations, we determine which design or content resonates best with the audience and ensure to drive higher conversion rates to your business.</p>
-                                        <p>We create dynamic content strategies, product recommendations, and run ad campaigns with targeted marketing messages for more engaging and relevant experience for a user, which significantly impacts conversion rates and boosts your business.</p>
+                                        <p>Conversion Rate Optimization (CRO) focuses on maximizing the number of website visitors who take meaningful action, whether it’s making a purchase, signing up, or submitting an inquiry. At NovaTales Media, we use deep behavioral analysis and user experience insights to transform website traffic into measurable conversions.</p>
+                                        <p>Our team identifies drop-off points, high-exit pages, and engagement gaps to understand where users lose interest. Using heatmaps, analytics data, and A/B testing, we fine-tune every touchpoint, from headlines and visuals to Call-to-Action (CTA) buttons, to ensure your audience moves seamlessly through the conversion funnel.</p>
+                                        <p>Optimization is an ongoing process. We continuously test variations, measure outcomes, and adapt strategies to deliver higher conversion rates. This data-driven approach allows us to refine content, layout, and messaging based on what truly resonates with your audience.</p>
+                                        <p>From personalized content strategies and product recommendations to targeted ad campaigns, we craft experiences that are both relevant and persuasive, turning visitors into loyal customers and driving tangible business growth.</p>
                                     </div>
                                 </div>
                             </div>

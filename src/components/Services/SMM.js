@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import linkedinIcon from '../../images/linkedin icon.png';
-import twitterIcon from '../../images/twitter icon.png';
-import smmIcon from '../../images/social m marketing icon N.png';
-import youtubeAdsIcon from '../../images/youtube ads.png';
-import smmImage from '../../images/SMM WEB IMAGE 2.png';
-import smmLapImage from '../../images/SOCIAL MEDIA MARKETING 6.svg';
-import smmTabImage from '../../images/social media marketing tab.svg';
-import '../../css/servisesCss/smm.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import ServiceContactForm from './ServiceContactForm';
-import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect, useState } from "react";
+import linkedinIcon from "../../images/linkedin icon.png";
+import twitterIcon from "../../images/twitter icon.png";
+import smmIcon from "../../images/social m marketing icon N.png";
+import youtubeAdsIcon from "../../images/youtube ads.png";
+import smmImage from "../../images/SMM WEB IMAGE 2.png";
+import smmLapImage from "../../images/SOCIAL MEDIA MARKETING 6.svg";
+import smmTabImage from "../../images/social media marketing tab.svg";
+import "../../css/servisesCss/smm.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ServiceContactForm from "./ServiceContactForm";
+import AllServices from "../AllServices";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // import { Col, Container, Row } from 'react-bootstrap';
 export default function SMM() {
-
-
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
   // const [activeIndexRight, setActiveIndexRight] = useState(null);
   // const toggleAccLeft = (index) => {
@@ -65,7 +63,7 @@ export default function SMM() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    <HelmetProvider>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Best Social Media Marketing Agency | NovaTales Media</title>
@@ -73,13 +71,25 @@ export default function SMM() {
           name="description"
           content="NovaTales is the best social media marketing agency specializes in Facebook and Instagram Ads, Smart Ads, Search Ads, Display Ads, YouTube Ads for maximum impact."
         />
-        <meta name="keywords"
-          content="best social media marketing agency, digital marketing and social media marketing,digital marketing for social media, smm marketing agency, social media marketing services,smm marketing,digital and social media marketing,social media advertising agencies." />
+        <meta
+          name="keywords"
+          content="best social media marketing agency, digital marketing and social media marketing,digital marketing for social media, smm marketing agency, social media marketing services,smm marketing,digital and social media marketing,social media advertising agencies."
+        />
       </Helmet>
-      <div className='smm'>
+      <div className="smm">
         <div className="service-heading">
-          <img src={smmLapImage} width="100%" alt="best social media marketing agency" className="lap" />
-          <img src={smmTabImage} alt="best social media marketing agency" className="tab" width="100%" />
+          <img
+            src={smmLapImage}
+            width="100%"
+            alt="best social media marketing agency"
+            className="lap"
+          />
+          <img
+            src={smmTabImage}
+            alt="best social media marketing agency"
+            className="tab"
+            width="100%"
+          />
         </div>
         <div className="service-content">
           <div className="container">
@@ -87,17 +97,42 @@ export default function SMM() {
               <div className="col-lg-6">
                 <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="service-para">
-                    <h1 className='mt-3 mb-3'>Social Media Marketing</h1>
-                    <p>Here at Nova Tales, we have unlocked the art & science behind creating the perfect social media campaign. With the right mixture of creativity, engaging and relevant content, right amount of interaction with the audience, and regular monitoring of analytics to track key metrics, we will ensure that all your time and monetary efforts have the desired reach and exceptional conversion rates that your brand deserves. Our consistent and targeted efforts ensure that your brand not only expands organically but continues to enjoy loyal followers that will look forward to your every move on social media.</p>
-                    <p>We help you create the perfect content for social media engagement by deep diving into your brand, the industry and your potential customers and create tailored content that ensures conversions, sales and exponential growth. </p>
-                    <p>The most successful businesses must have a combination of organic and paid strategies. Some of Social media content we plan, create, drive, track and push include:</p>
+                    <h1 className="mt-3 mb-3">Social Media Marketing</h1>
+                    <p>
+                      At NovaTales Media, we integrate creativity, strategy, and
+                      analytics to develop social media campaigns that truly
+                      connect. With the perfect balance of high-performing
+                      content, active audience interaction, and continuous
+                      performance tracking, we make sure every post, story, and
+                      campaign delivers measurable results. Our goal is simple,
+                      to grow your brand organically while nurturing a loyal
+                      online community that genuinely connects with your brand’s
+                      story.
+                    </p>
+                    <p>
+                      We don’t believe in one-size-fits-all social media. Our
+                      team dives deep into your brand identity, industry trends,
+                      and audience behavior to develop content that captures
+                      attention and drives conversions. From storytelling to
+                      sales-driven campaigns, every piece of content is designed
+                      for growth and engagement.
+                    </p>
+                    <p>
+                      The strongest brands today thrive on a mix of organic
+                      presence and paid strategy. Here’s how we help you stand
+                      out across platforms:
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 d-flex justify-content-center">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={smmImage} alt="digital marketing and social media marketing" className="img-fluid topBottom" />
+                    <img
+                      src={smmImage}
+                      alt="digital marketing and social media marketing"
+                      className="img-fluid topBottom"
+                    />
                   </div>
                 </div>
               </div>
@@ -107,18 +142,32 @@ export default function SMM() {
         <div className="service-points">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 left-media" style={{ paddingRight: '70px' }}>
+              <div
+                className="col-lg-6 left-media"
+                style={{ paddingRight: "70px" }}
+              >
                 <div className="media">
                   <div className="row mt-3">
                     <div className="col-lg-2 col-md-2 col-sm-2">
                       <div className="media-image">
-                        <img src={linkedinIcon} alt="LinkedIn icon representing LinkedIn advertising" width="100%" />
+                        <img
+                          src={linkedinIcon}
+                          alt="LinkedIn icon representing LinkedIn advertising"
+                          width="100%"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-10 col-md-10 col-sm-12">
                       <div className="media-body">
                         <h4>LinkedIn</h4>
-                        <p>Ad campaigns tailored to your specific needs whether it is to create brand awareness, drive consideration, or conversion using a mix of carousel ads, conversation or message ads, ads for events, followers, jobs, etc. Additionally, strategies to organically build following through rich content.</p>
+                        <p>
+                          We create tailored ad campaigns to build awareness,
+                          drive leads, or boost conversions, using a smart mix
+                          of carousel ads, conversation ads, and event
+                          promotions. Alongside, we build an authentic
+                          professional following with thought leadership content
+                          and strategic engagement.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -127,13 +176,23 @@ export default function SMM() {
                   <div className="row mt-3">
                     <div className="col-lg-2 col-md-2 col-sm-2">
                       <div className="media-image">
-                        <img src={twitterIcon} alt="Twitter icon representing Twitter (X) advertising" width="80%" />
+                        <img
+                          src={twitterIcon}
+                          alt="Twitter icon representing Twitter (X) advertising"
+                          width="80%"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-10 col-md-10 col-sm-12">
                       <div className="media-body">
                         <h4>Twitter (X)</h4>
-                        <p>Strategies to increase your Twitter (X) following using content that makes users want to like, repost and reply. Furthermore, we create the perfect ad campaign using image, video and carousel ads.</p>
+                        <p>
+                          We design scroll-stopping tweets, visuals, and ad
+                          campaigns that spark conversations and encourage users
+                          to engage, repost, and share. Our strategies are
+                          designed to grow followers and amplify your brand’s
+                          voice in real-time trends.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -144,13 +203,24 @@ export default function SMM() {
                   <div className="row mt-3">
                     <div className="col-lg-2 col-md-2 col-sm-2">
                       <div className="media-image">
-                        <img src={smmIcon} alt="Instagram and Facebook icons representing social media marketing" width="100%" />
+                        <img
+                          src={smmIcon}
+                          alt="Instagram and Facebook icons representing social media marketing"
+                          width="100%"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-10 col-md-10 col-sm-12">
                       <div className="media-body">
                         <h4>Instagram and Facebook </h4>
-                        <p>We drive content creation and publishing, organic growth through engagement posts, stories, videos along with paid activities such as sponsored content, influencer marketing and paid ads. Analytics to monitor performance and track metrics such as reach, engagement, clicks, and conversions. </p>
+                        <p>
+                          We handle everything from creative content and
+                          storytelling reels to influencer collaborations and
+                          paid ad campaigns. Our analytics-first approach helps
+                          track metrics like reach, engagement, clicks, and
+                          conversions, ensuring your social media spend delivers
+                          maximum ROI.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -159,13 +229,23 @@ export default function SMM() {
                   <div className="row mt-3">
                     <div className="col-lg-2 col-md-2 col-sm-2">
                       <div className="media-image">
-                        <img src={youtubeAdsIcon} alt="YouTube icon representing YouTube advertising" width="100%" />
+                        <img
+                          src={youtubeAdsIcon}
+                          alt="YouTube icon representing YouTube advertising"
+                          width="100%"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-10 col-md-10 col-sm-12">
                       <div className="media-body">
                         <h4> YouTube </h4>
-                        <p> We create visually appealing content that encourages clicks such as skippable ads and non-skippable ads, host live Q&A sessions and other interactive content to encourage viewers to like, share and subscribe.</p>
+                        <p>
+                          From short-form video ads to long-format storytelling,
+                          we produce captivating content that drives views,
+                          engagement, and subscriptions. Interactive sessions
+                          like live Q&As and behind-the-scenes videos help your
+                          brand connect authentically with its audience.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -173,6 +253,13 @@ export default function SMM() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="middle-text">
+          <p>
+            Whether you want to build brand awareness or increase sales,
+            NovaTales Media will help in establishing a powerful social presence
+            by creating real business impact.
+          </p>
         </div>
         {/* <div className="Health-faqs">
           <Container>
