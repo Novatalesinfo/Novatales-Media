@@ -513,7 +513,7 @@ const Header = () => {
                   to="/education-digital-marketing"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
-                  Education Service
+                  Education
                 </NavDropdown.Item>
 
 
