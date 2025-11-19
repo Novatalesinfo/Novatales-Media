@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import emailMarketingDesktop from '../../images/EMAIL MARKETING 6..svg';
-import emailMarketingTablet from '../../images/email marketing tab.svg';
-import emailMarketingMobile from '../../images/EMAIL MARKETING M.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import ServiceContactForm from './ServiceContactForm';
-import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useEffect, useState } from "react";
+import emailMarketingDesktop from "../../images/EMAIL MARKETING 6..svg";
+import emailMarketingTablet from "../../images/email marketing tab.svg";
+import emailMarketingMain from "../../images/EMAIL MARKETING M.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ServiceContactForm from "./ServiceContactForm";
+import AllServices from "../AllServices";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 export default function EmailMarketing() {
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
@@ -65,20 +65,34 @@ export default function EmailMarketing() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    <HelmetProvider>
       {/* Set the HTML head metadata */}
       <Helmet>
-        <title>NovaTales Email Marketing Campaigns to Increase Conversions</title>
+        <title>
+          NovaTales Email Marketing Campaigns to Increase Conversions
+        </title>
         <meta
           name="description"
           content="Our best email marketing services ensure your message lands directly in your customers inbox driving engagement and conversions with precision and impact,best email marketing platforms."
         />
-        <meta name="keywords"
-          content="Email Marketing Campaign, Best Email Marketing Service, Best Email Campaign Service, Email Marketing in Digital Marketing, Lead Generation in Email Marketing. " />
+        <meta
+          name="keywords"
+          content="Email Marketing Campaign, Best Email Marketing Service, Best Email Campaign Service, Email Marketing in Digital Marketing, Lead Generation in Email Marketing. "
+        />
       </Helmet>
       <div className="service-heading">
-        <img src={emailMarketingDesktop} width="100%" alt="Email Marketing Campaign, Best Email Marketing Service" className="lap" />
-        <img src={emailMarketingTablet} alt="Email Marketing Campaign, Best Email Marketing Service" className="tab" width="100%" />
+        <img
+          src={emailMarketingDesktop}
+          width="100%"
+          alt="Email Marketing Campaign, Best Email Marketing Service"
+          className="lap"
+        />
+        <img
+          src={emailMarketingTablet}
+          alt="Email Marketing Campaign, Best Email Marketing Service"
+          className="tab"
+          width="100%"
+        />
       </div>
       <div className="service-content">
         <div className="container">
@@ -87,22 +101,78 @@ export default function EmailMarketing() {
               <div data-aos="fade-up" data-aos-duration="1000">
                 <div className="service-para">
                   <h1>EMAIL MARKETING</h1>
-                  <p>Email marketing is an effective way to promote your products and services and incentivize your customers for showing loyalty to your brand. Marketing or promotional emails are used to keep customers on your mailing list up-to-date with product announcements, provide discount offers and coupons for their next purchase, and engage with customers with creative content to stay top of the mind between purchases.
+                  <p>
+                    Email marketing remains one of the most powerful and
+                    cost-effective ways to nurture customer relationships,
+                    promote products, and drive repeat business. It helps brands
+                    stay connected with their audience through personalized,
+                    value-driven communication, from exclusive offers and
+                    product updates to engaging newsletters that keep your brand
+                    top-of-mind.
                   </p>
-                  <p>Through NovaTales Email Marketing services, we create marketing campaigns to design email templates using rich media, provide strategies to generate extensive mailing lists, and deliver campaigns straight to inboxes that are relevant to your business. Newsletters are created and shared on a regular basis to keep subscribers informed and increase brand awareness. We tailor email marketing campaigns to fit your brand needs, budget, and market segments.</p>
-                  <div className="media">
-                    <div className="media-body">
-                      <p>Key benefit of email marketing is that it allows personalization of emails to provide maximum relevance and generates better engagement. We use email marketing tools that allow us to run A/B tests to experiment with the subject line, content, or call to action to see which option is most effective and then send out the emails to the relevant segment. We use analytics to measure the performance of the marketing campaign by tracking open rates, click-through rates, and conversion rates.
-                      </p>
-                    </div>
-                  </div>
+                  <p>
+                    At NovaTales Media, we design and execute impactful email
+                    campaigns that deliver results. Our team creates visually
+                    appealing, mobile-optimized email templates enriched with
+                    interactive media, develops strategies to grow your
+                    subscriber base, and ensures every campaign reaches the
+                    right audience at the right time. Regular newsletters and
+                    drip campaigns are tailored to enhance engagement, boost
+                    retention, and increase brand loyalty.
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 d-flex justify-content-center">
               <div className="service-image">
                 <div className="info-img position-relative">
-                  <img src={emailMarketingMobile} alt="Email Marketing in Digital Marketing" className="img-fluid topBottom" />
+                  <img
+                    src={emailMarketingMain}
+                    alt="Email Marketing in Digital Marketing"
+                    className="img-fluid topBottom"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div className="service-para">
+                  <div className="points-main-heading">
+                    <h2>
+                      Benefits of choosing NovaTales for your Email Marketing
+                    </h2>
+                    <ul>
+                      <li>
+                        <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                        Higher customer retention and repeat purchases
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faAnglesRight} size="lg" />
+                        Increase in order value due to targeted email campaigns
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faAnglesRight} size="lg" />{" "}
+                        Improvement in the ROI
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faAnglesRight} size="lg" /> Get
+                        monthly performance reports with actionable insights
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <div className="service-para mt-5">
+                  <div className="points-main-heading">
+
+                    <p>One of the greatest strengths of email marketing is personalization. We craft messages that speak directly to each customer segment, driving stronger engagement and higher conversion rates. Through A/B testing, we experiment with subject lines, visuals, and CTAs to discover what resonates best with your audience.</p>
+                    <p>Our approach is data-driven, using analytics to monitor open rates, click-through rates, and conversion metrics. This allows us to continually refine strategies and ensure every email campaign contributes to measurable business growth.</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -57,7 +57,78 @@
     margin-top: 0%;
   }
 }
-.justifyText{
-  text-align: justify; 
+.justifyText {
+  text-align: justify;
+}
 
+/*----Digital Marketing Services -----*/
+.Digital-services {
+  margin: 40px 0px;
+}
+.Digital-services h2 {
+  font-size: 32px;
+  color: #52377b;
+  font-weight: 800;
+  font-family: "Segoe UI";
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+.Digital-services .points-content .subcontent .col-lg-2 {
+  flex: 0 0 auto;
+  width: 12.666667%;
+}
+.Digital-services .points-content .Icon {
+  width: 60px;
+  height: auto;
+}
+.Digital-services .points-content .Icon-2 {
+  width: 50px;
+  height: auto;
+}
+
+
+.Digital-services .points-content h3 {
+  color: #52377b;
+  font-family: Segoe UI;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.Digital-services .points-content p {
+  color: #2f2144;
+  font-size: 15px;
+  font-weight: Regular 400;
+  line-height: 1.8;
+  text-align: left;
+  width: 90%;
+}
+
+.Digital-services .points-down2 ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.Digital-services .points-down li , .Digital-services .points-down2 li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #52377b;
+}
+
+.Digital-services .points-down .points-header span ,.Digital-services .points-down2 .points-header span  {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.Digital-services .points-down .pointer-content p , .Digital-services .points-down2 .pointer-content p {
+  color: #2f2144;
+  font-size: 15px; /* fixed typo: 'spx' -> 'px' */
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+}
+.sidebyside
+{
+ display: flex;
+ gap: 25px;
+ width: 80%;
 }

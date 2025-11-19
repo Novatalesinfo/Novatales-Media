@@ -1,105 +1,179 @@
-import React, { useEffect } from 'react';
-import digitalMarketingIllustration from '../../images/digital marketing illustration.svg';
-import digitalMarketingTab from '../../images/digital marketing tab.svg';
-import digitalMarketingWebImage from '../../images/DIGITAL MARKETING WEB IMAGE.png';
-import seoIcon from '../../images/SEO icon.png';
-import emailMarketingIcon from '../../images/email marketing icon N.png';
-import analyticsIcon from '../../images/analytics and business insights icon.png';
-// import affiliateMarketingIcon from '../../images/affliated marketing icon N.png';
-import socialMediaMarketingIcon from '../../images/social m marketing icon N.png';
-import paidAdvertisingIcon from '../../images/paid advertising.png';
-import '../../css/servisesCss/digital.css';
-import ServiceContactForm from './ServiceContactForm';
-import AllServices from '../AllServices';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-// import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
-
-// import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import digitalMarketingIllustration from "../../images/digital marketing illustration.svg";
+import digitalMarketingTab from "../../images/digital marketing tab.svg";
+import digitalMarketingWebImage from "../../images/DIGITAL MARKETING WEB IMAGE.png";
+import seoIcon from "../../images/SEO icon.png";
+import emailMarketingIcon from "../../images/email marketing icon N.png";
+import analyticsIcon from "../../images/analytics and business insights icon.png";
+import socialMediaMarketingIcon from "../../images/social m marketing icon N.png";
+import paidAdvertisingIcon from "../../images/paid advertising.png";
+import "../../css/servisesCss/digital.css";
+import ServiceContactForm from "./ServiceContactForm";
+import AllServices from "../AllServices";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import BrandingStrategy from "./BrandingStrategy";
+import seoImage from "../../images/Search Engine Optimization M.png";
+import emailMarketingMain from "../../images/EMAIL MARKETING M.png";
+import analyticsMImage from "../../images/Analytics & Business Insights M.png";
+import paidAdvertisingM from "../../images/PAID ADVERTISING M.png";
+import smmImage from "../../images/SMM WEB IMAGE 2.png";
 export default function DigitalMarketing() {
+  const points = [
+    {
+      title: "Traditional SEO",
+      content:
+        "We improve your Google ranking by optimizing your website’s structure, keywords, backlinks, and on-page elements that drive long-term organic traffic.",
+    },
+    {
+      title: "Answer Engine Optimization",
+      content:
+        "We optimize your content to sound more direct, conversational, and to appear in the “People Also Ask” section and in voice search, so users rely on your brand for queries.",
+    },
+    {
+      title: "Generative Engine Optimization",
+      content:
+        "We follow the strategies that let the AI discover your content over ChatGPT or Gemini, AI chat results, and summaries by aligning with the generative engine algorithms.",
+    },
+  ];
+  const pointsEmail = [
+    {
+      title: "Increase repeat purchases",
+      content:
+        " It encourages customers to buy again by sending targeted reminders, personalized recommendations, and post-purchase follow-up messages. ",
+    },
+    {
+      title: "Share offers & product launches",
+      content:
+        "It is ideal to introduce and announce new products, create appealing newsletters, broadcast seasonal offers, and exclusive discounts, which help your audience engage.",
+    },
+    {
+      title: "Nurture leads with valuable content",
+      content:
+        " It provides a platform to share educational resources, your brand stories, and how-to guides, helping to build trust among potential customers. ",
+    },
+    {
+      title: "Reward loyal customers",
+      content:
+        "Personalized emails retain customers by notifying them of loyalty points, early offers, and sending thank-you emails after every purchase.",
+    },
+  ];
+  const pointsAnalytics = [
+    {
+      title: "Customer behavior tracking",
+      content:
+        "The data obtained after tracking customer behavior, like how they interact, what they click, how they spend time on your brand, and what drives their purchasing decision. ",
+    },
+    {
+      title: "Campaign performance reports",
+      content:
+        "With accurate insights about the performance of the campaign, like what’s working and what’s not, we adjust our strategies for better engagement and ROI.  ",
+    },
+    {
+      title: "Website analytics",
+      content:
+        "With website analytics, all the data about traffic, top-performing pages, and user experience can be obtained, which helps to improve the conversion rates.",
+    },
+    {
+      title: "ROI measurement",
+      content:
+        "Every penny spent on marketing is measured against the business results. The ROI helps your business to spend wisely and grow efficiently.",
+    },
+    {
+      title: "Growth recommendations",
+      content:
+        "The data-driven insights play a significant role in enhancing the performance of your brand through actionable steps for your business growth.",
+    },
+  ];
+  const pointsSocial = [
+    {
+      title: "Creative posts & reels",
+      content:
+        " We create visually appealing and engaging content that captures attention by encouraging them to interact and increasing the brand identity.",
+    },
+    {
+      title: "Paid social ads",
+      content:
+        "We run highly targeted campaigns intended to reach your potential audience, which helps boost visibility and generate measurable results. ",
+    },
+    {
+      title: "Influencer collaborations",
+      content:
+        "Collaborating with credible creators who closely resonate with your brand's ideas will help expand your visibility, credibility, and reach wide audiences. ",
+    },
+    {
+      title: "Comments & community engagement",
+      content:
+        "Actively engaging and interacting with comments and handling queries of your audiences and followers boosts the loyalty to your brand.  ",
+    },
+    {
+      title: "Brand storytelling",
+      content:
+        "Consistently sharing relatable and emotional stories about the brand creates an emotional connection with the audience.",
+    },
+  ];
+  const pointsPaid = [
+    {
+      title: "Google Ads",
+      content:
+        "We design and manage campaigns, ensuring maximum reach and high conversion rates, and capture your audience’s attention, whether they are on Google, browsers, or on YouTube.",
+    },
+    {
+      title: "Meta Ads",
+      content:
+        "We help your brand stand out in the crowd of feeds by creating appealing posts to drive engagement and sales that precisely target your audience on Facebook and Instagram.",
+    },
+    {
+      title: "LinkedIn Ads",
+      content:
+        " It is one of the best platforms for B2B connections, so we professionally optimize campaigns to build qualified leads and professional networking, and credibility.",
+    },
+    {
+      title: "E-commerce Ads",
+      content:
+        "We help boost your brand’s ROAS by attracting customers ready to make purchases from your online store through our dynamic product ads and strategies. ",
+    },
+  ];
 
-
-  //   const [activeIndexLeft, setActiveIndexLeft] = useState(null);
-  //   const [activeIndexRight, setActiveIndexRight] = useState(null);
-  //   const toggleAccLeft = (index) => {
-  //     setActiveIndexLeft(activeIndexLeft === index ? null : index);
-  //   };
-  //   const toggleAccRight = (index) => {
-  //     setActiveIndexRight(activeIndexRight === index ? null : index);
-  //   };
-
-  //   const faq = [  {
-  //   q: "What digital marketing services do you offer?",
-  //   a: "We provide Branding, Web Design, Video Production, Podcasting, Paid Advertising, and Digital Campaigns, using AI insights and GEO-targeted strategies where relevant.",
-  // },
-  // {
-  //   q: "How do you create a digital marketing strategy for a business?",
-  //   a: "We analyze audience behavior, competitors, and business goals to design a tailored strategy for measurable results.",
-  // },
-  // {
-  //   q: "How do you measure the success of a digital marketing campaign?",
-  //   a: "Campaign performance is tracked using KPIs like website traffic, engagement, conversions, and ROI to optimize future campaigns.",
-  // },
-  // {
-  //   q: "Can GEO-targeting improve campaign performance?",
-  //   a: "Yes, location-based targeting ensures campaigns reach the right audiences, reducing wasted spend and improving conversions.",
-  // },
-  // {
-  //   q: "How do you decide which platforms are best for a business?",
-  //   a: "We evaluate audience presence, campaign objectives, and industry trends to select the most effective platforms.",
-  // },
-  // {
-  //   q: "Can AI help improve my marketing campaigns?",
-  //   a: "AI is applied selectively to analyze data, optimize targeting, and provide insights that enhance campaign performance.",
-  // },
-  // {
-  //   q: "Do you offer services for both small businesses and large enterprises?",
-  //   a: "Yes, our strategies scale effectively for startups and global companies, optimizing budgets and resources efficiently.",
-  // },
-  // {
-  //   q: "How long does it take to see results from digital marketing?",
-  //   a: "Paid campaigns can show quick traction, while SEO, GEO, and content strategies gradually build sustainable growth over a few months.",
-  // },
-  // {
-  //   q: "How often do you update campaigns or strategies?",
-  //   a: "Campaigns are monitored continuously, with updates made based on performance data and emerging trends.",
-  // },
-  // {
-  //   q: "Can digital marketing improve customer retention?",
-  //   a: "Yes, personalized campaigns, remarketing, and consistent engagement help strengthen customer loyalty over time.",
-  // },
-
-  //   ]
   useEffect(() => {
     // Initialize AOS library for animations
     AOS.init();
   }, []);
 
-  // useEffect(() => {
-
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   return (
-    <HelmetProvider >
+    <HelmetProvider>
       {/* Set the HTML head metadata */}
       <Helmet>
-        <title>Transform Your Online Reach| Best Digital Marketing Agency </title>
+        <title>
+          Transform Your Online Reach| Best Digital Marketing Agency{" "}
+        </title>
         <meta
           name="description"
           content="NovaTales is a full service digital marketing and branding agency offering SEO, PPC, SMM, Analytics, Google Ads, YouTube Ads, Instagram Ads, Facebook Ads."
         />
-        <meta name="keywords"
-          content="digital marketing agency, best digital marketing company, best digital marketing services, digital marketing company services,digital marketing company." />
+        <meta
+          name="keywords"
+          content="digital marketing agency, best digital marketing company, best digital marketing services, digital marketing company services,digital marketing company."
+        />
       </Helmet>
-      <div className='Digital'>
+      <div className="Digital">
         <div className="service-heading">
-          <img src={digitalMarketingIllustration} width="100%" alt="digital marketing agency" className="lap" />
-          <img src={digitalMarketingTab} alt="digital marketing agency" className="tab" width="100%" />
+          <img
+            src={digitalMarketingIllustration}
+            width="100%"
+            alt="digital marketing agency"
+            className="lap"
+          />
+          <img
+            src={digitalMarketingTab}
+            alt="digital marketing agency"
+            className="tab"
+            width="100%"
+          />
         </div>
         <div className="service-content">
           <div className="container">
@@ -109,13 +183,27 @@ export default function DigitalMarketing() {
                   <div className="service-para mt-3">
                     <h1>Digital marketing</h1>
                     <p className="mt-3">
-                      Digital marketing enables brands to reach, engage, and convert customers through online platforms, smart analytics, and personalized communication. Today, every business, small, medium, or enterprise, needs digital marketing to stay competitive, attract customers, and scale faster.
+                      Digital marketing enables brands to reach, engage, and
+                      convert customers through online platforms, smart
+                      analytics, and personalized communication. Today, every
+                      business, small, medium, or enterprise, needs digital
+                      marketing to stay competitive, attract customers, and
+                      scale faster.
                     </p>
                     <p>
-                      It is one of the most cost-effective and measurable marketing methods. Every campaign can be optimized in real-time based on performance data, ensuring better ROI and smarter decisions.
+                      It is one of the most cost-effective and measurable
+                      marketing methods. Every campaign can be optimized in
+                      real-time based on performance data, ensuring better ROI
+                      and smarter decisions.
                     </p>
                     <p>
-                      At NovaTales, we build digital marketing strategies that combines Data, Creativity, Technology, GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) together helping your brand appear not only on Google, but also on AI-powered search, generative engines, and voice-based platforms like ChatGPT, Google Gemini, Bard, Siri & Alexa.
+                      At NovaTales, we build digital marketing strategies that
+                      combine Data, Creativity, Technology, GEO (Generative
+                      Engine Optimization), and AEO (Answer Engine Optimization)
+                      together, helping your brand appear not only on Google but
+                      also on AI-powered search, generative engines, and
+                      voice-based platforms like ChatGPT, Google Gemini, Bard,
+                      Siri & Alexa.
                     </p>
                   </div>
                 </div>
@@ -123,257 +211,502 @@ export default function DigitalMarketing() {
               <div className="col-lg-6 d-flex justify-content-center">
                 <div className="service-image">
                   <div className="info-img position-relative">
-                    <img src={digitalMarketingWebImage} alt="digital marketing agency" className="img-fluid topBottom" />
+                    <img
+                      src={digitalMarketingWebImage}
+                      alt="digital marketing agency"
+                      className="img-fluid topBottom"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="service-points">
+        <div className="">
           <div className="container">
-            <div className="row mt-5">
-              <div className="col-lg-6 left-media" style={{ paddingRight: '70px' }}>
-                <Link to="/search-engine-optmization-marketing">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={seoIcon} alt="SEO icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Search Engine Optimization (SEO+AEO+GEO)</h4>
-                          <p>
-                            SEO increases your website’s visibility on search engines. But modern search has evolved; people ask questions, use voice queries, and depend on AI chatbots for answers.
-                            That’s why we optimize for:                          </p>
-
-                          <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Traditional SEO</span> : We improve your ranking on Google and other search engines by enhancing your website structure, including meaningful keywords, reputable backlinks, and other on-page elements. This approach makes your content technically strong and relevant to the audience, driving long-term organic traffic.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Answer Engine Optimization</span> : We optimize your content so that it appears in “People Also Ask” sections and voice search. We structure your content so that it sounds more direct and conversational, helping your brand become a go-to response by users for various queries</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Generative Engine Optimization</span> : We follow the strategies that let the AI discover your content over ChatGPT or Gemini, AI chat results, and summaries by aligning with the generative engine algorithms.</li>
-                          </ul>
-                          <p>
-                            This makes your brand visible in Google Search, Google Voice, ChatGPT Search, Bard / Gemini, Bing Copilot, and AI-generated summaries & recommendations.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+            <div className="row align-items-center ">
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="service-image">
+                  <div className="info-img position-relative">
+                    <img
+                      src={seoImage}
+                      alt="digital marketing agency"
+                      className=" topBottom"
+                       width="100%"
+                    />
                   </div>
-                </Link>
-                <Link to="/email-marketing">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Email Marketing</h4>
-                          <p>
-                            Email marketing helps brands maintain long-term customer relationships. We design automated and personalized email flows that:
-                          </p>
-
-                          <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Increase repeat purchases </span> : It encourages customers to buy again by sending targeted reminders, personalized recommendations, and post-purchase follow-up messages.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Share offers & product launches </span> :  It offers a chance to introduce and announce the new products, create appealing newsletters, broadcast seasonal offers and exclusive discounts, which helps your audience engage.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Nurture leads with valuable content </span> :  It provides a platform to share educational resources, your brand stories, and how-to guides, helping to build trust among potential customers.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Reward loyal customers </span> : Personalized emails help you strengthen your long-term connections with your customers by notifying them of loyalty points, early access to offers, and sending thank-you emails after purchase.</li>
-                          </ul>
-                          <p>
-                            From welcome series to festival campaigns, your brand stays connected
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-                <Link to="/google-analytics-search-console">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={analyticsIcon} alt="Analytics and business insights icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Analytics and Business Insights</h4>
-                          <p>
-                            Data-driven marketing outperforms guesswork. We track, measure, and analyze digital performance to help you make smarter decisions.
-                          </p>
-                          <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Customer behavior tracking</span> : Tracking customer behavior by understanding how they interact with your brand, what they are clicking, how they are spending time, and what drives their purchasing decision. All this data helps understand customer behavior.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Campaign performance reports </span> : It provides accurate insights about the performance of the campaign, about what’s working and what’s not. With the data obtained, the strategies can be adjusted accordingly for better engagement and ROI.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Website analytics </span> : With website analytics, all the data about traffic, top-performing pages, and user experience can be obtained, which helps to improve the conversion rates.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>ROI measurement </span> : Every penny spent in marketing is measured against the business results. The ROI helps your business to spend wisely and grow efficiently.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Growth recommendations </span> : The data-driven insights play a significant role in enhancing the performance of your brand through actionable steps for your business growth.</li>
-                          </ul>
-                          <p>
-                            These insights help optimize spending and increase conversions.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-                {/* <Link to="#">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={affiliateMarketingIcon} alt="Affiliate marketing icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Affiliate Marketing</h4>
-                          <p>
-                            Boost your product sales through Nova Tales’ affiliate marketing services. We have a wide network of key publishers, advertisers and influencers that enable us to connect you with the right marketer and maximize returns. Our services include Display ads, video ads, blogs, social media posts, etc.
-                          </p>
-                          <ul>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Instagram Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Facebook Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> Twitter Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> LinkedIn Marketing</li>
-                            <li><FontAwesomeIcon icon={faAnglesRight} /> YouTube Marketing</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link> */}
+                </div>
               </div>
-              <div className="col-lg-6 side-points">
-                <Link to="/social-media-marketing">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={socialMediaMarketingIcon} alt="Social media marketing icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Social Media Marketing</h4>
-                          <p>
-                            4.95 billion people are active on social media. Their buying decisions are influenced by reels, ads, reviews & brand stories. We create brand-focused digital content across Instagram, Facebook, LinkedIn, YouTube, and Twitter (X). Our SMM services include:                          </p>
-
-                          <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Creative posts & reels</span> : We create visually appealing and engaging content that captures attention by encouraging them to interact and increasing the brand identity.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Paid social ads </span> : We run highly targeted campaigns that are intended to reach your potential audience, which helps boost the visibility and generate measurable results.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Influencer collaborations </span> : Collaborating with authentic creators who resonate with your brand's ideas closely will help expand your visibility, credibility, and reach among wide audiences .</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Comments & community engagement</span> : Actively engaging and interacting with your audiences and followers online helps to build positive relationships by replying to their comments or actively handling their queries, boosting the loyalty around your brand.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Brand storytelling</span> : Creating an emotional connection with your audience through consistently sharing relatable and emotional stories about the brand helps to strengthen the brand’s connection with your audience.</li>
-                          </ul>
-                          <p>
-                            Turn followers into customers and customers into brand fans.
-                          </p>
-                        </div>
-                      </div>
+              <div className="col-lg-6 Digital-services">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="points-content"
+                >
+                  <div className="subcontent">
+                    <h3 className="mb-3">Search Engine Optimization</h3>
+                    <p>
+                      SEO increases your website’s visibility on search engines.
+                      But modern search has evolved; people ask questions, use
+                      voice queries, and depend on AI chatbots for answers.
+                      <br /> That’s why we optimize for:
+                    </p>
+                    <div className="row points-down">
+                      <ul>
+                        {points.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+                              <span>{item.title}</span>
+                            </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
+                    <p>
+                      We align our strategies with generative engine algorithms
+                      so that your content is discovered on ChatGPT, Gemini, AI
+                      chat results, summaries, or recommendations.
+                    </p>
                   </div>
-                </Link>
-                <Link to="/ppc-advertising">
-                  <div className="media">
-                    <div className="row">
-                      <div className="col-lg-2 col-md-2 col-sm-2">
-                        <div className="media-image mt-2">
-                          <img src={paidAdvertisingIcon} alt="paid advertsing icon" width="100%" />
-                        </div>
-                      </div>
-                      <div className="col-lg-10 col-md-10 col-sm-12">
-                        <div className="media-body">
-                          <h4 className="point-head">Paid Advertising (PPC + Social Ads)</h4>
-                          <p>
-                            Paid ads help your business reach customers instantly. We manage platforms like Google Ads, Meta Ads, LinkedIn Ads, and E-commerce Ads. With advanced targeting, retargeting, conversion tracking, and budget control, you get measurable, fast results.
-                          </p>
-                          <ul>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>Google Ads</span> : We design and manage campaigns to capture your audience’s attention, no matter if they are on Google, browsers, or on YouTube. Our strategies ensure maximum reach and high conversion rates.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'> Paid social ads </span> : We run highly targeted campaigns that are intended to reach your potential audience, which helps boost the visibility and generate measurable results.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /><span className='fw-bold'>Meta Ads </span> : We help your brand stand out in the crowd of feeds by creating appealing posts to drive engagement and sales that precisely target your audience on Facebook and Instagram.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>LinkedIn Ads</span> : It is one of the best platforms for B2B connections, so we professionally optimize campaigns to build qualified leads and professional networking, and credibility.</li>
-                            <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold'>E-commerce Ads</span> : We help your brand boost return on ad spend by attracting customers who are ready to make purchases from your online store through our dynamic product ads and strategies.</li>
-                          </ul>
-                          <p>
-                            Through our continuous monitoring system and retargeting, we ensure every campaign brings boosts in growth and ROI.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="Health-faqs">
-                  <Container>
-                    <div className="health-faqs-heading">
-                       <h2 className='text-center' style={{
-                textAlign: "center !important",
-                marginBottom: "40px",
-                marginTop: "40px",
-                color: "#52377b"
-              }}>Frequently Asked  Questions </h2>
-                    </div>
-                    <div className="faq-accordion" style={{
-                      paddingTop: "40px"
-                    }}>
-                      <Row>
-                        <Col lg={6}>
-                          {faq.slice(0, Math.ceil(faq.length / 2)).map((item, index) => (
-                            <div className="accordion" data-aos="fade-up" key={index}>
-                              <div
-                                className={`accordion__item ${activeIndexLeft === index ? "accordion__item--active" : ""
-                                  }`}
-                                onClick={() => toggleAccLeft(index)}
-                              >
-                                <button className="accordion__btn">
-                                  <span className="accordion__caption">
-                                      {item.q}
-                                  </span>
-                                  <span className="accordion__icon">
-                                    <FontAwesomeIcon icon={faPlus} />
-                                  </span>
-                                </button>
-                                {activeIndexLeft === index && (
-                                  <div className="accordion__content">{item.a}</div>
-                                )}
-                              </div>
+        <div className="">
+          <div className="container">
+            <div className="row align-items-center ">
+              <div className="col-lg-6 Digital-services">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="points-content"
+                >
+                  <div className="subcontent">
+                    <h3 className="mb-3">Email Marketing</h3>
+                    <p>
+                      Email marketing helps brands maintain long-term customer
+                      relationships. We design automated and personalized email
+                      flows that:
+                    </p>
+                    <div className=" row points-down">
+                      <ul>
+                        {pointsEmail.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+                              <span>{item.title}</span>
                             </div>
-                          ))}
-                        </Col>
-                        <Col lg={6}>
-                          {faq.slice(Math.ceil(faq.length / 2)).map((item, index) => (
-                            <div className="accordion" data-aos="fade-up" key={index}>
-                              <div
-                                className={`accordion__item ${activeIndexRight === index ? "accordion__item--active" : ""
-                                  }`}
-                                onClick={() => toggleAccRight(index)}
-                              >
-                                <button className="accordion__btn">
-                                  <span className="accordion__caption">
-                                      {item.q}
-                                  </span>
-                                  <span className="accordion__icon">
-                                    <FontAwesomeIcon icon={faPlus} />
-                                  </span>
-                                </button>
-                                {activeIndexRight === index && (
-                                  <div className="accordion__content">{item.a}</div>
-                                )}
-                              </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
                             </div>
-                          ))}
-                        </Col>
-                      </Row>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  </Container>
-                </div> */}
+                    <p>
+                      From welcome series to festival campaigns, your brand
+                      stays connected.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="service-image">
+                  <div className="info-img position-relative">
+                    <img
+                      src={emailMarketingMain}
+                      alt="digital marketing agency"
+                      className=" topBottom"
+                       width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="container">
+            <div className="row align-items-center ">
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="service-image">
+                  <div className="info-img position-relative">
+                    <img
+                      src={analyticsMImage}
+                      alt="digital marketing agency"
+                      className=" topBottom"
+                       width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 Digital-services">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="points-content"
+                >
+                  <div className="subcontent">
+                    <h3 className="mb-3">Analytics & Business Insights</h3>
+                    <p>
+                      Data-driven marketing outperforms guesswork. We track,
+                      measure, and analyze digital performance to help you make
+                      smarter decisions.
+                    </p>
+                    <div className=" row points-down">
+                      <ul>
+                        {pointsAnalytics.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+                              <span>{item.title}</span>
+                            </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      These insights help optimize spending and increase
+                      conversions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="container">
+            <div className="row align-items-center ">
+              <div className="col-lg-6 Digital-services">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="points-content"
+                >
+                  <div className="subcontent">
+                    <h3 className="mb-3">Paid Advertising (PPC + Social Ads)</h3>
+                    <p>
+                      Paid ads help your business reach customers instantly. We
+                      manage platforms like Google Ads, Meta Ads, LinkedIn Ads,
+                      and E-commerce Ads. With advanced targeting, retargeting,
+                      conversion tracking, and budget control, you get
+                      measurable, fast results.
+                    </p>
+                    <div className=" row points-down">
+                      <ul>
+                        {pointsPaid.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+                              <span>{item.title}</span>
+                            </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      Through our continuous monitoring system and retargeting,
+                      we ensure every campaign brings boosts in growth and ROI.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="service-image">
+                  <div className="info-img position-relative">
+                    <img
+                      src={paidAdvertisingM}
+                      alt="digital marketing agency"
+                      className="topBottom"
+                       width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="container">
+            <div className="row align-items-center ">
+              <div className="col-lg-6 d-flex justify-content-center">
+                <div className="service-image">
+                  <div className="info-img position-relative">
+                    <img
+                      src={smmImage}
+                      alt="digital marketing agency"
+                      className=" topBottom "
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 Digital-services">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="points-content"
+                >
+                  <div className="subcontent">
+                      <h3>Social Media Marketing</h3>
+                    <p>
+                      4.95 billion people are active on social media. Their
+                      buying decisions are influenced by reels, ads, reviews &
+                      brand stories. We create brand-focused digital content
+                      across Instagram, Facebook, LinkedIn, YouTube, and Twitter
+                      (X). Our SMM services include:
+                    </p>
+                    <div className=" row points-down">
+                      <ul>
+                        {pointsSocial.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+
+                              <span>{item.title}</span>
+                            </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      Turn followers into customers and customers into brand
+                      fans.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="Digital-services">
+          <div className="container">
+            <div className="points-content">
+              <div className="">
+                <div >
+                  <div className=" subcontent sidebyside">
+                    <div >
+                      <div className="Icon">
+                        {" "}
+                        <img src={seoIcon} alt="SEO icon" width="100%" />
+                      </div>
+                    </div>
+                    <div >
+                      <h3>Search Engine Optimization</h3>
+                      <p>
+                        SEO increases your website’s visibility on search
+                        engines. But modern search has evolved; people ask
+                        questions, use voice queries, and depend on AI chatbots
+                        for answers.
+                        <br /> That’s why we optimize for:
+                      </p>
+                      <div className="row points-down">
+                        <ul>
+                          {points.map((item, idx) => (
+                            <li key={idx}>
+                              <div className="points-header">
+  
+                                <span>{item.title}</span>
+                              </div>
+                              <div className="pointer-content">
+                                <p>{item.content}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <p>
+                        We align our strategies with generative engine
+                        algorithms so that your content is discovered on
+                        ChatGPT, Gemini, AI chat results, summaries, or
+                        recommendations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div >
+                  <div className=" subcontent sidebyside">
+                    <div >
+                      <div className="Icon-2">
+                        {" "}
+                        <img
+                          src={emailMarketingIcon}
+                          alt="Email marketing icon"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h3>Email Marketing</h3>
+                      <p>
+                        Email marketing helps brands maintain long-term customer
+                        relationships. We design automated and personalized
+                        email flows that:
+                      </p>
+                      <div className=" row points-down">
+                        <ul>
+                          {pointsEmail.map((item, idx) => (
+                            <li key={idx}>
+                              <div className="points-header">
+  
+                                <span>{item.title}</span>
+                              </div>
+                              <div className="pointer-content">
+                                <p>{item.content}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <p>
+                        From welcome series to festival campaigns, your brand
+                        stays connected.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className=" subcontent sidebyside">
+                    <div className="">
+                      <div className="Icon-2">
+                        {" "}
+                        <img
+                          src={analyticsIcon}
+                          alt="Analytics and business insights icon"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                    <div className="">
+                      <h3>Analytics & Business Insights</h3>
+                      <p>
+                        Data-driven marketing outperforms guesswork. We track,
+                        measure, and analyze digital performance to help you
+                        make smarter decisions.
+                      </p>
+                      <div className=" row points-down">
+                        <ul>
+                          {pointsAnalytics.map((item, idx) => (
+                            <li key={idx}>
+                              <div className="points-header">
+  
+                                <span>{item.title}</span>
+                              </div>
+                              <div className="pointer-content">
+                                <p>{item.content}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <p>
+                        These insights help optimize spending and increase
+                        conversions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div >
+                  <div className="sidebyside subcontent">
+                    <div className="">
+                      <div className="Icon-2">
+                        {" "}
+                        <img
+                          src={paidAdvertisingIcon}
+                          alt="paid advertsing icon"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                    <div className="">
+                      <h3>Paid Advertising (PPC + Social Ads)</h3>
+                      <p>
+                        Paid ads help your business reach customers instantly.
+                        We manage platforms like Google Ads, Meta Ads, LinkedIn
+                        Ads, and E-commerce Ads. With advanced targeting,
+                        retargeting, conversion tracking, and budget control,
+                        you get measurable, fast results.
+                      </p>
+                      <div className=" row points-down">
+                        <ul>
+                          {pointsPaid.map((item, idx) => (
+                            <li key={idx}>
+                              <div className="points-header">
+  
+                                <span>{item.title}</span>
+                              </div>
+                              <div className="pointer-content">
+                                <p>{item.content}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <p>
+                        Through our continuous monitoring system and
+                        retargeting, we ensure every campaign brings boosts in
+                        growth and ROI.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className=" subcontent sidebyside">
+                  <div>
+                    <div className="Icon-2">
+                      {" "}
+                      <img
+                        src={socialMediaMarketingIcon}
+                        alt="Social media marketing icon"
+                        width="100%"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3>Social Media Marketing</h3>
+                    <p>
+                      4.95 billion people are active on social media. Their
+                      buying decisions are influenced by reels, ads, reviews &
+                      brand stories. We create brand-focused digital content
+                      across Instagram, Facebook, LinkedIn, YouTube, and Twitter
+                      (X). Our SMM services include:
+                    </p>
+                    <div className=" row points-down">
+                      <ul>
+                        {pointsSocial.map((item, idx) => (
+                          <li key={idx}>
+                            <div className="points-header">
+
+                              <span>{item.title}</span>
+                            </div>
+                            <div className="pointer-content">
+                              <p>{item.content}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p>
+                      Turn followers into customers and customers into brand
+                      fans.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
         <AllServices />
         <ServiceContactForm />
       </div>
