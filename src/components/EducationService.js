@@ -103,10 +103,10 @@ const EducationService = () => {
                                         flexDirection: "column",
                                         gap: "1",
                                     }}>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold text-dark'>Attract prospective students</span> with targeted campaigns and compelling positioning.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold text-dark'>Engage effectively</span> by creating high-value content and community touch-points.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold text-dark'>Convert leads</span> into enrollments through optimized funnels, nurturing and analytics.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold text-dark'>Retain & grow student loyalty </span> via brand advocacy and lifetime engagement</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Attract prospective students</span> with targeted campaigns and compelling positioning.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Engage effectively</span> by creating high-value content and community touch-points.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Convert leads</span> into enrollments through optimized funnels, nurturing and analytics.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Retain & grow student loyalty </span> via brand advocacy and lifetime engagement</li>
 
                                     </ul>
                                 </div>
@@ -474,12 +474,12 @@ const EducationService = () => {
                                         Ongoing optimisation, monthly reporting and strategic expansion as we scale together.
                                     </p>
                                     <span className='' style={{
-                                        color: "#000", fontSize: "18px", fontWeight: "bold"
+                                        color: "#52377b", fontSize: "18px", fontWeight: "bold"
                                     }}> Contact us today</span>
                                     <p className='mt-1 ps-3'>
                                         <span style={{
                                             color: "#52377b", fontWeight: "bold"
-                                        }}> Novatales Media
+                                        }}> NovaTales Media
                                         </span> – your digital growth partner in the education sector.
                                     </p>
                                 </div>
