@@ -17,7 +17,6 @@ import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
 
 import icon3 from '../images/portfolio/donation_1-01.png';
 import icon4 from '../images/icon 4.png';
-import bannerImage from "../images/casestudies/Healthcare page Header-01.png"
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ServicesCards from './ServicesCards';
@@ -104,11 +103,20 @@ export default function HealthCare() {
         </div>
         <BookForm />
          <div className="whyStrategies">
-          <div className="whyStrategiesHeading">
-            <h2>
-              Why Choose NovaTales for Your Healthcare Marketing Strategies?
-            </h2>
-          </div>
+         
+
+          <div data-aos="fade-up" className="health-why-novatales">
+                    <h2
+                        className="text-center"
+                        style={{
+                            textAlign: "center",
+                            color: "#52377b",
+                            marginTop: "80px",
+                            marginBottom: "20px"
+                        }}
+                    >  Why Choose NovaTales for Your Healthcare Marketing Strategies?
+                    </h2>
+                </div>
           <div className="whyStrategiesContent">
             <Row>
               <Col

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import aboutHeroImage from '../images/portfolio/healthcare_banner_l.jpg';
 import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jpg';
-import real_estate from "../images/portfolio/education.png"
+import real_estate from "../images/portfolio/edu_banner-01.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,56 +21,11 @@ import edu_cont from "../images/portfolio/edu_contact.png"
 import EducationBookForm from './EducationBookForm';
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Container } from 'react-bootstrap';
-
 const EducationService = () => {
-
-    const faqs = [
-        {
-            q: "Is Digital Marketing really helpful for my Real Estate sales?",
-            a: "Yes, it helps you attract the targeted buyers and build an online presence."
-        },
-        {
-            q: "Will I be able to find more leads with Digital Marketing?",
-            a: "Definitely yes. We use the strategies that target the buyers in real time who are actively searching online."
-        },
-        {
-            q: "Will Digital Marketing help me boost my brand reputation?",
-            a: "Absolutely, at NovaTales, we follow various strategies that help in increasing your online presence and build trust that automatically boosts your brand’s reputation."
-        },
-        {
-            q: "Can I manage Digital Marketing on my own?",
-            a: "If you wish to see results, then you need technical specialists like NovaTales who are experienced in the field."
-        },
-        {
-            q: "Is it possible to get immediate results from Digital Marketing?",
-            a: "It is not possible to see immediate results, as lead generation and building awareness take time."
-        },
-        {
-            q: "Will digital marketing improve the online reputation of real estate?",
-            a: "At NovaTales, we have an expert team that consistently looks at the reviews and works towards creating a better influence."
-        },
-        {
-            q: "Will my business appear as a top result with GEO?",
-            a: "At Novatales, we improve the chances of your business getting featured on the GEO search results, which requires certain criteria to be fulfilled."
-        }, {
-            q: "Is Marketing Automation essential in Real Estate?",
-            a: "Yes, there is a need because it saves a lot of time in addressing the follow-up questions and increases the lead conversion."
-        },
-        {
-            q: "How do Virtual tours help sell properties?",
-            a: "It lets the buyers explore the properties remotely, which increases engagement."
-        },
-        {
-            q: "Is AI really helpful in real estate digital marketing?",
-            a: "Yes, AI tools are extremely helpful as they ensure smart targeting with higher-quality leads by identifying genuine buyers, optimizing ads, and making real-time property recommendations."
-        },
-
-    ];
     const [activeIndexLeft, setActiveIndexLeft] = useState(0);
     const toggleAccLeft = (index) => {
         setActiveIndexLeft(activeIndexLeft === index ? null : index);
     };
-
     useEffect(() => {
         // window.scrollTo({ top: 0, behavior: "smooth" });
         AOS.init();
@@ -84,17 +39,24 @@ const EducationService = () => {
             </div>
 
             {/* Why Choose NovaTales for Education Empowering  */}
-            <div data-aos="fade-up" data-aos-delay="100" className="health-why-novatales text-center d-flex justify-content-center flex-column align-items-center">
-                <h2 className='mb-5 px-3' style={{
-                    color: "#52377b"
-                }}>
-                    Why Choose NovaTales for Your Education Marketing Needs
-                </h2>
+            <div className="service-content LogoVisual pt-4 pb-4">
                 <div className="container">
                     <div className="row align-items-center">
-
                         <div className="col-lg-6">
-                            <div className="service-para mt-3 pe-xl-2">
+                            <div data-aos="fade-up" className="service-para mt-3">
+                                <div className="health-why-novatales text-center text-lg-start">
+                                    <h3
+                                        className="fw-bold pb-3"
+                                        style={{
+                                            lineHeight: "40px",
+                                            padding: "0px 12px",
+                                            color: "#52377b",
+                                            fontSize:"28px"
+                                        }}
+                                    >
+                                        Why Choose NovaTales for Your Education Marketing Needs
+                                    </h3>
+                                </div>
                                 <div className='healthcareTopPara'>In today’s dynamic education landscape, whether you are an online course provider, coaching institute, K-12 school, university, or skill-training centre, digital visibility is no longer optional. At NovaTales, we combine deep domain understanding of the education sector with full-stack digital marketing to help you:</div>
                                 <div className='healthcareTopPara'>
                                     <ul className='text-left flex align-items-start justify-content-md-start' style={{
@@ -103,28 +65,31 @@ const EducationService = () => {
                                         flexDirection: "column",
                                         gap: "1",
                                     }}>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Attract prospective students</span> with targeted campaigns and compelling positioning.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Engage effectively</span> by creating high-value content and community touch-points.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Convert leads</span> into enrollments through optimized funnels, nurturing and analytics.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{color:"#52377b"}}>Retain & grow student loyalty </span> via brand advocacy and lifetime engagement</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Attract prospective students</span> with targeted campaigns and compelling positioning.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Engage effectively</span> by creating high-value content and community touch-points.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Convert leads</span> into enrollments through optimized funnels, nurturing and analytics.</li>
+                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Retain & grow student loyalty </span> via brand advocacy and lifetime engagement</li>
 
                                     </ul>
                                 </div>
+                                <div className='healthcareTopPara'>We understand the unique challenges: long decision cycles, multiple stakeholders (students, parents, guardians), trust and credibility factors, regulatory environment, and the rising cost of acquisition. Our education-focused approach ensures your message hits the right audience, at the right time, on the right platform.</div>
                             </div>
                         </div>
-                        <div className="col-lg-6 d-flex justify-content-between ps-lg-5">
+                        <div data-aos="fade-up" className="col-lg-6 d-flex justify-content-center">
                             <div className="service-image">
-                                <div className="info-img position-relative p-2">
-                                    <img src={real_estate} alt="digital marketing and real estate" className="img-fluid topBottom" />
+                                <div className="info-img position-relative">
+                                    <img
+                                        src={real_estate}
+                                        alt="hospital digital marketing"
+                                        className=" topBottom"
+                                    />
                                 </div>
-                                <div className='healthcareTopPara'>We understand the unique challenges: long decision cycles, multiple stakeholders (students, parents, guardians), trust and credibility factors, regulatory environment, and the rising cost of acquisition. Our education-focused approach ensures your message hits the right audience, at the right time, on the right platform.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            <EducationBookForm />
             {/* Servises provided by the novatales digital for education empowering  */}
 
             <div className="service-points">
@@ -791,6 +756,22 @@ const EducationService = () => {
                     </div>
                     <div className="conclusion mb-5">
                     </div>
+                </Container>
+            </div>
+            <div className="Health-faqs pb-5 mb-2">
+                <Container>
+                    <div data-aos="fade-up" className="health-why-novatales">
+                        <h2 className='text-center' style={{
+                            textAlign: "center !important",
+                            marginBottom: "40px",
+                            marginTop: "40px",
+                            color: "#52377b"
+                        }}>Why NovaTales? </h2>
+                    </div>
+                    <p className='px-lg-5' style={{
+                        fontSize: "18px",
+                        textAlign: "center"
+                    }}>At NovaTales Media, we don’t just provide services, we become your digital marketing co-pilots. With two years of agency experience, and a framework refined across multiple industries. We bring a structured, measurable, and ROI-centric approach to education. Partner with us and let your institution shine online.</p>
                 </Container>
             </div>
         </>
