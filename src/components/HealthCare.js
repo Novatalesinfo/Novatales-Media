@@ -103,7 +103,7 @@ export default function HealthCare() {
           </div>
         </div>
         <BookForm />
-        <div className="whyStrategies">
+         <div className="whyStrategies">
           <div className="whyStrategiesHeading">
             <h2>
               Why Choose NovaTales for Your Healthcare Marketing Strategies?
@@ -122,6 +122,7 @@ export default function HealthCare() {
                     <img
                       src={icon1}
                       alt="healthcare marketing expertise"
+                      width="60px"
                     />
                   </div>
                   <div className="heading">
@@ -138,7 +139,7 @@ export default function HealthCare() {
               <Col xl={3} md={6} sm={12} data-aos="fade-up" >
                 <div className="icon-1 text-left  px-2">
                   <div>
-                    <img src={icon2} alt="digital solutions in healthcare" />
+                    <img src={icon2} alt="digital solutions in healthcare" width="60px"/>
                   </div>
                   <div className="heading">
                     <p className="title text-left">
@@ -160,7 +161,7 @@ export default function HealthCare() {
               >
                 <div className="icon-1 text-left  px-2">
                   <div>
-                    <img src={icon3} alt="healthcare marketing budget" />
+                    <img src={icon3} alt="healthcare marketing budget" width="60px"/>
                   </div>
                   <div className="heading">
                     <p className="title text-left">
@@ -181,7 +182,7 @@ export default function HealthCare() {
                     <img
                       src={icon4}
                       alt="reputation management for healthcare"
-                    
+                    width="60px"
                     />
                   </div>
                   <div className="heading">
