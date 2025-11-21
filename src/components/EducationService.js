@@ -8,26 +8,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 import contentMarketingIcon from '../images/content marketing icon-01.png';
 import seoIcon from '../images/SEO icon.png';
-import emailMarketingIcon from '../images/email marketing icon N.png';
 import analyticsIcon from '../images/analytics and business insights icon.png';
 import socialMediaMarketingIcon from '../images/social m marketing icon N.png';
 import paidAdvertisingIcon from '../images/paid advertising.png';
-import online_realestate from "../images/casestudies/NEXT GEN-01.png"
+import webdev from "../images/web &app DVP icon-01.png"
+import online_realestate from "../images/portfolio/longer.png"
 import social from "../images/casestudies/SEO 01-01.png"
-import gads from "../images/casestudies/brand_voice.png"
-import data from "../images/casestudies/Creative Storytelling-01.png"
-import analyst from "../images/casestudies/Advanced Analytics-01.png"
+import gads from "../images/portfolio/trust.png"
+import data from "../images/portfolio/destinations.png"
+import analyst from "../images/portfolio/roi-01.png"
 import edu_cont from "../images/portfolio/edu_contact.png"
 import EducationBookForm from './EducationBookForm';
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Container } from 'react-bootstrap';
+import BrandPositioningIcon from '../images/brand positioning-04.png';
 const EducationService = () => {
     const [activeIndexLeft, setActiveIndexLeft] = useState(0);
     const toggleAccLeft = (index) => {
         setActiveIndexLeft(activeIndexLeft === index ? null : index);
     };
     useEffect(() => {
-        // window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
         AOS.init();
     }, []);
     return (
@@ -51,7 +52,7 @@ const EducationService = () => {
                                             lineHeight: "40px",
                                             padding: "0px 12px",
                                             color: "#52377b",
-                                            fontSize:"28px"
+                                            fontSize: "28px"
                                         }}
                                     >
                                         Why Choose NovaTales for Your Education Marketing Needs
@@ -130,8 +131,8 @@ const EducationService = () => {
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
-                                        <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                        <div className=" mt-2">
+                                            <img src={BrandPositioningIcon} alt="Email marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -148,8 +149,8 @@ const EducationService = () => {
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
-                                        <div className="media-image mt-2">
-                                            <img src={analyticsIcon} alt="Analytics and business insights icon" width="100%" />
+                                        <div className=" mt-2">
+                                            <img src={contentMarketingIcon} alt="Analytics and business insights icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -175,7 +176,7 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                            <img src={analyticsIcon} alt="Email marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -194,8 +195,8 @@ const EducationService = () => {
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
-                                        <div className="media-image mt-2">
-                                            <img src={socialMediaMarketingIcon} alt="Social media marketing icon" width="100%" />
+                                        <div className=" mt-2">
+                                            <img src={webdev} alt="Social media marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -203,7 +204,6 @@ const EducationService = () => {
                                             <h4 className="">Website & Landing Page Optimisation</h4>
                                             <p>
                                                 Your website is often the first place a prospect interacts. We ensure: </p>
-
                                             <ul>
                                                 <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Fast, responsive, mobile-ready design;</li>
                                                 <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Clear structure: courses, faculty, testimonials, campus/virtual experience;</li>
@@ -215,13 +215,12 @@ const EducationService = () => {
                                     </div>
                                 </div>
                             </div>
-
                             {/* AI in Paid Advertising (Google, Meta, LinkedIn) */}
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={paidAdvertisingIcon} alt="paid advertsing icon" width="100%" />
+                                            <img src={seoIcon} alt="paid advertsing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -241,7 +240,7 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className=" mt-2">
-                                            <img src={contentMarketingIcon} alt="paid advertsing icon" width="100%" />
+                                            <img src={paidAdvertisingIcon} alt="paid advertsing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -260,7 +259,7 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                            <img src={socialMediaMarketingIcon } alt="Email marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
@@ -758,7 +757,7 @@ const EducationService = () => {
                     </div>
                 </Container>
             </div>
-            <div className="Health-faqs pb-5 mb-2">
+            {/* <div className="Health-faqs pb-5 mb-2">
                 <Container>
                     <div data-aos="fade-up" className="health-why-novatales">
                         <h2 className='text-center' style={{
@@ -773,7 +772,7 @@ const EducationService = () => {
                         textAlign: "center"
                     }}>At NovaTales Media, we don’t just provide services, we become your digital marketing co-pilots. With two years of agency experience, and a framework refined across multiple industries. We bring a structured, measurable, and ROI-centric approach to education. Partner with us and let your institution shine online.</p>
                 </Container>
-            </div>
+            </div> */}
         </>
     )
 }

@@ -28,48 +28,6 @@ const RealEstate = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     AOS.init();
   }, []);
-  const faqs = [
-    {
-      q: "Is Digital Marketing really helpful for my Real Estate sales?",
-      a: "Yes, it helps you attract the targeted buyers and build an online presence."
-    },
-    {
-      q: "Will I be able to find more leads with Digital Marketing?",
-      a: "Definitely yes. We use the strategies that target the buyers in real time who are actively searching online."
-    },
-    {
-      q: "Will Digital Marketing help me boost my brand reputation?",
-      a: "Absolutely, at NovaTales, we follow various strategies that help in increasing your online presence and build trust that automatically boosts your brand’s reputation."
-    },
-    {
-      q: "Can I manage Digital Marketing on my own?",
-      a: "If you wish to see results, then you need technical specialists like NovaTales who are experienced in the field."
-    },
-    {
-      q: "Is it possible to get immediate results from Digital Marketing?",
-      a: "It is not possible to see immediate results, as lead generation and building awareness take time."
-    },
-    {
-      q: "Will digital marketing improve the online reputation of real estate?",
-      a: "At NovaTales, we have an expert team that consistently looks at the reviews and works towards creating a better influence."
-    },
-    {
-      q: "Will my business appear as a top result with GEO?",
-      a: "At Novatales, we improve the chances of your business getting featured on the GEO search results, which requires certain criteria to be fulfilled."
-    }, {
-      q: "Is Marketing Automation essential in Real Estate?",
-      a: "Yes, there is a need because it saves a lot of time in addressing the follow-up questions and increases the lead conversion."
-    },
-    {
-      q: "How do Virtual tours help sell properties?",
-      a: "It lets the buyers explore the properties remotely, which increases engagement."
-    },
-    {
-      q: "Is AI really helpful in real estate digital marketing?",
-      a: "Yes, AI tools are extremely helpful as they ensure smart targeting with higher-quality leads by identifying genuine buyers, optimizing ads, and making real-time property recommendations."
-    },
-
-  ];
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);

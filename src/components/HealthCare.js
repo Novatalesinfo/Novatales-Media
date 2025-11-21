@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../css/healthcare.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Faqs from "./faq";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,28 +10,22 @@ import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jp
 import hospital_image_1 from '../images/portfolio/healthcare_about.png';
 import '../css/Home.css';
 import icon1 from '../images/icon 1.png';
-// import icon2 from '../images/portfolio/customize_1-01.png';
-// import icon2 from '../images/portfolio/bgi_bulb_y.png';
 import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
-
 import icon3 from '../images/portfolio/donation_1-01.png';
 import icon4 from '../images/icon 4.png';
 import BookForm from './bookForm';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ServicesCards from './ServicesCards';
 export default function HealthCare() {
-  const [faq, setFaq] = useState([]);
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
   const toggleAccLeft = (index) => {
     setActiveIndexLeft(activeIndexLeft === index ? null : index);
   };
-
   useEffect(() => {
     AOS.init();
   }, []);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setFaq(Faqs);
   }, []);
   return (
     <div style={{
