@@ -24,7 +24,7 @@ export default function Footer() {
                             <div className="about">
                                 <h2>About</h2>
                                 <p>
-                                    <Link to="/about" onClick={() => handleNavigation('about')}>Nova Tales is a boutique digital marketing and brand strategy consulting firm with expertise in Marketing campaign strategy, Multimedia content creation, Web and App development, Podcasting etc.</Link>
+                                    <Link to="/about" onClick={() => handleNavigation('about')}>Novatales is a growing digital marketing firm based in Kondapur, Hyderabad, helping brands succeed online with AI-driven innovations and creative strategies. From SEO and SMM to Branding, we enhance brands' visibility, identity, and engagement through our measurable digital solutions.</Link>
                                 </p>
                             </div>
                         </div>

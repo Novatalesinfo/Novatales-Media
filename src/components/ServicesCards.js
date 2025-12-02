@@ -61,7 +61,7 @@ const ServicesCards = () => {
                     </div>
 
                     {/* -------- COLUMN 2 -------- */}
-                    <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
+                    <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center align-items-center flex-column">
                         <div className="get-list__item">
                             <div className="get-list__heading">
                                 <div className="get-list__icon">
@@ -117,7 +117,7 @@ const ServicesCards = () => {
                     </div>
 
                     {/* -------- COLUMN 4 -------- */}
-                    <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
+                    <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12  d-flex justify-content-center align-items-center flex-column">
                         <div className='row d-flex justify-content-center align-items-center flex-column flex-lg-row'>
                             <div className='col-xl-12 col-lg-6'>
                                 <div className="get-list__item">

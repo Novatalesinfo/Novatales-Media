@@ -211,6 +211,7 @@
   }
   
   .decription-heading h2 {
+    
     font-size: 43px;
     color: #52377b;
     line-height: 41px;
@@ -239,7 +240,7 @@
   .about-services .card {
     text-align: center;
     width: 18rem;
-    min-height: 260px ;
+    min-height: 250px ;
     font-family: 'Poppins', sans-serif;
   }
   

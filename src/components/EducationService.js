@@ -1,33 +1,34 @@
 import React, { useEffect, useState } from 'react'
-import aboutHeroImage from '../images/portfolio/healthcare_banner_l.jpg';
+import aboutHeroImage from '../images/casestudies/education_ban_l.jpg';
 import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jpg';
-import real_estate from "../images/portfolio/edu_banner-01.png"
+import real_estate from "../images/portfolio/icons/edu_ban_1.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
-import contentMarketingIcon from '../images/content marketing icon-01.png';
+import contentMarketingIcon from '../images/casestudies/content_icon.png';
 import seoIcon from '../images/SEO icon.png';
-import emailMarketingIcon from '../images/email marketing icon N.png';
+import market_aud from "../images/casestudies/market_aud-01.png"
 import analyticsIcon from '../images/analytics and business insights icon.png';
 import socialMediaMarketingIcon from '../images/social m marketing icon N.png';
 import paidAdvertisingIcon from '../images/paid advertising.png';
-import online_realestate from "../images/casestudies/NEXT GEN-01.png"
-import social from "../images/casestudies/SEO 01-01.png"
-import gads from "../images/casestudies/brand_voice.png"
-import data from "../images/casestudies/Creative Storytelling-01.png"
-import analyst from "../images/casestudies/Advanced Analytics-01.png"
-import edu_cont from "../images/portfolio/edu_contact.png"
+import webdev from "../images/casestudies/web_dev.png"
+import online_realestate from "../images/portfolio/longer.png"
+import social from "../images/casestudies/stake.png"
+import gads from "../images/portfolio/trust.png"
+import data from "../images/portfolio/destinations.png"
+import analyst from "../images/portfolio/roi-01.png"
+import edu_cont from "../images/casestudies/bottom_edu.png"
 import EducationBookForm from './EducationBookForm';
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Container } from 'react-bootstrap';
+import BrandPositioningIcon from '../images/casestudies/market_position.png';
 const EducationService = () => {
     const [activeIndexLeft, setActiveIndexLeft] = useState(0);
     const toggleAccLeft = (index) => {
         setActiveIndexLeft(activeIndexLeft === index ? null : index);
     };
     useEffect(() => {
-        // window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
         AOS.init();
     }, []);
     return (
@@ -51,40 +52,33 @@ const EducationService = () => {
                                             lineHeight: "40px",
                                             padding: "0px 12px",
                                             color: "#52377b",
-                                            fontSize:"28px"
+                                            fontSize: "28px"
                                         }}
                                     >
                                         Why Choose NovaTales for Your Education Marketing Needs
                                     </h3>
                                 </div>
                                 <div className='healthcareTopPara'>In today’s dynamic education landscape, whether you are an online course provider, coaching institute, K-12 school, university, or skill-training centre, digital visibility is no longer optional. At NovaTales, we combine deep domain understanding of the education sector with full-stack digital marketing to help you:</div>
-                                <div className='healthcareTopPara'>
-                                    <ul className='text-left flex align-items-start justify-content-md-start' style={{
-                                        display: "flex",
-                                        justifyContent: "start",
-                                        flexDirection: "column",
-                                        gap: "1",
-                                    }}>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Attract prospective students</span> with targeted campaigns and compelling positioning.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Engage effectively</span> by creating high-value content and community touch-points.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Convert leads</span> into enrollments through optimized funnels, nurturing and analytics.</li>
-                                        <li className=''><FontAwesomeIcon icon={faAnglesRight} /> <span className='fw-bold' style={{ color: "#52377b" }}>Retain & grow student loyalty </span> via brand advocacy and lifetime engagement</li>
-
-                                    </ul>
-                                </div>
+                                <ul className='listPara px-3'>
+                                    <li className='listPara-li'><span></span> Attract prospective students with targeted campaigns and compelling positioning.</li>
+                                    <li className='listPara-li'><span></span> Engage effectively by creating high-value content and community touch-points.</li>
+                                    <li className='listPara-li'><span></span> Convert leads into enrollments through optimized funnels, nurturing and analytics.</li>
+                                    <li className='listPara-li'><span></span> Retain & grow student loyalty via brand advocacy and lifetime engagement.</li>
+                                </ul>
                                 <div className='healthcareTopPara'>We understand the unique challenges: long decision cycles, multiple stakeholders (students, parents, guardians), trust and credibility factors, regulatory environment, and the rising cost of acquisition. Our education-focused approach ensures your message hits the right audience, at the right time, on the right platform.</div>
                             </div>
                         </div>
-                        <div data-aos="fade-up" className="col-lg-6 d-flex justify-content-center">
-                            <div className="service-image">
-                                <div className="info-img position-relative">
+                        <div data-aos="fade-up" className="col-lg-6 d-flex justify-content-center align-items-center">
+                           
+                           
                                     <img
                                         src={real_estate}
                                         alt="hospital digital marketing"
                                         className=" topBottom"
+                                        width="100%"
                                     />
-                                </div>
-                            </div>
+                                
+                         
                         </div>
                     </div>
                 </div>
@@ -114,13 +108,13 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={seoIcon} alt="SEO icon" width="100%" />
+                                            <img src={market_aud} alt="SEO icon" width="110%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className=""> Market & Audience Research</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 We begin by deeply understanding your institution, your offerings, your region, and your target segments, for example, high-school students driving towards engineering/medicine, adult learners seeking skill-upgradation, or international students looking for study-abroad pathways. We map personas (students, parents, career-counsellors) and analyse competition and digital behaviour.</p>
                                         </div>
                                     </div>
@@ -131,13 +125,13 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                            <img src={BrandPositioningIcon} alt="Email marketing icon" width="110%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Brand Positioning & Messaging</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 You might have a strong legacy, unique pedagogy, or innovative delivery model, but is that reflected in your digital presence? We craft a compelling value proposition (“Why us?”) that resonates with students and parents alike, define key brand pillars, and ensure consistent messaging across web, social and offline touch-points.
                                             </p>
                                         </div>
@@ -149,23 +143,23 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={analyticsIcon} alt="Analytics and business insights icon" width="100%" />
+                                            <img src={contentMarketingIcon} alt="Analytics and business insights icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Content Marketing & Engagement</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 Students today research online first. Our content strategy includes:
                                             </p>
-                                            <ul>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Blog articles on topics like “How to choose an MBA program”, “Tips for cracking NEET”, “Online learning vs campus learning”;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Video & reel content (virtual tours, student testimonials, day-in-the-life), ideal for social;
+                                            <ul className='listPara'>
+                                                <li className='listPara-li'><span></span> Blog articles on topics like “How to choose an MBA program”, “Tips for cracking NEET”, “Online learning vs campus learning”.</li>
+                                                <li className='listPara-li'><span></span> Video & reel content (virtual tours, student testimonials, day-in-the-life), ideal for social.
                                                 </li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Webinars/podcasts featuring faculty or alumni;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Lead magnets: e-brochures, checklists, scholarships guides;
+                                                <li className='listPara-li'><span></span> Webinars/podcasts featuring faculty or alumni.</li>
+                                                <li className='listPara-li'><span></span> Lead magnets: e-brochures, checklists, scholarships guides.
                                                 </li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Email workflows to nurture leads through decision stages.</li>
+                                                <li className='listPara-li'><span></span> Email workflows to nurture leads through decision stages.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -175,13 +169,13 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                            <img src={analyticsIcon} alt="Email marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className=""> Analytics, Reporting & Optimisation</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 We believe in data-driven decision-making. You’ll receive clear dashboards tracking: website traffic, lead sources, cost per lead, enrolment conversion rate, student lifetime value (where applicable). Monthly review meetings ensure we optimise campaigns, shift budget to high-performers and refine messaging.
                                             </p>
                                         </div>
@@ -194,41 +188,39 @@ const EducationService = () => {
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
-                                        <div className="media-image mt-2">
-                                            <img src={socialMediaMarketingIcon} alt="Social media marketing icon" width="100%" />
+                                        <div className="media-image">
+                                            <img src={webdev} alt="Social media marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Website & Landing Page Optimisation</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 Your website is often the first place a prospect interacts. We ensure: </p>
-
-                                            <ul>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Fast, responsive, mobile-ready design;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Clear structure: courses, faculty, testimonials, campus/virtual experience;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Trust signals: accreditation, alumni stories, success metrics;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> Conversion-focused landing pages: enquiry forms, brochures, scholarships, virtual-tour registrations;</li>
-                                                <li className='justifyText'><FontAwesomeIcon icon={faAnglesRight} /> SEO foundations so you appear when students search for keywords like “best engineering college in Hyderabad”, “online MBA India”, etc.</li>
+                                            <ul className='listPara'>
+                                                <li className='listPara-li'><span></span> Fast, responsive, mobile-ready design;</li>
+                                                <li className='listPara-li'><span></span> Clear structure: courses, faculty, testimonials, campus/virtual experience;</li>
+                                                <li className='listPara-li'><span></span> Trust signals: accreditation, alumni stories, success metrics;</li>
+                                                <li className='listPara-li'><span></span> Conversion-focused landing pages: enquiry forms, brochures, scholarships, virtual-tour registrations;</li>
+                                                <li className='listPara-li'><span></span> SEO foundations so you appear when students search for keywords like “best engineering college in Hyderabad”, “online MBA India”, etc.</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             {/* AI in Paid Advertising (Google, Meta, LinkedIn) */}
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={paidAdvertisingIcon} alt="paid advertsing icon" width="100%" />
+                                            <img src={seoIcon} alt="paid advertsing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Search Engine Optimisation (SEO)
                                             </h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 Leveraging our SEO expertise, we optimize for both local and national/international keywords relevant to your institution. From on-page optimisations (meta tags, schema for events/courses, site structure) to off-page efforts (link building with education portals, guest blogging, press releases), we drive organic visibility and reduce your dependence on paid ads.
                                             </p>
                                         </div>
@@ -240,15 +232,15 @@ const EducationService = () => {
                             <div data-aos="fade-up" className="media">
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
-                                        <div className=" mt-2">
-                                            <img src={contentMarketingIcon} alt="paid advertsing icon" width="100%" />
+                                        <div className="media-image mt-2">
+                                            <img src={paidAdvertisingIcon} alt="paid advertsing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Paid Media & Lead Generation
                                             </h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 Enquiries cost matter. We run targeted Google Search Ads (for keywords like “join coaching institute”, “study abroad program”), Display & Remarketing campaigns (targeting parents/guardians via relevant portals), and Social Media Ads (Facebook, Instagram, LinkedIn, depending on target segment). Our leads are routed to your CRM/WhatsApp/lead-form with immediate follow-up workflows.
                                             </p>
 
@@ -260,13 +252,13 @@ const EducationService = () => {
                                 <div className="row">
                                     <div className="col-lg-2 col-md-2 col-sm-2">
                                         <div className="media-image mt-2">
-                                            <img src={emailMarketingIcon} alt="Email marketing icon" width="100%" />
+                                            <img src={socialMediaMarketingIcon} alt="Email marketing icon" width="100%" />
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-md-10 col-sm-12">
                                         <div className="media-body">
                                             <h4 className="">Social Media & Community Building</h4>
-                                            <p>
+                                            <p className='mb-0'>
                                                 We design platform-specific strategies for Instagram, Facebook, YouTube, and LinkedIn (for professional courses). This includes organic content calendar, reels, stories, live Q&A with faculty, student take-overs, campus events. The goal: build trust, humanise your institution and promote word-of-mouth via alumni and student voice.
                                             </p>
                                         </div>
@@ -419,34 +411,33 @@ const EducationService = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div data-aos="fade-up" className="service-para mt-3">
-                                <div className="">
-                                    <p>Ready to give your education institution the digital presence it deserves?</p>
-                                    <p className='mt-1 ps-3'>  <span className='my-1' style={{
-                                        color: "#52377b", fontSize: "18px", fontWeight: "bold"
-                                    }}><FontAwesomeIcon icon={faAnglesRight} />  Free Consultation : </span>
+                                <p>Ready to give your education institution the digital presence it deserves?</p>
+                                <div className="px-2">
+                                    <div className='my-1' style={{
+                                        color: "#52377b", fontSize: "16px", fontWeight: "bold"
+                                    }}>Free Consultation  </div>
+                                    <div className=''>
                                         Let’s assess your current marketing performance, competition and digital landscape
-                                    </p>
-                                    <div className='my-2' >
-                                        <p className='mt-1 ps-3'>  <span className='my-1' style={{
-                                            color: "#52377b", fontSize: "18px", fontWeight: "bold"
-                                        }}><FontAwesomeIcon icon={faAnglesRight} />  Custom Proposal : </span>
-                                            We’ll outline a 90-day roadmap, budget options and key milestones.
-                                        </p>
                                     </div>
-                                    <p className='mt-1 ps-3'> <span className='' style={{
-                                        color: "#52377b", fontSize: "18px", fontWeight: "bold"
-                                    }}><FontAwesomeIcon icon={faAnglesRight} /> Launch & Grow : </span>
+                                    <div className='my-1' style={{
+                                        color: "#52377b", fontSize: "16px", fontWeight: "bold"
+                                    }}>Custom Proposal  </div>
+                                    <div className=''>
+                                        We’ll outline a 90-day roadmap, budget options and key milestones.
+                                    </div>
+                                    <div className='my-1' style={{
+                                        color: "#52377b", fontSize: "16px", fontWeight: "bold"
+                                    }}>Launch & Grow </div>
+                                    <div className=''>
                                         Ongoing optimisation, monthly reporting and strategic expansion as we scale together.
-                                    </p>
-                                    <span className='' style={{
-                                        color: "#52377b", fontSize: "18px", fontWeight: "bold"
-                                    }}> Contact us today</span>
-                                    <p className='mt-1 ps-3'>
-                                        <span style={{
-                                            color: "#52377b", fontWeight: "bold"
-                                        }}> NovaTales Media
-                                        </span> – your digital growth partner in the education sector.
-                                    </p>
+                                    </div>
+                                    <div className='my-1' style={{
+                                        color: "#52377b", fontSize: "16px", fontWeight: "bold"
+                                    }}>Contact us today </div>
+                                    <div className=''>
+                                        NovaTales Media– your digital growth partner in the education sector.
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -758,22 +749,7 @@ const EducationService = () => {
                     </div>
                 </Container>
             </div>
-            <div className="Health-faqs pb-5 mb-2">
-                <Container>
-                    <div data-aos="fade-up" className="health-why-novatales">
-                        <h2 className='text-center' style={{
-                            textAlign: "center !important",
-                            marginBottom: "40px",
-                            marginTop: "40px",
-                            color: "#52377b"
-                        }}>Why NovaTales? </h2>
-                    </div>
-                    <p className='px-lg-5' style={{
-                        fontSize: "18px",
-                        textAlign: "center"
-                    }}>At NovaTales Media, we don’t just provide services, we become your digital marketing co-pilots. With two years of agency experience, and a framework refined across multiple industries. We bring a structured, measurable, and ROI-centric approach to education. Partner with us and let your institution shine online.</p>
-                </Container>
-            </div>
+
         </>
     )
 }
