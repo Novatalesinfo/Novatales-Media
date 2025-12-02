@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import aboutHeroImage from '../images/portfolio/healthcare_banner_l.jpg';
+import aboutHeroImage from '../images/casestudies/health_ban_l.jpg';
 import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jpg';
 import hospital_image_1 from '../images/portfolio/healthcare_about.png';
 import '../css/Home.css';

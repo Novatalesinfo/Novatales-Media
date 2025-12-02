@@ -8,7 +8,7 @@ import social from "../images/casestudies/SEO 01-01.png"
 import gads from "../images/casestudies/brand_voice.png"
 import data from "../images/casestudies/Creative Storytelling-01.png"
 import analyst from "../images/casestudies/Advanced Analytics-01.png"
-import aboutHeroImage from '../images/portfolio/realestate_l.jpg';
+import aboutHeroImage from '../images/casestudies/real_est.jpg';
 import banner_mob from '../images/portfolio/realestate_m.png';
 import { Container } from 'react-bootstrap'
 import serviceCardimg_1 from "../images/portfolio/icons/smi.png"
@@ -247,7 +247,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 2 -------- */}
-              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className="get-list__item">
                   <div className="get-list__heading">
                     <div className="get-list__icon">
@@ -302,7 +302,7 @@ const RealEstate = () => {
               </div>
 
               {/* -------- COLUMN 4 -------- */}
-              <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12 mt-xl-5 pt-xl-5 d-flex justify-content-center align-items-center flex-column">
+              <div data-aos="fade-up" className="col-xl-3 col-lg-12 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
                 <div className='row d-flex justify-content-center align-items-center flex-column flex-lg-row'>
                   <div className='col-xl-12 col-lg-6'>
                     <div className="get-list__item">

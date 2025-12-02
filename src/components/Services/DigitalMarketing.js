@@ -17,11 +17,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import BrandingStrategy from "./BrandingStrategy";
-import seoImage from "../../images/Search Engine Optimization M.png";
-import emailMarketingMain from "../../images/EMAIL MARKETING M.png";
+import seoImage from "../../images/portfolio/icons/seo_mark.png";
+import emailMarketingMain from "../../images/portfolio/icons/email_mark.png";
 import analyticsMImage from "../../images/Analytics & Business Insights M.png";
-import paidAdvertisingM from "../../images/PAID ADVERTISING M.png";
-import smmImage from "../../images/SMM WEB IMAGE 2.png";
+import paidAdvertisingM from "../../images/portfolio/icons/paid_ad.png";
+import smmImage from "../../images/portfolio/icons/ssm_web.png";
 export default function DigitalMarketing() {
   const points = [
     {
@@ -338,7 +338,7 @@ export default function DigitalMarketing() {
                       src={analyticsMImage}
                       alt="digital marketing agency"
                       className=" topBottom"
-                       width="100%"
+                       width="90%"
                     />
                   </div>
                 </div>

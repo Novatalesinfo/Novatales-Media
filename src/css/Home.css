@@ -110,6 +110,7 @@ ul li {
   border-radius: 0.375rem;
   padding: 30px 0px;
   z-index: 1000;
+ margin-top: -7px;
 }
 
 .dropdown-menu .dropdown-item {
