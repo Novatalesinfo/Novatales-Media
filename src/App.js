@@ -49,11 +49,11 @@ import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
 // import JewelPortfolio from './components/JewelPortfolio';
 // import PhotShootPortfolio from './components/PhotoShootPortfolio';
 import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
-import EndulaWebDesign from './components/EndulaWebDesign';
-import ConceivaWebDesign from './components/ConceivaWebDesign';
-import CdcCenter from './components/Cdc';
-import MagnaidWebDesign from './components/MagnaidWebDesign';
-import LivvonWebDesign from './components/LivvonWebDesign';
+// import EndulaWebDesign from './components/EndulaWebDesign';
+// import ConceivaWebDesign from './components/ConceivaWebDesign';
+// import CdcCenter from './components/Cdc';
+// import MagnaidWebDesign from './components/MagnaidWebDesign';
+// import LivvonWebDesign from './components/LivvonWebDesign';
 import AImarketing from './components/Services/AImarketing';
 import EducationService from './components/EducationService';
 
@@ -88,7 +88,7 @@ const App = () => {
 
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
           <Route path="/real-estate-digital-marketing" element={<RealEstate />} />
-          <Route path="/education-digital-marketing" element={<EducationService />} />
+          {/* <Route path="/education-digital-marketing" element={<EducationService />} /> */}
 
           {/* <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/3d" element={<FoodBakery />} />
@@ -105,11 +105,11 @@ const App = () => {
           <Route path="/case-studies/endula-infra" element={<EndulaCaseStudyDetails />} />
           <Route path="/case-studies/livvon-comforts" element={<LivvonCaseStudyDetails />} />
           <Route path="/case-studies/head-digitals-wroks" element={<HeadDigitalCaseStudy />} />
-          <Route path="/case-studies/web-designing/endula-infra" element={<EndulaWebDesign />} />
+          {/* <Route path="/case-studies/web-designing/endula-infra" element={<EndulaWebDesign />} />
           <Route path="/case-studies/web-designing/conceiva-fertility" element={<ConceivaWebDesign />} />
           <Route path="/case-studies/web-designing/citrus-diagnostic-center" element={<CdcCenter />} />
           <Route path="/case-studies/web-designing/magnaid-hospitals" element={<MagnaidWebDesign />} />
-          <Route path="/case-studies/web-designing/livon-techno-foams" element={<LivvonWebDesign />} />
+          <Route path="/case-studies/web-designing/livon-techno-foams" element={<LivvonWebDesign />} /> */}
 
           {/* Lowercased if uncommented */}
           <Route path="/thankyou" element={<ThankYou />} />
@@ -137,7 +137,7 @@ const App = () => {
           <Route path="/video-production" element={<VideoProduction />} />
           <Route path="/professional-photoshoot" element={<Photoshoot />} />
 
-          <Route path="/ai-powered-marketing" element={<AImarketing />} />
+          {/* <Route path="/ai-powered-marketing" element={<AImarketing />} /> */}
         </Routes>
         <Footer />
       </NavigationProvider>

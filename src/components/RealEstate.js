@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import "../css/realestate.css"
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import real_estate from "../images/portfolio/real_1.png"
+import real_estate from "../images/casestudies/real_estate_banner.png"
 import online_realestate from "../images/casestudies/NEXT GEN-01.png"
 import social from "../images/casestudies/SEO 01-01.png"
 import gads from "../images/casestudies/brand_voice.png"
 import data from "../images/casestudies/Creative Storytelling-01.png"
 import analyst from "../images/casestudies/Advanced Analytics-01.png"
 import aboutHeroImage from '../images/casestudies/real_est.jpg';
-import banner_mob from '../images/portfolio/realestate_m.png';
+import banner_mob from '../images/portfolio/mobile_size_real.jpg';
 import { Container } from 'react-bootstrap'
 import serviceCardimg_1 from "../images/portfolio/icons/smi.png"
 import serviceCardimg_2 from "../images/portfolio/icons/seosmm.png"
@@ -72,12 +72,10 @@ const RealEstate = () => {
                   <div className='healthcareTopPara'>Our AI-powered tools do more than automate, they match your properties with qualified buyers, optimize campaigns for maximum ROI and ensure every inquiry is addressed instantly through intelligent chatbots. With Generative Engine Optimization (GEO), your listings get the visibility they deserve across emerging AI search platforms, reaching both local and global audiences. Combine AI and GEO, and your real estate business becomes smarter, faster and more profitable future-ready for the next era of property marketing.</div>
                 </div>
               </div>
-              <div className="col-lg-6 d-flex justify-content-between">
-                <div className="service-image  pe-4">
-                  <div className="info-img position-relative d-flex justify-content-start align-items-center">
-                    <img src={real_estate} width="100%" alt="digital marketing and real estate" className="img-fluid topBottom" />
+              <div className="col-lg-6 d-flex d-flex justify-content-center align-items-center">
+                  <div className=" position-relative ">
+                    <img src={real_estate} width="100%" alt="digital marketing and real estate" className=" topBottom" />
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -202,7 +200,9 @@ const RealEstate = () => {
           </div>
         </div>
 
-        <div className="section-get">
+        <div style={{
+         paddingBottom:"2px !important"
+        }}>
           <div className="wrapper">
             <div data-aos="fade-up" className="health-why-novatales">
               <h2
@@ -211,7 +211,7 @@ const RealEstate = () => {
                   textAlign: "center",
                   color: "#52377b",
                   marginTop: "80px",
-                  marginBottom: "20px"
+                  marginBottom: "40px"
                 }}
               >
                 NovaTales Expert Digital Marketing Services <br /> for Real Estate
@@ -342,7 +342,7 @@ const RealEstate = () => {
               <h2 className='text-center' style={{
                 textAlign: "center !important",
                 marginBottom: "40px",
-                marginTop: "40px",
+                marginTop:"0px !important",
                 color: "#52377b"
               }}>Frequently Asked  Questions </h2>
             </div>

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-// import digitalMarketingIllustration from '../../images/casestudies/ai_powered_l.jpg';
-import digitalMarketingIllustration from '../../images/casestudies/ai_powere_l.jpg';
-// import digitalMarketingTab from '../../images/casestudies/ai_powered_tab.jpg';
-import digitalMarketingTab from '../../images/casestudies/ai_powered_tb.jpg';
+import digitalMarketingIllustration from '../../images/casestudies/ai_powered_l.jpg';
+// import digitalMarketingIllustration from '../../images/casestudies/ai_powere_l.jpg';
+import digitalMarketingTab from '../../images/casestudies/ai_powered_tab.jpg';
+// import digitalMarketingTab from '../../images/casestudies/ai_powered_tb.jpg';
 // import digitalMarketingWebImage from '../../images/portfolio/icons/ai_pow.png';
 import digitalMarketingWebImage from '../../images/portfolio/icons/ai_powered_1.png';
 import seoIcon from '../../images/SEO icon.png';
@@ -49,7 +49,7 @@ const AImarketing = () => {
                             <div className="col-lg-6">
                                 <div data-aos="fade-up" data-aos-duration="1000">
                                     <div className="service-para mt-3">
-                                        <h1>AI-Powered Digital Marketing Services by NovaTales Media</h1>
+                                        <h1 className='text-center text-lg-start'>AI-Powered Digital Marketing Services by NovaTales Media</h1>
                                         <p className="mt-3">
                                             At NovaTales Media, we combine human creativity with Artificial Intelligence to deliver marketing that’s smarter, faster, and more personalized than ever before.
                                         </p>
@@ -63,7 +63,7 @@ const AImarketing = () => {
                             <div className="col-lg-6 d-flex justify-content-center">
                                 <div className="service-image">
                                     <div className="info-img position-relative">
-                                        <img src={digitalMarketingWebImage} alt="digital marketing agency" className=" topBottom"  width="90%"/>
+                                        <img src={digitalMarketingWebImage} alt="digital marketing agency" className=" topBottom" width="90%" />
                                     </div>
                                 </div>
                             </div>
@@ -77,13 +77,13 @@ const AImarketing = () => {
                             style={{
                                 textAlign: "center",
                                 color: "#52377b",
-                                marginTop: "80px",
+                                marginTop: "40px",
                                 marginBottom: "20px"
                             }}
                         > How NovaTales Uses AI Across Every Digital Channel
                         </h2>
                     </div>
-                    <div className="container pt-5">
+                    <div className="container pt-2">
                         <div className="row mt-5">
                             <div className="col-lg-6 left-media" style={{ paddingRight: '70px' }}>
                                 {/* AI in SEO (Search + Generative + Answer Optimization) */}
@@ -101,12 +101,12 @@ const AImarketing = () => {
                                                     SEO has evolved beyond just keywords and backlinks, it’s now powered by machine learning and intent analysis.</p>
                                                 <p className='fw-bold mb-0'>At NovaTales, we use AI-driven SEO systems to:</p>
                                                 <ul className='listPara'>
-                                                 <li className='listPara-li'><span></span> Identify user intent and map content to search & voice queries</li>
-                                                 <li className='listPara-li'><span></span> Optimize pages for GEO (Generative Engine Optimization) to appear in AI search results</li>
-                                                 <li className='listPara-li'><span></span> Implement AEO (Answer Engine Optimization) for “People Also Ask” & featured snippets</li>
-                                                 <li className='listPara-li'><span></span> Use predictive SEO tools to detect keyword trends before competitors</li>
-                                                 <li className='listPara-li'><span></span> Automate technical audits & backlink quality checks</li>
-                                                 <li className='listPara-li'><span></span> Analyze search sentiment to create content that matches user tone</li>
+                                                    <li className='listPara-li'><span></span> Automate technical audits & backlink quality checks</li>
+                                                    <li className='listPara-li'><span></span> Identify user intent and map content to search & voice queries</li>
+                                                    <li className='listPara-li'><span></span> Optimize pages for GEO (Generative Engine Optimization) to appear in AI search results</li>
+                                                    <li className='listPara-li'><span></span> Implement AEO (Answer Engine Optimization) for “People Also Ask” & featured snippets</li>
+                                                    <li className='listPara-li'><span></span> Use predictive SEO tools to detect keyword trends before competitors</li>
+                                                    <li className='listPara-li'><span></span> Analyze search sentiment to create content that matches user tone</li>
                                                 </ul>
                                                 <p>
                                                     <span className='fw-bold' >Result</span>   <br />
@@ -131,13 +131,13 @@ const AImarketing = () => {
                                                     AI enables personalized communication at scale.
                                                 </p>
                                                 <p className='fw-bold mb-0'>We use automation platforms with AI segmentation to:</p>
-                                              <ul className='listPara'>
-                                                     <li className='listPara-li'><span></span> Send the right email to the right person at the right time</li>
-                                                     <li className='listPara-li'><span></span> Predict open rates and click behavior</li>
-                                                     <li className='listPara-li'><span></span> Create dynamic subject lines based on user interests</li>
-                                                     <li className='listPara-li'><span></span> Automate re-engagement & loyalty campaigns</li>
+                                                <ul className='listPara'>
+                                                    <li className='listPara-li'><span></span> Predict open rates and click behavior</li>
+                                                    <li className='listPara-li'><span></span> Automate re-engagement & loyalty campaigns</li>
+                                                    <li className='listPara-li'><span></span> Create dynamic subject lines based on user interests</li>
+                                                    <li className='listPara-li'><span></span> Send the right email to the right person at the right time</li>
                                                 </ul>
-                                                <p> 
+                                                <p>
                                                     <span className='fw-bold' >Result</span>    <br />
                                                     Higher open rates, lower churn, and strong brand recall.
                                                 </p>
@@ -161,14 +161,12 @@ const AImarketing = () => {
                                                 </p>
                                                 <p className='fw-bold mb-0'>
                                                     We integrate analytics tools powered by machine learning to:</p>
-                                               <ul className='listPara'>
-                                                  <li className='listPara-li'><span></span> Predict which channels will perform best next month</li>
-                                                     <li className='listPara-li'><span></span> Detect customer drop-off points in the funnel
-                                                    </li>
-                                                     <li className='listPara-li'><span></span> Identify new market opportunities</li>
-                                                     <li className='listPara-li'><span></span> Automate reporting dashboards
-                                                    </li>
-                                          <li className='listPara-li'><span></span> Give real-time insights for smarter decisions</li>
+                                                <ul className='listPara'>
+                                                    <li className='listPara-li'><span></span> Automate reporting dashboards </li>
+                                                    <li className='listPara-li'><span></span> Identify new market opportunities</li>
+                                                    <li className='listPara-li'><span></span> Detect customer drop-off points in the funnel</li>
+                                                    <li className='listPara-li'><span></span> Give real-time insights for smarter decisions</li>
+                                                    <li className='listPara-li'><span></span> Predict which channels will perform best next month</li>
                                                 </ul>
                                                 <p>
                                                     <span className='fw-bold'>Result </span>    <br />
@@ -222,14 +220,13 @@ const AImarketing = () => {
                                                 <p className='fw-bold mb-0'>
                                                     We use AI to:
                                                 </p>
-                                           <ul className='listPara'>
-                                                     <li className='listPara-li'><span></span> Generate post ideas & trending content using real-time data</li>
-                                                     <li className='listPara-li'><span></span> Identify the best posting times for engagement using predictive analytics</li>
-                                                     <li className='listPara-li'><span></span> Create dynamic captions, ad copies, and hashtags optimized for reach</li>
-                                                     <li className='listPara-li'><span></span> Monitor audience behavior and auto-adjust strategies</li>
-                                                     <li className='listPara-li'><span></span> Use AI tools to edit reels and analyze performance instantly</li>
+                                                <ul className='listPara'>
+                                                    <li className='listPara-li'><span></span> Monitor audience behavior and auto-adjust strategies</li>
+                                                    <li className='listPara-li'><span></span> Generate post ideas & trending content using real-time data</li>
+                                                    <li className='listPara-li'><span></span> Use AI tools to edit reels and analyze performance instantly</li>
+                                                    <li className='listPara-li'><span></span> Create dynamic captions, ad copies, and hashtags optimized for reach</li>
+                                                    <li className='listPara-li'><span></span> Identify the best posting times for engagement using predictive analytics</li>
                                                 </ul>
-
                                                 <p>
                                                     <span className='fw-bold' >Example</span>   <br />
                                                     Our AI tools can scan your competitors' content strategies and auto-suggest what to post next to outperform them.</p>
@@ -259,15 +256,14 @@ const AImarketing = () => {
                                                 <p className='fw-bold mb-0'>
                                                     NovaTales uses AI for:
                                                 </p>
-                                              <ul className='listPara'>
-                                                     <li className='listPara-li'><span></span> Smart bidding to reduce cost per conversion</li>
-                                                     <li className='listPara-li'><span></span> Ad copy generation optimized for CTR & emotional triggers</li>
-                                                     <li className='listPara-li'><span></span> Dynamic audience segmentation using AI-based behavioral data</li>
-                                                     <li className='listPara-li'><span></span> A/B testing automation – the system itself finds the best-performing ads</li>
-                                                     <li className='listPara-li'><span></span> Predictive budget allocation based on past performance</li>
-                                                     <li className='listPara-li'><span></span> GEO & interest-based targeting for maximum ROI</li>
+                                                <ul className='listPara'>
+                                                    <li className='listPara-li'><span></span> Smart bidding to reduce cost per conversion</li>
+                                                    <li className='listPara-li'><span></span> GEO & interest-based targeting for maximum ROI</li>
+                                                    <li className='listPara-li'><span></span> Predictive budget allocation based on past performance</li>
+                                                    <li className='listPara-li'><span></span> Ad copy generation optimized for CTR & emotional triggers</li>
+                                                    <li className='listPara-li'><span></span> Dynamic audience segmentation using AI-based behavioral data</li>
+                                                    <li className='listPara-li'><span></span> A/B testing automation – the system itself finds the best-performing ads</li>
                                                 </ul>
-
                                                 <p>
                                                     <span className='fw-bold' >Example</span>   <br />
                                                     Our AI engine predicts which creatives will perform best — before spending a single rupee.
@@ -299,14 +295,13 @@ const AImarketing = () => {
                                                 <p className='fw-bold mb-0'>
                                                     We use AI for:
                                                 </p>
-                                              <ul className='listPara'>
-                                                     <li className='listPara-li'><span></span> Topic & keyword clustering using semantic intelligence</li>
-                                                     <li className='listPara-li'><span></span> Blog & landing page generation optimized for GEO + AEO</li>
-                                                     <li className='listPara-li'><span></span> Readability enhancement & tone alignment for audience emotion</li>
-                                                     <li className='listPara-li'><span></span> Plagiarism & factual validation with AI fact-checking</li>
-                                                     <li className='listPara-li'><span></span> Automatic metadata and schema tagging</li>
+                                                <ul className='listPara'>
+                                                    <li className='listPara-li'><span></span> Automatic metadata and schema tagging</li>
+                                                    <li className='listPara-li'><span></span> Topic & keyword clustering using semantic intelligence</li>
+                                                    <li className='listPara-li'><span></span> Blog & landing page generation optimized for GEO + AEO</li>
+                                                    <li className='listPara-li'><span></span> Plagiarism & factual validation with AI fact-checking</li>
+                                                    <li className='listPara-li'><span></span> Readability enhancement & tone alignment for audience emotion</li>
                                                 </ul>
-
                                                 <p>
                                                     <span className='fw-bold' >Example</span>   <br />
                                                     Our AI-driven content system ensures every piece is SEO-ready, voice-friendly, and conversion-focused.
@@ -416,7 +411,7 @@ const AImarketing = () => {
                                 margin: "4px",
                                 height: "200px",
                                 borderRadius: "10px",
-                                padding:"12px"
+                                padding: "12px"
                             }}>
                                 <div>
                                     <img src={geo} alt='online marketing real estate' />

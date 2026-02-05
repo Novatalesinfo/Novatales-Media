@@ -215,7 +215,7 @@
 
   .media-body p {
     font-size: 13px;
-    padding: 10px 20px !important;
+    padding: 10px 20px;
     /* margin-top: 40px; */
   }
 

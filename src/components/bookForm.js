@@ -13,6 +13,7 @@ const BookForm = () => {
     }
     const [formData, setFormData] = useState(initialFormData);
     const [consent, setConsent] = useState(false);
+
     const [loading, setLoading] = useState(false)
     const [errors, setErrors] = useState({});
     const navigate = useNavigate()

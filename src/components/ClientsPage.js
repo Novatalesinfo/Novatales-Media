@@ -7,7 +7,7 @@ import TavasLogo from "../images/TavasSecurity.png";
 import VInfoNetLogo from "../images/Vision infonet logo (2).png";
 import ConfluxLogo from "../images/Asset 2.png";
 import MDCareLogo from "../images/MdCareLogo.png";
-import livvonconforts from "../images/livon logo 2v final.png";
+import livvonconforts from "../images/casestudies/moondew.jpeg";
 import LivonfoamsLogo from "../images/livvon-foams-logo.png"
 import ekam from "../images/ekam.png"
 import conceiva from "../images/conceiva.webp";
@@ -17,7 +17,7 @@ import navatris from "../images/navatris.png";
 import yard_22 from "../images/yard-22.png"
 import mapplestreet from "../images/MSB_1 FRONT.png"
 import ace2three from "../images/casestudies/a23-rummy-card.webp"
-import acet3poker from "../images/casestudies/a23-poker-card.webp"
+import acet3poker from "../images/casestudies/tranquilla.png"
 import cricket from "../images/casestudies/cricket-card.webp"
 import tic from "../images/casestudies/TIC LOGO REDESIGN-01.jpg"
 import endul from "../images/casestudies/ENDULA LOGO-01.png"
@@ -67,7 +67,9 @@ const ClientsPage = () => {
           </div>
           <div className="client-item">
             <img loading="lazy"
-            
+             style={{
+                width: "250px",
+              }}
               src={livvonconforts}
               alt="Client 2"
             />
@@ -107,7 +109,7 @@ const ClientsPage = () => {
           <div className="client-item">
             <img loading="lazy"
               style={{
-                width: "150px",
+                width: "220px",
               }}
               src={acet3poker}
               alt="Client 2"

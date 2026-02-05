@@ -38,7 +38,7 @@ const EducationBookForm = () => {
     const validate = () => {
         const newErrors = {};
         if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
-        if (!formData.institutename.trim()) newErrors.institutename = "Hospital name is required";
+        if (!formData.institutename.trim()) newErrors.institutename = "Institute name is required";
         if (!formData.email.trim()) {
             newErrors.email = "Email is required";
         } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
@@ -130,7 +130,7 @@ const EducationBookForm = () => {
                                     {errors.phoneNumber && <small className="text-danger">{errors.phoneNumber}</small>}
                                 </div>
                                 <div className='col-lg-6 col-xl-3 my-2'>
-                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='hospitalname' onChange={handleChange} value={formData.institutename} placeholder='Institute Name' />
+                                    <input className='form-control w-100 py-2' disabled={loading} type='text' name='institutename' onChange={handleChange} value={formData.institutename} placeholder='Institute Name' />
                                     {errors.institutename && <small className="text-danger">{errors.institutename}</small>}
                                 </div>
                             </div>

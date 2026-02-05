@@ -10,7 +10,7 @@ import tab_img_4 from "../images/casestudies/endula.webp"
 import tab_img_5 from "../images/casestudies/livvon.webp"
 import tab_img_6 from "../images/casestudies/head-digital.webp"
 import aboutHeroImage from '../images/casestudies/case_study_banner.jpg';
-import web_site_case from "../images/casestudies/web_site_dev_case.png"
+// import web_site_case from "../images/casestudies/web_site_dev_case.png"
 import case_study_mobile_banner from '../images/casestudies/case_study_mobile_banner.jpg';
 import TabPanel from '@mui/lab/TabPanel';
 import AOS from 'aos';
@@ -144,7 +144,7 @@ const CaseStudy = () => {
                                                 },
                                             }}
                                         />
-                                        <Tab
+                                        {/* <Tab
                                             label="Web Designing"
                                             value="4"
                                             sx={{
@@ -152,8 +152,8 @@ const CaseStudy = () => {
                                                 color: "#E3E3E3",
                                                 borderRadius: "40px 40px 40px 20px",
                                                 padding: {
-                                                    xs: "4px 8px",  // padding on small screens
-                                                    md: "6px 16px",  // padding on larger screens
+                                                    xs: "4px 8px",
+                                                    md: "6px 16px",  
                                                 }, fontSize: "16px",
                                                 minWidth: "auto",
                                                 textTransform: "none",
@@ -164,7 +164,7 @@ const CaseStudy = () => {
                                                     color: "#fff",
                                                 },
                                             }}
-                                        />
+                                        /> */}
                                     </TabList>
                                 </Box>
                             </Box>
@@ -304,7 +304,7 @@ const CaseStudy = () => {
                                     </div>
                                 </div> </TabPanel>
 
-                            {/* Video Production Case Studies  */}
+            
 
                             <TabPanel value="3">
                                 <div data-aos="fade-up" data-aos-delay="300" className='row mt-5 mb-3 d-flex flex-lg-row flex-column-reverse align-items-center tab-panel-row' >
@@ -323,11 +323,7 @@ const CaseStudy = () => {
                                                 HD Works has recently shifted to a new office location, marking a significant milestone in their growth journey. To capture this transition, we created a high-quality video showcasing both the old and new office spaces, using advanced drone footage and professional setups. The video highlights the evolution of the workspace, reflecting the brand’s progress and ambition, and serves as a powerful visual story of transformation and expansion.
                                             </p>
 
-                                            {/* <Link to="/case-studies/head-digitals-wroks">
-                                                <button className='inside-tab-child-div-button' style={{ fontFamily: "Poppins" }}>
-                                                    View Details
-                                                </button>
-                                            </Link> */}
+                            
                                         </div>
                                     </div>
                                     <div className='col-lg-6 d-flex justify-content-center'>
@@ -335,7 +331,7 @@ const CaseStudy = () => {
                                     </div>
                                 </div>
                             </TabPanel>
-                            <TabPanel value="4" sx={{
+                            {/* <TabPanel value="4" sx={{
                                 p: 0
                             }}>
                                 <div data-aos="fade-up" data-aos-delay="300" className="service-content LogoVisual">
@@ -498,7 +494,7 @@ const CaseStudy = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Approach */}
+                                
                                 <div style={{
                                     fontFamily: "Poppins"
                                 }} data-aos="fade-up" data-aos-delay="100" className='mt-5 mb-3 pt-5 pb-5 d-flex flex-column'>
@@ -527,35 +523,35 @@ const CaseStudy = () => {
                                             }}>Discovery & Strategy</span> : Understanding client goals, target audiences, competitive landscape, and growth objectives.</p>
                                         <p style={{
                                             paddingTop: "16px",
-                                            // fontSize: "18px" 
+                                         
                                         }}>
                                             <span style={{
                                                 fontWeight: "bold", color: "#f3bc50", fontFamily: "Poppins"
                                             }}>User-Centric Design</span> :  Creating wireframes and prototypes that ensure intuitive navigation, conversion-focused layouts, and consistent branding.</p>
                                         <p style={{
                                             paddingTop: "16px",
-                                            // fontSize: "18px" 
+                                          
                                         }}>
                                             <span style={{
                                                 fontWeight: "bold", color: "#f3bc50", fontFamily: "Poppins"
                                             }}>Responsive & Performance Optimization</span> :  Ensuring sites load quickly, adapt to all devices, and provide optimal user experience across platforms</p>
                                         <p style={{
                                             paddingTop: "16px",
-                                            // fontSize: "18px" 
+                                          
                                         }}>
                                             <span style={{
                                                 fontWeight: "bold", color: "#f3bc50", fontFamily: "Poppins"
                                             }}>SEO, Accessibility & CMS Integration</span> : Making sure clients can update content easily, and that sites are discoverable, compliant, and inclusive.</p>
                                         <p style={{
                                             paddingTop: "16px",
-                                            // fontSize: "18px" 
+                                            
                                         }}>
                                             <span style={{
                                                 fontWeight: "bold", color: "#f3bc50", fontFamily: "Poppins"
                                             }}>Quality Assurance & Launch Support</span> : Rigorous testing, stakeholder feedback loops, and post-launch analytics and support.</p>
                                     </div>
                                 </div>
-                            </TabPanel>
+                            </TabPanel> */}
                         </TabContext>
                     </Box>
                 </div>

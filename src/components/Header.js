@@ -319,7 +319,7 @@ const Header = () => {
                           >
                             Analytics & Business Insights
                           </NavDropdown.Item>
-                          <NavDropdown.Item
+                          {/* <NavDropdown.Item
                             as={Link}
                             to='/ai-powered-marketing'
                             onClick={() => {
@@ -328,7 +328,7 @@ const Header = () => {
                             }}
                           >
                             AI-Powered Digital Marketing
-                          </NavDropdown.Item>
+                          </NavDropdown.Item> */}
                           <NavDropdown.Item
                             as={Link}
                             to='/ppc-advertising'
@@ -508,13 +508,13 @@ const Header = () => {
                 >
                   Real Estate
                 </NavDropdown.Item>
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   as={Link}
                   to="/education-digital-marketing"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                   Education
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
 
               </NavDropdown>

@@ -26,8 +26,8 @@
 }
 @media screen and (max-width: 1536px) {
   .client-row-layout {
-    row-gap: 80px;
-    column-gap: 80px;
+    row-gap: 60px;
+    column-gap: 60px;
     justify-content: center;
   }
   .client-item {

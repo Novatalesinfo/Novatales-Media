@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import aboutHeroImage from '../images/casestudies/health_ban_l.jpg';
 import case_study_mobile_banner from '../images/portfolio/healthcare_banner_m.jpg';
-import hospital_image_1 from '../images/portfolio/healthcare_about.png';
+import hospital_image_1 from '../images/casestudies/health_about.png';
 import '../css/Home.css';
 import icon1 from '../images/icon 1.png';
 import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
@@ -80,31 +80,26 @@ export default function HealthCare() {
                   </div>
                 </div>
               </div>
-              <div data-aos="fade-up" className="col-lg-6 d-flex justify-content-center">
-                <div className="service-image">
-                  <div className="info-img position-relative">
-                    <img
-                      src={hospital_image_1}
-                      alt="hospital digital marketing"
-                      className="img-fluid topBottom"
-                    />
-                  </div>
-                </div>
+              <div data-aos="fade-up" className="col-lg-6 d-flex justify-content-center align-items-center">
+
+                <img
+                  src={hospital_image_1}
+                  alt="hospital digital marketing"
+                  className=" topBottom"
+                />
               </div>
             </div>
           </div>
         </div>
         <BookForm />
         <div className="whyStrategies">
-
-
           <div data-aos="fade-up" className="health-why-novatales">
             <h2
               className="text-center"
               style={{
                 textAlign: "center",
                 color: "#52377b",
-                marginTop: "80px",
+                marginTop: "40px",
                 marginBottom: "20px"
               }}
             >  Why Choose NovaTales for Your Healthcare Marketing Strategies?
@@ -505,6 +500,7 @@ export default function HealthCare() {
                 healthcare, to elevate your hospital’s digital presence. Let’s
                 build a strong community, improve patient experiences, and take
                 your hospital to new heights!
+                
               </p>
               <p>Contact us today to get started!</p>
             </div>
