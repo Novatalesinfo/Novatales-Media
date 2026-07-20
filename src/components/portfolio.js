@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import foodPoster from "../images/portfolio/collage_3d.png";
 import videoPoster from "../images/portfolio/output_000.mp4";
 import prodcutPoster from "../images/portfolio/product_img_7.webp";
-import cocktailPoster from "../images/casestudies/magnaid_post_2.webp";
+// import cocktailPoster from "../images/casestudies/magnaid_post_2.webp";
 import humanPoster from "../images/portfolio/photoshoot_img_1.webp";
 import _vdo_1 from "../images/portfolio/video_1.mp4"
 import "../css/portfolio.css";
@@ -43,13 +43,13 @@ const Portfolio = () => {
             media: prodcutPoster,
             link: "/portfolio/products"
         },
-        {
-            id: 5,
-            title: "Graphics",
-            mediaType: "image",
-            media: cocktailPoster,
-            link: "/portfolio/graphics"
-        },
+        // {
+        //     id: 5,
+        //     title: "Graphics",
+        //     mediaType: "image",
+        //     media: cocktailPoster,
+        //     link: "/portfolio/graphics"
+        // },
     ];
     return (
         <div className="portfolio-parent d-flex justify-content-center align-items-center flex-column">

@@ -508,13 +508,13 @@ const Header = () => {
                 >
                   Real Estate
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item
+                <NavDropdown.Item
                   as={Link}
                   to="/education-digital-marketing"
                   onClick={() => { handleNavigation('RealEstate'); handleNavCollapse(); }}
                 >
                   Education
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>
 
 
               </NavDropdown>

@@ -41,13 +41,13 @@ import EkamCaseStudyDetails from './components/EkamCaseStudyDetails';
 import TwentyCaseStudyDetails from './components/22yardsCaseStudyDetails';
 import EndulaCaseStudyDetails from './components/EndulCaseStudyDetails';
 import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
-// import Portfolio from './components/portfolio';
-// import FoodBakery from './components/foodBakery';
+import Portfolio from './components/portfolio';
+import FoodBakery from './components/foodBakery';
 // import CockTail from './components/CockTail';
-// import VdoPortfolio from './components/VdoPortfolio';
-// import ProductPortfolio from './components/ProductPortfolio';
-// import JewelPortfolio from './components/JewelPortfolio';
-// import PhotShootPortfolio from './components/PhotoShootPortfolio';
+import VdoPortfolio from './components/VdoPortfolio';
+import ProductPortfolio from './components/ProductPortfolio';
+import JewelPortfolio from './components/JewelPortfolio';
+import PhotShootPortfolio from './components/PhotoShootPortfolio';
 import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
 // import EndulaWebDesign from './components/EndulaWebDesign';
 // import ConceivaWebDesign from './components/ConceivaWebDesign';
@@ -88,12 +88,12 @@ const App = () => {
 
           <Route path="/hospital-digital-marketing" element={<HealthCare />} />
           <Route path="/real-estate-digital-marketing" element={<RealEstate />} />
-          {/* <Route path="/education-digital-marketing" element={<EducationService />} /> */}
+          <Route path="/education-digital-marketing" element={<EducationService />} />
 
           {/* <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/3d" element={<FoodBakery />} />
-          <Route path="/portfolio/graphics" element={<CockTail />} />
-          <Route path="/portfolio/video-portfolio" element={<VdoPortfolio />} />
+          <Route path="/portfolio/3d" element={<FoodBakery />} /> */}
+          {/* <Route path="/portfolio/graphics" element={<CockTail />} /> */}
+          {/* <Route path="/portfolio/video-portfolio" element={<VdoPortfolio />} />
           <Route path='/portfolio/products' element={<ProductPortfolio />} />
           <Route path="/portfolio/motion-graphics" element={<JewelPortfolio />} />
           <Route path="/portfolio/people" element={<PhotShootPortfolio />} /> */}
