@@ -37,25 +37,24 @@ const EducationService = () => {
             <HelmetProvider>
                 <Helmet>
                     <title>
-                        NovaTales - 
-                         Digital Marketing Agency for Healthcare
+                        NovaTales -
+                        Digital Marketing Agency for Education
                     </title>
                     <meta
                         name="description"
-                        content="NovaTales specializes in hospital digital marketing, helping hospitals and doctors. We offer expert doctor digital marketing solutions to attract more patients."
-                    />
+                        content="NovaTales specializes in education digital marketing, helping schools, colleges, universities, and edtech brands attract more students and grow online." />
                 </Helmet>
                 {/* Top Banner of the page  */}
                 <div className="about-hero">
                     <img
                         src={aboutHeroImage}
                         width="100%"
-                        alt="healthcare digital marketing agency"
+                        alt="Education digital marketing agency"
                         className="lap"
                     />
                     <img
                         src={case_study_mobile_banner}
-                        alt="healthcare digital marketing agency"
+                        alt="Education digital marketing agency"
                         className="tab"
                         width="100%"
                     />
@@ -121,7 +120,7 @@ const EducationService = () => {
                             >
                                 <img
                                     src={real_estate}
-                                    alt="hospital digital marketing"
+                                    alt="Education digital marketing"
                                     className=" topBottom"
                                     width="100%"
                                 />
@@ -492,7 +491,7 @@ const EducationService = () => {
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={online_realestate} alt="real estate digital agency" />
+                                    <img src={online_realestate} alt="Education digital marketing agency" />
                                 </div>
                                 <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
                                     <span
@@ -533,7 +532,7 @@ const EducationService = () => {
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={social} alt="real estate digital agency" />
+                                    <img src={social} alt="Education digital marketing agency" />
                                 </div>
                                 <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
                                     <span
@@ -573,7 +572,7 @@ const EducationService = () => {
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={gads} alt="real estate digital agency" />
+                                    <img src={gads} alt="Education digital marketing agency" />
                                 </div>
                                 <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
                                     <span
@@ -615,7 +614,7 @@ const EducationService = () => {
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={data} alt="real estate digital agency" />
+                                    <img src={data} alt="Education digital marketing  agency" />
                                 </div>
                                 <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
                                     <span
@@ -657,7 +656,7 @@ const EducationService = () => {
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={analyst} alt="real estate digital agency" />
+                                    <img src={analyst} alt="Education digital marketing  agency" />
                                 </div>
                                 <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
                                     <span
@@ -779,7 +778,7 @@ const EducationService = () => {
                                     <div className="info-img position-relative d-flex justify-content-center align-items-center">
                                         <img
                                             src={edu_cont}
-                                            alt="hospital digital marketing"
+                                            alt="Education digital marketing"
                                             className=" topBottom"
                                             style={{
                                                 maxWidth: "80%"
