@@ -271,7 +271,6 @@ export default function HealthCare() {
                           <li style={{ listStyleType: "disc" }}>Social media management</li>
                           <li style={{ listStyleType: "disc" }}>Branding & creatives</li>
                           <li style={{ listStyleType: "disc" }}>Google Search, Display & Performance Max campaigns</li>
-
                         </ul>
                       </div>
                     )}

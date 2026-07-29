@@ -61,11 +61,11 @@
     padding: 12px 8px;
   }
   .whyneedRealestate {
-    width: 90%;
+    width: 95%;
     margin-top: 60px;
   }
   .whyneedRealestate2 {
-    width: 90%;
+    width: 95%;
     /* margin-bottom: 80px; */
   }
   .responsive-height-realestate {
@@ -301,7 +301,7 @@
   padding-top: 5px;
   margin-bottom: 1px;
   color: #212529;
-  font-weight: 500;
+  
 }
 @media screen and  (min-width: 1810px) and (max-width:2200px){
 .whyneedRealestate {

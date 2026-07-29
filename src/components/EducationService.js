@@ -525,18 +525,20 @@ const EducationService = () => {
                                     // backgroundColor: "rgba(36, 73, 168, 0.03)",
                                     backgroundColor: "#ebd4ff",
                                     margin: "4px",
-                                    height: "225px",
+                                    height: "220px",
                                     borderRadius: "10px",
                                     padding: "12px 15px",
                                     boxShadow: "0px 1rem 2.6rem #ebd4ff6b",
                                 }}
                             >
                                 <div className="text-left d-flex justify-content-start ps-2 mt-1">
-                                    <img src={social} alt="Education digital marketing agency" />
+                                    <img src={social} style={{
+                                        width: "65px"
+                                    }} alt="Education digital marketing agency" />
                                 </div>
-                                <div className="ps-2 d-flex justify-content-start gap-0 mt-1 flex-column align-items-start">
+                                <div className="ps-2 d-flex justify-content-start gap-0 mt-2 flex-column align-items-start">
                                     <span
-                                        className="my-1"
+                                        className="my-1 pt-2"
                                         style={{
                                             color: "#52377b",
                                             fontSize: "18px",
@@ -565,7 +567,7 @@ const EducationService = () => {
                                 style={{
                                     backgroundColor: "#ebd4ff",
                                     margin: "4px",
-                                    height: "225px",
+                                    minHeight: "220px",
                                     borderRadius: "10px",
                                     padding: "12px 15px",
                                     boxShadow: "0px 1rem 2.6rem #ebd4ff6b",
@@ -607,7 +609,7 @@ const EducationService = () => {
                                 style={{
                                     backgroundColor: "#ebd4ff",
                                     margin: "4px",
-                                    minHeight: "230px",
+                                    minHeight: "225px",
                                     borderRadius: "10px",
                                     padding: "12px 15px",
                                     boxShadow: "0px 1rem 2.6rem #ebd4ff6b",
@@ -649,7 +651,7 @@ const EducationService = () => {
                                 style={{
                                     backgroundColor: "#ebd4ff",
                                     margin: "4px",
-                                    minHeight: "230px",
+                                    minHeight: "225px",
                                     borderRadius: "10px",
                                     padding: "12px 15px",
                                     boxShadow: "0px 1rem 2.6rem #ebd4ff6b",

@@ -16,6 +16,12 @@ import navatris from "../images/navatris.png"
 import ekam from "../images/ekam.png"
 import yard from "../images/yard-22.png"
 import mapplestreet from "../images/MSB_1 FRONT.png"
+import lakme from "../images/portfolio/lakem_logo.png"
+import bonnie from "../images/portfolio/bonnie_logo.png"
+import qc_logo from "../images/portfolio/qc_logo.png"
+import slned from "../images/portfolio/slned_logo.png"
+import prachin from "../images/portfolio/prachin.png"
+import truviq from "../images/portfolio/truviq.png"
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
 import cdc from "../images/casestudies/CDC FINAL LOGO - 01 (1).png"
@@ -30,24 +36,30 @@ export default function Clients() {
             <h2 >Our Clients</h2>
             <div className="logo-slider" >
                 <div className="logos-slide">
-                    <img src={TrippinladakhLogo} alt="Trippin Ladakh" width="150px" height="80px"/>
-                    <img src={LivonComfortsLogo} alt="Livon Comforts" width="150px" height="80px"/>
-                    <img src={livvon} alt="Livon Comforts" width="250px"/>
-                    <img src={aura} alt="Tranquilla" width="200px"/>
-                    <img src={mdOfficelogo} alt="Md Office" width="250px" height="auto" className='mdOffice'/>
-                    <img src={FaxtoneLogo} alt="Faxtone" width="250px" height="auto"/>
-                    <img src={TavasLogo} alt="Tavas" width="250px" height="auto"/> 
-                    <img src={cdc} alt="CDC" width="280px" height="auto"/> 
-                    <img src={conceiva} alt="Conceiva" width="200px" height="auto"/> 
-                    <img src={magnaid} alt="Magnaid" width="auto" height="auto"/> 
-                    <img src={navatris} alt="Navatris" width="180px" height="auto"/> 
-                    <img src={hdworks} alt="hdworks" width="180px" height="auto"/> 
-                    <img src={VInfoNetLogo} alt="VInfoNet" width="200px" height="auto"/>
-                    <img src={ConfluxLogo} alt="Conflux" width="250px" height="auto"/>
-                    <img src={MDCareLogo} alt="MdCare" width="250px" height="auto"/>
-                    <img src={ekam} alt="MdCare" width="120px" height="auto"/>
-                    <img src={yard} alt="MdCare" width="250px" height="auto"/>
-                    <img src={mapplestreet} alt="MdCare" width="200px" height="auto"/>
+                    <img src={prachin} alt="Prachin Global Hospitals" width="250px" height="auto" />
+                    <img src={lakme} alt="Lakme Salon" width="auto" height="auto" />
+                    <img src={qc_logo} alt="Quality Matrix" width="auto" height="auto" />
+                    <img src={bonnie} alt="Bonnie Health" width="auto" height="auto" />
+                    <img src={slned} alt="SLN Education" width="250px" height="auto" />
+                    <img src={truviq} alt="Quality Matrix" width="300px" height="auto" />
+                    <img src={LivonComfortsLogo} alt="Livon Comforts" width="150px" height="80px" />
+                    <img src={cdc} alt="CDC" width="280px" height="auto" />
+                    <img src={conceiva} alt="Conceiva" width="200px" height="auto" />
+                    <img src={magnaid} alt="Magnaid" width="auto" height="auto" />
+                    <img src={ekam} alt="MdCare" width="120px" height="auto" />
+                    <img src={yard} alt="MdCare" width="250px" height="auto" />
+                    <img src={hdworks} alt="hdworks" width="180px" height="auto" />
+                    <img src={aura} alt="Tranquilla" width="200px" />
+                    <img src={livvon} alt="Livon Comforts" width="250px" />
+                    <img src={mdOfficelogo} alt="Md Office" width="250px" height="auto" className='mdOffice' />
+                    <img src={FaxtoneLogo} alt="Faxtone" width="250px" height="auto" />
+                    <img src={TavasLogo} alt="Tavas" width="250px" height="auto" />
+                    <img src={TrippinladakhLogo} alt="Trippin Ladakh" width="150px" height="80px" />
+                    <img src={navatris} alt="Navatris" width="180px" height="auto" />
+                    <img src={VInfoNetLogo} alt="VInfoNet" width="200px" height="auto" />
+                    <img src={ConfluxLogo} alt="Conflux" width="250px" height="auto" />
+                    <img src={MDCareLogo} alt="MdCare" width="250px" height="auto" />
+                    <img src={mapplestreet} alt="MdCare" width="200px" height="auto" />
                 </div>
             </div>
         </div>

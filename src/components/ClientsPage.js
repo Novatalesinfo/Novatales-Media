@@ -26,7 +26,12 @@ import max from "../images/casestudies/Maxx Sleep Logo-01.png"
 import start from "../images/casestudies/Straunt Illusrator Logo l-01.png"
 import tttt from "../images/casestudies/TTT logo-01.png"
 import cdc from "../images/casestudies/CDC FINAL LOGO - 01 (1).png"
-
+import lakme from "../images/portfolio/lakem_logo.png"
+import bonnie from "../images/portfolio/bonnie_logo.png"
+import qc_logo from "../images/portfolio/qc_logo.png"
+import slned from "../images/portfolio/slned_logo.png"
+import prachin from "../images/portfolio/prachin.png"
+import truviq from "../images/portfolio/truviq.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const ClientsPage = () => {
@@ -56,18 +61,74 @@ const ClientsPage = () => {
         </h1>
 
         <div className="client-row-layout">
+
+
           <div className="client-item">
             <img loading="lazy"
               style={{
-                width: "200px",
+                width: "250px",
               }}
-              src={LivonfoamsLogo}
+              src={prachin}
               alt="Client 2"
             />
           </div>
           <div className="client-item">
             <img loading="lazy"
-             style={{
+              style={{
+                width: "250px",
+              }}
+              src={lakme}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "250px",
+              }}
+              src={bonnie}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "250px",
+              }}
+              src={qc_logo}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "250px",
+              }}
+              src={slned}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy" style={{
+              width: "150px"
+            }} src={magnaid} alt="Client 1" />
+          </div>
+
+
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "150px",
+              }}
+              src={ekam}
+              alt="Client 3"
+            />
+          </div>
+
+
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
                 width: "250px",
               }}
               src={livvonconforts}
@@ -77,32 +138,9 @@ const ClientsPage = () => {
           <div className="client-item">
             <img loading="lazy"
               style={{
-                width: "250px",
+                width: "90%",
               }}
-              src={conceiva}
-              alt="Client 3"
-            />
-          </div>
-          <div className="client-item">
-            <img loading="lazy" style={{
-              width: "150px"
-            }} src={magnaid} alt="Client 1" />
-          </div>
-          <div className="client-item">
-            <img loading="lazy"
-              style={{
-                width: "300px",
-              }}
-              src={hdworks}
-              alt="Client 2"
-            />
-          </div>
-          <div className="client-item">
-            <img loading="lazy"
-              style={{
-                width: "150px",
-              }}
-              src={ace2three}
+              src={truviq}
               alt="Client 2"
             />
           </div>
@@ -118,13 +156,63 @@ const ClientsPage = () => {
           <div className="client-item">
             <img loading="lazy"
               style={{
-                width: "150px",
+                width: "250px",
               }}
-              src={cricket}
+              src={conceiva}
+              alt="Client 3"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "250px",
+              }}
+              src={cdc}
+              alt="Client 1"
+            />
+          </div>
+
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "300px",
+              }}
+              src={hdworks}
               alt="Client 2"
             />
           </div>
-          
+
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "250px",
+              }}
+              src={yard_22}
+              alt="Client 3"
+            />
+          </div>
+
+
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "200px",
+              }}
+              src={LivonfoamsLogo}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "200px",
+              }}
+              src={endul}
+              alt="Client 1"
+            />
+          </div>
+
+
           <div className="client-item">
             <img loading="lazy"
               style={{
@@ -137,37 +225,28 @@ const ClientsPage = () => {
           <div className="client-item">
             <img loading="lazy"
               style={{
-                width: "150px",
-              }}
-              src={ekam}
-              alt="Client 3"
-            />
-          </div>
-           <div className="client-item">
-            <img loading="lazy"
-              style={{
-                width: "250px",
-              }}
-              src={cdc}
-              alt="Client 1"
-            />
-          </div>
-          <div className="client-item">
-            <img loading="lazy"
-              style={{
-                width: "250px",
-              }}
-              src={yard_22}
-              alt="Client 3"
-            />
-          </div>
-          <div className="client-item">
-            <img loading="lazy"
-              style={{
                 width: "250px",
               }}
               src={mapplestreet}
               alt="Client 3"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "150px",
+              }}
+              src={ace2three}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "150px",
+              }}
+              src={cricket}
+              alt="Client 2"
             />
           </div>
           <div className="client-item">
@@ -188,15 +267,7 @@ const ClientsPage = () => {
               alt="Client 1"
             />
           </div>
-          <div className="client-item">
-            <img loading="lazy"
-              style={{
-                width: "200px",
-              }}
-              src={endul}
-              alt="Client 1"
-            />
-          </div>
+
           <div className="client-item">
             <img loading="lazy"
               style={{
@@ -233,7 +304,7 @@ const ClientsPage = () => {
               alt="Client 1"
             />
           </div>
-         
+
           <div className="client-item">
             <img loading="lazy"
               style={{
