@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import PhotoshootBannerLaptop from '../../images/Photoshoots header.jpg';
 import PhotoshootBannerTab from '../../images/photoshoots tab.jpg';
 import photoshootsImage from '../../images/Photoshoots M.png';
@@ -7,7 +7,7 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -58,7 +58,7 @@ export default function Photoshoot() {
     AOS.init();
   }, []);
   return (
-    <HelmetProvider >
+    < >
       <div>
         <Helmet>
           <title>NovaTales - Best Professional Product Photography Services</title>
@@ -168,6 +168,6 @@ export default function Photoshoot() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   )
 }

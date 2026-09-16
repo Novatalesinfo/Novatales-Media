@@ -41,20 +41,20 @@ import EkamCaseStudyDetails from './components/EkamCaseStudyDetails';
 import TwentyCaseStudyDetails from './components/22yardsCaseStudyDetails';
 import EndulaCaseStudyDetails from './components/EndulCaseStudyDetails';
 import LivvonCaseStudyDetails from './components/LivvonCaseStudyDetails';
-import Portfolio from './components/portfolio';
-import FoodBakery from './components/foodBakery';
+// import Portfolio from './components/portfolio';
+// import FoodBakery from './components/foodBakery';
 // import CockTail from './components/CockTail';
-import VdoPortfolio from './components/VdoPortfolio';
-import ProductPortfolio from './components/ProductPortfolio';
-import JewelPortfolio from './components/JewelPortfolio';
-import PhotShootPortfolio from './components/PhotoShootPortfolio';
+// import VdoPortfolio from './components/VdoPortfolio';
+// import ProductPortfolio from './components/ProductPortfolio';
+// import JewelPortfolio from './components/JewelPortfolio';
+// import PhotShootPortfolio from './components/PhotoShootPortfolio';
 import HeadDigitalCaseStudy from './components/HeadDigitalCaseStudy';
 // import EndulaWebDesign from './components/EndulaWebDesign';
 // import ConceivaWebDesign from './components/ConceivaWebDesign';
 // import CdcCenter from './components/Cdc';
 // import MagnaidWebDesign from './components/MagnaidWebDesign';
 // import LivvonWebDesign from './components/LivvonWebDesign';
-import AImarketing from './components/Services/AImarketing';
+// import AImarketing from './components/Services/AImarketing';
 import EducationService from './components/EducationService';
 
 const RedirectToLowercase = () => {

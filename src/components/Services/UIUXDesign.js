@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import serviceImage1 from '../../images/Ui ux design 6.svg';
 import serviceImage2 from '../../images/UI UX design tab.svg';
 import designIcon from '../../images/design & development icon N.png';
@@ -8,7 +8,7 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -68,7 +68,7 @@ export default function UIUXDesign() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Best UI/UX Design Agency for Exceptional User Experience</title>
@@ -214,6 +214,6 @@ export default function UIUXDesign() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

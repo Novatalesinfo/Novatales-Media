@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import advertisingMarketingImg from '../../images/ADVERTISING & MARKETING MATERIALS 6.jpg';
 import advertisingMarketingTabImg from '../../images/advertising & marketing tab.jpg';
 import brochureIcon from '../../images/brochure icon N.png';
@@ -20,7 +20,7 @@ import 'aos/dist/aos.css';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 // import { Col, Container, Row } from 'react-bootstrap';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 export default function Advertising() {
 
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
@@ -57,7 +57,7 @@ export default function Advertising() {
   //   a: "Yes, we manage everything from concept to high-quality print and delivery.",
   // },
   
-  // ]
+  //]
   // Initialize AOS library for animations
   useEffect(() => {
     AOS.init();
@@ -68,7 +68,7 @@ export default function Advertising() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Brand Marketing and Advertising Ad Agency | NovaTales</title>
@@ -396,6 +396,6 @@ export default function Advertising() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

@@ -22,7 +22,7 @@ import paypal from '../images/paypal.svg';
 import googleAnalytics from '../images/google-analytics.svg';
 import postman from '../images/postman.svg';
 import { Link } from 'react-router-dom';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 import { useNavigation } from '../components/NavigationContext';
 export default function Technologies() {
   // Initialize AOS library for scroll animations
@@ -36,7 +36,7 @@ export default function Technologies() {
   const { handleNavigation } = useNavigation();
   return (
   <div>
-      <HelmetProvider >
+      < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Advanced Technologies for Web Development | NovaTales</title>
@@ -156,7 +156,7 @@ export default function Technologies() {
         </div>
       </div>
    </div>
-    </HelmetProvider>
+    </>
   </div>
   );
 }

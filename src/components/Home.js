@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import OurServices from './OurServices';
 import ContactForm from './ContactForm';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 import YourAims from './YourAims';
 import Clients from './Clients';
 import MainPage from './MainPage';
@@ -25,7 +25,7 @@ const Home = () => {
   }, [location]);
   // Render the components for the home page
   return (
-    <HelmetProvider  >
+    <  >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>NovaTales - Best Digital Marketing and Branding Agency</title>
@@ -47,7 +47,7 @@ const Home = () => {
      <Clients />
      </div>
       <ContactForm />
-    </HelmetProvider>
+    </>
   );
 };
 

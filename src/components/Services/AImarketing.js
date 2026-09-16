@@ -17,7 +17,7 @@ import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import contentMarketingIcon from '../../images/casestudies/content_icon.png';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 import online_realestate from "../../images/casestudies/NEXT GEN-01.png"
 import ai_strategy from "../../images/portfolio/ai_strategy.png"
 import ai_dashb from "../../images/portfolio/data-report.png"
@@ -28,7 +28,7 @@ const AImarketing = () => {
         AOS.init();
     }, []);
     return (
-        <HelmetProvider >
+        < >
             <Helmet>
                 <title>Transform Your Online Reach| Best Digital Marketing Agency </title>
                 <meta
@@ -431,7 +431,7 @@ const AImarketing = () => {
                 <AllServices />
                 <ServiceContactForm />
             </div>
-        </HelmetProvider>
+        </>
     )
 }
 

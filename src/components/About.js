@@ -7,7 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../css/about.css'
 import AllServices from './AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 export default function About() {
   // Initialize AOS library
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function About() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
         {/* Set the HTML head metadata */}
       <Helmet>
         <title>NovaTales - One of the Best Digital Advertising Agencies</title>
@@ -119,6 +119,6 @@ export default function About() {
         </div>
       </div>
       <AllServices />
-    </HelmetProvider>
+    </>
   );
 }

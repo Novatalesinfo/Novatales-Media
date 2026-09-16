@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 // Import images
 import packagingDesignLarge from '../../images/PACKAGING DESIGN & PRODUCTION 6.svg';
 import packagingDesignTab from '../../images/packaging design & production tab.svg';
@@ -9,7 +9,7 @@ import AllServices from '../AllServices';
 // import { Col, Container, Row } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Helmet, HelmetProvider } from 'react-helmet-async'; // Import Helmet  from 'react-helmet' to set the HTML head metadata
+import { Helmet,  } from 'react-helmet-async'; // Import Helmet  from 'react-helmet' to set the HTML head metadata
 export default function PackageDesign() {
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
   // const [activeIndexRight, setActiveIndexRight] = useState(null);
@@ -60,7 +60,7 @@ export default function PackageDesign() {
  
   // ]
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Premium Branding and Packaging Design Agency For Brands</title>
@@ -175,6 +175,6 @@ export default function PackageDesign() {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

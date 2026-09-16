@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import lapImage from '../../images/WEB &UI AND UX N.svg';
 import tabImage from '../../images/WEB &UI AND UX TAB.svg';
 import serviceImage from '../../images/Web & App Development M.png';
@@ -6,7 +6,7 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -59,7 +59,7 @@ const WebAppDevelopment = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Web Development Services | NovaTales Marketing Agency</title>
@@ -173,7 +173,7 @@ const WebAppDevelopment = () => {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 export default function ContactUsMain() {
   const [formData, setFormData] = useState({
@@ -82,7 +82,7 @@ const navigate = useNavigate()
   }, []);
 
   return (
-    <HelmetProvider >
+    < >
       <Helmet >
         <title>Contact Us | Nova Tales Digital Marketing Company</title>
         <meta name="description" content="We are the best Digital Marketing Agency." />
@@ -183,6 +183,6 @@ const navigate = useNavigate()
           </div>
         </div>
       </div>
-    </HelmetProvider>
+    </>
   );
 }

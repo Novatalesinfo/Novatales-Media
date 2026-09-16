@@ -6,7 +6,7 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 export default function MobileApp() {
   // Initialize AOS library for animations
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function MobileApp() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Mobile App Development Service | React Native, Flutter, Angular, Node JS</title>
@@ -67,6 +67,6 @@ export default function MobileApp() {
       </div>
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

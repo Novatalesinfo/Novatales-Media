@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import ecommerceLap from '../../images/E-Commerce 6.svg';
 import ecommerceTab from '../../images/E-commerce tab.svg';
 import ecommerceImage from '../../images/Ecommerce M.png';
@@ -6,7 +6,7 @@ import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -66,7 +66,7 @@ export default function Ecommerce() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Best Ecommerce Web Development Agency | NovaTales Media</title>
@@ -246,6 +246,6 @@ export default function Ecommerce() {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

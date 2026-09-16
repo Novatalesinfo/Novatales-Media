@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../../css/servisesCss/branding.css'
 import '../../css/servisesCss/sevices-mediaquery.css'
 import AOS from 'aos';
@@ -11,7 +11,7 @@ import tabImage from '../../images/branding strategy & planning tab.svg';
 import webImage from '../../images/BRANDING WEB IMAGE.png';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 export default function BrandingStrategy() {
@@ -66,7 +66,7 @@ export default function BrandingStrategy() {
   }, []);
 
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Brand Marketing and Strategy | NovaTales Branding Agency</title>
@@ -205,6 +205,6 @@ export default function BrandingStrategy() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

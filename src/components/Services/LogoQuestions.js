@@ -10,7 +10,7 @@ import '../../css/servisesCss/logo.css'
 import axios from 'axios';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 export default function LogoQuestions() {
   // eslint-disable-next-line no-unused-vars
@@ -178,7 +178,7 @@ export default function LogoQuestions() {
 
 
   return (
-    <HelmetProvider >
+    < >
       <Helmet>
         <title>Logo Design Questionnaire</title>
         <meta
@@ -716,6 +716,6 @@ export default function LogoQuestions() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   )
 }

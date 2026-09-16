@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import analyticsImage from '../../images/ANALYTICS & BUSINESS INSIGHTS 6.svg';
 import tabImage from '../../images/analytics & business insights tab.svg';
 import analyticsMImage from '../../images/Analytics & Business Insights M.png';
@@ -8,7 +8,7 @@ import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 import '../../css/servisesCss/analytics.css';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 // import { Col, Container, Row } from 'react-bootstrap';
@@ -55,7 +55,7 @@ export default function Analytics() {
    
 //     ]
     return (
-        <HelmetProvider >
+        < >
             {/* Set the HTML head metadata */}
             <Helmet>
                 <title>NovaTales Google Data Analytics | Insights and Solutions</title>
@@ -211,6 +211,6 @@ export default function Analytics() {
                 <AllServices />
                 <ServiceContactForm />
             </div>
-        </HelmetProvider>
+        </>
     );
 }

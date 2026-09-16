@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import emailMarketingDesktop from "../../images/EMAIL MARKETING 6..svg";
 import emailMarketingTablet from "../../images/email marketing tab.svg";
 import emailMarketingMain from "../../images/EMAIL MARKETING M.png";
@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet,  } from "react-helmet-async";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
@@ -65,7 +65,7 @@ export default function EmailMarketing() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>
@@ -248,6 +248,6 @@ export default function EmailMarketing() {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import logoVisualImage from '../../images/LOGO & VISUAL ELEMENTS 6.svg';
 import logoVisualTabImage from '../../images/logo & visual elements tab.svg';
 import logoVisualMImage from '../../images/logo & visual elements m.png';
@@ -10,7 +10,7 @@ import brandVoiceIcon from '../../images/brand voice.png';
 import '../../css/servisesCss/logo.css'
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { Col, Container, Row } from 'react-bootstrap';
@@ -60,7 +60,7 @@ export default function LogoVisual() {
 
     // ]
     return (
-        <HelmetProvider >
+        < >
             {/* Set the HTML head metadata */}
             <Helmet>
                 <title>Creative Logo Design Company for your Business | NovaTales</title>
@@ -265,7 +265,7 @@ export default function LogoVisual() {
             </div> */}
             <AllServices />
             <ServiceContactForm />
-        </HelmetProvider>
+        </>
 
     );
 }

@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import digitalMarketingIllustration from "../../images/digital marketing illustration.svg";
 import digitalMarketingTab from "../../images/digital marketing tab.svg";
 import digitalMarketingWebImage from "../../images/DIGITAL MARKETING WEB IMAGE.png";
-import seoIcon from "../../images/SEO icon.png";
-import emailMarketingIcon from "../../images/email marketing icon N.png";
-import analyticsIcon from "../../images/analytics and business insights icon.png";
-import socialMediaMarketingIcon from "../../images/social m marketing icon N.png";
-import paidAdvertisingIcon from "../../images/paid advertising.png";
+// import seoIcon from "../../images/SEO icon.png";
+// import emailMarketingIcon from "../../images/email marketing icon N.png";
+// import analyticsIcon from "../../images/analytics and business insights icon.png";
+// import socialMediaMarketingIcon from "../../images/social m marketing icon N.png";
+// import paidAdvertisingIcon from "../../images/paid advertising.png";
 import "../../css/servisesCss/digital.css";
 import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import BrandingStrategy from "./BrandingStrategy";
+// import { Link } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { Helmet,  } from "react-helmet-async";
+// import BrandingStrategy from "./BrandingStrategy";
 import seoImage from "../../images/portfolio/icons/seo_mark.png";
 import emailMarketingMain from "../../images/portfolio/icons/email_mark.png";
 import analyticsMImage from "../../images/Analytics & Business Insights M.png";
@@ -145,7 +145,7 @@ export default function DigitalMarketing() {
   }, []);
 
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>
@@ -710,6 +710,6 @@ export default function DigitalMarketing() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

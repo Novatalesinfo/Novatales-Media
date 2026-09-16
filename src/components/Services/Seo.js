@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import seoImage from "../../images/Search Engine Optimization M.png";
 import seoLapImage from "../../images/SEARCH ENGINE OPTIMIZATION 6.svg";
 import seoTabImage from "../../images/search engine optimization tab.svg";
@@ -8,7 +8,7 @@ import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet,  } from "react-helmet-async";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 export default function Seo() {
   // Initialize AOS library for animations
@@ -21,7 +21,7 @@ export default function Seo() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Best SEO and Digital Marketing Agency | NovaTales Media</title>
@@ -159,6 +159,6 @@ export default function Seo() {
       </div>
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

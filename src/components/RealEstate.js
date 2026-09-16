@@ -22,7 +22,7 @@ import serviceCardimg_8 from "../images/portfolio/icons/reputaion.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RealEstateBookFrom from './realEstateFrom';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 const RealEstate = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -34,7 +34,7 @@ const RealEstate = () => {
   };
 
   return (
-    <HelmetProvider>
+    <>
       <Helmet>
         <title>Best Real Estate Digital Marketing Agency | NovaTales</title>
         <meta
@@ -620,7 +620,7 @@ const RealEstate = () => {
         <RealEstateBookFrom />
         <div className='w-100 mb-5'>
         </div>
-      </div></HelmetProvider>
+      </div></>
 
 
   )

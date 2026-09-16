@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 // Import your images here
 import brandPositioningImage from '../../images/brand postioning.svg';
 import tabImage from '../../images/brand postioning tab.svg';
 import positioningMImage from '../../images/brand postioning M.png';
 import AllServices from '../AllServices';
 import ServiceContactForm from './ServiceContactForm';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { Col, Container, Row } from 'react-bootstrap';
@@ -58,7 +58,7 @@ export default function BrandPositioning() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Expert Brand Positioning Strategy Solutions | NovaTales</title>
@@ -173,6 +173,6 @@ export default function BrandPositioning() {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

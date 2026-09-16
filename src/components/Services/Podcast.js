@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import podcastPlanningProduction6 from '../../images/podcast planning & production6.svg';
 import podcastPlanningProductionTab from '../../images/podcast planning & production tab.svg';
 import podcastM from '../../images/PODCAST M.png';
@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
 export default function Podcast() {
@@ -66,7 +66,7 @@ export default function Podcast() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider >
+    < >
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Podcasting in Digital Marketing: Power Up Your Strategy</title>
@@ -193,6 +193,6 @@ export default function Podcast() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

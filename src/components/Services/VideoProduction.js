@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import videoScreenLaptop from '../../images/video production-01.jpg';
 import videoScreenTab from '../../images/video production tab-01.jpg';
 import AOS from 'aos';
@@ -12,7 +12,7 @@ import corporateFilms from '../../images/corporate films.png';
 import explainerVideos from '../../images/expainer videos.png';
 import ServiceContactForm from './ServiceContactForm';
 import AllServices from '../AllServices';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { Col, Container, Row } from 'react-bootstrap';
@@ -71,7 +71,7 @@ export default function VideoProduction() {
     AOS.init();
   }, []);
   return (
-    <HelmetProvider >
+    < >
       <Helmet>
         <title>Professional Video filming and Production Agency| NovaTales</title>
         <meta
@@ -248,6 +248,6 @@ export default function VideoProduction() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   )
 }

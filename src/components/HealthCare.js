@@ -14,7 +14,7 @@ import icon2 from '../images/portfolio/custmized-01 (1)-01.png';
 import icon3 from '../images/portfolio/donation_1-01.png';
 import icon4 from '../images/icon 4.png';
 import BookForm from './bookForm';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 import ServicesCards from './ServicesCards';
 export default function HealthCare() {
   const [activeIndexLeft, setActiveIndexLeft] = useState(0);
@@ -31,7 +31,7 @@ export default function HealthCare() {
     <div style={{
       marginBottom: "80px"
     }}>
-      <HelmetProvider>
+      <>
         <Helmet>
           <title>
             NovaTales - Hospital Digital Marketing Agency for Healthcare
@@ -506,7 +506,7 @@ export default function HealthCare() {
           </Container>
         </div>
         <BookForm />
-      </HelmetProvider>
+      </>
     </div>
   );
 }

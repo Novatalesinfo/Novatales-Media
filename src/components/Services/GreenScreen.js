@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import GrennScreenLarge from '../../images/greenscreen header-01 (1).jpg';
 import GreenScreenTab from '../../images/green screen for tab-01.jpg';
 import { Row, Col, Container } from 'react-bootstrap';
@@ -12,7 +12,7 @@ import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GreenScreenVideo from './GreenScreenVideo';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet,  } from 'react-helmet-async';
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 export default function GreenScreen() {
   // const [activeIndexLeft, setActiveIndexLeft] = useState(null);
@@ -54,7 +54,7 @@ export default function GreenScreen() {
     AOS.init();
   }, []);
   return (
-    <HelmetProvider >
+    < >
       <div>
         <Helmet>
           <title>Green Screen Studio Space Available For Rent | NovaTales</title>
@@ -176,6 +176,6 @@ export default function GreenScreen() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   )
 }

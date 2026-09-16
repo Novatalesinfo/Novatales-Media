@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import linkedinIcon from "../../images/linkedin icon.png";
 import twitterIcon from "../../images/twitter icon.png";
 import smmIcon from "../../images/social m marketing icon N.png";
@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet,  } from "react-helmet-async";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -63,7 +63,7 @@ export default function SMM() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Best Social Media Marketing Agency | NovaTales Media</title>
@@ -332,6 +332,6 @@ export default function SMM() {
         <AllServices />
         <ServiceContactForm />
       </div>
-    </HelmetProvider>
+    </>
   );
 }

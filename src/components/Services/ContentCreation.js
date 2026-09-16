@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import contentCreating from "../../images/content creating.svg";
 import contentCreationTab from "../../images/content creation tab.svg";
 import contentCreationWeb from "../../images/CONTENT CREATION WEB IMAGE.png";
@@ -6,7 +6,7 @@ import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet,  } from "react-helmet-async";
 
 export default function ContentCreation() {
   // Initialize AOS library for animations
@@ -19,7 +19,7 @@ export default function ContentCreation() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>Engage and Grow - NovaTales Content Marketing Services</title>
@@ -152,6 +152,6 @@ export default function ContentCreation() {
       </div>
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

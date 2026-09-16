@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import paidAdvertisingLap from "../../images/PAID ADVERSTISING 6.svg";
 import paidAdvertisingTab from "../../images/paid advertising tab.svg";
 import paidAdvertisingM from "../../images/PAID ADVERTISING M.png";
@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ServiceContactForm from "./ServiceContactForm";
 import AllServices from "../AllServices";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet,  } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 // import { faLightbulb, faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -66,7 +66,7 @@ export default function PaidAdvertising() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <HelmetProvider>
+    <>
       {/* Set the HTML head metadata */}
       <Helmet>
         <title>PPC Ad Agency | Maximize ROI with Expert Ad Strategies</title>
@@ -336,6 +336,6 @@ export default function PaidAdvertising() {
       </div> */}
       <AllServices />
       <ServiceContactForm />
-    </HelmetProvider>
+    </>
   );
 }

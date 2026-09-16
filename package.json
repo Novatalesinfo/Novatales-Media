@@ -38,7 +38,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -59,5 +59,49 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+  "include": [
+    "/",
+    "/about",
+    "/clients",
+    "/technologies",
+    "/contactus",
+    "/blog",
+    "/hospital-digital-marketing",
+    "/real-estate-digital-marketing",
+    "/education-digital-marketing",
+    "/case-studies",
+    "/case-studies/magnaid-hospitals",
+    "/case-studies/ekam-fertility",
+    "/case-studies/22-yards",
+    "/case-studies/endula-infra",
+    "/case-studies/livvon-comforts",
+    "/case-studies/head-digitals-wroks",
+    "/branding-and-marketing",
+    "/brand-positioning",
+    "/logo-designing",
+    "/logo-question",
+    "/brand-and-packaging-design",
+    "/marketing-and-advertising",
+    "/digital-marketing",
+    "/search-engine-optmization-marketing",
+    "/social-media-marketing",
+    "/google-analytics-search-console",
+    "/ppc-advertising",
+    "/email-marketing",
+    "/website-development",
+    "/ui-ux-design-development",
+    "/mobile-application-development",
+    "/e-commerce-web-development",
+    "/content-creation-and-marketing",
+    "/podcast-editing-hosting",
+    "/green-screen-studio-rent",
+    "/video-production",
+    "/professional-photoshoot"
+  ]
+}
 }
