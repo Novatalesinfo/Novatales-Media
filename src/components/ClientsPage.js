@@ -32,6 +32,7 @@ import qc_logo from "../images/portfolio/qc_logo.png"
 import slned from "../images/portfolio/slned_logo.png"
 import prachin from "../images/portfolio/prachin.png"
 import truviq from "../images/portfolio/truviq.png"
+import mnchester from "../images/portfolio/mnchester.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const ClientsPage = () => {
@@ -109,8 +110,17 @@ const ClientsPage = () => {
             />
           </div>
           <div className="client-item">
+            <img loading="lazy"
+              style={{
+                width: "280px",
+              }}
+              src={mnchester}
+              alt="Client 2"
+            />
+          </div>
+          <div className="client-item">
             <img loading="lazy" style={{
-              width: "150px"
+              width: "180px"
             }} src={magnaid} alt="Client 1" />
           </div>
 

@@ -25,6 +25,7 @@ import truviq from "../images/portfolio/truviq.png"
 import '../css/Home.css';
 import '../css/HomeMediaQuery.css';
 import cdc from "../images/casestudies/CDC FINAL LOGO - 01 (1).png"
+import mnchester from "../images/portfolio/mnchester.png"
 export default function Clients() {
     useEffect(() => {
         const logoSlide = document.querySelector(".logos-slide");
@@ -41,6 +42,7 @@ export default function Clients() {
                     <img src={qc_logo} alt="Quality Matrix" width="auto" height="auto" />
                     <img src={bonnie} alt="Bonnie Health" width="auto" height="auto" />
                     <img src={slned} alt="SLN Education" width="250px" height="auto" />
+                    <img src={mnchester} alt="SLN Education" width="200px" height="auto" />
                     <img src={truviq} alt="Quality Matrix" width="300px" height="auto" />
                     <img src={LivonComfortsLogo} alt="Livon Comforts" width="150px" height="80px" />
                     <img src={cdc} alt="CDC" width="280px" height="auto" />
